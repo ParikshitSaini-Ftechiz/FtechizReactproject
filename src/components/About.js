@@ -9,7 +9,7 @@ function About() {
     paraData : "Helping Start-ups, mid and High-Level Enterprises In Embracing Technologies That Bring The Highest Value.",
   };
   const image = {
-    imageData : "./images/main_section_image.jpg",
+    imageData : "./images/aboutUs.jpg",
   }
   const btn = {
     btnData : "Let's talk",

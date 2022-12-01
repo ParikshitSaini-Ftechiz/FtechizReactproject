@@ -38,10 +38,6 @@ const Main_Section = ({ myData, para, image, btn }) => {
 const Wrapper = styled.section`
   padding: 9rem 0;
 
-  img {
-    min-width: 20rem;
-    height: 20rem;
-  }
   .grid {
    display: grid;
    gap: 9rem;
@@ -57,10 +53,6 @@ const Wrapper = styled.section`
     align-items: center;
   }
 
-  .image {
-    width: 80%;
-    height: auto;
-  }
   .heading.anim {
     animation-delay: 0.5s;
   }
