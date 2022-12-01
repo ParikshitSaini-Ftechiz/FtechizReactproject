@@ -15,19 +15,13 @@ const Main_Section = ({ myData, para, image, btn }) => {
           <div className="grid grid_two_column">
             <div className="main_section">
               <h1 className="heading animX">{nameData}</h1>
-              <p className="main_para anim">{paraData}</p>
+              <p  className="main_para para anim">{paraData}</p>
               <NavLink>
                 <Button className="anim">{btnData}</Button>
               </NavLink>
             </div>
             <div classname="main_section_image">
-              <figure>
-                <img
-                  src={imageData}
-                  alt="main_section_image"
-                  className="image"
-                />
-              </figure>
+              <img src={imageData} alt="main_section_image" className="image" />
             </div>
           </div>
         </div>
@@ -37,22 +31,25 @@ const Main_Section = ({ myData, para, image, btn }) => {
 };
 const Wrapper = styled.section`
   padding: 9rem 0;
-
+  background: ${({ theme }) => theme.colors.component_bg};
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
   .grid {
-   display: grid;
-   gap: 9rem;
-   margin:8rem 0rem 0rem 0rem;
+    display: grid;
+    gap: 12rem;
+    margin: 8rem 0rem 0rem 0rem;
   }
-  .main-section{
-    background: {({theme}) theme.colors.};
+
   .main_section_image {
     width: 100%;
     height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
   }
-
+  .image {
+    width: 45rem;
+    height: 40rem;
+  }
   .heading.anim {
     animation-delay: 0.5s;
   }
@@ -78,7 +75,7 @@ const Wrapper = styled.section`
       transform: translateY(0);
     }
   }
-}
+
   @media (max-width: ${({ theme }) => theme.media.tab}) {
     .grid {
       display: grid;
@@ -93,7 +90,6 @@ const Wrapper = styled.section`
       min-width: 24rem;
       height: 22rem;
     }
-  
   }
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
     html {
@@ -114,9 +110,7 @@ const Wrapper = styled.section`
       height: 22rem;
     }
   }
-    @media (max-width: ${({ theme }) => theme.media.small_phone}) {
-     
-    }
-  
+  @media (max-width: ${({ theme }) => theme.media.small_phone}) {
+  }
 `; // 1fr=25% of the available space.
 export default Main_Section;

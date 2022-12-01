@@ -10,6 +10,7 @@ import CurrencyBitcoinIcon from "@mui/icons-material/CurrencyBitcoin";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import DvrIcon from "@mui/icons-material/Dvr";
 import ComputerIcon from "@mui/icons-material/Computer";
+import GoogleMap from "./components/GoogleMap";
 const Footer = () => {
   return (
     <>
@@ -29,7 +30,7 @@ const Footer = () => {
                     <h3>Contact Details</h3>
                     <p>
                       <CallIcon />{" "}
-                      <NavLink to="tel:+918755231772">+918755231772</NavLink>
+                      <NavLink to="tel:+917534078989">+917534078989</NavLink>
                     </p>
                     <p>
                       <EmailIcon /> <NavLink to="#"> sales@ftechiz.com</NavLink>
@@ -53,22 +54,17 @@ const Footer = () => {
                       <i class="fa-brands fa-linkedin"></i>
                     </NavLink>
                   </div>
+
+                  {/* google map */}
                   <div>
-                    <iframe
-                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3445.078763705736!2d78.0581474152188!3d30.291819281792982!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390929c315555515%3A0x25553e3289a692dd!2sFtechiz%20Solutions%20Pvt%20Ltd!5e0!3m2!1sen!2sin!4v1669802354380!5m2!1sen!2sin"
-                      width="400"
-                      height="150"
-                      style={{ border: 0, borderRadius: "1rem" }}
-                      allowFullScreen=""
-                      loading="lazy"
-                      referrerPolicy="no-referrer-when-downgrade"
-                    ></iframe>
+                   <GoogleMap />
                   </div>
+                  {/* google map */}
+
                 </div>
                 {/* contact info end */}
 
                 {/* services start */}
-
                 <div className="services">
                   <h3>services</h3>
                   <ul>
