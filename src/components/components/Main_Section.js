@@ -32,16 +32,14 @@ const Main_Section = ({ myData, para, image, btn }) => {
 const Wrapper = styled.section`
   padding: 9rem 0;
   background: ${({ theme }) => theme.colors.component_bg};
-  display: flex;
-  justify-content: center;
-  align-items: center;
- 
+  Button{
+      background:${({theme}) => theme.colors.btn_color}
+    }
   .grid {
     display: grid;
     gap: 12rem;
     margin: 8rem 0rem 0rem 0rem;
   }
-
   .main_section_image {
     width: 100%;
     height: auto;

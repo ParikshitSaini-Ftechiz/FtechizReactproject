@@ -21,8 +21,10 @@ function App() {
       bg: "#101434",
       helper:" #FBAB1F ",
       color_white:"#fff",
-      component_bg:"#2C4385",
+      btn_color:"#0275d8",
+      component_bg:"linear-gradient(0deg, rgba(45,82,173,1) 0%, rgba(24,45,96,1) 50%, rgba(21,41,89,1) 100%)",
       fontSize: "2rem",
+      hover_color:"#0275d8",
       shadow:"0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);",
     },
     fontsize:{

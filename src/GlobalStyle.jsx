@@ -27,22 +27,25 @@ h4 {
 }
 
 h1 {
-  color: ${({ theme }) => theme.colors.heading};
-  font-size: 5rem;
+  color: ${({ theme }) => theme.colors.color_white};
+  font-size: 4.6rem;
   font-weight: 700;
 }
-
+.heading{
+  color: ${({ theme }) => theme.colors.headings};
+}
  h2 {
-   color: ${({ theme }) => theme.colors.heading};
+   color: ${({ theme }) => theme.colors.color_white};
    font-size: 4.4rem;
    font-weight: 300;
    white-space: normal;
-  
+
   }
 
 h3 {
-  font-size: 2.4rem;
-  font-weight: 600;
+  font-size: 2rem;
+  font-weight: 500;
+  color: ${({ theme }) => theme.colors.color_white};
 }
 
 p{
@@ -50,8 +53,13 @@ p{
   font-size: 1.5rem;
   line-height: 1.6;
   font-weight:400;
-}
-
+} 
+ .para {
+    margin-top: 2rem;
+    margin-bottom: 5rem;
+    word-spacing: 0.3rem;
+    font-size: 1.9rem;
+  }
 a {
   text-decoration: none;
   font-size: 1.5rem;

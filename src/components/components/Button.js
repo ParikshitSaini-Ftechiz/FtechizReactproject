@@ -8,7 +8,7 @@ text-transform: uppercase;
 font-size: 1.4rem;
 font-weight: 500;
 border:none;
-padding: 1rem;
+padding: 1rem 1.5rem;
 cursor: pointer;
 background: ${({theme}) =>theme.colors.helper};
 box-shadow:${({theme}) => theme.colors.shadow};

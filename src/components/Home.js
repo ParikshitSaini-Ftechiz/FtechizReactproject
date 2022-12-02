@@ -1,10 +1,11 @@
 import React from "react";
+import Industries from "./components/Industries";
 
 const Home = () => {
 
   return (
     <>
-    <h1>home</h1>
+<Industries />
     </>
   );
 };

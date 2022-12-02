@@ -1,7 +1,6 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
-import { Button } from "./components/Button";
 import CallIcon from "@mui/icons-material/Call";
 import EmailIcon from "@mui/icons-material/Email";
 import LanguageSharpIcon from "@mui/icons-material/LanguageSharp";
@@ -11,6 +10,7 @@ import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import DvrIcon from "@mui/icons-material/Dvr";
 import ComputerIcon from "@mui/icons-material/Computer";
 import GoogleMap from "./components/GoogleMap";
+import Icons from "../components/components/Icons";
 const Footer = () => {
   return (
     <>
@@ -40,19 +40,9 @@ const Footer = () => {
                       <NavLink to="#">www.ftechiz.com</NavLink>
                     </p>
                   </div>
-                  <div className="icons">
-                    <NavLink className="icon" to="#">
-                      <i class="fa-brands fa-square-google-plus"></i>
-                    </NavLink>
-                    <NavLink className="icon" to="#">
-                      <i class="fa-brands fa-square-facebook"></i>
-                    </NavLink>
-                    <NavLink className="icon" to="#">
-                      <i class="fa-brands fa-square-twitter"></i>
-                    </NavLink>
-                    <NavLink className="icon" to="#">
-                      <i class="fa-brands fa-linkedin"></i>
-                    </NavLink>
+                  {/* google icons */}
+                  <div>
+                    <Icons />
                   </div>
 
                   {/* google map */}
@@ -223,21 +213,9 @@ const Wrapper = styled.section`
         align-items:center;
         line-height: 3.4rem;
         gap:1rem; 
+        margin-bottom: 2rem;
       }
       }
-          .icons {
-            margin-top: 2.4rem;
-            margin-bottom: 2.4rem;
-            padding: 0.1rem;
-            cursor: pointer;
-            display: flex;
-            gap:1rem;
-
-            .icon {
-              font-size:${({ theme }) => theme.colors.fontSize};
-              cursor: pointer;
-            }
-          }
       }
     
    ${'' /* copyright */}
