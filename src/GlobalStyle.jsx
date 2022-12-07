@@ -43,8 +43,8 @@ h1 {
   }
 
 h3 {
-  font-size: 2rem;
-  font-weight: 500;
+  font-size: 2.6rem;
+  font-weight: 400;
   color: ${({ theme }) => theme.colors.color_white};
 }
 
