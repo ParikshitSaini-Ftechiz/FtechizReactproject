@@ -37,7 +37,7 @@ export const Card_detail = [
         btn_text:"Read Me",
     },
     {
-        icon:<BackupOutlinedIcon/>,
+        icon:<BackupOutlinedIcon style={{color:"white", fontSize:"5rem", marginTop:".5rem"}}/>,
         title:"Cloud Application Development Company",
         para:"As a leading cloud application development company, our cloud-native application development includes ERPs, CRMs, and much more. Ftechiz offers custom cloud application development services as per your budget and business requirement. We develop and Implement Cloud Applications that are Browser-compatible, Future-Proof, and Highly Scalable. We can deploy cloud applications in public, private, or hybrid environments thanks to our top-level integration services.",
         btn_text:"Read Me",
