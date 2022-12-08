@@ -13,7 +13,7 @@ const Sofware_Development_Services = () => {
         <div className="container">
           <div className="content">
             <h1 className="heading">Our Software Development Services</h1>
-            <p className="para">
+            <p>
               Our strength lies in the comprehensive suite of services we offer
               to our clients. From full-stack development to just consultancy-
               you demand, we deliver.
@@ -48,14 +48,14 @@ const Sofware_Development_Services = () => {
   );
 };
 const Wrapper = styled.section`
-  background: #f7f7f7;
+  background: ${({theme}) => theme.colors.color_grey};
   padding: 1rem;
   text-align: center;
   .content {
     h1,
     p {
       text-align: center;
-      margin: 2rem 15rem;
+      margin: 2rem 16rem;
       color: ${({ theme }) => theme.colors.heading};
     }
   }

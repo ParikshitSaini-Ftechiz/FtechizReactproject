@@ -15,7 +15,7 @@ const Industries = () => {
         <div className="container industries_portion">
           <div className="heading_portion grid">
             <h1 className="headings">Industries We Serve</h1>
-            <p className="para">
+            <p>
               Be it a simple app or an enterprise-grade complex solution, we
               have expertise in industries we serve and we have developed the
               perfect applications for brands and companies across the globe.
@@ -94,9 +94,7 @@ const Wrapper = styled.section`
       p {
         color: ${({ theme }) => theme.colors.heading};
         text-align: center;
-      }
-      p {
-        font-size: 1.5rem;
+        margin:0 16rem;
       }
     }
     .industries_icons {

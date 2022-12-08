@@ -53,6 +53,8 @@ const Counter_Up = () => {
   );
 };
 const Wrapper = styled.section`
+  background: ${({theme}) => theme.colors.color_grey};
+  padding: 1rem 0;
   .container {
     padding: 1rem 0;
     background: ${({ theme }) => theme.colors.bg};
