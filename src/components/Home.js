@@ -4,6 +4,7 @@ import Sofware_Development_Services from "./components/Sofware_Development_Servi
 import Why_Choose_Us from "./components/Why_Choose_Us";
 import Counter_Up from "./components/CounterUp";
 import Tool_Tech from "./components/Tool_Tech";
+import Contact_Page from "./components/Contact_Page";
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <Why_Choose_Us />
       <Counter_Up />
       <Tool_Tech/>
+      <Contact_Page/>
     </>
   );
 };

@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import { Button } from "../components/Button";
+import { Button } from "../components/components/Button";
 
 const Navbar = () => {
   const [menuIcon, setMenuIcon] = useState();

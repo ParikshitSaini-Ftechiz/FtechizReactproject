@@ -1,5 +1,5 @@
 import React from 'react'
-import Main_Section from './components/Main_Section'
+import Main_Section from './components/components/Main_Section'
 
 const Portfolio = () => {
   const data = {

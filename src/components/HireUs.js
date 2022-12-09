@@ -2,8 +2,8 @@ import React from "react";
 import styled from "styled-components";
 import PhoneIcon from "@mui/icons-material/Phone";
 import { NavLink } from "react-router-dom";
-import { Button } from "../components/components/Button";
-import Icons from "../components/components/Icons";
+import { Button } from "./components/components/Button";
+import Icons from "./components/components/Icons";
 const HireUs = () => {
   return (
     <>
@@ -50,7 +50,7 @@ const HireUs = () => {
                 </div>
               </div>
             </div>
-            {/* conatct form  */}
+            {/* contact form  */}
             <div className="form">
               <h1>Let's Talk</h1>
               <div className="contact_form">

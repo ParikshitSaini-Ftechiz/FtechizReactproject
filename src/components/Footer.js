@@ -9,8 +9,8 @@ import CurrencyBitcoinIcon from "@mui/icons-material/CurrencyBitcoin";
 import PhoneIphoneIcon from "@mui/icons-material/PhoneIphone";
 import DvrIcon from "@mui/icons-material/Dvr";
 import ComputerIcon from "@mui/icons-material/Computer";
-import GoogleMap from "./components/GoogleMap";
-import Icons from "../components/components/Icons";
+import GoogleMap from "./components/components/GoogleMap";
+import Icons from "./components/components/Icons";
 const Footer = () => {
   return (
     <>

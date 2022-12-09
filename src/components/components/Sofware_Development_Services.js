@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Button } from "./Button";
+import { Button } from "./components/Button";
 import { NavLink } from "react-router-dom";
 import { Card_detail } from "./Card_detail";
 
@@ -61,7 +61,7 @@ const Wrapper = styled.section`
   }
   .grid {
     display: grid;
-    gap: 12rem;
+    gap: 6rem;
     margin: 8rem 2rem;
   }
   .grid-three-column {
@@ -81,8 +81,10 @@ const Wrapper = styled.section`
   }
 
   .card {
-    width: 30rem;
+    width: auto;
     height: auto;
+    padding:1rem 2rem;
+    border:none;
     .card_icon {
       width: 10rem;
       height: 10rem;
@@ -100,9 +102,9 @@ const Wrapper = styled.section`
     .card_btn {
       .btn {
         color: ${({ theme }) => theme.colors.color_white};
-        background: ${({ theme }) => theme.colors.component_bg};
+        background: ${({ theme }) => theme.colors.card_bg};
         border-radius: 1rem;
-        padding: 1rem 2rem;
+        padding: 1rem 2.5rem;
       }
     }
   }

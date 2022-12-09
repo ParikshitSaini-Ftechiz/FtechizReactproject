@@ -7,8 +7,7 @@ const Header = () => {
   return (
     <MainHeader>
       <NavLink to="/">
-      <h2 style={{color:"#fff"}}>logo</h2>
-        {/* <img className="logo" src="" alt="logo_image" /> */}
+      <img class="logo" style ={{width:"20rem", height:"auto"}}src="https://ftechiz.com/wp-content/uploads/2022/11/FtechizLogo.png" alt="logo"/>
       </NavLink>
       <Navbar/>
     </MainHeader>
@@ -17,13 +16,13 @@ const Header = () => {
 
 const MainHeader = styled.header`
   width:100%;
-  height: 7rem;
+  height: auto;
   background-color:${({theme}) => theme.colors.bg};
   display: flex;
   justify-content: space-between;
   align-items: center;
   position: fixed;
-  padding:0 3rem;
+  padding:2rem 7rem;
   z-index:999999;
 
   .logo{

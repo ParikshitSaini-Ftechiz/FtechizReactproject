@@ -50,9 +50,6 @@ const Wrapper = styled.section`
   .content{
     margin-top:3rem;
     text-align:center;
-    p{
-      font-size:1.6rem; 
-    }
   }
   .card {
     width: 58rem;
