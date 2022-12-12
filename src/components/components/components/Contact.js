@@ -3,7 +3,7 @@ import "../../../../node_modules/bootstrap/dist/css/bootstrap.min.css";
 import { NavLink } from "react-router-dom";
 import { Button } from "./Button";
 import styled from "styled-components";
-import { Formik, Form, Field, ErrorMessage } from "formik";
+import { Formik, Form, Field, ErrorMessage ,MyTextArea} from "formik";
 
 import * as Yup from "yup";
 
@@ -27,7 +27,9 @@ const Contact = () => {
       .min(1)
       .max(25)
       .required("Please enter your Skype ID/Whatsapp No"),
- 
+   desc: Yup.string()
+      .min(1)
+      .required("Required"),
   });
 
   const handleSubmit = (values) => {
@@ -140,6 +142,22 @@ const Contact = () => {
                   </p>
                 </div>
               </div>
+              <div className="col-md-12">
+               <div className="form-outline">
+                 <label for="validationCustom02" className="form-label">
+                   Project Description
+                 </label>
+                 <Field as="textarea"
+                   type="text"
+                   class="form-control"
+                   rows="20"
+                   column="10"
+                   name="desc"
+                   id="desc"
+                 />
+                 <p><ErrorMessage name="desc"/></p>
+               </div>
+               </div>
               <div className="col-12">
                 <NavLink to="/">
                   <Button
@@ -167,7 +185,7 @@ const Wrapper = styled.div`
   .contact_form {
     background: ${({theme}) => theme.colors.bg};
      p{
-      color: ${({ theme }) => theme.colors.color_white};
+      color:red;
       font-size: 1.9rem;
      }
     input,

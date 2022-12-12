@@ -19,23 +19,29 @@ function App() {
       heading: "#231740",
       text: "#fff",
       bg: "#101434",
-      helper:" #FBAB1F ",
-      color_white:"#fff",
-      btn_color:"#0275d8",
-      component_bg:"linear-gradient(0deg, rgba(45,82,173,1) 0%, rgba(24,45,96,1) 50%, rgba(21,41,89,1) 100%)",
+      helper: " #FBAB1F ",
+      color_white: "#fff",
+      btn_color: "#0275d8",
+      component_bg:
+        "linear-gradient(0deg, rgba(45,82,173,1) 0%, rgba(24,45,96,1) 50%, rgba(21,41,89,1) 100%)",
       fontSize: "2rem",
-      hover_color:"#0275d8",
-      color_grey:"#f7f7f7",
-      card_bg:"linear-gradient(90deg, rgba(2,82,150,1) 0%, rgba(2,103,190,1) 54%, rgba(2,117,216,1) 100%);",
-      shadow:"0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);",
+      hover_color: "#0275d8",
+      color_grey: "#f7f7f7",
+      premiumClient_bg:
+        "linear-gradient(90deg, rgba(35,23,64,1) 0%, rgba(58,38,105,1) 54%, rgba(91,61,167,1) 100%);",
+      card_bg:
+        "linear-gradient(90deg, rgba(2,82,150,1) 0%, rgba(2,103,190,1) 54%, rgba(2,117,216,1) 100%);",
+      shadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+      dark_shadow:
+        "0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);",
     },
-    fontsize:{
+    fontsize: {
       fontSize: "2rem",
     },
     media: {
       mobile: "768px",
       tab: "998px",
-      small_phone:"612px"
+      small_phone: "612px",
     },
   };
   return (
@@ -48,14 +54,17 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
-            <Route path="/hireremotedevelopers" element={<HireRemoteDevelopers />} />
+            <Route
+              path="/hireremotedevelopers"
+              element={<HireRemoteDevelopers />}
+            />
             <Route path="/services" element={<Services />} />
             <Route path="/career" element={<Career />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/hire" element={<HireUs />} />
             <Route path="*" element={<ErrorPage />} />
           </Routes>
-          <Footer/>
+          <Footer />
         </Router>
       </ThemeProvider>
     </>
