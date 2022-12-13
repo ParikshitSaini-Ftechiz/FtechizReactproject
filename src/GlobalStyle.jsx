@@ -58,8 +58,8 @@ p{
  .para {
     margin-top: 2rem;
     margin-bottom: 5rem;
-    word-spacing: 0.3rem;
-    font-size: 1.9rem;
+    word-spacing: 0rem;
+    font-size: 1.7rem;
   }
 a {
   text-decoration: none;
@@ -86,16 +86,14 @@ ${"" /* resuable code section  */}
 }
 
 .grid_two_column {
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: 1fr 1fr;
 
 }
 .grid-two-rows{
-  grid-template-rows: repeat(2, 1fr);
-
- 
+  grid-template-rows: 1fr 1fr;
 }
 .grid-three-column {
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .grid-four-column{

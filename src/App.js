@@ -2,7 +2,23 @@ import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
-import HireRemoteDevelopers from "./components/HireRemoteDevelopers";
+import HireRemoteDevelopers from "./components/components/DropDown_Page/HireRemoteDevelopers";
+import HireBlockchainDevelopers from "./components/components/DropDown_Page/HireBlockchainDevelopers";
+import HireFullStackDevelopers from "./components/components/DropDown_Page/HireFullStackDevelopers";
+import HireJavaDevelopers from "./components/components/DropDown_Page/HireJavaDevelopers";
+import HireMobileAppDevelopers from "./components/components/DropDown_Page/HireMobileAppDevelopers";
+
+import MobileAppDevelopment from "./components/components/DropDown2_Page/MobileAppDevelopment";
+import AndroidAppDevelopment from "./components/components/DropDown2_Page/AndroidAppDevelopment";
+import IOSAppDevelopment from "./components/components/DropDown2_Page/IOSAppDevelopment";
+import FlutterAppDevelopment from "./components/components/DropDown2_Page/FlutterAppDevelopment";
+import ReactNativeAppDevelopment from "./components/components/DropDown2_Page/ReactNativeAppDevelopment";
+import WebsiteDevelopment from "./components/components/DropDown2_Page/WebsiteDevelopment";
+import WebsiteDesigning from "./components/components/DropDown2_Page/WebsiteDesigning";
+import WebApplicationDevelopment from "./components/components/DropDown2_Page/WebApplicationDevelopment";
+import BlockChainDevelopment from "./components/components/DropDown2_Page/BlockChainDevelopment";
+import CloudAppDevelopment from "./components/components/DropDown2_Page/CloudAppDevelopment";
+
 import ErrorPage from "./components/ErrorPage";
 import { ThemeProvider } from "styled-components";
 import Header from "./components/Header/Header";
@@ -22,8 +38,8 @@ function App() {
       helper: " #FBAB1F ",
       color_white: "#fff",
       btn_color: "#0275d8",
-      component_bg:
-        "linear-gradient(0deg, rgba(45,82,173,1) 0%, rgba(24,45,96,1) 50%, rgba(21,41,89,1) 100%)",
+      component_bg:" linear-gradient(90deg, rgba(25,28,63,1) 0%, rgba(19,21,47,1) 54%, rgba(23,23,23,1) 100%);",
+        // "linear-gradient(90deg, rgba(23,23,23,1) 0%, rgba(19,21,47,1) 54%, rgba(25,28,63,1) 100%);",
       fontSize: "2rem",
       hover_color: "#0275d8",
       color_grey: "#f7f7f7",
@@ -54,9 +70,67 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
+            {/* drop down */}
             <Route
               path="/hireremotedevelopers"
               element={<HireRemoteDevelopers />}
+            />
+             <Route
+              path="/hireblockchaindevelopers"
+              element={<HireBlockchainDevelopers />}
+            />
+             <Route
+              path="/hirefullstackdevelopers"
+              element={<HireFullStackDevelopers />}
+            />
+             <Route
+              path="/hirejavadevelopers"
+              element={<HireJavaDevelopers />}
+            />
+             <Route
+              path="/hiremobileappdevelopers"
+              element={<HireMobileAppDevelopers />}
+            />
+            {/* drop down 2*/}
+            <Route
+              path="/mobileappdevelopment"
+              element={<MobileAppDevelopment />}
+            />
+             <Route
+              path="/androidappdevelopment"
+              element={<AndroidAppDevelopment />}
+            />
+             <Route
+              path="/iosappdevelopmen"
+              element={<IOSAppDevelopment />}
+            />
+             <Route
+              path="/flutterappdevelopment"
+              element={<FlutterAppDevelopment />}
+            />
+             <Route
+              path="/reactnativeappdevelopment"
+              element={<ReactNativeAppDevelopment />}
+            />
+             <Route
+              path="/websitedevelopment"
+              element={<WebsiteDevelopment/>}
+            />
+             <Route
+              path="/websitedesigning"
+              element={<WebsiteDesigning />}
+            />
+            <Route
+              path="/webapplicationdevelopment"
+              element={<WebApplicationDevelopment />}
+            />  
+             <Route
+              path="/blockchaindevelopment"
+              element={<BlockChainDevelopment />}
+            />
+               <Route
+              path="/cloudappdevelopment"
+              element={<CloudAppDevelopment />}
             />
             <Route path="/services" element={<Services />} />
             <Route path="/career" element={<Career />} />

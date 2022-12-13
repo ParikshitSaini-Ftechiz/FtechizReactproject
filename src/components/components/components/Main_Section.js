@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 const Main_Section = ({ myData, para, image, btn }) => {
   const { nameData } = myData;
-  const { paraData } = para;
+  const { paraData, para2 } = para;
   const { imageData } = image;
   const { btnData } = btn;
   return (
@@ -15,7 +15,7 @@ const Main_Section = ({ myData, para, image, btn }) => {
           <div className="grid grid_two_column">
             <div className="main_section">
               <h1 className="heading animX">{nameData}</h1>
-              <p  className="main_para para anim">{paraData}</p>
+              <p className="main_para para anim">{paraData}<br/><br/> {para2}</p>
               <NavLink>
                 <Button className="anim">{btnData}</Button>
               </NavLink>
@@ -32,21 +32,26 @@ const Main_Section = ({ myData, para, image, btn }) => {
 const Wrapper = styled.section`
   padding: 9rem 0;
   background: ${({ theme }) => theme.colors.component_bg};
-  Button{
-      background:${({theme}) => theme.colors.btn_color}
-    }
+  .main_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  Button {
+    background: ${({ theme }) => theme.colors.btn_color};
+    margin-left: -26rem;
+  }
   .grid {
     display: grid;
     gap: 12rem;
     margin: 8rem 0rem 0rem 0rem;
   }
-  .main_section_image {
-    width: 100%;
-    height: auto;
-  }
+
   .image {
-    width: 45rem;
-    height: 40rem;
+    width: rem;
+    height: 45rem;
   }
   .heading.anim {
     animation-delay: 0.5s;

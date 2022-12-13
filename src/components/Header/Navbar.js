@@ -4,6 +4,8 @@ import styled from "styled-components";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { Button } from "../components/components/Button";
+import DropDown from "../components/components/DropDown";
+import Second_DropDown from "../components/components/Second_DropDown";
 
 const Navbar = () => {
   const [menuIcon, setMenuIcon] = useState();
@@ -12,7 +14,7 @@ const Navbar = () => {
   
     .navbar-lists {
       display: flex;
-      gap: 4.8rem;
+      gap: 2.8rem;
       justify-content: center;
       align-items: center;
       .navbar-link {
@@ -142,25 +144,12 @@ const Navbar = () => {
                 About Us
               </NavLink>
             </li>
+            {/* Drop down  */}
             <li>
-              <NavLink
-                to="/hireremotedevelopers"
-                className="navbar-link"
-                activeClassName="active-link"
-                onClick={() => setMenuIcon(false)}
-              >
-                Hire Remote Developers
-              </NavLink>
+            <DropDown/>
             </li>
             <li>
-              <NavLink
-                to="/services"
-                className="navbar-link"
-                activeClassName="active-link"
-                onClick={() => setMenuIcon(false)}
-              >
-                Services
-              </NavLink>
+              <Second_DropDown/>
             </li>
             <li>
               <NavLink

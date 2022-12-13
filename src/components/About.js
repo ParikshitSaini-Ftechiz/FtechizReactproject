@@ -1,5 +1,10 @@
 import React from 'react';
+import Our_Aim from './components/About_page_components/Our_Aim';
 import Main_Section from './components/components/Main_Section';
+import Who_We_Are from './components/About_page_components/Who_We_Are';
+import Our_Proficiency from './components/About_page_components/Our_Proficiency';
+import Right_Technology from './components/About_page_components/Right_Technology';
+import Contact_Page from './components/Contact_Page';
 
 function About() {
   const data = {
@@ -18,6 +23,11 @@ function About() {
     <>
       {/* {myName} */}
       <Main_Section myData={data} para={para} image={image} btn={btn}/>
+      <Our_Aim/>
+      <Who_We_Are/>
+      <Our_Proficiency/>
+      <Right_Technology/>
+      <Contact_Page/>
     </>
   );
 }

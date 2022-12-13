@@ -201,7 +201,7 @@ const Wrapper = styled.div`
       margin: auto;
       margin-top: 2rem;
       padding: 1rem 6rem;
-      color: ${({ theme }) => theme.colors.heading};
+      color: ${({ theme }) => theme.colors.color_white};
       font-weight: 600;
       font-size: 1.5rem;
     }
