@@ -101,7 +101,7 @@ function App() {
               element={<AndroidAppDevelopment />}
             />
              <Route
-              path="/iosappdevelopmen"
+              path="/iosappdevelopment"
               element={<IOSAppDevelopment />}
             />
              <Route

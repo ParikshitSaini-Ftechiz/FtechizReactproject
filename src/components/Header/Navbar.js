@@ -115,7 +115,6 @@ const Navbar = () => {
           font-size: 3rem;
         }
       }
-     
     }
   `;
 
