@@ -15,7 +15,7 @@ const Main_Section = ({ myData, para, image, btn }) => {
           <div className="grid grid_two_column">
             <div className="main_section">
               <h1 className="heading animX">{nameData}</h1>
-              <p className="main_para para anim">{paraData}<br/><br/> {para2}</p>
+              <p className="main_para para anim">{paraData}</p>
               <NavLink>
                 <Button className="anim">{btnData}</Button>
               </NavLink>
@@ -50,7 +50,7 @@ const Wrapper = styled.section`
   }
 
   .image {
-    width: rem;
+    width: 55rem;
     height: 45rem;
   }
   .heading.anim {
