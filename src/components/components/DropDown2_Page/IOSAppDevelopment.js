@@ -1,8 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import Main_Section from "../components/Main_Section";
 import Para_Heading from "../components/DropDown_components.js/Para_Heading";
 import Why_To_Choose from "../components/DropDown_components.js/Why_To_Choose";
-const iOSAppDevelopment = () => {
+import { IOS_Data } from "../components/DropDown_components.js/Card_Data";
+import Card from "../components/DropDown_components.js/Card";
+import styled from "styled-components";
+import { IOS_Para_Data } from "../components/DropDown_components.js/Para_Data";
+import Para_Heading_Component from "../components/DropDown_components.js/Para_Heading_component";
+
+const IOSAppDevelopment = () => {
+  const [state1, setState1] = useState(IOS_Data);
+     const [paraHeading, setParaHeading] = useState(IOS_Para_Data);
+
   const data = {
     nameData: "iOS App Development Company",
   };
@@ -53,11 +62,61 @@ const iOSAppDevelopment = () => {
 
   return (
     <>
-      <Main_Section myData={data} para={para} image={image} btn={btn} />
-      <Para_Heading heading={heading} para1={para1} />
-      <Why_To_Choose icon={icon} title={title} />
+      <Wrapper>
+        <Main_Section myData={data} para={para} image={image} btn={btn} />
+        <Para_Heading heading={heading} para1={para1} />
+        <Why_To_Choose icon={icon} title={title} />
+            {/* why choose us para or heading through map method */}
+        <div>
+          {paraHeading.map((currentData) => {
+            const {
+              headingData,
+              paraData,
+              paraData2,
+              paraData3,
+            } = currentData;
+            return (
+              <>
+                <Para_Heading_Component
+                  headingData={headingData}
+                  paraData={paraData}
+                  paraData2={paraData2}
+                  paraData3={paraData3}
+                />
+              </>
+            );
+          })}
+        </div>
+
+        {/* why choose us cards */}
+        <div className="container">
+          <div className="grid grid-three-column">
+            {state1.map((currentData) => {
+              const { icon1, title1, para1 } = currentData;
+              return (
+                <>
+                  <div>
+                    <Card title={title1} para={para1} icon={icon1} />
+                  </div>
+                </>
+              );
+            })}
+          </div>
+        </div>
+      </Wrapper>
     </>
   );
 };
-
-export default iOSAppDevelopment;
+const Wrapper = styled.section`
+  padding: 1rem;
+  text-align: center;
+  .grid {
+    display: grid;
+    gap: 2rem;
+    margin: 8rem 0rem;
+  }
+  .grid-three-column {
+    grid-template-columns: repeat(3, 1fr);
+  }
+`;
+export default IOSAppDevelopment;

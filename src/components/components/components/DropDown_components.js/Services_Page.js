@@ -13,7 +13,7 @@ const Services_Page = () => {
         <div className="container">
           <div className="grid grid-three-column">
             {state.map((currentData) => {
-              const { icon, title, para } = currentData;
+              const { icon, title, para} = currentData;
               return (
                 <>
                 <div>
@@ -22,6 +22,7 @@ const Services_Page = () => {
                 </>
               );
             })}
+        
           </div>
         </div>
       </Wrapper>
@@ -29,26 +30,15 @@ const Services_Page = () => {
   );
 }
 const Wrapper = styled.section`
-  background: ${({theme}) => theme.colors.color_grey};
   padding: 1rem;
   text-align: center;
-  .content {
-    h1,
-    p {
-      text-align: center;
-      margin: 2rem 16rem;
-      color: ${({ theme }) => theme.colors.heading};
-    }
-  }
   .grid {
     display: grid;
-    gap: 6rem;
-    margin: 8rem 2rem;
+    gap: 2rem;
+    margin: 8rem 0rem;
   }
   .grid-three-column {
     grid-template-columns: repeat(3, 1fr);
   }
-  
-  
 `;
 export default Services_Page;

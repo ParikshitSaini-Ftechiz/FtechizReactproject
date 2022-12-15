@@ -86,10 +86,11 @@ const Wrapper = styled.section`
       padding: 4rem;
       gap:1rem;
       i {
-        font-size: 5rem;
+        font-size: 4rem;
         color: white;
       }
       h3{
+        font-size:2.5rem;
         text-align:center;
       }
       p{

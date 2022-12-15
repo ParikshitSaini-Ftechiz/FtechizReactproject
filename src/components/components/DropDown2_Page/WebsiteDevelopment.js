@@ -1,11 +1,13 @@
-import React from "react";
+import React,{useState} from "react";
 import Main_Section from "../components/Main_Section";
 import Para_Heading from "../components/DropDown_components.js/Para_Heading";
 import Why_To_Choose from "../components/DropDown_components.js/Why_To_Choose";
 import Services_Page from "../components/DropDown_components.js/Services_Page";
-
+import { WebDevelopment_Para_Data } from "../components/DropDown_components.js/Para_Data";
+import Para_Heading_Component from "../components/DropDown_components.js/Para_Heading_component";
 
 const WebsiteDevelopment = () => {
+     const [paraHeading, setParaHeading] = useState(WebDevelopment_Para_Data);
   const data = {
     nameData: "Website Development Company",
   };
@@ -55,14 +57,37 @@ const WebsiteDevelopment = () => {
     title7: "",
     title8: "",
   };
-// card//
+  // card//
 
   return (
     <>
       <Main_Section myData={data} para={para} image={image} btn={btn} />
       <Para_Heading heading={heading} para1={para1} />
       <Why_To_Choose icon={icon} title={title} />
-<Services_Page/>
+          {/* why choose us para or heading through map method */}
+        <div>
+          {paraHeading.map((currentData) => {
+            const {
+              headingData,
+              paraData,
+              paraData2,
+              paraData3,
+            } = currentData;
+            return (
+              <>
+                <Para_Heading_Component
+                  headingData={headingData}
+                  paraData={paraData}
+                  paraData2={paraData2}
+                  paraData3={paraData3}
+                />
+              </>
+            );
+          })}
+        </div>
+
+        {/* why choose us cards */}
+      <Services_Page />
     </>
   );
 };

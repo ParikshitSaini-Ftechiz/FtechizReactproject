@@ -30,6 +30,7 @@ const Main_Section = ({ myData, para, image, btn }) => {
   );
 };
 const Wrapper = styled.section`
+  width:100%;
   padding: 9rem 0;
   background: ${({ theme }) => theme.colors.component_bg};
   .main_section {

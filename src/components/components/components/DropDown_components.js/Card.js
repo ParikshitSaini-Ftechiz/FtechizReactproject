@@ -3,48 +3,37 @@ import styled from "styled-components";
 import { Button } from "../Button";
 import { NavLink } from "react-router-dom";
 
-const Card = ({ icon, title, para }) => {
+
+const Card = ({ icon, title, para, icon1, para1,title1 }) => {
   return (
     <>
       <Wrapper>
+        
         <div className="card">
           <div className="card_icon">
-            <div className="icon"> {icon}</div>
+            <div className="icon"> {icon}{icon1}</div>
           </div>
           <div className="card_title">
-            <h3><NavLink>{title}</NavLink></h3>
-            <p className="card_para">{para}</p>
+            <h3>{title}{title1}</h3>
+            <p className="card_para">{para}{para1}</p>
           </div>
         </div>
+        
       </Wrapper>
     </>
   );
 };
 const Wrapper = styled.div`
-  .card_title {
-    p {
-      text-align: justify;
-      font-weight: 300;
-      font-size: 1.6rem;
-    }
-    p,
-    h3 {;
-      margin-bottom: 2.6rem;
-      a{
-        color: ${({ theme }) => theme.colors.color_white};
-        text-decoration:underline;
-        font-size:2.5rem;
-        font-weight:500;
-      }
-    }
-  }
+
+  
 
   .card {
     width: auto;
-    height: 60rem;
-    padding: 1rem 2rem;
-    border: none;
+    height:auto 60rem;
+    padding:4rem;
+    border:none;
     border-radius:1rem;
+    box-shadow:${({theme})=> theme.colors.shadow};
     background:  linear-gradient(0deg, rgba(1,83,156,1) 0%, rgba(2,59,108,1) 49%, rgba(1,43,78,1) 100%);
     .card_icon {
       width: 10rem;
@@ -57,9 +46,21 @@ const Wrapper = styled.div`
       margin-bottom: 2rem;
       .icon {
         font-size: 5rem;
-        color: ${({ theme }) => theme.colors.color_white};
+        color: ${({ theme }) => theme.colors.heading};
       }
     }
+    .card_title {
+    p {
+      text-align: justify;
+      font-weight: 300;
+      font-size: 1.6rem;
+    }
+    p,
+    h3 {
+      color: ${({ theme }) => theme.colors.color_white};
+      margin-bottom: 2.6rem;
+    }
+  }
   }
 `;
 export default Card;
