@@ -1,16 +1,20 @@
-import React,{useState} from 'react'
+import React, { useState } from "react";
 import Main_Section from "../components/Main_Section";
 import Para_Heading from "../components/DropDown_components.js/Para_Heading";
 import Why_To_Choose from "../components/DropDown_components.js/Why_To_Choose";
-import {Cloud_Data} from "../components/DropDown_components.js/Card_Data";
-import Card from '../components/DropDown_components.js/Card';
-import styled from "styled-components"
+import { Cloud_Data } from "../components/DropDown_components.js/Card_Data";
+import Card from "../components/DropDown_components.js/Card";
+import styled from "styled-components";
 import { Cloud_Para_Data } from "../components/DropDown_components.js/Para_Data";
 import Para_Heading_Component from "../components/DropDown_components.js/Para_Heading_component";
+import CloudSyncIcon from '@mui/icons-material/CloudSync';
+import CloudIcon from '@mui/icons-material/Cloud';
+import SettingsSystemDaydreamIcon from '@mui/icons-material/SettingsSystemDaydream';
+import PaidIcon from '@mui/icons-material/Paid';
 
 const CloudAppDevelopment = () => {
   const [state1, setState1] = useState(Cloud_Data);
-     const [paraHeading, setParaHeading] = useState(Cloud_Para_Data);
+  const [paraHeading, setParaHeading] = useState(Cloud_Para_Data);
   const data = {
     nameData: "Leading Cloud Application Development Company",
   };
@@ -42,40 +46,38 @@ const CloudAppDevelopment = () => {
 
   // icons //
   const icon = {
-    icon1: "",
-    icon2: "",
-    icon3: "",
-    icon4: "",
-    icon5: "",
-    icon6: "",
+    icon1:"",
+    icon2: <i aria-hidden="true" class="elementkit-infobox-icon fas fa-server"></i>,
+    icon3:  <CloudIcon style={{fontSize:"5rem", color:"white", marginBottom:"-.8rem"}}/>,
+    icon4:  <PaidIcon style={{fontSize:"5rem", color:"white", marginBottom:"-.8rem"}}/>,
+    icon5: <CloudSyncIcon style={{fontSize:"5rem", color:"white", marginBottom:"-.8rem"}}/>,
+    icon6:<SettingsSystemDaydreamIcon style={{fontSize:"5rem", color:"white", marginBottom:"-.8rem"}}/> ,
     icon7: "",
     icon8: "",
   };
+ 
+
   const title = {
-    title1: "",
-    title2: "",
-    title3: "",
-    title4: "",
-    title5: "",
-    title6: "",
-    title7: "",
-    title8: "",
+    title1: " Agile Approach model",
+    title2: " Multiple Service Models ",
+    title3: " Strong knowledge of Cloud Services ",
+    title4: "  Cost Effective Solutions ",
+    title5: " A pool of expert Cloud Developers   ",
+    title6: " Cloud Platforms of Your Choice ",
+    title7: "   Secure Development ",
+    title8: " Post Development Services ",
   };
+
   return (
     <>
-        <Wrapper>
-      <Main_Section myData={data} para={para} image={image} btn={btn} />
-      <Para_Heading heading={heading} para1={para1} />
-      <Why_To_Choose icon={icon} title={title} />
-          {/* why choose us para or heading through map method */}
+      <Wrapper>
+        <Main_Section myData={data} para={para} image={image} btn={btn} />
+        <Para_Heading heading={heading} para1={para1} />
+        <Why_To_Choose icon={icon} title={title} />
+        {/* why choose us para or heading through map method */}
         <div>
           {paraHeading.map((currentData) => {
-            const {
-              headingData,
-              paraData,
-              paraData2,
-              paraData3,
-            } = currentData;
+            const { headingData, paraData, paraData2, paraData3 } = currentData;
             return (
               <>
                 <Para_Heading_Component
@@ -90,22 +92,21 @@ const CloudAppDevelopment = () => {
         </div>
 
         {/* why choose us cards */}
-      <div className="container">
+        <div className="container">
           <div className="grid grid-three-column">
             {state1.map((currentData) => {
-              const { icon1, title1, para1} = currentData;
+              const { icon1, title1, para1 } = currentData;
               return (
                 <>
-                <div>
-                <Card title={title1} para={para1} icon={icon1}/>
-                </div>
+                  <div>
+                    <Card title={title1} para={para1} icon={icon1} />
+                  </div>
                 </>
               );
             })}
-        
           </div>
         </div>
-          </Wrapper>
+      </Wrapper>
     </>
   );
 };
@@ -120,5 +121,5 @@ const Wrapper = styled.section`
   .grid-three-column {
     grid-template-columns: repeat(3, 1fr);
   }
-  `;
+`;
 export default CloudAppDevelopment;
