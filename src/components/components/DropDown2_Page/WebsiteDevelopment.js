@@ -1,13 +1,15 @@
-import React,{useState} from "react";
+import React, { useState } from "react";
 import Main_Section from "../components/Main_Section";
 import Para_Heading from "../components/DropDown_components.js/Para_Heading";
 import Why_To_Choose from "../components/DropDown_components.js/Why_To_Choose";
 import Services_Page from "../components/DropDown_components.js/Services_Page";
 import { WebDevelopment_Para_Data } from "../components/DropDown_components.js/Para_Data";
 import Para_Heading_Component from "../components/DropDown_components.js/Para_Heading_component";
+import Contact_Page from "../Contact_Page";
+import Industries_We_Serve from "../components/DropDown_components.js/Industries_We_Serve";
 
 const WebsiteDevelopment = () => {
-     const [paraHeading, setParaHeading] = useState(WebDevelopment_Para_Data);
+  const [paraHeading, setParaHeading] = useState(WebDevelopment_Para_Data);
   const data = {
     nameData: "Website Development Company",
   };
@@ -36,6 +38,16 @@ const WebsiteDevelopment = () => {
     paraData4:
       "Below are the few reasons why we can be your best technology partner when thinking of building websites and applications:-",
   };
+
+  // contact page heading and para//
+  const contactHeading = {
+    contactHeadingData: "Have Any Project Requirement?",
+  };
+  const contactPara = {
+    contactParaData:
+      "Feel free to connect with us by filling out this form! Our team will be happy to guide you through our process.",
+  };
+
   // icons //
   const icon = {
     icon1: "",
@@ -64,30 +76,35 @@ const WebsiteDevelopment = () => {
       <Main_Section myData={data} para={para} image={image} btn={btn} />
       <Para_Heading heading={heading} para1={para1} />
       <Why_To_Choose icon={icon} title={title} />
-          {/* why choose us para or heading through map method */}
-        <div>
-          {paraHeading.map((currentData) => {
-            const {
-              headingData,
-              paraData,
-              paraData2,
-              paraData3,
-            } = currentData;
-            return (
-              <>
-                <Para_Heading_Component
-                  headingData={headingData}
-                  paraData={paraData}
-                  paraData2={paraData2}
-                  paraData3={paraData3}
-                />
-              </>
-            );
-          })}
-        </div>
 
-        {/* why choose us cards */}
+      {/*services para or heading through map method */}
+      <div>
+        {paraHeading.map((currentData) => {
+          const { headingData, paraData, paraData2, paraData3 } = currentData;
+          return (
+            <>
+              <Para_Heading_Component
+                headingData={headingData}
+                paraData={paraData}
+                paraData2={paraData2}
+                paraData3={paraData3}
+              />
+            </>
+          );
+        })}
+      </div>
+
+      {/*services cards */}
       <Services_Page />
+      {/*services cards */}
+
+      {/* indusrties we serve */}
+      <Industries_We_Serve />
+      {/* indusrties we serve */}
+
+      {/* contact page */}
+      <Contact_Page contactPara={contactPara} contactHeading={contactHeading} />
+      {/* contact page */}
     </>
   );
 };

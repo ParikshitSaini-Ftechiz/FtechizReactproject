@@ -6,11 +6,13 @@ import Card from "../components/DropDown_components.js/Card";
 import styled from "styled-components";
 import { Mobile_Para_Data } from "../components/DropDown_components.js/Para_Data";
 import Para_Heading_Component from "../components/DropDown_components.js/Para_Heading_component";
+import Contact_Page from "../Contact_Page";
 
 import Why_To_Choose from "../components/DropDown_components.js/Why_To_Choose";
+import Industries_We_Serve from "../components/DropDown_components.js/Industries_We_Serve";
 const MobileAppDevelopment = () => {
   const [state1, setState1] = useState(Mobile_Data);
-     const [paraHeading, setParaHeading] = useState(Mobile_Para_Data);
+  const [paraHeading, setParaHeading] = useState(Mobile_Para_Data);
   const data = {
     nameData: "Mobile App Development Company",
   };
@@ -38,6 +40,15 @@ const MobileAppDevelopment = () => {
       "Our talented mobile app developers use latest cutting-edge technologies such as React Native, Flutter, iOS, Android, Kotlin, etc., to deliver secure, scalable, and user-friendly mobile application development services that meet your specific business requirements.",
   };
 
+  // contact page heading and para//
+  const contactHeading = {
+    contactHeadingData:
+      "Have an Awesome Idea in Mind? Let's Discuss the Project!",
+  };
+  const contactPara = {
+    contactParaData:
+      "Let us know your requirements and We Will Provide a Quick Analysis and free Proposal for it. Don’t worry, it is Secure and Confidential.",
+  };
   // icons //
   const icon = {
     icon1: "",
@@ -65,15 +76,10 @@ const MobileAppDevelopment = () => {
         <Main_Section myData={data} para={para} image={image} btn={btn} />
         <Para_Heading heading={heading} para1={para1} />
         <Why_To_Choose icon={icon} title={title} />
-            {/* why choose us para or heading through map method */}
+        {/* services para or heading through map method */}
         <div>
           {paraHeading.map((currentData) => {
-            const {
-              headingData,
-              paraData,
-              paraData2,
-              paraData3,
-            } = currentData;
+            const { headingData, paraData, paraData2, paraData3 } = currentData;
             return (
               <>
                 <Para_Heading_Component
@@ -87,7 +93,7 @@ const MobileAppDevelopment = () => {
           })}
         </div>
 
-        {/* why choose us cards */}
+        {/* services cards */}
         <div className="container">
           <div className="grid grid-three-column">
             {state1.map((currentData) => {
@@ -102,13 +108,23 @@ const MobileAppDevelopment = () => {
             })}
           </div>
         </div>
+        {/* services cards */}
+
+        {/* industries we serve */}
+        <Industries_We_Serve />
+        {/* industries we serve */}
+
+        {/* contact page */}
+        <Contact_Page
+          contactPara={contactPara}
+          contactHeading={contactHeading}
+        />
+        {/* contact page */}
       </Wrapper>
     </>
   );
 };
 const Wrapper = styled.section`
-  padding: 1rem;
-  text-align: center;
   .grid {
     display: grid;
     gap: 2rem;

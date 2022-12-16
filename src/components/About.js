@@ -7,6 +7,7 @@ import Right_Technology from './components/About_page_components/Right_Technolog
 import Contact_Page from './components/Contact_Page';
 
 function About() {
+  //main section 
   const data = {
     nameData : "Leading Software Development Company",
   };
@@ -19,6 +20,17 @@ function About() {
   const btn = {
     btnData : "Let's talk",
   }
+
+  //contact page//
+
+  const contactHeading = {
+    contactHeadingData: "Tell Us About Your Project",
+  };
+  const contactPara = {
+    contactParaData:
+      "Here are the reasons you can depend on Ftechiz Solutions to keep you and your business up and running:",
+  };
+
   return (
     <>
       {/* {myName} */}
@@ -27,7 +39,7 @@ function About() {
       <Who_We_Are/>
       <Our_Proficiency/>
       <Right_Technology/>
-      <Contact_Page/>
+      <Contact_Page contactPara={contactPara} contactHeading={contactHeading} />
     </>
   );
 }

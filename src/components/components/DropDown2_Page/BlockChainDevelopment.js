@@ -3,18 +3,19 @@ import Main_Section from "../components/Main_Section";
 import Para_Heading from "../components/DropDown_components.js/Para_Heading";
 import Why_To_Choose from "../components/DropDown_components.js/Why_To_Choose";
 import { BlockChain_Data } from "../components/DropDown_components.js/Card_Data";
-import Card from "../components/DropDown_components.js/Card";
 import styled from "styled-components";
 import { BlockChain_Para_Data } from "../components/DropDown_components.js/Para_Data";
 import Para_Heading_Component from "../components/DropDown_components.js/Para_Heading_component";
-import MessageIcon from '@mui/icons-material/Message';
-import QuestionAnswerIcon from '@mui/icons-material/QuestionAnswer';
-import ViewInArIcon from '@mui/icons-material/ViewInAr';
-import SyncIcon from '@mui/icons-material/Sync';
+import MessageIcon from "@mui/icons-material/Message";
+import QuestionAnswerIcon from "@mui/icons-material/QuestionAnswer";
+import ViewInArIcon from "@mui/icons-material/ViewInAr";
+import SyncIcon from "@mui/icons-material/Sync";
+import Contact_Page from "../Contact_Page";
+import Industries_We_Serve from "../components/DropDown_components.js/Industries_We_Serve";
 
 const BlockChainDevelopment = () => {
   const [state1, setState1] = useState(BlockChain_Data);
-    const [paraHeading, setParaHeading] = useState(BlockChain_Para_Data);
+  const [paraHeading, setParaHeading] = useState(BlockChain_Para_Data);
   const data = {
     nameData: "Blockchain Development Company",
   };
@@ -44,14 +45,46 @@ const BlockChainDevelopment = () => {
       "Ftechiz Solutions Pvt. Ltd. has established itself as a prominent blockchain development company that empowers businesses to even look out for this innovative technology.  Our highly skilled and experienced blockchain developers have excelled their skills at working with multiple platforms, including Ethereum and Solidity, and thus give you a variety of options and solutions while planning to integrate this technology to your business. We believe in providing quality results, no matter how complex your project is. We practice what we commit and we deliver what we promise.",
   };
 
+  // contact page heading and para//
+  const contactHeading = {
+    contactHeadingData: "Have An Blockchain-Based App Requirement?",
+  };
+  const contactPara = {
+    contactParaData:
+      "Feel free to connect with us by filling out this form! Our team will be happy to guide you through our process.",
+  };
+
   // icons //
   const icon = {
-    icon1: <SyncIcon style={{fontSize:"5rem", color:"white", marginBottom:"-.8rem"}}/>,
-    icon2: <ViewInArIcon style={{fontSize:"5rem", color:"white", marginBottom:"-.8rem"}}/>,
-    icon3:  <MessageIcon style={{fontSize:"5rem", color:"white", marginBottom:"-.8rem"}}/>,
-    icon4: <i aria-hidden="true" class="elementkit-infobox-icon fas fa-users"></i>,
-    icon5: <QuestionAnswerIcon  style={{fontSize:"5rem", color:"white", marginBottom:"-.8rem"}}/>,
-    icon6: <i aria-hidden="true" class="elementkit-infobox-icon fas fa-project-diagram"></i>,
+    icon1: (
+      <SyncIcon
+        style={{ fontSize: "5rem", color: "white", marginBottom: "-.8rem" }}
+      />
+    ),
+    icon2: (
+      <ViewInArIcon
+        style={{ fontSize: "5rem", color: "white", marginBottom: "-.8rem" }}
+      />
+    ),
+    icon3: (
+      <MessageIcon
+        style={{ fontSize: "5rem", color: "white", marginBottom: "-.8rem" }}
+      />
+    ),
+    icon4: (
+      <i aria-hidden="true" class="elementkit-infobox-icon fas fa-users"></i>
+    ),
+    icon5: (
+      <QuestionAnswerIcon
+        style={{ fontSize: "5rem", color: "white", marginBottom: "-.8rem" }}
+      />
+    ),
+    icon6: (
+      <i
+        aria-hidden="true"
+        class="elementkit-infobox-icon fas fa-project-diagram"
+      ></i>
+    ),
     icon7: <i class="fa-solid fa-gears"></i>,
     icon8: <i class="fa-solid fa-hand-holding-dollar"></i>,
   };
@@ -71,15 +104,10 @@ const BlockChainDevelopment = () => {
         <Main_Section myData={data} para={para} image={image} btn={btn} />
         <Para_Heading heading={heading} para1={para1} />
         <Why_To_Choose icon={icon} title={title} />
-         {/* why choose us para or heading through map method */}
+        {/* services para or heading through map method */}
         <div>
           {paraHeading.map((currentData) => {
-            const {
-              headingData,
-              paraData,
-              paraData2,
-              paraData3,
-            } = currentData;
+            const { headingData, paraData, paraData2, paraData3 } = currentData;
             return (
               <>
                 <Para_Heading_Component
@@ -93,7 +121,7 @@ const BlockChainDevelopment = () => {
           })}
         </div>
 
-        {/* why choose us cards */}
+        {/* services cards */}
         <div className="container">
           <div className="grid grid-three-column">
             {state1.map((currentData) => {
@@ -111,14 +139,23 @@ const BlockChainDevelopment = () => {
             })}
           </div>
         </div>
-            {/* why choose us cards */}
+        {/* services cards */}
+
+        {/* Industries_We_Serve */}
+        <Industries_We_Serve />
+        {/* Industries_We_Serve */}
+
+        {/* contact page */}
+        <Contact_Page
+          contactPara={contactPara}
+          contactHeading={contactHeading}
+        />
+        {/* contact page */}
       </Wrapper>
     </>
   );
 };
 const Wrapper = styled.section`
-  padding: 1rem;
-  text-align: center;
   .grid {
     display: grid;
     gap: 2rem;
@@ -132,9 +169,12 @@ const Wrapper = styled.section`
       text-align: justify;
       font-weight: 300;
       font-size: 1.6rem;
+      color: ${({ theme }) => theme.colors.color_white};
+      margin-bottom: 2.6rem;
     }
-    p,
+  
     h3 {
+      text-align:center;
       color: ${({ theme }) => theme.colors.color_white};
       margin-bottom: 2.6rem;
     }
@@ -142,12 +182,12 @@ const Wrapper = styled.section`
 
   .card {
     width: auto;
-    height:auto;
-    padding:4rem;
-    border:none;
-    border-radius:1rem;
-    box-shadow:${({theme})=> theme.colors.shadow};
-    background:  linear-gradient(0deg, rgba(1,83,156,1) 0%, rgba(2,59,108,1) 49%, rgba(1,43,78,1) 100%);
+    height: auto;
+    padding: 4rem;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: ${({ theme }) => theme.colors.shadow};
+    background: ${({ theme }) => theme.colors.services_card_bg};
   }
 `;
 export default BlockChainDevelopment;

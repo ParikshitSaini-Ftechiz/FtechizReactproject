@@ -45,7 +45,7 @@ export const Android_Data = [
     icon1: (
       <ComputerIcon style={{ fontSize: "5rem", marginBottom: "2.8rem" }} />
     ),
-    title1: "Android App Development	t",
+    title1: "Android App Development",
     para1:
       "Ftechiz has acquired a reputation as one of the most reliable Android app development company on the market for more than 6 years. If you need an Android app for your mobile, watch, or TV we can help you create a strong solution that works on any device, regardless of the brand and your operating industry. We have successfully delivered android apps in various domains like on demand apps, Retail, Entertainment, ecommerce, Education, Blockchain, Healthcare, and many categories. 	y",
   },
@@ -167,39 +167,28 @@ export const Flutter_Data = [
   // first
   {
     icon1:"" ,
-    title1: "",
-    para1: "",
+    para1: "Our Flutter app development services are devised to help your business to create a multi-platform existence. We help you right from finding the best product-market fit to seamlessly developing and deploying your application across a number of platforms. Our flutter app developer can help you design, develop, test, and deploy full-fledged Flutter apps.",
+    title1: "Flutter App Development",
   },
   // second
   {
     icon1:"" ,
-    title1: "",
-    para1: "",
+    para1: "Flutter app development has come a long way since its origin both in terms of framework maturity and use cases. We are a flutter app development company that can help you authenticate your Flutter app idea and help you ensure that the framework is the best technical solution for your product idea.",
+    title1: "Flutter Mobile App Consultation Services",
   },
   // third
   {
     icon1:"" ,
-    title1: "",
-    para1: "",
+    para1: "Flutter Application is always known for their simple user-friendly interface and immersive design. Our expert Flutter UI/UX designers creates visually beautiful and easy to access applications with flexible user interface. As per your business model and domain we design the UI/UX of your app accordingly to give uniqueness to the social presence of your services.",
+    title1: "Flutter App UI/UX Design ",
   },
   // fourth
   {
     icon1:"",
-    title1: "",
-    para1: "",
+    para1: "Looking for a company to maintain your Flutter app? We offer both Flutter app development and maintenance service to make your app up to date with the latest trends, improvise for user engagement, keep up with market demands, etc. Our squad refreshes your app content, analyzes your app performance, monitors user engagement, reviews user retention and takes other corrective actions, to maintain your app.",
+    title1: "Flutter App Support & Maintenance",
   },
-  // fifth
-  {
-    icon1:"" ,
-    title1: "",
-    para1: "	",
-  },
-  // sixth
-  {
-    icon1:"" ,
-    title1: "",
-    para1: "",
-  },
+
 ];
 
 export const IOS_Data = [

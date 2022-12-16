@@ -52,8 +52,6 @@ p{
   color: ${({ theme }) => theme.colors.color_white};
   font-size: 1.65rem;
   line-height: 1.6;
-  word-spacing:.1rem;
-  font-weight:400;
 } 
  .para {
     margin-top: 2rem;

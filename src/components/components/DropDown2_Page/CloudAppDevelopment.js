@@ -7,10 +7,12 @@ import Card from "../components/DropDown_components.js/Card";
 import styled from "styled-components";
 import { Cloud_Para_Data } from "../components/DropDown_components.js/Para_Data";
 import Para_Heading_Component from "../components/DropDown_components.js/Para_Heading_component";
-import CloudSyncIcon from '@mui/icons-material/CloudSync';
-import CloudIcon from '@mui/icons-material/Cloud';
-import SettingsSystemDaydreamIcon from '@mui/icons-material/SettingsSystemDaydream';
-import PaidIcon from '@mui/icons-material/Paid';
+import CloudSyncIcon from "@mui/icons-material/CloudSync";
+import CloudIcon from "@mui/icons-material/Cloud";
+import SettingsSystemDaydreamIcon from "@mui/icons-material/SettingsSystemDaydream";
+import PaidIcon from "@mui/icons-material/Paid";
+import Contact_Page from "../Contact_Page";
+import Industries_We_Serve from "../components/DropDown_components.js/Industries_We_Serve";
 
 const CloudAppDevelopment = () => {
   const [state1, setState1] = useState(Cloud_Data);
@@ -44,18 +46,44 @@ const CloudAppDevelopment = () => {
       "We use latest cutting-edge technologies and the best of all private, public and hybrid cloud services for business-driving results. Our experienced team of cloud-based app developers have all the skills required for the job. Plus, you will get on-demand and self-service IT Support and maintenance for your cloud-based apps, including services such as efficiency audits, SLA management and overview of all critical elements for your cloud-based application.",
   };
 
+  // contact page heading and para//
+  const contactHeading = {
+    contactHeadingData: "Have Any Project Requirement?",
+  };
+  const contactPara = {
+    contactParaData:
+      "Feel free to connect with us by filling out this form! Our team will be happy to guide you through our process.",
+  };
+
   // icons //
   const icon = {
-    icon1:"",
-    icon2: <i aria-hidden="true" class="elementkit-infobox-icon fas fa-server"></i>,
-    icon3:  <CloudIcon style={{fontSize:"5rem", color:"white", marginBottom:"-.8rem"}}/>,
-    icon4:  <PaidIcon style={{fontSize:"5rem", color:"white", marginBottom:"-.8rem"}}/>,
-    icon5: <CloudSyncIcon style={{fontSize:"5rem", color:"white", marginBottom:"-.8rem"}}/>,
-    icon6:<SettingsSystemDaydreamIcon style={{fontSize:"5rem", color:"white", marginBottom:"-.8rem"}}/> ,
+    icon1: "",
+    icon2: (
+      <i aria-hidden="true" class="elementkit-infobox-icon fas fa-server"></i>
+    ),
+    icon3: (
+      <CloudIcon
+        style={{ fontSize: "5rem", color: "white", marginBottom: "-.8rem" }}
+      />
+    ),
+    icon4: (
+      <PaidIcon
+        style={{ fontSize: "5rem", color: "white", marginBottom: "-.8rem" }}
+      />
+    ),
+    icon5: (
+      <CloudSyncIcon
+        style={{ fontSize: "5rem", color: "white", marginBottom: "-.8rem" }}
+      />
+    ),
+    icon6: (
+      <SettingsSystemDaydreamIcon
+        style={{ fontSize: "5rem", color: "white", marginBottom: "-.8rem" }}
+      />
+    ),
     icon7: "",
     icon8: "",
   };
- 
 
   const title = {
     title1: " Agile Approach model",
@@ -74,7 +102,7 @@ const CloudAppDevelopment = () => {
         <Main_Section myData={data} para={para} image={image} btn={btn} />
         <Para_Heading heading={heading} para1={para1} />
         <Why_To_Choose icon={icon} title={title} />
-        {/* why choose us para or heading through map method */}
+        {/* services para or heading through map method */}
         <div>
           {paraHeading.map((currentData) => {
             const { headingData, paraData, paraData2, paraData3 } = currentData;
@@ -91,7 +119,7 @@ const CloudAppDevelopment = () => {
           })}
         </div>
 
-        {/* why choose us cards */}
+        {/* services cards */}
         <div className="container">
           <div className="grid grid-three-column">
             {state1.map((currentData) => {
@@ -106,13 +134,23 @@ const CloudAppDevelopment = () => {
             })}
           </div>
         </div>
+        {/* services cards */}
+
+        {/* industries we serve */}
+        <Industries_We_Serve />
+        {/* industries we serve */}
+
+        {/* contact page */}
+        <Contact_Page
+          contactPara={contactPara}
+          contactHeading={contactHeading}
+        />
+        {/* contact page */}
       </Wrapper>
     </>
   );
 };
 const Wrapper = styled.section`
-  padding: 1rem;
-  text-align: center;
   .grid {
     display: grid;
     gap: 2rem;

@@ -1,16 +1,18 @@
-import React,{useState} from 'react'
+import React, { useState } from "react";
 import Main_Section from "../components/Main_Section";
 import Para_Heading from "../components/DropDown_components.js/Para_Heading";
-
 import Why_To_Choose from "../components/DropDown_components.js/Why_To_Choose";
-import {WebApp_Data} from "../components/DropDown_components.js/Card_Data";
-import Card from '../components/DropDown_components.js/Card';
+import { WebApp_Data } from "../components/DropDown_components.js/Card_Data";
+import Card from "../components/DropDown_components.js/Card";
 import styled from "styled-components";
 import { WebApp_Para_Data } from "../components/DropDown_components.js/Para_Data";
 import Para_Heading_Component from "../components/DropDown_components.js/Para_Heading_component";
+import Contact_Page from "../Contact_Page";
+import Industries_We_Serve from "../components/DropDown_components.js/Industries_We_Serve";
+
 const WebApplicationDevelopment = () => {
   const [state1, setState1] = useState(WebApp_Data);
-     const [paraHeading, setParaHeading] = useState(WebApp_Para_Data);
+  const [paraHeading, setParaHeading] = useState(WebApp_Para_Data);
   const data = {
     nameData: "Leading Web Application Development Company",
   };
@@ -41,6 +43,15 @@ const WebApplicationDevelopment = () => {
       " Below are some of the reasons why you can choose Ftechiz for Web Application Development services",
   };
 
+  // contact page heading and para//
+  const contactHeading = {
+    contactHeadingData: "Have Any Project Requirement?",
+  };
+  const contactPara = {
+    contactParaData:
+      "Feel free to connect with us by filling out this form! Our team will be happy to guide you through our process.",
+  };
+
   // icons //
   const icon = {
     icon1: "",
@@ -64,19 +75,15 @@ const WebApplicationDevelopment = () => {
   };
   return (
     <>
-        <Wrapper>
-      <Main_Section myData={data} para={para} image={image} btn={btn} />
-      <Para_Heading heading={heading} para1={para1} />
-      <Why_To_Choose icon={icon} title={title} />
-          {/* why choose us para or heading through map method */}
+      <Wrapper>
+        <Main_Section myData={data} para={para} image={image} btn={btn} />
+        <Para_Heading heading={heading} para1={para1} />
+        <Why_To_Choose icon={icon} title={title} />
+
+        {/*services para or heading through map method */}
         <div>
           {paraHeading.map((currentData) => {
-            const {
-              headingData,
-              paraData,
-              paraData2,
-              paraData3,
-            } = currentData;
+            const { headingData, paraData, paraData2, paraData3 } = currentData;
             return (
               <>
                 <Para_Heading_Component
@@ -90,29 +97,38 @@ const WebApplicationDevelopment = () => {
           })}
         </div>
 
-        {/* why choose us cards */}
-      <div className="container">
+        {/*services cards */}
+        <div className="container">
           <div className="grid grid-three-column">
             {state1.map((currentData) => {
-              const { icon1, title1, para1} = currentData;
+              const { icon1, title1, para1 } = currentData;
               return (
                 <>
-                <div>
-                <Card title={title1} para={para1} icon={icon1}/>
-                </div>
+                  <div>
+                    <Card title={title1} para={para1} icon={icon1} />
+                  </div>
                 </>
               );
             })}
-        
           </div>
         </div>
-          </Wrapper>
+        {/*services cards */}
+
+        {/* industries we serve */}
+        <Industries_We_Serve />
+        {/* industries we serve */}
+
+        {/* contact page */}
+        <Contact_Page
+          contactPara={contactPara}
+          contactHeading={contactHeading}
+        />
+        {/* contact page */}
+      </Wrapper>
     </>
   );
 };
 const Wrapper = styled.section`
-  padding: 1rem;
-  text-align: center;
   .grid {
     display: grid;
     gap: 2rem;
@@ -121,5 +137,5 @@ const Wrapper = styled.section`
   .grid-three-column {
     grid-template-columns: repeat(3, 1fr);
   }
-  `;
+`;
 export default WebApplicationDevelopment;
