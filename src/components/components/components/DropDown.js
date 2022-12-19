@@ -37,21 +37,3 @@ const Wrapper = styled.div`
 }
 `;
 export default DropDown
-// const data = {
-//     nameData: "",
-//   };
-//   const para = {
-//     paraData: "",
-//   };
-//   const image = {
-//     imageData: "",
-//   };
-//   const btn = {
-//     btnData: "",
-//   };
-//   return (
-//     <>
-//       <Wrapper>
-//         <Main_Section myData={data} para={para} image={image} btn={btn} />
-//       </Wrapper>
-//     </>
