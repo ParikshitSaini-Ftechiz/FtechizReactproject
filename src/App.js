@@ -7,7 +7,6 @@ import HireBlockchainDevelopers from "./components/components/DropDown_Page/Hire
 import HireFullStackDevelopers from "./components/components/DropDown_Page/HireFullStackDevelopers";
 import HireJavaDevelopers from "./components/components/DropDown_Page/HireJavaDevelopers";
 import HireMobileAppDevelopers from "./components/components/DropDown_Page/HireMobileAppDevelopers";
-
 import MobileAppDevelopment from "./components/components/DropDown2_Page/MobileAppDevelopment";
 import AndroidAppDevelopment from "./components/components/DropDown2_Page/AndroidAppDevelopment";
 import IOSAppDevelopment from "./components/components/DropDown2_Page/IOSAppDevelopment";
@@ -32,6 +31,7 @@ import Footer from "./components/Footer";
 function App() {
   const theme = {
     colors: {
+      light_color:"#ebebed",
       heading: "#231740",
       text: "#fff",
       bg: "#101434",

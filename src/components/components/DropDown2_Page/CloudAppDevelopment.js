@@ -13,7 +13,6 @@ import Contact_Page from "../Contact_Page";
 import Industries_We_Serve from "../components/DropDown_components.js/Industries_We_Serve";
 import { cloud_dev_process } from "../components/DropDown_components.js/VerticalCard_Data";
 import Vertical_Card from "../components/DropDown_components.js/Vertical_Card";
-import {CgShapeRhombus} from "react-icons/cg";
 
 const CloudAppDevelopment = () => {
   const [state1, setState1] = useState(Cloud_Data);
@@ -64,11 +63,7 @@ const CloudAppDevelopment = () => {
 
   // icons app-dev-company//
   const icon = {
-    icon1: (
-      <CgShapeRhombus
-        style={{ fontSize: "5rem", color: "white", marginBottom: "-.8rem" }}
-/>
-    ),
+    icon1: "",
     icon2: (
       <i
         aria-hidden="true"

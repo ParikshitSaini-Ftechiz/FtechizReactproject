@@ -14,6 +14,7 @@ import ShopIcon from "@mui/icons-material/Shop";
 import Contact_Page from "../Contact_Page";
 import Industries_We_Serve from "../components/DropDown_components.js/Industries_We_Serve";
 import Vertical_Card from "../components/DropDown_components.js/Vertical_Card";
+import Questions from "../components/DropDown_components.js/Questions";
 
 // import Card from './Card';
 const AndroidAppDevelopment = () => {
@@ -183,6 +184,8 @@ const AndroidAppDevelopment = () => {
       </Section>
 
       {/* development process we follow */}
+
+      <Questions/>
 
       {/* contact page */}
       <Contact_Page contactPara={contactPara} contactHeading={contactHeading} />

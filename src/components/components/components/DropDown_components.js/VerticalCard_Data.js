@@ -5,9 +5,6 @@ import CodeIcon from "@mui/icons-material/Code";
 import ForumIcon from '@mui/icons-material/Forum';
 import DescriptionIcon from '@mui/icons-material/Description';
 import CheckCircleOutlineOutlinedIcon from '@mui/icons-material/CheckCircleOutlineOutlined';
-import { FaRegWindowMaximize } from 'react-icons/fa';
-
-
 
 
 export const android_dev_process = [
