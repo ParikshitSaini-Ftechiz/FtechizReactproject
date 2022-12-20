@@ -64,7 +64,7 @@ const Wrapper = styled.section`
   }
   .grid {
     display: grid;
-    gap: 1rem;
+    gap:.8rem;
     margin: 5rem 0rem 0rem 0rem;
   }
   .grid-four-column {
@@ -83,14 +83,14 @@ const Wrapper = styled.section`
       border: 1px solid ${({ theme }) => theme.colors.color_white};
       border-radius: 1rem;
       background: ${({ theme }) => theme.colors.card_bg};
-      padding: 4rem 3rem;
+      padding: 4rem 3.5rem;
       gap:1rem;
       i {
         font-size: 4rem;
         color: white;
       }
       h3{
-        font-size:2.5rem;
+        font-size:2.6rem;
         text-align:center;
       }
       p{

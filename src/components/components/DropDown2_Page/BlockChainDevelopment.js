@@ -1,19 +1,16 @@
 import React, { useState } from "react";
 import Main_Section from "../components/Main_Section";
 import Para_Heading from "../components/DropDown_components.js/Para_Heading";
-import Why_To_Choose from "../components/DropDown_components.js/Why_To_Choose";
 import { BlockChain_Data } from "../components/DropDown_components.js/Card_Data";
 import styled from "styled-components";
 import { BlockChain_Para_Data } from "../components/DropDown_components.js/Para_Data";
 import Para_Heading_Component from "../components/DropDown_components.js/Para_Heading_component";
-import MessageIcon from "@mui/icons-material/Message";
-import QuestionAnswerIcon from "@mui/icons-material/QuestionAnswer";
-import ViewInArIcon from "@mui/icons-material/ViewInAr";
-import SyncIcon from "@mui/icons-material/Sync";
 import Contact_Page from "../Contact_Page";
 import Industries_We_Serve from "../components/DropDown_components.js/Industries_We_Serve";
 import Vertical_Card from "../components/DropDown_components.js/Vertical_Card";
 import { blockChain_dev_process } from "../components/DropDown_components.js/VerticalCard_Data";
+import { Questions_blockchain } from "../components/DropDown_components.js/Questions";
+import { Why_To_Choose_blockchain } from "../components/DropDown_components.js/Why_To_Choose_Data";
 
 const BlockChainDevelopment = () => {
   const [state1, setState1] = useState(BlockChain_Data);
@@ -62,56 +59,12 @@ const BlockChainDevelopment = () => {
     const dev_process_para = "We convert your ideas into real world applications that are scalable, efficient and reliable. Our experienced blockchain developers follow a sound process to develop & test quickly and get product maturity at an early stage. We are also a prominent Blockchain development company that has helped many businesses to design high-quality blockchain applications. With the experience of developing 10+ blockchain-powered solutions, we have tailored our process to align with the constant evolution of blockchain technology."
     ;
 
-  // icons  app-dev-company//
-  const icon = {
-    icon1: (
-      <SyncIcon
-        style={{ fontSize: "5rem", color: "white", marginBottom: "-.8rem" }}
-      />
-    ),
-    icon2: (
-      <ViewInArIcon
-        style={{ fontSize: "5rem", color: "white", marginBottom: "-.8rem" }}
-      />
-    ),
-    icon3: (
-      <MessageIcon
-        style={{ fontSize: "5rem", color: "white", marginBottom: "-.8rem" }}
-      />
-    ),
-    icon4: (
-      <i aria-hidden="true" class="elementkit-infobox-icon fas fa-users"></i>
-    ),
-    icon5: (
-      <QuestionAnswerIcon
-        style={{ fontSize: "5rem", color: "white", marginBottom: "-.8rem" }}
-      />
-    ),
-    icon6: (
-      <i
-        aria-hidden="true"
-        class="elementkit-infobox-icon fas fa-project-diagram"
-      ></i>
-    ),
-    icon7: <i class="fa-solid fa-gears"></i>,
-    icon8: <i class="fa-solid fa-hand-holding-dollar"></i>,
-  };
-  const title = {
-    title1: "   360° Holistic Approach ",
-    title2: "    Use of Latest Technologies   ",
-    title3: "  Dynamic Engagement ",
-    title4: "  Center of Excellence Team   ",
-    title5: "  Client Association at Each Stage  ",
-    title6: "   Agile Execution Approach  ",
-    title7: "    Support &amp; Maintenance    ",
-    title8: "   Cost-effective Solutions   ",
-  };
   return (
     <>
       <Wrapper>
         <Main_Section myData={data} para={para} image={image} btn={btn} />
         <Para_Heading heading={heading} para1={para1} />
-        <Why_To_Choose icon={icon} title={title} />
+        <Why_To_Choose_blockchain/>
         {/* services para or heading through map method */}
         <div>
           {paraHeading.map((currentData) => {
@@ -177,6 +130,7 @@ const BlockChainDevelopment = () => {
 
       {/* development process we follow */}
 
+      <Questions_blockchain/>
 
         {/* contact page */}
         <Contact_Page

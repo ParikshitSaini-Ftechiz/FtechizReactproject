@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import styled from "styled-components";
 
-const MyAccordion = ({ question, answer }) => {
+const MyAccordion = ({ question, answer,answer1 ,answer2 ,answer3 ,answer4 ,answer5 ,answer6 ,answer7 }) => {
     const [show, setShow] = useState(false);
   return (
     <>
@@ -17,10 +17,13 @@ const MyAccordion = ({ question, answer }) => {
                {show ?  <i class="fa fa-angle-down" aria-hidden="true"></i> : <i aria-hidden="true" class="fa-toggle fas fa-angle-right"></i>}
               </div>
             </div>
+        
             {
-                show &&  <p>{answer}</p>
+                show &&  <p>{answer}
+                {answer1}{answer2}{answer3}{answer4}{answer5}{answer6}{answer7}</p>
+              
             }
-       
+        
           </div>
         </div>
       </Wrapper>

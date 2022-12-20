@@ -1,5 +1,6 @@
 import React from "react";
-import DropDown_MainSection from "../components/DropDown_MainSection";
+import Main_Section_DropDown from "../components/DropDown_components.js/Main_Section_DropDown";
+import Industries_We_Serve from '../components/DropDown_components.js/Industries_We_Serve';
 
 const HireRemoteDevelopers = () => {
   const data = {
@@ -17,9 +18,14 @@ const HireRemoteDevelopers = () => {
   const btn = {
     btnData: "REQUEST A QUOTE ",
   };
+    //industries we serve//
+    const industries_para={
+      paraData_serve:"Throughout these years, we have delivered thousands of projects and gathered experience from almost every industry around the globe, and we are capable enough of providing to hire dedicated java developers on a large scale as per your need.",
+    }
   return (
-    <>
-      <DropDown_MainSection myData={data} para={para} image={image} btn={btn} />
+   <>
+   <Main_Section_DropDown myData={data} para={para} image={image} btn={btn}/>
+   <Industries_We_Serve industries_para={industries_para}/>
     </>
   );
 };

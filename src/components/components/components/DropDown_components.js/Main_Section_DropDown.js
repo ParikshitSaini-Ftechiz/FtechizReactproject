@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 
 const Main_Section_DropDown = ({ myData, para, image, btn }) => {
   const { nameData } = myData;
-  const { paraData } = para;
+  const { paraData, para2 } = para;
   const { imageData } = image;
   const { btnData } = btn;
   return (
@@ -15,7 +15,9 @@ const Main_Section_DropDown = ({ myData, para, image, btn }) => {
           <div className="grid grid_two_column">
             <div className="main_section">
               <h1 className="heading animX">{nameData}</h1>
-              <p className="main_para para anim">{paraData}</p>
+              <p className="main_para para anim">{paraData}<br/><br/>{para2}</p>
+           
+           
               <NavLink>
                 <Button className="anim">{btnData}</Button>
               </NavLink>
@@ -43,12 +45,20 @@ const Wrapper = styled.section`
     p {
       text-align: justify;
     }
-    h1,
-    Button {
+    h1{
+
       display: flex;
       align-items: center;
       justify-content: flex-start;
     }
+    
+      Button {
+        background: ${({ theme }) => theme.colors.helper};
+        font-weight:300;
+        font-size:1.5rem;
+        color: ${({ theme }) => theme.colors.color_white};
+      }
+    
   }
 
   Button {

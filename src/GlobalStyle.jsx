@@ -56,8 +56,7 @@ p{
  .para {
     margin-top: 2rem;
     margin-bottom: 5rem;
-    word-spacing: 0rem;
-    font-size: 1.7rem;
+    font-size: 1.65rem;
   }
 a {
   text-decoration: none;

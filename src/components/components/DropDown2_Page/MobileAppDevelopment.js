@@ -10,6 +10,8 @@ import Contact_Page from "../Contact_Page";
 
 import Why_To_Choose from "../components/DropDown_components.js/Why_To_Choose";
 import Industries_We_Serve from "../components/DropDown_components.js/Industries_We_Serve";
+import { Questions_mobile } from "../components/DropDown_components.js/Questions";
+import { Why_To_Choose_mobile } from "../components/DropDown_components.js/Why_To_Choose_Data";
 const MobileAppDevelopment = () => {
   const [state1, setState1] = useState(Mobile_Data);
   const [paraHeading, setParaHeading] = useState(Mobile_Para_Data);
@@ -49,33 +51,13 @@ const MobileAppDevelopment = () => {
     contactParaData:
       "Let us know your requirements and We Will Provide a Quick Analysis and free Proposal for it. Don’t worry, it is Secure and Confidential.",
   };
-  // icons //
-  const icon = {
-    icon1: "",
-    icon2: "",
-    icon3: "",
-    icon4: "",
-    icon5: "",
-    icon6: "",
-    icon7: "",
-    icon8: "",
-  };
-  const title = {
-    title1: "",
-    title2: "",
-    title3: "",
-    title4: "",
-    title5: "",
-    title6: "",
-    title7: "",
-    title8: "",
-  };
+
   return (
     <>
       <Wrapper>
         <Main_Section myData={data} para={para} image={image} btn={btn} />
         <Para_Heading heading={heading} para1={para1} />
-        <Why_To_Choose icon={icon} title={title} />
+        <Why_To_Choose_mobile/>
         {/* services para or heading through map method */}
         <div>
           {paraHeading.map((currentData) => {
@@ -113,6 +95,8 @@ const MobileAppDevelopment = () => {
         {/* industries we serve */}
         <Industries_We_Serve />
         {/* industries we serve */}
+
+        <Questions_mobile/>
 
         {/* contact page */}
         <Contact_Page

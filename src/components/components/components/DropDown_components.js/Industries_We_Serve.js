@@ -8,13 +8,17 @@ import SchoolIcon from "@mui/icons-material/School";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import StorefrontIcon from "@mui/icons-material/Storefront";
 
-const Industries_We_Serve = () => {
+const Industries_We_Serve = ({industries_para}) => {
+  const {paraData_serve}= industries_para;
+   
+  
   return (
     <>
       <Wrapper>
         <div className="container industries_portion">
           <div className="heading_portion grid">
             <h2 className="headings">Industries We Serve</h2>
+            <p>{paraData_serve}</p>
           </div>
           <div className="grid grid-four-column industries_icons">
             <div className="grid_two_column">

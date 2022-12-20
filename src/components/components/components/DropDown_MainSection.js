@@ -5,7 +5,16 @@ import { NavLink } from "react-router-dom";
 
 const DropDown_MainSection = ({ myData, para, image, btn }) => {
   const { nameData } = myData;
-  const { paraData, para2 } = para;
+  const {
+    paraData,
+    paraData1,
+    paraData2,
+    paraData3,
+    paraData4,
+    paraData5,
+    paraData6,
+    paraData7,
+  } = para;
   const { imageData } = image;
   const { btnData } = btn;
   return (
@@ -15,7 +24,30 @@ const DropDown_MainSection = ({ myData, para, image, btn }) => {
           <div className="grid grid_two_column">
             <div className="main_section">
               <h1 className="heading animX">{nameData}</h1>
-              <p className="main_para para anim">{paraData}<br/><br/>{para2}</p>
+              <p className="main_para para anim">
+                <i class="fa fa-check" aria-hidden="true"></i>
+                {paraData}
+                <br />
+                <i class="fa fa-check" aria-hidden="true"></i>
+                {paraData1}
+                <br />
+                <i class="fa fa-check" aria-hidden="true"></i>
+                {paraData2}
+                <br />
+                <i class="fa fa-check" aria-hidden="true"></i>
+                {paraData2}
+                <br /> <i class="fa fa-check" aria-hidden="true"></i>
+                {paraData3}
+                <br /> <i class="fa fa-check" aria-hidden="true"></i>
+                {paraData4}
+                <br /> <i class="fa fa-check" aria-hidden="true"></i>
+                {paraData5}
+                <br /> <i class="fa fa-check" aria-hidden="true"></i>
+                {paraData6}
+                <br /><i class="fa fa-check" aria-hidden="true"></i>
+                {paraData7}
+                
+              </p>
               <NavLink>
                 <Button className="anim">{btnData}</Button>
               </NavLink>
@@ -30,19 +62,29 @@ const DropDown_MainSection = ({ myData, para, image, btn }) => {
   );
 };
 const Wrapper = styled.section`
-  padding: 9rem 0;
+  padding: 7rem 0;
   background: ${({ theme }) => theme.colors.component_bg};
   .main_section {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    i {
+      font-size: 1.3rem;
+      margin-right: 1rem;
+    }
+    Button {
+      background: ${({ theme }) => theme.colors.helper};
+      margin-left: -26rem;
+      font-weight:300;
+      font-size:1.5rem;
+      color: ${({ theme }) => theme.colors.color_white};
+      margin-top:-4rem;
+    }
+   
   }
 
-  Button {
-    background: ${({ theme }) => theme.colors.btn_color};
-    margin-left: -26rem;
-  }
   .grid {
     display: grid;
     gap: 12rem;
@@ -53,6 +95,7 @@ const Wrapper = styled.section`
     width: 55rem;
     height: 45rem;
   }
+
   .heading.anim {
     animation-delay: 0.5s;
   }

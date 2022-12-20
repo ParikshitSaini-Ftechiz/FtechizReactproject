@@ -8,13 +8,11 @@ import { Android_Para_Data } from "../components/DropDown_components.js/Para_Dat
 import { android_dev_process } from "../components/DropDown_components.js/VerticalCard_Data";
 import Card from "../components/DropDown_components.js/Card";
 import styled from "styled-components";
-import SearchIcon from "@mui/icons-material/Search";
-import PaidIcon from "@mui/icons-material/Paid";
-import ShopIcon from "@mui/icons-material/Shop";
 import Contact_Page from "../Contact_Page";
 import Industries_We_Serve from "../components/DropDown_components.js/Industries_We_Serve";
 import Vertical_Card from "../components/DropDown_components.js/Vertical_Card";
-import Questions from "../components/DropDown_components.js/Questions";
+import {Questions_android} from "../components/DropDown_components.js/Questions";
+import { Why_To_Choose_android } from "../components/DropDown_components.js/Why_To_Choose_Data";
 
 // import Card from './Card';
 const AndroidAppDevelopment = () => {
@@ -63,66 +61,13 @@ const AndroidAppDevelopment = () => {
   const dev_process_heading = "Our Development Process";
   const dev_process_para =
     "A reliable Android App Development company, Ftechiz supervises the entire development process to achieve client satisfaction. The method includes Ideation & Planning, Design & Development, Testing & QA and Deployment of the Application. This process is followed by the post-deployment services, which include; bug fixing, updates, and modifications as per demand of the client at the best price.";
-  //why to choose us  icons //
-  const icon = {
-    icon1: (
-      <i aria-hidden="true" class="elementkit-infobox-icon fas fa-user-cog"></i>
-    ),
-    icon2: (
-      <ShopIcon
-        style={{ fontSize: "5rem", color: "white", marginBottom: "-.8rem" }}
-      />
-    ),
-    icon3: (
-      <PaidIcon
-        style={{ fontSize: "5rem", color: "white", marginBottom: "-.8rem" }}
-      />
-    ),
-    icon4: (
-      <i aria-hidden="true" class="elementkit-infobox-icon fas fa-server"></i>
-    ),
-    icon5: (
-      <i
-        aria-hidden="true"
-        class="elementkit-infobox-icon fab fa-rocketchat"
-      ></i>
-    ),
-    icon6: (
-      <i
-        aria-hidden="true"
-        class="elementkit-infobox-icon fas fa-pencil-alt"
-      ></i>
-    ),
-    icon7: (
-      <i
-        aria-hidden="true"
-        class="elementkit-infobox-icon fas fa-users-cog"
-      ></i>
-    ),
-    icon8: (
-      <SearchIcon
-        style={{ fontSize: "5rem", color: "white", marginBottom: "-.8rem" }}
-      />
-    ),
-  };
-  const title = {
-    title1: " Skilled Android Developers  ",
-    title2: " Play Store Submission    ",
-    title3: "  Cost-effective solutions   ",
-    title4: "IP Rights Protection   ",
-    title5: " Smooth Communication   ",
-    title6: " Robust Architecture  ",
-    title7: "   Post Launch Maintenance ",
-    title8: "   Complete Transparency   ",
-  };
-
+  
   return (
     <>
       <Main_Section myData={data} para={para} image={image} btn={btn} />
 
       <Para_Heading heading={heading} para1={para1} />
-      <Why_To_Choose icon={icon} title={title} />
-
+      <Why_To_Choose_android/>
       {/* services para or heading through map method */}
       <div>
         {paraHeading.map((currentData) => {
@@ -185,7 +130,7 @@ const AndroidAppDevelopment = () => {
 
       {/* development process we follow */}
 
-      <Questions/>
+      <Questions_android/>
 
       {/* contact page */}
       <Contact_Page contactPara={contactPara} contactHeading={contactHeading} />

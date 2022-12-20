@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import Main_Section from "../components/Main_Section";
 import Para_Heading from "../components/DropDown_components.js/Para_Heading";
-import Why_To_Choose from "../components/DropDown_components.js/Why_To_Choose";
 import { Flutter_Data } from "../components/DropDown_components.js/Card_Data";
 import FourCol_card from "../components/DropDown_components.js/FourCol_card";
 import styled from "styled-components";
@@ -9,6 +8,8 @@ import { Flutter_Para_Data } from "../components/DropDown_components.js/Para_Dat
 import Para_Heading_Component from "../components/DropDown_components.js/Para_Heading_component";
 import Contact_Page from "../Contact_Page";
 import Industries_We_Serve from "../components/DropDown_components.js/Industries_We_Serve";
+import { Questions_flutter } from "../components/DropDown_components.js/Questions";
+import { Why_To_Choose_flutter } from "../components/DropDown_components.js/Why_To_Choose_Data";
 
 const FlutterAppDevelopment = () => {
   const [state1, setState1] = useState(Flutter_Data);
@@ -52,33 +53,13 @@ const FlutterAppDevelopment = () => {
       "Feel free to connect with us by filling out this form! Our team will be happy to guide you through our process.",
   };
 
-  // icons //
-  const icon = {
-    icon1: "",
-    icon2: "",
-    icon3: "",
-    icon4: "",
-    icon5: "",
-    icon6: "",
-    icon7: "",
-    icon8: "",
-  };
-  const title = {
-    title1: "",
-    title2: "",
-    title3: "",
-    title4: "",
-    title5: "",
-    title6: "",
-    title7: "",
-    title8: "",
-  };
+
   return (
     <>
       <Wrapper>
         <Main_Section myData={data} para={para} image={image} btn={btn} />
         <Para_Heading heading={heading} para1={para1} />
-        <Why_To_Choose icon={icon} title={title} />
+      <Why_To_Choose_flutter/>
 
         {/* services para or heading through map method */}
         <div>
@@ -117,6 +98,8 @@ const FlutterAppDevelopment = () => {
         {/* industries we serve */}
         <Industries_We_Serve />
         {/* industries we serve */}
+
+        <Questions_flutter/>
 
         {/* contact page */}
         <Contact_Page
