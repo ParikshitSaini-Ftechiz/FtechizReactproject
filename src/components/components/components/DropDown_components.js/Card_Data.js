@@ -1,5 +1,6 @@
 import { NavLink } from "react-router-dom";
 import ComputerIcon from "@mui/icons-material/Computer";
+import AccountBoxOutlinedIcon from '@mui/icons-material/AccountBoxOutlined';
 
 export const Card_Data = [
   // first
@@ -127,37 +128,37 @@ export const BlockChain_Data = [
 export const Cloud_Data = [
   // first
   {
-    icon1:"" ,
+    icon1:  <img src="./images/cloud_service.png"  style={{ width: "6.5rem", color: "white", marginBottom: "2.8rem"  , marginLeft:"-.5rem"}}/> ,
     title1: "Cloud App development	",
     para1: "	Our team of highly skilled cloud developers builds solutions that are extremely scalable, highly secure, and efficiently designed to optimize the user experience and maximize your ROI.	",
   },
   // second
   {
-    icon1:"" ,
+    icon1:<img src="./images/cloud_consulting.png"  style={{ width: "6.5rem", color: "white", marginBottom: "2.8rem" , marginLeft:"-.5rem"}}/> ,
     title1: "	Cloud Consulting Services		",
     para1: "Before starting any project our main approach to cloud consulting begins with what, why, and how Cloud Services can benefit your business. Our Expert Cloud Consultants assist businesses for strategic cloud consultation related to planning, architecture, infrastructure, deployment, integration, optimization, delivery and support.",
   },
   // third
   {
-    icon1:"" ,
+    icon1:<img src="./images/cloud_migration.png"  style={{ width: "5.5rem", color: "white", marginBottom: "2.8rem" }}/> ,
     title1: "Cloud Migration		",
     para1: "	We provide cloud migration services for start-ups, mid and high level organizations. Our cloud development team closely works with you to migrate applications, workflows and the whole infrastructure to the cloud. We always make sure to limit the system downtime and ensure data integrity throughout the migration process. ",
   },
   // fourth
   {
-    icon1:"",
+    icon1:<img src="./images/cloud.png"  style={{ width: "5rem", color: "white", marginBottom: "2.8rem"}}/>,
     title1: "Cloud Integration		",
     para1: "	We accelerate your business productivity by Integrating processes, databases, and network resources to increase your entire IT infrastructure, promoting additional robustness, reliability, and cost-efficiency.",
   },
   // fifth
   {
-    icon1:"" ,
-    title1: "Cloud Monitoring &amp; Support		",
+    icon1:<img src="./images/images.png"  style={{ width: "5.8rem", color: "white", marginBottom: "2.8rem"}}/> ,
+    title1: "Cloud Monitoring & Support		",
     para1: "	We also provide efficient cloud performance monitoring and optimization services to all our clients. Our cloud monitoring and support service gives you complete visibility into the health and availability of the entire cloud infrastructure of your business.",
   },
   // sixth
   {
-    icon1:"" ,
+    icon1:<img src="./images/cloud_backup.png"  style={{ width: "5.5rem", color: "white", marginBottom: "2.8rem"}}/> ,
     title1: "	Cloud Backup Services		",
     para1: "Our distributed, community-based, inter-cloud, and multi-cloud solutions will protect your entire system against disastrous breakdown or data losses. We have years of experience in building cloud storage solutions over popular platforms like AWS, Microsoft Azure, Google Cloud platform, and many more.",
   },

@@ -29,7 +29,7 @@ const Para_Heading_Component = ({
   );
 };
 const Wrapper = styled.section`
-  padding: 1rem 0 0 0;
+  padding: 5rem 0 0 0;
    {
     h1 {
       text-align: center;

@@ -59,15 +59,10 @@ const AndroidAppDevelopment = () => {
       "Feel free to connect with us by filling out this form! Our team will be happy to guide you through our process.",
   };
   // development process para and heading//
-  const dev_process_heading = {
-    headingData: "Our Development Process",
-  };
-  const dev_process_para = {
-    paragraphData:
-      "A reliable Android App Development company, Ftechiz supervises the entire development process to achieve client satisfaction. The method includes Ideation & Planning, Design & Development, Testing & QA and Deployment of the Application. This process is followed by the post-deployment services, which include; bug fixing, updates, and modifications as per demand of the client at the best price.",
-  };
-
-  // icons //
+  const dev_process_heading = "Our Development Process";
+  const dev_process_para =
+    "A reliable Android App Development company, Ftechiz supervises the entire development process to achieve client satisfaction. The method includes Ideation & Planning, Design & Development, Testing & QA and Deployment of the Application. This process is followed by the post-deployment services, which include; bug fixing, updates, and modifications as per demand of the client at the best price.";
+  //why to choose us  icons //
   const icon = {
     icon1: (
       <i aria-hidden="true" class="elementkit-infobox-icon fas fa-user-cog"></i>
@@ -103,7 +98,11 @@ const AndroidAppDevelopment = () => {
         class="elementkit-infobox-icon fas fa-users-cog"
       ></i>
     ),
-    icon8: <SearchIcon style={{ fontSize: "5rem", color: "white" }} />,
+    icon8: (
+      <SearchIcon
+        style={{ fontSize: "5rem", color: "white", marginBottom: "-.8rem" }}
+      />
+    ),
   };
   const title = {
     title1: " Skilled Android Developers  ",
@@ -163,21 +162,25 @@ const AndroidAppDevelopment = () => {
       {/* industies we serve */}
 
       {/* development process we follow */}
+      <Section>
+        <div class="container">
+          <div className="content">
+            <h1>{dev_process_heading}</h1>
+            <p>{dev_process_para}</p>
+          </div>
 
-      {devProcess.map((currentData) => {
-        const { icon, title, para } = currentData;
-        return (
-          <>
-            <Vertical_Card
-              icon={icon}
-              title={title}
-              para={para}
-              dev_process_heading={dev_process_heading}
-              dev_process_para={dev_process_para}
-            />
-          </>
-        );
-      })}
+          {devProcess.map((currentData) => {
+            const { icon, title, para } = currentData;
+            return (
+              <>
+                <div>
+                  <Vertical_Card icon={icon} title={title} para={para} />
+                </div>
+              </>
+            );
+          })}
+        </div>
+      </Section>
 
       {/* development process we follow */}
 
@@ -195,6 +198,20 @@ const Wrapper = styled.section`
   }
   .grid-three-column {
     grid-template-columns: repeat(3, 1fr);
+  }
+`;
+const Section = styled.section`
+  padding: 12rem 0 5rem 0;
+  .content {
+    h1 {
+      color: ${({ theme }) => theme.colors.heading};
+      text-align: center;
+    }
+    p {
+      color: ${({ theme }) => theme.colors.heading};
+      text-align: justify;
+      margin: 0 0 4rem 0;
+    }
   }
 `;
 export default AndroidAppDevelopment;

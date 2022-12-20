@@ -83,7 +83,7 @@ const Wrapper = styled.section`
       border: 1px solid ${({ theme }) => theme.colors.color_white};
       border-radius: 1rem;
       background: ${({ theme }) => theme.colors.card_bg};
-      padding: 4rem;
+      padding: 4rem 3rem;
       gap:1rem;
       i {
         font-size: 4rem;

@@ -1,19 +1,15 @@
 import styled from "styled-components";
 
-const Vertical_Card = ({icon, title, para, dev_process_heading, dev_process_para,
+const Vertical_Card = ({
+  icon,
+  title,
+  para,
 }) => {
-
-  const {headingData} = dev_process_heading;
-  const {paragraphData} = dev_process_para;
   return (
     <>
       <Wrapper>
-        <div class="container">
-          <div className="content">
-            <h1>{headingData}</h1>
-            <p>{paragraphData}</p>
-          </div>
-          {/* <div class="grid"> */}
+        <div>
+          <div class="grid">
             <div class="card">
               <div class=" grid-two-column">
                 <div className="card_icon">
@@ -27,22 +23,17 @@ const Vertical_Card = ({icon, title, para, dev_process_heading, dev_process_para
                 </div>
               </div>
             </div>
-          {/* </div> */}
+          </div>
         </div>
       </Wrapper>
     </>
   );
 };
 const Wrapper = styled.section`
- .grid {
+  .grid {
     display: grid;
-    gap: 0rem;
-    margin: 0rem 0rem;
-  }
-  .content {
-    margin-top: 3rem;
-    text-align: center;
-    color: ${({ theme }) => theme.colors.heading};
+    gap: 2rem;
+    margin: 1rem 0rem;
   }
   .card {
     width: 100%;
@@ -66,7 +57,6 @@ const Wrapper = styled.section`
           color: ${({ theme }) => theme.colors.helper};
         }
       }
-    
     }
   }
 `;

@@ -7,16 +7,18 @@ import Card from "../components/DropDown_components.js/Card";
 import styled from "styled-components";
 import { Cloud_Para_Data } from "../components/DropDown_components.js/Para_Data";
 import Para_Heading_Component from "../components/DropDown_components.js/Para_Heading_component";
-import CloudSyncIcon from "@mui/icons-material/CloudSync";
-import CloudIcon from "@mui/icons-material/Cloud";
 import SettingsSystemDaydreamIcon from "@mui/icons-material/SettingsSystemDaydream";
 import PaidIcon from "@mui/icons-material/Paid";
 import Contact_Page from "../Contact_Page";
 import Industries_We_Serve from "../components/DropDown_components.js/Industries_We_Serve";
+import { cloud_dev_process } from "../components/DropDown_components.js/VerticalCard_Data";
+import Vertical_Card from "../components/DropDown_components.js/Vertical_Card";
+import {CgShapeRhombus} from "react-icons/cg";
 
 const CloudAppDevelopment = () => {
   const [state1, setState1] = useState(Cloud_Data);
   const [paraHeading, setParaHeading] = useState(Cloud_Para_Data);
+  const [devProcess, setDevProcess] = useState(cloud_dev_process);
   const data = {
     nameData: "Leading Cloud Application Development Company",
   };
@@ -55,34 +57,40 @@ const CloudAppDevelopment = () => {
       "Feel free to connect with us by filling out this form! Our team will be happy to guide you through our process.",
   };
 
-  // icons //
+  // development process para and heading//
+  const dev_process_heading = "Development Process We Follow";
+  const dev_process_para =
+    "Ftechiz is one of the most trusted partners to help guide your cloud journey. We help you in quickly build, test, launch and deliver your cloud strategy, new services and products. We fit in the best of all the major cloud providers into a flawless experience for your customers, employees and other stakeholders. While modernizing your business we focus on reducing complexity, costs and operational challenges.";
+
+  // icons app-dev-company//
   const icon = {
-    icon1: "",
-    icon2: (
-      <i aria-hidden="true" class="elementkit-infobox-icon fas fa-server"></i>
-    ),
-    icon3: (
-      <CloudIcon
+    icon1: (
+      <CgShapeRhombus
         style={{ fontSize: "5rem", color: "white", marginBottom: "-.8rem" }}
-      />
+/>
     ),
+    icon2: (
+      <i
+        aria-hidden="true"
+        class="elementkit-infobox-icon fas fa-server"
+        style={{ fontSize: "4rem", color: "white", marginBottom: "-.8rem" }}
+      ></i>
+    ),
+    icon3: 
+      <img src="./images/cloud_service.png"  style={{ width: "5.2rem", color: "white", marginBottom: "-.8rem" }}/>,
     icon4: (
       <PaidIcon
-        style={{ fontSize: "5rem", color: "white", marginBottom: "-.8rem" }}
+        style={{ fontSize: "4.8rem", color: "white", marginBottom: "-.8rem" }}
       />
     ),
-    icon5: (
-      <CloudSyncIcon
-        style={{ fontSize: "5rem", color: "white", marginBottom: "-.8rem" }}
-      />
-    ),
+    icon5: <img src="./images/cloud.png"  style={{ width: "5rem", color: "white", marginBottom: "-.8rem" }}/>,
     icon6: (
       <SettingsSystemDaydreamIcon
         style={{ fontSize: "5rem", color: "white", marginBottom: "-.8rem" }}
       />
     ),
-    icon7: "",
-    icon8: "",
+    icon7: <i class="fa fa-lock" aria-hidden="true" style={{ fontSize: "4rem", color: "white", marginBottom: "-.8rem" }}></i>,
+    icon8: <i class="fa-solid fa-hand-holding-dollar" style={{ fontSize: "4rem", color: "white", marginBottom: "-.8rem" }}></i>,
   };
 
   const title = {
@@ -140,6 +148,29 @@ const CloudAppDevelopment = () => {
         <Industries_We_Serve />
         {/* industries we serve */}
 
+        {/* development process we follow */}
+        <Section>
+          <div class="container">
+            <div className="content">
+              <h1>{dev_process_heading}</h1>
+              <p>{dev_process_para}</p>
+            </div>
+
+            {devProcess.map((currentData) => {
+              const { icon, title, para } = currentData;
+              return (
+                <>
+                  <div>
+                    <Vertical_Card icon={icon} title={title} para={para} />
+                  </div>
+                </>
+              );
+            })}
+          </div>
+        </Section>
+
+        {/* development process we follow */}
+
         {/* contact page */}
         <Contact_Page
           contactPara={contactPara}
@@ -158,6 +189,26 @@ const Wrapper = styled.section`
   }
   .grid-three-column {
     grid-template-columns: repeat(3, 1fr);
+  }
+`;
+
+const Section = styled.section`
+  padding: 12rem 0 4rem 0;
+  .grid {
+    display: grid;
+    gap: 2rem;
+    margin: 1rem 0rem;
+  }
+  .content {
+    h1 {
+      color: ${({ theme }) => theme.colors.heading};
+      text-align: center;
+    }
+    p {
+      color: ${({ theme }) => theme.colors.heading};
+      text-align: justify;
+      margin: 0 0 4rem 0;
+    }
   }
 `;
 export default CloudAppDevelopment;
