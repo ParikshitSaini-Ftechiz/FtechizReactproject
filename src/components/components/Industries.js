@@ -82,12 +82,12 @@ const Industries = () => {
   );
 };
 const Wrapper = styled.section`
-  padding: 9rem 0 12rem 0;
+  padding: 5rem 0 0rem 0;
   background: ${({ theme }) => theme.colors.color_white};
   .grid {
     display: grid;
     gap: 0rem;
-    margin: 4rem 3rem 0rem 3rem;
+    margin: 2rem 3rem 0rem 3rem;
   }
   .industries_portion {
     display: flex;

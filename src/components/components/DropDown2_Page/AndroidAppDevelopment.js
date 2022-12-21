@@ -64,7 +64,6 @@ const AndroidAppDevelopment = () => {
   return (
     <>
       <Main_Section myData={data} para={para} image={image} btn={btn} />
-
       <Para_Heading heading={heading} para1={para1} />
       <Why_To_Choose_android/>
       {/* services para or heading through map method */}

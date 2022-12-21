@@ -16,6 +16,7 @@ const BlockChainDevelopment = () => {
   const [state1, setState1] = useState(BlockChain_Data);
   const [paraHeading, setParaHeading] = useState(BlockChain_Para_Data);
   const [devProcess, setDevProcess] = useState(blockChain_dev_process);
+  
   const data = {
     nameData: "Blockchain Development Company",
   };

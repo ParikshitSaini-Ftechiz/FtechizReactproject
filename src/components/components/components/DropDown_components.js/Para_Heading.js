@@ -1,9 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
-const Para_Heading = ({ heading, para1 ,para}) => {
+const Para_Heading = ({ heading, para1 }) => {
   const { headingData } = heading;
-  const { paragraph } = para;
   const {
     paraData,
     paraData2,
@@ -13,9 +12,6 @@ const Para_Heading = ({ heading, para1 ,para}) => {
     paraData6,
     paraData7,
     paraData8,
-    paraData9,
-    paraData10,
-    paraData11,
   } = para1;
 
   return (
@@ -24,18 +20,15 @@ const Para_Heading = ({ heading, para1 ,para}) => {
         <div className="container">
           <div className="content">
             <h1>{headingData} </h1>
-            <p className="para">{paragraph}</p>
-            <p><i class="fa fa-check" aria-hidden="true"></i>{paraData} </p> 
-            <p><i class="fa fa-check" aria-hidden="true"></i>{paraData2} </p> 
-            <p><i class="fa fa-check" aria-hidden="true"></i>{paraData3} </p> 
-            <p><i class="fa fa-check" aria-hidden="true"></i>{paraData4} </p> 
-            <p><i class="fa fa-check" aria-hidden="true"></i>{paraData5} </p> 
-            <p><i class="fa fa-check" aria-hidden="true"></i>{paraData6} </p> 
-            <p><i class="fa fa-check" aria-hidden="true"></i>{paraData7} </p> 
-            <p><i class="fa fa-check" aria-hidden="true"></i>{paraData8} </p> 
-            <p><i class="fa fa-check" aria-hidden="true"></i>{paraData9} </p> 
-            <p><i class="fa fa-check" aria-hidden="true"></i>{paraData10} </p> 
-            <p><i class="fa fa-check" aria-hidden="true"></i>{paraData11} </p> 
+            <p>{paraData} </p> 
+            <p>{paraData2} </p> 
+            <p>{paraData3} </p> 
+            <p>{paraData4} </p> 
+            <p>{paraData5} </p> 
+            <p>{paraData6} </p> 
+            <p>{paraData7} </p> 
+            <p>{paraData8} </p> 
+           
           </div>
         </div>
       </Wrapper>
@@ -43,25 +36,20 @@ const Para_Heading = ({ heading, para1 ,para}) => {
   );
 };
 const Wrapper = styled.section`
-  padding: 9rem 0 5rem 0;
+  padding: 9rem 0 0rem 0;
    {
     h1{
       color: ${({ theme }) => theme.colors.heading};
       text-align:center;
+      margin-bottom:4rem;
     }
     p {
       color: ${({ theme }) => theme.colors.heading};
       text-align: justify;
-      i {
-      font-size: 1.2rem;
-      margin-right: 1rem;
+      margin-bottom:2rem;
+
     }
-    }
-    .para {
-      color: ${({ theme }) => theme.colors.heading};
-      text-align: justify;
-      margin: 4rem  0;
-    }
+  
   }
 `;
 export default Para_Heading;

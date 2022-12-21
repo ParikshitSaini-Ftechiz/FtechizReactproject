@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import Extra_div from "./Extra_div";
-import Para_Heading from "./Para_Heading";
+import Para_heading_Why_Hire_Remote_dev from "./Para_heading_Why_Hire_Remote_dev";
 
 const Why_Hire_Remote_dev = () => {
   const heading = {
@@ -32,7 +32,7 @@ const Why_Hire_Remote_dev = () => {
     <>
       <Wrapper>
         <div className="content">
-          <Para_Heading heading={heading} para1={para1} para={Why_Hire_Remote_dev_para1}/>
+          <Para_heading_Why_Hire_Remote_dev heading={heading} para1={para1} para={Why_Hire_Remote_dev_para1}/>
           <Extra_div/>
         </div>
       </Wrapper>

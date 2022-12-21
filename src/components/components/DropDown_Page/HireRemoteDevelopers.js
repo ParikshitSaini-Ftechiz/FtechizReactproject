@@ -83,7 +83,7 @@ const HireRemoteDevelopers = () => {
       {/* Why Hire Remote Developers from Ftechiz? */}
 
       {/* Hire_Top_Software_In_Steps */}
-      <Hire_Top_Software_In_Steps />
+      <Hire_Top_Software_In_Steps/>
       {/* Hire_Top_Software_In_Steps */}
 
       {/* Take our Risk-Free 7 Days Free Trial */}

@@ -375,4 +375,133 @@ export const WebsiteDesigning_Data = [
     para1: "With our custom website designing services you can get innovative and attractive websites for your business. Bring your website ideas into life by getting a custom website designed by Ftechiz. We execute your ideas and transform into reality with perfection to satisfy your needs and expectations.",
   },
 ];
+export const blockchain = [
+  {
+    icon1:"" ,
+    title1: " Blockchain Consulting   ",
+    para1: "Our experienced Blockchain consultants will provide you practical advice on the implementing blockchain technology by detailed analysis of your organization’s profile, enabling them to build an optimal solution for your business domain. We help businesses to recognize how blockchain can be a perfect fit to their business model. We have years of hands-on experience in integrating blockchain technology and business processes across the entire blockchain journey."
+  },
+  {
+    icon1:"" ,
+    title1: " Smart Contract Development    ",
+    para1: "We do Smart Contract Development for Private and Public Blockchain Networks. Our team of experienced developers craft secure and accurate smart contracts which make the business ecosystem conflict-free. With years of experience in smart contract development tools and programming languages, our developers have the capabilities to build secure and tamper proof smart contracts. We also offer blockchain-agnostic smart contract development. This will help you to build a decentralized applications (dApp) that can interact with any type of blockchain."
+  },
+  {
+    icon1:"" ,
+    title1: " Blockchain Application Development    ",
+    para1: "With expertise in various blockchain platforms like Hyperledger, Polkadot, Tron, Stellar, and many more, we build scalable, secure and scalable custom blockchain software solutions for enterprises and startups. With profound knowledge and experience in developing the decentralized solutions, we create business processes highly secure, transparent and can be accessed globally. We have already developed many applications for Games, Exchanges, Crypto Wallets, Education, healthcare and for many industries."
+  },
+  {
+    icon1:"" ,
+    title1: "Custom Blockchain Development Solutions    ",
+    para1: "Ftechiz provides reliable, trusted, secure and sustainable solutions for your business growth. We offer custom Blockchain Development Solutions to implement with your existing business domain. Our blockchain development technology experts are always ready to help our clients in getting top-notch and secure solutions tailored to their specific needs. We also focus in architecting customized Blockchain software development solutions that aligns with your workflow.    "
+  },
+  {
+    icon1:"" ,
+    title1: "NFT marketplace development  ",
+    para1: "We help businesses with our blockchain development services that also include building decentralized NFT marketplaces to manage NFT trading, bidding and selling their digital assets. To solve the interoperability issues, we also launch cross-chain marketplaces that help with multi-chain NFTs in business. Ftechiz provides the best NFT Marketplace development services to help you launch your own NFT Marketplace like Opensea, Rarible, and others.    "
+  },
+  {
+    icon1:"" ,
+    title1: " Blockchain wallet development ",
+    para1: "As part of our Blockchain wallet development services, our blockchain developers creates robust, secure and feature-rich web and mobile wallet applications that hold hundreds of cryptocurrencies, while carrying information related to your wallet balance and purchase history. We create blockchain wallets that support the exchange of various digital assets and currencies and are integrated with features of cross-chain token swapping.    "
+  },
+]
+export const fullStack = [
+  {
+    icon1:" Front End Development " ,
+    title1: "  ",
+    para1: "Our full stack front-end developers are experts in front-end languages such as HTML, CSS/SCSS, Bootstrap, JavaScript, Angular.js, Vue.js, Node.js and React.js. We are more focus on using trending technologies that not only make your solutions attractive, but also enhance its performance and make it more efficient and scalable. We make sure that your websites, applications and products have a user-friendly and response design."
+  },
+  {
+    icon1:"" ,
+    title1: "  Back-end Development  ",
+    para1: "Our full stack back-end developers are capable in handling applications that run on servers like applications and APIs. We build websites that function smoothly and fulfill all the expectations of your customers. Our back-end developers are experts in programming languages and frameworks like Ruby on Rails, Python, PHP, SQL, Java, Node.js, ASP.NET and Laravel."
+  },
+  {
+    icon1:"" ,
+    title1: "API Integration  ",
+    para1: "Our full stack developers have huge experience in providing custom web API and integration services. We offer entire web API development services that help in the smooth and seamless functioning of your business solutions. We also build custom APIs for you to be used by external applications without any hindrances. Our developers execute integrations for your payment systems, social networks, business tools, etc."
+  },
+  {
+    icon1:"" ,
+    title1: " Database Configuration ",
+    para1: "Our full stack developers collect and regulate all the crucial information from huge amounts of data. Our team of skilled developers has years of experience in XML/JSON. We have experience in almost all type of custom database development services and technologies. This has given us a great understanding of how to link a database with the back-end language of your choice."
+  },  {
+    icon1:"" ,
+    title1: "Quality Analysis",
+    para1: "Our certified full stack developers deliver the highest quality products and services to our valuable clients. We follow strict protocols to ensure on time delivery of the high-quality applications. We offer strong software testing and quality assurance services to ensure accuracy, safety, entirety and quality of software products. Our quality analysis methods are structured to fix any, arising issues efficiently and swiftly. This ensures that your application is free of any bugs, errors, or harmful elements.    "
+  },
+  {
+    icon1:"" ,
+    title1: "UI/UX Designing",
+    para1: "Our full stack UI/UX designers have all the capabilities to craft all the possible web experiences with pixel-perfect UI/UX designs that you can imagine with. Our UI/UX Designers can build full stack web applications, SaaS solutions, web portals, etc.    "
+  },
+
+]
+export const java = [
+  {
+    icon1:"" ,
+    title1: " Custom Java App Development ",
+    para1: "Our team of Java specialists consisting of UI/UX designers, java developers, and QA testers will create an exceptional Java application as per your requirements. They can create complex applications, ERPs, large-scale enterprise applications, and other software solutions that require high-end security. We create customizable applications that are best fit to your business needs. You can hire java developers from us to get your project done on time and within your budget.    "
+  },
+  {
+    icon1:"" ,
+    title1: " Java Web Application Development ",
+    para1: "Ftechiz is a client-focused Java software development company. We have a noteworthy record of providing Java web application development services to start-ups as well as big enterprises in different verticals such as healthcare, real estate, e-commerce, education, entertainment, and many more. We use powerful Java frameworks like spring which provides the stability, flexibility, and security that make the language ideal for developing interactive and fascinating web applications."
+  },
+  {
+    icon1:"" ,
+    title1: " Enterprise Portal Development ",
+    para1: "Using the latest technology and best-in-class tools, a wide range of Enterprise Portal solutions are offered by our dedicated Java Developers and Content Managers. You can hire Java programmers from us who will add strength and industrial experience to your existing team.    "
+  },
+  {
+    icon1:"" ,
+    title1: "  Java/J2EE Development ",
+    para1: "Take advantage of world-class Java Development services in developing powerful and secure J2EE products for managing your day-to-day operations. We've used J2EE to create a number of multilayered web-based applications so far. Other than this we assist our clients in developing custom feature-rich applications for small and large businesses, allowing them to remain competitive in the market.    "
+  }, 
+   {
+    icon1:"" ,
+    title1: " Java Migration ",
+    para1: "Outsource Java development services and migration to professionals like us who have extensive experience migrating projects to a Java framework. With their knowledge of Java Development and Java Migration, you can hire Java developers from us who can assist you in making a smooth transition to Java.    "
+  },
+  {
+    icon1:"" ,
+    title1: " Maintenance & Support   ",
+    para1: "Our expert Java developers will guide you through the entire process of setting up and running your Java app. We provide Cost-effective application maintenance, up-gradation of obsolete components, and optimization with best-in-class turnaround time. We are a leading Java software development company that provides full app support, application administration, and performance management."
+  },
+
+]
+export const mobile = [
+  {
+    icon1:"" ,
+    title1: <NavLink to="">Android App Development</NavLink>  ,
+    para1: "At Ftechiz, you get a separate team of dedicated skilled professionals for Android app development. The team is focused and does constant R&D with Android apps that keep us a step ahead of everyone in the industry. You may check our portfolio for the versatile range of android applications to hire android developers from our experienced team.    "
+  },
+  {
+    icon1:"" ,
+    title1: <NavLink to="">iOS App Development</NavLink>  ,
+    para1: "For businesses houses whose target consumers are on iPhones, we have dedicated ios App Developers for hire having years of industry experience in building platform-specific solutions. We provide custom solutions to start-ups and enterprises across the globe, making them go mobile. It's time to leverage our rich expertise in iOS app development to build an interactive, engaging, secure and consistent app for your industry, regardless of complexity and business domain.    "
+  },
+  {
+    icon1:"" ,
+    title1:"Flutter App Development    "  ,
+    para1: "We have a talented team of flutter app developers experienced in creating beautiful, high quality and functionally rich apps. By using flutter’s single code base, we have developed smooth performing apps for iOS, Android, and web platforms. Our team of talented flutter app developers has experience in developing mobile apps across a variety of platforms. We use the trending technologies to create cross-platform that effectively works on multiple devices across different industries. It is also one of the best choices for integrating ML in apps.    "
+  },
+  {
+    icon1:"" ,
+    title1: " React-Native App Development   ",
+    para1: "We have a team of passionate & experienced React Native App developers who got maestro in building beautiful cross-platform mobile applications for both Android & iOS. For most of our client’s mobile solutions, we use this versatile mobile app cross-platform development tool. You can hire react native app developers from our team to create robust applications for your business as per your desired technology.    "
+  },  {
+    icon1:"" ,
+    title1: "  Ionic App Development    ",
+    para1: "We at Ftechiz provide ionic app development services including up-to-date integrated technologies with highly functional solutions having some irresistible features which suit your business. We use the trending technology to create an outstanding Ionic mobile app for your business as a mobile app development company. We use the business-ready framework to create a dynamic, secure & complex app.    "
+  },
+  {
+    icon1:"" ,
+    title1: "Advance App Development    ",
+    para1: "We have a team of professionals that transform your current app from good to great. We deliver everything from easy integration, Highly Secure, highly-optimized performance to user-friendly interfaces with responsive design. We use latest cutting-edge technologies, including UI/UX matching operating system standards and custom methodologies for a seamless experience you'll love!    "
+  },
+
+]
 
