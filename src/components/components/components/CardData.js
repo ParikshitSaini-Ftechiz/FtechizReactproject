@@ -1,3 +1,5 @@
+import TextSnippetSharpIcon from '@mui/icons-material/TextSnippetSharp';
+import ContactPageOutlinedIcon from '@mui/icons-material/ContactPageOutlined';
 export const CardData = [
   {
     description: "Great team, with long run relatioship vision, professional and above very efficient to deliver result under time to market deadlines. Highly recommended and with no doubt I'll hire this team again.",
@@ -29,3 +31,33 @@ export const CardData = [
     title:"Brain"
   },
 ];
+export const Hire_Top_Software_In_Steps_Data = [
+  {
+    icon:<img src="https://ftechiz.com/wp-content/uploads/2022/10/React-Native-App-Consulting.svg"/>,
+    description: "Tell us in brief about your ideas and needs. Don't worry it's secure and confidential.",
+    title:"Step 1 : Inquiry",
+  },
+  {
+    icon:<ContactPageOutlinedIcon />,
+    description: "Shortlist Candidates which best fit in your needs by viewing their CVs.",
+    title:"Step 2 : Select CV"
+  },
+
+  {
+    icon:<iTextSnippetSharpIcon />,
+    description: "Optionally, asses candidates over phone or video call.",
+    title:"Step 3 : Assessment    "
+  },
+  {
+    icon:<i class="fa-thin fa-hand-holding-dollar"></i> ,
+    description: "Take a 1 week free trial.",
+    title:"Step 4 : Trial Run"
+  },
+  {
+    icon:<img src="https://ftechiz.com/wp-content/uploads/2022/08/icons8-staff-64.png"/>,
+    description: "If you like the resource(s), pay for the trial time and onboard resource(s).    ",
+    title:"Step 5 : Add resource in your team   "
+  },
+
+];
+

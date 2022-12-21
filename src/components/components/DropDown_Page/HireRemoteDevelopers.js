@@ -11,6 +11,7 @@ import ContactPage_Small from "../components/DropDown_components.js/ContactPage_
 import Extra_div from "../components/DropDown_components.js/Extra_div";
 import Top_Notch_technology from "../components/DropDown_components.js/Top_Notch_technology";
 import Why_Hire_Remote_dev from "../components/DropDown_components.js/Why_Hire_Remote_dev";
+import Hire_Top_Software_In_Steps from "../components/DropDown_components.js/Hire_Top_Software_In_Steps";
 
 const HireRemoteDevelopers = () => {
   const data = {
@@ -80,6 +81,10 @@ const HireRemoteDevelopers = () => {
       {/* Why Hire Remote Developers from Ftechiz? */}
       <Why_Hire_Remote_dev />
       {/* Why Hire Remote Developers from Ftechiz? */}
+
+      {/* Hire_Top_Software_In_Steps */}
+      <Hire_Top_Software_In_Steps />
+      {/* Hire_Top_Software_In_Steps */}
 
       {/* Take our Risk-Free 7 Days Free Trial */}
       <ContactPage_Small
