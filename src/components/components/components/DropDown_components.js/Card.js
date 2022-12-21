@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { Button } from "../Button";
-import { NavLink } from "react-router-dom";
 
 const Card = ({ icon, title, para, icon1, para1, title1 }) => {
   return (

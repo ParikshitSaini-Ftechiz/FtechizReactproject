@@ -1,15 +1,14 @@
 import React, { useState } from "react";
 import Main_Section from "../components/Main_Section";
 import Para_Heading from "../components/DropDown_components.js/Para_Heading";
-import Why_To_Choose from "../components/DropDown_components.js/Why_To_Choose";
 import { ReactNative_Data } from "../components/DropDown_components.js/Card_Data";
 import FourCol_card from "../components/DropDown_components.js/FourCol_card";
 import styled from "styled-components";
 import { ReactNative_Para_Data } from "../components/DropDown_components.js/Para_Data";
 import Para_Heading_Component from "../components/DropDown_components.js/Para_Heading_component";
 import Contact_Page from "../Contact_Page";
-import Industries_We_Serve from "../components/DropDown_components.js/Industries_We_Serve";
-import { Questions_mobile, Questions_reactnative } from "../components/DropDown_components.js/Questions";
+import Industries from "../Industries";
+import {  Questions_reactnative } from "../components/DropDown_components.js/Questions";
 import { Why_To_Choose_reactnative } from "../components/DropDown_components.js/Why_To_Choose_Data";
 
 const ReactNativeAppDevelopment = () => {
@@ -93,7 +92,7 @@ const ReactNativeAppDevelopment = () => {
         {/* services cards */}
 
         {/* industries we serve */}
-        <Industries_We_Serve />
+        <Industries />
         {/* industries we serve */}
 
         <Questions_reactnative/>

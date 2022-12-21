@@ -2,16 +2,17 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-const Tool_Tech = () => {
+const Tool_Tech = ({tool_tech_para, tool_tech_heading}) => {
+
+  const {paraData} = tool_tech_para;
+  const {headingData} = tool_tech_heading;
   return (
     <>
       <Wrapper>
         <div className="container">
-          <h1>Tools & Tech Stack</h1>
+          <h1>{headingData}</h1>
           <p>
-            Get what you are looking for to fulfill your software development
-            and outsourcing needs at Ftechiz, with our expertise on all
-            in-demand technologies & platforms.
+            {paraData}
           </p>
           <div className="grid grid-five-column">
             <div className="first_column active">
@@ -123,7 +124,7 @@ const Wrapper = styled.section`
   .grid {
     display: grid;
     gap: 5rem;
-    margin: 6rem 6rem 0rem 6rem;
+    margin: 6rem 0rem 0rem 3rem;
   }
   h1,
   p {

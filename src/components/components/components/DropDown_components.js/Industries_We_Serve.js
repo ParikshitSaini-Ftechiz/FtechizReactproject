@@ -7,6 +7,8 @@ import PaymentsIcon from "@mui/icons-material/Payments";
 import SchoolIcon from "@mui/icons-material/School";
 import YouTubeIcon from "@mui/icons-material/YouTube";
 import StorefrontIcon from "@mui/icons-material/Storefront";
+import { NavLink } from "react-router-dom";
+import { Button } from "../Button";
 
 const Industries_We_Serve = ({industries_para}) => {
   const {paraData_serve}= industries_para;
@@ -75,6 +77,9 @@ const Industries_We_Serve = ({industries_para}) => {
               </div>
             </div>
           </div>
+          <NavLink>
+            <Button>PLANS AND PRICING</Button>
+          </NavLink>
         </div>
       </Wrapper>
     </>
@@ -151,6 +156,10 @@ const Wrapper = styled.section`
           }
         }
       }
+    }
+    Button{
+      margin-bottom:3rem;
+      font-size:1.6rem;
     }
   }
 `;

@@ -269,3 +269,136 @@ export const webdevelopment_ques = [
     answer: "",
   },
 ];
+
+//first dropdown page data//
+
+export const hireblockchain_ques = [
+  {
+    question: "",
+    answer: "",
+  },
+  {
+    question: "",
+    answer: "",
+  },
+  {
+    question: "",
+    answer: "",
+  },
+  {
+    question: "",
+    answer: "",
+  },
+  {
+    question: "",
+    answer: "",
+  },
+  {
+    question: "",
+    answer: "",
+  },
+];
+export const hirefullstack_ques = [
+  {
+    question: "",
+    answer: "",
+  },
+  {
+    question: "",
+    answer: "",
+  },
+  {
+    question: "",
+    answer: "",
+  },
+  {
+    question: "",
+    answer: "",
+  },
+  {
+    question: "",
+    answer: "",
+  },
+  {
+    question: "",
+    answer: "",
+  },
+];
+export const hirejava_ques = [
+  {
+    question: "",
+    answer: "",
+  },
+  {
+    question: "",
+    answer: "",
+  },
+  {
+    question: "",
+    answer: "",
+  },
+  {
+    question: "",
+    answer: "",
+  },
+  {
+    question: "",
+    answer: "",
+  },
+  {
+    question: "",
+    answer: "",
+  },
+];
+export const hiremobile_ques = [
+  {
+    question: "",
+    answer: "",
+  },
+  {
+    question: "",
+    answer: "",
+  },
+  {
+    question: "",
+    answer: "",
+  },
+  {
+    question: "",
+    answer: "",
+  },
+  {
+    question: "",
+    answer: "",
+  },
+  {
+    question: "",
+    answer: "",
+  },
+];
+export const hireremote_ques = [
+  {
+    question: "",
+    answer: "",
+  },
+  {
+    question: "",
+    answer: "",
+  },
+  {
+    question: "",
+    answer: "",
+  },
+  {
+    question: "",
+    answer: "",
+  },
+  {
+    question: "",
+    answer: "",
+  },
+  {
+    question: "",
+    answer: "",
+  },
+];

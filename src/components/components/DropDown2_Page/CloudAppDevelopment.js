@@ -8,7 +8,7 @@ import styled from "styled-components";
 import { Cloud_Para_Data } from "../components/DropDown_components.js/Para_Data";
 import Para_Heading_Component from "../components/DropDown_components.js/Para_Heading_component";
 import Contact_Page from "../Contact_Page";
-import Industries_We_Serve from "../components/DropDown_components.js/Industries_We_Serve";
+import Industries from "../Industries";
 import { cloud_dev_process } from "../components/DropDown_components.js/VerticalCard_Data";
 import Vertical_Card from "../components/DropDown_components.js/Vertical_Card";
 import { Questions_cloud } from "../components/DropDown_components.js/Questions";
@@ -101,7 +101,7 @@ const CloudAppDevelopment = () => {
         {/* services cards */}
 
         {/* industries we serve */}
-        <Industries_We_Serve />
+        <Industries />
         {/* industries we serve */}
 
         {/* development process we follow */}

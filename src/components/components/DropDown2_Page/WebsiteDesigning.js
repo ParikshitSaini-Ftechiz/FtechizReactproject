@@ -1,14 +1,13 @@
 import React, { useState } from "react";
 import Main_Section from "../components/Main_Section";
 import Para_Heading from "../components/DropDown_components.js/Para_Heading";
-import Why_To_Choose from "../components/DropDown_components.js/Why_To_Choose";
 import { WebsiteDesigning_Data } from "../components/DropDown_components.js/Card_Data";
 import Card from "../components/DropDown_components.js/Card";
 import styled from "styled-components";
 import { WebsiteDesigning_Para_Data } from "../components/DropDown_components.js/Para_Data";
 import Para_Heading_Component from "../components/DropDown_components.js/Para_Heading_component";
 import Contact_Page from "../Contact_Page";
-import Industries_We_Serve from "../components/DropDown_components.js/Industries_We_Serve";
+import Industries from "../Industries";
 import { Questions_webdesigning } from "../components/DropDown_components.js/Questions";
 import { Why_To_Choose_webdesigning } from "../components/DropDown_components.js/Why_To_Choose_Data";
 
@@ -98,7 +97,7 @@ const WebsiteDesigning = () => {
         {/*services cards */}
 
         {/* industries we serve */}
-        <Industries_We_Serve />
+        <Industries />
         {/* industries we serve */}
 
         <Questions_webdesigning/>

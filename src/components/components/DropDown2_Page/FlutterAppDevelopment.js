@@ -7,7 +7,7 @@ import styled from "styled-components";
 import { Flutter_Para_Data } from "../components/DropDown_components.js/Para_Data";
 import Para_Heading_Component from "../components/DropDown_components.js/Para_Heading_component";
 import Contact_Page from "../Contact_Page";
-import Industries_We_Serve from "../components/DropDown_components.js/Industries_We_Serve";
+import Industries from "../Industries";
 import { Questions_flutter } from "../components/DropDown_components.js/Questions";
 import { Why_To_Choose_flutter } from "../components/DropDown_components.js/Why_To_Choose_Data";
 
@@ -96,7 +96,7 @@ const FlutterAppDevelopment = () => {
         {/* services cards */}
 
         {/* industries we serve */}
-        <Industries_We_Serve />
+        <Industries />
         {/* industries we serve */}
 
         <Questions_flutter/>

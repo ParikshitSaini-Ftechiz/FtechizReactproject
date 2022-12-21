@@ -1,12 +1,11 @@
 import React, { useState } from "react";
 import Main_Section from "../components/Main_Section";
 import Para_Heading from "../components/DropDown_components.js/Para_Heading";
-import Why_To_Choose from "../components/DropDown_components.js/Why_To_Choose";
 import Services_Page from "../components/DropDown_components.js/Services_Page";
 import { WebDevelopment_Para_Data } from "../components/DropDown_components.js/Para_Data";
 import Para_Heading_Component from "../components/DropDown_components.js/Para_Heading_component";
 import Contact_Page from "../Contact_Page";
-import Industries_We_Serve from "../components/DropDown_components.js/Industries_We_Serve";
+import Industries from "../Industries";
 import { Questions_webdevelopment } from "../components/DropDown_components.js/Questions";
 import { Why_To_Choose_webdevelopment } from "../components/DropDown_components.js/Why_To_Choose_Data";
 
@@ -78,10 +77,10 @@ const WebsiteDevelopment = () => {
       {/*services cards */}
 
       {/* indusrties we serve */}
-      <Industries_We_Serve />
+      <Industries />
       {/* indusrties we serve */}
 
-<Questions_webdevelopment/>
+      <Questions_webdevelopment/>
 
       {/* contact page */}
       <Contact_Page contactPara={contactPara} contactHeading={contactHeading} />

@@ -6,7 +6,7 @@ import styled from "styled-components";
 import { BlockChain_Para_Data } from "../components/DropDown_components.js/Para_Data";
 import Para_Heading_Component from "../components/DropDown_components.js/Para_Heading_component";
 import Contact_Page from "../Contact_Page";
-import Industries_We_Serve from "../components/DropDown_components.js/Industries_We_Serve";
+import Industries from "../Industries";
 import Vertical_Card from "../components/DropDown_components.js/Vertical_Card";
 import { blockChain_dev_process } from "../components/DropDown_components.js/VerticalCard_Data";
 import { Questions_blockchain } from "../components/DropDown_components.js/Questions";
@@ -102,8 +102,8 @@ const BlockChainDevelopment = () => {
         </div>
         {/* services cards */}
 
-        {/* Industries_We_Serve */}
-        <Industries_We_Serve />
+        {/* Industries */}
+        <Industries />
         {/* Industries_We_Serve */}
 
 

@@ -1,6 +1,10 @@
 import React from 'react'
 import DropDown_MainSection from "../components/DropDown_MainSection";
 import Industries_We_Serve from '../components/DropDown_components.js/Industries_We_Serve';
+import ContactForm_DropDown from '../components/DropDown_components.js/ContactForm_DropDown';
+import styled from 'styled-components';
+import Contact_Small from '../components/DropDown_components.js/Contact_Small';
+import {Questions_hiremobile} from "../components/DropDown_components.js/Questions";
 
 const HireMobileAppDevelopers = () => {
     //main section 
@@ -32,7 +36,29 @@ const HireMobileAppDevelopers = () => {
    <>
    <DropDown_MainSection myData={data} para={para} image={image} btn={btn}/>
    <Industries_We_Serve industries_para={industries_para}/>
+   <ContactForm_DropDown/>
+
+     {/* frequently asked question */}
+     <Questions_hiremobile/>
+   {/* frequently asked question */}
+   <Wrapper>
+   <div className='content'>
+    <h1 className='heading'>Need a Consultation?</h1>
+    <Contact_Small/>
+   </div>
+   </Wrapper>
    </>
   )
 }
+const Wrapper = styled.section`
+padding: 5rem 0;
+  .content {
+    h1{
+   
+      color: ${({ theme }) => theme.colors.heading};
+      text-align: center;
+    
+    }
+  }
+  `;
 export default HireMobileAppDevelopers

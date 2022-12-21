@@ -1,6 +1,10 @@
 import React from 'react';
+import styled from 'styled-components';
+import Contact_Small from '../components/DropDown_components.js/Contact_Small';
+import ContactForm_DropDown from '../components/DropDown_components.js/ContactForm_DropDown';
 import Industries_We_Serve from '../components/DropDown_components.js/Industries_We_Serve';
 import DropDown_MainSection from "../components/DropDown_MainSection";
+import {Questions_hireblockchain} from "../components/DropDown_components.js/Questions";
 
 const HireBlockchainDevelopers = () => {
     //main section 
@@ -32,8 +36,30 @@ const HireBlockchainDevelopers = () => {
    <>
    <DropDown_MainSection myData={data} para={para} image={image} btn={btn}/>
    <Industries_We_Serve industries_para={industries_para}/>
+   <ContactForm_DropDown/>
+
+   {/* frequently asked question */}
+   <Questions_hireblockchain/>
+   {/* frequently asked question */}
+
+   <Wrapper>
+   <div className='content'>
+    <h1 >Need a Consultation?</h1>
+    <Contact_Small/>
+   </div>
+   </Wrapper>
    </>
   )
 }
-
+const Wrapper = styled.section`
+padding: 5rem 0;
+  .content {
+    h1{
+   
+      color: ${({ theme }) => theme.colors.heading};
+      text-align: center;
+    
+    }
+  }
+`;
 export default HireBlockchainDevelopers;

@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Why_To_Choose from "../components/DropDown_components.js/Why_To_Choose";
 import Main_Section from "../components/Main_Section";
 import Para_Heading_Component from "../components/DropDown_components.js/Para_Heading_component";
 import Para_Heading from "../components/DropDown_components.js/Para_Heading";
@@ -9,7 +8,7 @@ import { android_dev_process } from "../components/DropDown_components.js/Vertic
 import Card from "../components/DropDown_components.js/Card";
 import styled from "styled-components";
 import Contact_Page from "../Contact_Page";
-import Industries_We_Serve from "../components/DropDown_components.js/Industries_We_Serve";
+import Industries from "../Industries";
 import Vertical_Card from "../components/DropDown_components.js/Vertical_Card";
 import {Questions_android} from "../components/DropDown_components.js/Questions";
 import { Why_To_Choose_android } from "../components/DropDown_components.js/Why_To_Choose_Data";
@@ -104,7 +103,7 @@ const AndroidAppDevelopment = () => {
         {/* services card end*/}
       </Wrapper>
       {/* industies we serve */}
-      <Industries_We_Serve />
+      <Industries />
       {/* industies we serve */}
 
       {/* development process we follow */}
