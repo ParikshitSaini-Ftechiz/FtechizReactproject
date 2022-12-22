@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { android_ques, blockchain_ques, cloud_ques, flutter_ques, ios_ques, mobile_ques, reactnative_ques, webapp_ques, webdesigning_ques, webdevelopment_ques,hireblockchain_ques,hirejava_ques,hireremote_ques,hiremobile_ques,hirefullstack_ques } from "./Question_Data";
+import { android_ques, blockchain_ques, cloud_ques, flutter_ques, ios_ques, mobile_ques, reactnative_ques, webapp_ques, webdesigning_ques, webdevelopment_ques, hireblockchain_ques,hirejava_ques, hireremote_ques, hiremobile_ques, hirefullstack_ques } from "./Question_Data";
 import MyAccordion from "./MyAccordion";
 
 // second dropdown pages data
@@ -427,4 +427,4 @@ export const Questions_blockchain = () => {
       </>
     );
   };
-
+  

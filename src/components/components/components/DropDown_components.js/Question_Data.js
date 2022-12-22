@@ -290,7 +290,7 @@ export const webdevelopment_ques = [
     answer: "Here is the list of some of the best and most popular programming languages used for website development in 2022: * React * Angular * PHP * Python * Angular * Java Script * Java * JS * .NET",
   },
 ];
-export const hireremote = [
+export const hireremote_ques = [
   {
     question: "What is Ftechiz?",
     answer: "Ftechiz Solutions Pvt Ltd is one of the best software development company serving more than 10+ countries worldwide. We have 6+ years of tech expertise in app and web development, delivering 100+ projects since 2016. We have a team of 50+ IT experts consisting of developers, UI/UX designers, Testers, Project Managers & QA to ensure the smooth and successful delivery of your project.",
@@ -325,7 +325,7 @@ export const hireremote = [
     answer: "With year of experience in product development, project management, and UI/UX, we are a one-stop solution for any of your software development needs. Whether you need assistance with skilled resources or you are looking to outsource your project, you can rely upon us for; * Website development using emerging technologies * Mobile App development using cross-platform tools * Staff Augmentation – Fill the tech talent gap in your existing team * Full-stack Website development * Blockchain Development Services * Project Management * Post Launch Support",
   },
 ]
-export const hirebloockchain = [
+export const hireblockchain_ques = [
   {
     question: "Why should I hire Blockchain developers from Ftechiz?",
     answer: "Ftechiz have been in the market since 2016 and provide all kinds of services, from custom software development to hiring developers. We have: * 6+ years of experience * Delivered 50+ projects * Served 100+ customers * Expertise with the latest technologies",
@@ -359,7 +359,7 @@ export const hirebloockchain = [
     answer: "Yes, we have a separate team with years of experience for cloud-based product and also for web & mobile app solution development. We will help you increase the proficiency and cost-effectiveness of the cloud services you use. Our expertise include: * AWS * Microsoft Azure * Google Cloud Platform",
   },
 ]
-export const hirejava = [
+export const hirejava_ques = [
    {
     question: "Why should I Hire Java Developers from Ftechiz?",
     answer: "Ftechiz have been in the market since 2016 and provide all kinds of services, from custom software development to hiring dedicated java developers. If you want timely delivery of your project at low investment cost, it is a wise idea to opt for dedicated java developers who work solely on your project and deliver you faster results.  We have: * 6+ years of experience * Delivered 50+ projects * Served 100+ customers * Expertise with the latest technologies",
@@ -385,7 +385,7 @@ export const hirejava = [
     answer: "In Ftechiz, we allow you to conduct a thorough interview process for our developers and hire the dedicated developer of your choices.",
   },
 ]
-export const hiremobile = [
+export const hiremobile_ques = [
   {
     question: "Why should I hire Mobile App developers from Ftechiz?",
     answer: "In addition to delivering robust software solutions promptly, our mobile app developers bring several advantages, such as: * A pool of expert developers * Budget-friendly development * Best-in-class project management * Expertise with the latest technologies",
@@ -407,7 +407,7 @@ export const hiremobile = [
     answer: "Yes, of course! When you hire mobile app developer from us, you will get the development team who will upload your application on the App Store as an app development process. Our team has already uploaded over 50+ mobile apps successfully without charging any additional cost.",
   },
 ]
-export const hirefullstack = [
+export const hirefullstack_ques = [
   {
     question: "Why should I hire Full Stack developers from Ftechiz?",
     answer: "Ftechiz have been in the market since 2016 and provide all kinds of services, from custom software development to hiring developers. We have: * 6+ years of experience * Delivered 50+ projects * Served 100+ customers * Expertise with the latest technologies",

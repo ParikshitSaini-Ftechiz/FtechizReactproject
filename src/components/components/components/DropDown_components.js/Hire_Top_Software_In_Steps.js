@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import Card from "../Card";
 import { Hire_Top_Software_In_Steps_Data } from "../CardData";
 
 const Hire_Top_Software_In_Steps = () => {

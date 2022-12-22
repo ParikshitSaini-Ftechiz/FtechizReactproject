@@ -136,6 +136,7 @@ const AndroidAppDevelopment = () => {
     </>
   );
 };
+      {/* services card */}
 const Wrapper = styled.section`
   .grid {
     display: grid;
@@ -146,6 +147,8 @@ const Wrapper = styled.section`
     grid-template-columns: repeat(3, 1fr);
   }
 `;
+      {/* services card */}
+      
 const Section = styled.section`
   padding: 12rem 0 5rem 0;
   .content {

@@ -8,10 +8,11 @@ import { Questions_hireremote } from "../components/DropDown_components.js/Quest
 import Tool_Tech from "../Tool_Tech";
 import Testimonial from "../Testimonial";
 import ContactPage_Small from "../components/DropDown_components.js/ContactPage_Small";
-import Extra_div from "../components/DropDown_components.js/Extra_div";
 import Top_Notch_technology from "../components/DropDown_components.js/Top_Notch_technology";
 import Why_Hire_Remote_dev from "../components/DropDown_components.js/Why_Hire_Remote_dev";
 import Hire_Top_Software_In_Steps from "../components/DropDown_components.js/Hire_Top_Software_In_Steps";
+import Quality_Services from "../components/DropDown_components.js/Quality_Services";
+
 
 const HireRemoteDevelopers = () => {
   const data = {
@@ -45,17 +46,7 @@ const HireRemoteDevelopers = () => {
       "We sculpt your potent idea using our innovative techniques & technologies and represent it in the real world.",
   };
 
-  /* Take our Risk-Free 7 Days Free Trial contact page*/
-
-  const contactPara = {
-    contactParaData:
-      "Partner with Ftechiz and get excellent digital services for your business. We have a qualified and trained team of Remote Developers for hire that strive to deliver the best solution for your business at an honest price.",
-  };
-  const contactHeading = {
-    contactHeadingData:
-      "Still Wondering if we are the Right Fit? Take our Risk-Free 7 Days Free Trial",
-  };
-
+ 
   return (
     <>
       <Main_Section_DropDown
@@ -66,10 +57,15 @@ const HireRemoteDevelopers = () => {
       />
       {/* Top_Notch_technology */}
       <Top_Notch_technology />
+      
       {/* Top_Notch_technology */}
       <Industries_We_Serve industries_para={industries_para} />
 
       <ContactForm_DropDown />
+
+
+      {/* card vertical */}
+      <Quality_Services/>
 
       {/* our technology */}
       <Tool_Tech
@@ -87,15 +83,9 @@ const HireRemoteDevelopers = () => {
       {/* Hire_Top_Software_In_Steps */}
 
       {/* Take our Risk-Free 7 Days Free Trial */}
-      <ContactPage_Small
-        contactPara={contactPara}
-        contactHeading={contactHeading}
-      />
+      <ContactPage_Small/>
       {/* Take our Risk-Free 7 Days Free Trial */}
 
-      {/* Extra_div */}
-      <Extra_div />
-      {/* Extra_div */}
 
       {/* testimonials */}
       <Testimonial />

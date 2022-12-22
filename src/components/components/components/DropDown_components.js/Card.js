@@ -29,8 +29,8 @@ const Card = ({ icon, title, para, icon1, para1, title1 }) => {
 };
 const Wrapper = styled.div`
   .card {
-    width: 40rem;
-    height: 55rem;
+    width: 36rem;
+    height: 65rem;
     padding: 2rem 2rem;
     border: none;
     border-radius: 1rem;
@@ -45,7 +45,7 @@ const Wrapper = styled.div`
       padding: 2rem 0rem;
       margin-bottom: 2rem;
       margin-top: 2rem;
-      margin-left:12rem; 
+      margin-left:10rem; 
       .icon {
         margin-left:2.3rem; 
         font-size: 5rem;

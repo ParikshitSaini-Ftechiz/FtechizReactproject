@@ -7,6 +7,7 @@ import DescriptionIcon from '@mui/icons-material/Description';
 import CheckCircleOutlineOutlinedIcon from '@mui/icons-material/CheckCircleOutlineOutlined';
 
 
+
 export const android_dev_process = [
 
   {
@@ -59,7 +60,7 @@ export const blockChain_dev_process = [
   },
   {
     icon: <i class="fa fa-code" aria-hidden="true" style={{ fontSize: "5rem" }}></i> ,
-    title: "QA &amp; Testing	",
+    title: "QA & Testing	",
     para: "	In this stage, we carry out in-depth QA testing, for each release of your product or platform to make sure that the final product is bug-free. Our testing team carefully test every blockchain product or platform to ensure client satisfaction and excellent user experience.",
   },
   {

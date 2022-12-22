@@ -2,6 +2,7 @@ import { NavLink } from "react-router-dom";
 import ComputerIcon from "@mui/icons-material/Computer";
 import AccountBoxOutlinedIcon from '@mui/icons-material/AccountBoxOutlined';
 
+// web development data
 export const Card_Data = [
   // first
   {
@@ -375,7 +376,9 @@ export const WebsiteDesigning_Data = [
     para1: "With our custom website designing services you can get innovative and attractive websites for your business. Bring your website ideas into life by getting a custom website designed by Ftechiz. We execute your ideas and transform into reality with perfection to satisfy your needs and expectations.",
   },
 ];
-export const blockchain = [
+
+// first drop down data
+export const hireblockchain = [
   {
     icon1:"" ,
     title1: " Blockchain Consulting   ",
@@ -407,10 +410,10 @@ export const blockchain = [
     para1: "As part of our Blockchain wallet development services, our blockchain developers creates robust, secure and feature-rich web and mobile wallet applications that hold hundreds of cryptocurrencies, while carrying information related to your wallet balance and purchase history. We create blockchain wallets that support the exchange of various digital assets and currencies and are integrated with features of cross-chain token swapping.    "
   },
 ]
-export const fullStack = [
+export const hirefullStack = [
   {
-    icon1:" Front End Development " ,
-    title1: "  ",
+    icon1:"" ,
+    title1: " Front End Development  ",
     para1: "Our full stack front-end developers are experts in front-end languages such as HTML, CSS/SCSS, Bootstrap, JavaScript, Angular.js, Vue.js, Node.js and React.js. We are more focus on using trending technologies that not only make your solutions attractive, but also enhance its performance and make it more efficient and scalable. We make sure that your websites, applications and products have a user-friendly and response design."
   },
   {
@@ -439,7 +442,7 @@ export const fullStack = [
   },
 
 ]
-export const java = [
+export const hirejava = [
   {
     icon1:"" ,
     title1: " Custom Java App Development ",
@@ -472,15 +475,15 @@ export const java = [
   },
 
 ]
-export const mobile = [
+export const hiremobile = [
   {
     icon1:"" ,
-    title1: <NavLink to="">Android App Development</NavLink>  ,
+    title1: <NavLink to="" style={{fontSize:"2.55rem", color:"white",textDecoration:"underline"}}>Android App Development</NavLink>  ,
     para1: "At Ftechiz, you get a separate team of dedicated skilled professionals for Android app development. The team is focused and does constant R&D with Android apps that keep us a step ahead of everyone in the industry. You may check our portfolio for the versatile range of android applications to hire android developers from our experienced team.    "
   },
   {
     icon1:"" ,
-    title1: <NavLink to="">iOS App Development</NavLink>  ,
+    title1: <NavLink to="" style={{fontSize:"2.55rem", color:"white",textDecoration:"underline"}}>iOS App Development</NavLink>  ,
     para1: "For businesses houses whose target consumers are on iPhones, we have dedicated ios App Developers for hire having years of industry experience in building platform-specific solutions. We provide custom solutions to start-ups and enterprises across the globe, making them go mobile. It's time to leverage our rich expertise in iOS app development to build an interactive, engaging, secure and consistent app for your industry, regardless of complexity and business domain.    "
   },
   {
@@ -504,4 +507,6 @@ export const mobile = [
   },
 
 ]
+
+
 
