@@ -81,7 +81,8 @@ const Footer = () => {
                         development
                       </NavLink>
                     </li>
-                    <li>
+                    <li className="flutter">
+                    <img src="https://ftechiz.com/wp-content/uploads/2020/09/4691465_flutter_icon.svg"/>
                       <NavLink to="#">flutter app development</NavLink>
                     </li>
                     <li>
@@ -167,9 +168,9 @@ const Footer = () => {
           <div className="container footer_bottom">
             <p>
               ©️{new Date().getFullYear()} FTECHIZ | All Rights Reserved | 
-              <NavLink to="#"> privacy policy</NavLink> | 
-              <NavLink> disclaimer</NavLink> | 
-              <NavLink> terms of use</NavLink>
+              <NavLink to="/privacy"> privacy policy</NavLink> | 
+              <NavLink to="/disclaimer"> disclaimer</NavLink> | 
+              <NavLink to="/terms"> terms of use</NavLink>
             </p>
         </div>
         </footer>
@@ -202,6 +203,13 @@ const Wrapper = styled.section`
         justify-content:flex-start;
         gap:1rem;
         color: ${({ theme }) => theme.colors.color_white};
+      }
+      }
+      .flutter{
+        display: flex;
+        gap:.6rem;
+      img{
+        width:1.6rem;
       }
       }
       .contact {

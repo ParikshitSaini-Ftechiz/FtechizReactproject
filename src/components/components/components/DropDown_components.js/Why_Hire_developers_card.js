@@ -24,16 +24,10 @@ const Wrapper = styled.section`
   }
 
   .icons_content {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    flex-direction: column;
-    gap: 8rem;
+
     .content {
       display: flex;
       align-items: center;
-      justify-content: center;
-      flex-direction: rows;
       gap: 2rem;
 
       .icons {

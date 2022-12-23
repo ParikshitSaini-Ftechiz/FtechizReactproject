@@ -8,6 +8,8 @@ import DropDown_MainSection from "../components/DropDown_MainSection";
 import { Questions_hireblockchain } from "../components/DropDown_components.js/Questions";
 import { Development_Services_blockchain } from "../components/DropDown_components.js/Development_Services";
 import { Hire_Best_Team_blockchain } from "../components/DropDown_components.js/Hire_Best_Team";
+import { Why_Hire_developers_blockchainDev } from "../components/DropDown_components.js/Why_Hire_developers";
+import { Hire_SpringBoot_Dev_blockchain } from "../components/DropDown_components.js/Hire_SpringBoot_Dev";
 
 const HireBlockchainDevelopers = () => {
   //main section
@@ -40,6 +42,11 @@ const HireBlockchainDevelopers = () => {
     <>
       <DropDown_MainSection myData={data} para={para} image={image} btn={btn} />
       <Industries_We_Serve industries_para={industries_para} />
+
+      {/* Hire_SpringBoot_Dev_blockchain */}
+      <Hire_SpringBoot_Dev_blockchain />
+      {/* Hire_SpringBoot_Dev_blockchain */}
+
       <ContactForm_DropDown />
 
       {/* Hire_Best_Team  contact_page*/}
@@ -49,6 +56,10 @@ const HireBlockchainDevelopers = () => {
       {/* Development_Services */}
       <Development_Services_blockchain />
       {/* Development_Services */}
+
+      {/* Why_Hire_developers_blockchainDev */}
+      <Why_Hire_developers_blockchainDev />
+      {/* Why_Hire_developers_blockchainDev */}
 
       {/* Take our Risk-Free 7 Days Free Trial */}
       <ContactPage_Small />

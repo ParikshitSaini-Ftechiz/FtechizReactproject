@@ -9,7 +9,10 @@ import { Questions_hirejava } from "../components/DropDown_components.js/Questio
 import { Development_Services_java } from "../components/DropDown_components.js/Development_Services";
 import { Hire_Best_Team_java } from "../components/DropDown_components.js/Hire_Best_Team";
 import Testimonial from "../Testimonial";
-import Why_Hire_developers from "../components/DropDown_components.js/Why_Hire_developers";
+import {Why_Hire_developers_javaDev} from "../components/DropDown_components.js/Why_Hire_developers";
+import  {Hire_SpringBoot_Dev_java}  from "../components/DropDown_components.js/Hire_SpringBoot_Dev";
+import { Technology_Stack_mobile } from "../components/DropDown_components.js/Technology_Stack";
+
 
 const HireJavaDevelopers = () => {
   //main section
@@ -35,6 +38,7 @@ const HireJavaDevelopers = () => {
   const btn = {
     btnData: "Start One Week Risk Free Trial",
   };
+
   //industries we serve//
   const industries_para = {
     paraData_serve:
@@ -44,6 +48,11 @@ const HireJavaDevelopers = () => {
     <>
       <DropDown_MainSection myData={data} para={para} image={image} btn={btn} />
       <Industries_We_Serve industries_para={industries_para} />
+
+      {/* Hire_SpringBoot_Dev */}
+      <Hire_SpringBoot_Dev_java/>
+      {/* Hire_SpringBoot_Dev */}
+
       <ContactForm_DropDown />
 
       {/* Hire_Best_Team  contact_page*/}
@@ -54,13 +63,16 @@ const HireJavaDevelopers = () => {
       <Development_Services_java />
       {/* Development_Services */}
 
+      {/* Technology_Stack_mobile */}
+      <Technology_Stack_mobile/>
+      {/* Technology_Stack_mobile */}
 
-      {/* ContactPage_Small */}
-      <Why_Hire_developers/>
-      {/* ContactPage_Small */}
+      {/* Why_Hire_developers */}
+      <Why_Hire_developers_javaDev />
+      {/* Why_Hire_developers */}
 
-    {/* Take our Risk-Free 7 Days Free Trial */}
-    <ContactPage_Small/>
+      {/* Take our Risk-Free 7 Days Free Trial */}
+      <ContactPage_Small />
       {/* Take our Risk-Free 7 Days Free Trial */}
 
       {/* testimonials */}

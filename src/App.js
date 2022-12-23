@@ -27,6 +27,9 @@ import Career from "./components/Career";
 import Portfolio from "./components/Portfolio";
 import HireUs from "./components/HireUs";
 import Footer from "./components/Footer";
+import PrivacyPolicy from "./components/components/Footer_component/PrivacyPolicy"
+import Disclaimer from "./components/components/Footer_component/Disclaimer"
+import TermOfUse from "./components/components/Footer_component/TermOfUse"
 
 function App() {
   const theme = {
@@ -138,6 +141,11 @@ function App() {
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/hire" element={<HireUs />} />
             <Route path="*" element={<ErrorPage />} />
+
+            {/* footer_component */}
+            <Route path="/disclaimer" element={<Disclaimer/>} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
+            <Route path="/terms" element={<TermOfUse />} />
           </Routes>
           <Footer />
         </Router>

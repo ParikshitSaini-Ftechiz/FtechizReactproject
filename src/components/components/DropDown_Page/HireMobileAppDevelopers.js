@@ -8,6 +8,10 @@ import ContactPage_Small from "../components/DropDown_components.js/ContactPage_
 import { Questions_hiremobile } from "../components/DropDown_components.js/Questions";
 import { Development_Services_mobile } from "../components/DropDown_components.js/Development_Services";
 import { Hire_Best_Team_mobile } from "../components/DropDown_components.js/Hire_Best_Team";
+import { Why_Hire_developers_mobileDev } from "../components/DropDown_components.js/Why_Hire_developers";
+import { Hire_SpringBoot_Dev_mobile } from "../components/DropDown_components.js/Hire_SpringBoot_Dev";
+import { Technology_Stack_mobileData } from "../components/DropDown_components.js/Technology_Stack_Data";
+import { Technology_Stack_mobile } from "../components/DropDown_components.js/Technology_Stack";
 
 const HireMobileAppDevelopers = () => {
   //main section
@@ -40,6 +44,11 @@ const HireMobileAppDevelopers = () => {
     <>
       <DropDown_MainSection myData={data} para={para} image={image} btn={btn} />
       <Industries_We_Serve industries_para={industries_para} />
+
+      {/* Hire_SpringBoot_Dev_mobile */}
+      <Hire_SpringBoot_Dev_mobile />
+      {/* Hire_SpringBoot_Dev_mobile */}
+
       <ContactForm_DropDown />
 
       {/* Hire_Best_Team contact_page */}
@@ -49,6 +58,14 @@ const HireMobileAppDevelopers = () => {
       {/* Development_Services */}
       <Development_Services_mobile />
       {/* Development_Services */}
+
+      {/* Technology_Stack_mobile */}
+      <Technology_Stack_mobile/>
+      {/* Technology_Stack_mobile */}
+
+      {/* Why_Hire_developers*/}
+      <Why_Hire_developers_mobileDev />
+      {/*Why_Hire_developers  */}
 
       {/* Take our Risk-Free 7 Days Free Trial */}
       <ContactPage_Small />

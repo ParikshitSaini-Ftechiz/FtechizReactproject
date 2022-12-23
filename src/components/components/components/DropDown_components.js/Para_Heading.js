@@ -47,7 +47,6 @@ const Wrapper = styled.section`
       color: ${({ theme }) => theme.colors.heading};
       text-align: justify;
       margin-bottom:2rem;
-
     }
   
   }
