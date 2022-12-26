@@ -5,6 +5,43 @@ import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
 const PremiumClient = () => {
+  const style = {
+    marginLeft: "auto",
+    marginRight: "auto",
+  };
+  const options = {
+    margin: 30,
+    responsiveClass: true,
+    nav: true,
+    dots: false,
+    autoplay: true,
+    smartSpeed: 1000,
+    autoplayTimeout: 3000,
+    loop: false,
+
+    responsive: {
+      0: {
+        items: 1,
+        center: true,
+      },
+      400: {
+        items: 1,
+        center: true,
+      },
+      600: {
+        items: 2,
+        center: true,
+      },
+      700: {
+        items: 3,
+        center: true,
+      },
+      1000: {
+        items: 3,
+        center: true,
+      },
+    },
+  };
   const img1 = "https://ftechiz.com/wp-content/uploads/2022/07/Picture3-1.png";
   const img2 = "https://ftechiz.com/wp-content/uploads/2022/07/Picture4-1.png";
   const img3 = "https://ftechiz.com/wp-content/uploads/2022/07/Picture1-2.png";
@@ -22,29 +59,38 @@ const PremiumClient = () => {
         <div className="container">
           <div className="content">
             <h1>Our Premium Clients</h1>
-            <p>In  the passing years we have establish good relationship with our clients. They appreciation gives us motivation to do better everyday.</p>
+            <p>
+              In the passing years we have establish good relationship with our
+              clients. They appreciation gives us motivation to do better
+              everyday.
+            </p>
           </div>
-          <div className="premium_client">
-            <OwlCarousel
-              className="owl-theme"
-              items={3}
-              autoplay="true"
-              nav={true}
-              dots={false}
-              loop
-              margin={0}
-              autoplayTimeout="3000"
-    
-     >
-            
-              <img src={img1} />
-              <img src={img2} />
-              <img src={img3} />
-              <img src={img4} />
-              <img src={img5} />
-              <img src={img6} />
-              <img src={img7} />
-              <img src={img8} />
+          <div className="premium_client" style={style}>
+            <OwlCarousel className="owl-theme" {...options} style={style}>
+              <div className="item">
+                <img src={img1} style={style} />
+              </div>
+              <div className="item">
+                <img src={img2} style={style} />
+              </div>
+              <div className="item">
+                <img src={img3} style={style} />
+              </div>
+              <div className="item">
+                <img src={img4} style={style} />
+              </div>
+              <div className="item">
+                <img src={img5} style={style} />
+              </div>
+              <div className="item">
+                <img src={img6} style={style} />
+              </div>
+              <div className="item">
+                <img src={img7} style={style} />
+              </div>
+              <div className="item">
+                <img src={img8} style={style} />
+              </div>
             </OwlCarousel>
           </div>
         </div>
@@ -53,8 +99,8 @@ const PremiumClient = () => {
   );
 };
 const Wrapper = styled.section`
- padding: 5rem 0 1rem 0 ;
- .content {
+  padding: 5rem 0 1rem 0;
+  .content {
     h1,
     p {
       color: ${({ theme }) => theme.colors.heading};
@@ -69,21 +115,14 @@ const Wrapper = styled.section`
     border-radius: 1rem;
     padding: 1rem;
     background: ${({ theme }) => theme.colors.premiumClient_bg};
-    margin: 5rem 2rem 1rem 2rem;
-    .owl-theme{
-      display: flex;
-      align-items:center;
-      justify-content:center; 
-      ${'' /* gap:6rem; */}
-    
-    }
-    img {
-      width: 24rem;
-    }
-  }
-  @media (max-width:${({theme}) => theme.media.small_phone}){
-    .owl-theme{
-    
+    margin: auto;
+    display: flex;
+
+    .owl-theme .item {
+      img {
+        width: 22rem;
+        padding-top: 2rem;
+      }
     }
   }
 `;

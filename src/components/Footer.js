@@ -18,7 +18,7 @@ const Footer = () => {
         <footer>
           <div className="footer_portion">
             <div className="container">
-              <div className="grid grid-three-column">
+              <div className="grid grid-three-column footer">
                 {/* contact info start */}
                 <div className="contact_portion">
                   <h3>Office Location</h3>
@@ -193,6 +193,7 @@ const Wrapper = styled.section`
     }
     .grid-three-column {
       grid-template-columns: 1fr 1fr 1fr;
+    }
       a {
         display: flex;
         align-items: center;
@@ -200,7 +201,7 @@ const Wrapper = styled.section`
         gap: 1rem;
         color: ${({ theme }) => theme.colors.color_white};
       }
-    }
+    
     .flutter {
       display: flex;
       gap: 0.6rem;
@@ -240,26 +241,48 @@ const Wrapper = styled.section`
       max-width: 130rem;
       padding: 0 3.2rem;
     }
+    .grid {
+      display: grid;
+      gap: 1rem;
+      margin: 2rem 0rem 0rem 0rem;
+    }
+   .grid-three-column{
+      grid-template-columns:1fr ;
+    }
   }
 
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
     html {
       font-size: 60%;
     }
-    .grid-three-column {
-      grid-template-columns: 1fr;
-    }
     
+    .grid {
+      display: grid;
+      gap: 1rem;
+      margin: 2rem 0rem 0rem 0rem;
+    }
+   
+   .grid-three-column{
+      grid-template-columns: 1fr;
+  }
   }
 
   @media (max-width: ${({ theme }) => theme.media.small_phone}) {
     html {
       font-size: 60%;
     }
-    .grid-three-column {
-      grid-template-columns: 1fr;
-    }
     
+    .grid {
+      display: grid;
+      gap: 1rem;
+      margin: 2rem 0rem 0rem 0rem;
+    }
+  
+    .grid-three-column {
+      grid-template-columns:  1fr;
+
+    }
+
   }
 
 `;
