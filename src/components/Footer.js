@@ -47,10 +47,9 @@ const Footer = () => {
 
                   {/* google map */}
                   <div>
-                   <GoogleMap />
+                    <GoogleMap />
                   </div>
                   {/* google map */}
-
                 </div>
                 {/* contact info end */}
 
@@ -59,55 +58,57 @@ const Footer = () => {
                   <h3>services</h3>
                   <ul>
                     <li>
-                      <NavLink to="#">
+                      <NavLink to="/blockchaindevelopment">
                         <CurrencyBitcoinIcon /> blockchain development
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="#">
+                      <NavLink to="/mobileappdevelopment">
                         <PhoneIphoneIcon />
                         mobile app development
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="#">
+                      <NavLink to="/androidappdevelopment">
                         <i class="fa-brands fa-android"></i> android app
                         development
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="#">
+                      <NavLink to="/iosappdevelopment">
                         <i class="fa-brands fa-app-store-ios"></i>ios app
                         development
                       </NavLink>
                     </li>
                     <li className="flutter">
-                    <img src="https://ftechiz.com/wp-content/uploads/2020/09/4691465_flutter_icon.svg"/>
-                      <NavLink to="#">flutter app development</NavLink>
+                      <img src="https://ftechiz.com/wp-content/uploads/2020/09/4691465_flutter_icon.svg" />
+                      <NavLink to="/flutterappdevelopment">
+                        flutter app development
+                      </NavLink>
                     </li>
                     <li>
-                      <NavLink to="#">
+                      <NavLink to="/reactnativeappdevelopment">
                         <i class="fa-brands fa-react"></i> react native app
                         development
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="#">
+                      <NavLink to="/websitedevelopment">
                         <i class="fa-solid fa-desktop"></i> website development
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="#">
+                      <NavLink to="/websitedesigning">
                         <DvrIcon /> website designing company
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="#">
+                      <NavLink to="/webapplicationdevelopment">
                         <ComputerIcon /> web app development
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="#">
+                      <NavLink to="/cloudappdevelopment">
                         <i class="fa-solid fa-cloud"></i>cloud application
                         development
                       </NavLink>
@@ -121,27 +122,27 @@ const Footer = () => {
                   <h3>Hire Developers</h3>
                   <ul>
                     <li>
-                      <NavLink to="#">
+                      <NavLink to="/hirejavadevelopers">
                         <AdjustIcon /> hire java developer
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="#">
+                      <NavLink to="/hiremobileappdevelopers">
                         <AdjustIcon /> hire mobile app developers
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="#">
+                      <NavLink to="/hirefullstackdevelopers">
                         <AdjustIcon /> hire full stack developers
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="#">
+                      <NavLink to="/hireblockchaindevelopers">
                         <AdjustIcon /> hire blockchain developers
                       </NavLink>
                     </li>
                     <li>
-                      <NavLink to="#">
+                      <NavLink to="/hireremotedevelopers">
                         <AdjustIcon /> hire remote developers
                       </NavLink>
                     </li>
@@ -149,13 +150,8 @@ const Footer = () => {
                   <h3>Resources</h3>
                   <ul>
                     <li>
-                      <NavLink to="#">
+                      <NavLink to="/career">
                         <AdjustIcon /> career
-                      </NavLink>
-                    </li>
-                    <li>
-                      <NavLink to="#">
-                        <AdjustIcon /> blog
                       </NavLink>
                     </li>
                   </ul>
@@ -167,12 +163,12 @@ const Footer = () => {
           {/* copyright */}
           <div className="container footer_bottom">
             <p>
-              ©️{new Date().getFullYear()} FTECHIZ | All Rights Reserved | 
-              <NavLink to="/privacy"> privacy policy</NavLink> | 
-              <NavLink to="/disclaimer"> disclaimer</NavLink> | 
+              ©️{new Date().getFullYear()} FTECHIZ | All Rights Reserved |
+              <NavLink to="/privacy"> privacy policy</NavLink> |
+              <NavLink to="/disclaimer"> disclaimer</NavLink> |
               <NavLink to="/terms"> terms of use</NavLink>
             </p>
-        </div>
+          </div>
         </footer>
       </Wrapper>
     </>
@@ -189,124 +185,82 @@ const Wrapper = styled.section`
     .grid {
       display: grid;
       gap: 9rem;
-      margin:8rem 0rem 0rem 0rem;
-     }
+      margin: 8rem 0rem 0rem 0rem;
+    }
     .container {
       text-transform: capitalize;
       line-height: 4.4rem;
     }
-    .grid-three-column{
-      grid-template-columns:1fr 1fr 1fr; 
-      a{
+    .grid-three-column {
+      grid-template-columns: 1fr 1fr 1fr;
+      a {
         display: flex;
-        align-items:center;
-        justify-content:flex-start;
-        gap:1rem;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
         color: ${({ theme }) => theme.colors.color_white};
       }
+    }
+    .flutter {
+      display: flex;
+      gap: 0.6rem;
+      img {
+        width: 1.6rem;
       }
-      .flutter{
+    }
+    .contact {
+      h3 {
+        margin-top: 2.4rem;
+      }
+      p {
         display: flex;
-        gap:.6rem;
-      img{
-        width:1.6rem;
-      }
-      }
-      .contact {
-        h3{
-          margin-top: 2.4rem;
-        }
-       p{
-        display: flex;
-        align-items:center;
+        align-items: center;
         line-height: 3.4rem;
-        gap:1rem; 
+        gap: 1rem;
         margin-bottom: 2rem;
       }
-      }
-      }
-    
-   ${'' /* copyright */}
-    .footer_bottom {
-        text-align:center; 
-        text-transform: capitalize;
-      p {
-        color: ${({ theme }) => theme.colors.bg};
-        font-size: 1.5rem;
-        margin: 4rem 0;
-      }
     }
+  }
 
-  ${'' /* responsive */}
+  ${"" /* copyright */}
+  .footer_bottom {
+    text-align: center;
+    text-transform: capitalize;
+    p {
+      color: ${({ theme }) => theme.colors.bg};
+      font-size: 1.5rem;
+      margin: 4rem 0;
+    }
+  }
+
+  ${"" /* responsive */}
+ 
   @media (max-width: ${({ theme }) => theme.media.tab}) {
     .container {
-      max-width: 120rem;
+      max-width: 130rem;
       padding: 0 3.2rem;
     }
-    .footer_portion {
-      .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-
-        .grid {
-          display: grid;
-          gap: 4rem;
-          margin: 8rem 12rem 0rem 12rem;
-
-          .grid-three-column {
-            grid-template-columns: 1.4fr 1.2fr 1.3fr;
-            .grid-two-rows .bottom {
-              display: flex;
-              align-items: center;
-              justify-content: space-between;
-              margin-left: 4rem;
-            }
-          }
-        }
-      }
-    }
   }
+
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
-    .footer_portion {
-      .container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin: auto;
-        .grid {
-          display: grid;
-          gap: 1.6rem;
-          margin: 8rem 12rem 0rem 12rem;
-
-        .grid-three-column {
-       
-          .grid-two-rows .bottom {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            margin-left: 4rem;
-          }
-        }
-      }
+    html {
+      font-size: 60%;
     }
+    .grid-three-column {
+      grid-template-columns: 1fr;
+    }
+    
   }
-  }
-  @media (max-width: ${({ theme }) => theme.media.small_phone}) {
-.icons {
-       display:flex;
 
-       flex-direction:column;
-            cursor: pointer;
-            .icon {
-              border: 1px solid white;
-              margin-left: 0.6rem;
-              border-radius: 50%;
-              font-size: 1.7rem;
-              cursor: pointer;
-            }
-          }
+  @media (max-width: ${({ theme }) => theme.media.small_phone}) {
+    html {
+      font-size: 60%;
+    }
+    .grid-three-column {
+      grid-template-columns: 1fr;
+    }
+    
   }
+
 `;
 export default Footer;

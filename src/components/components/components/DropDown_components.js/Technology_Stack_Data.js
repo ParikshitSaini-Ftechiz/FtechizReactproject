@@ -25,13 +25,13 @@ export const Technology_Stack_mobileData = [
 
   export const Technology_Stack_blockchainData = [
     {
-      img1: "./images/" ,
-      img2: "./images/" ,
-      img3: "./images/" ,
-      img4: "./images/" ,
-      img5: "./images/" ,
-      img6: "./images/" ,
-      img7: "./images/" ,
-      img8: "./images/" ,
+      img1: "https://ftechiz.com/wp-content/uploads/2022/07/hyperledger.png" ,
+      img2: "https://ftechiz.com/wp-content/uploads/2022/08/etherum.png" ,
+      img3: "https://ftechiz.com/wp-content/uploads/2022/07/image-8.png" ,
+      img4: "https://ftechiz.com/wp-content/uploads/2022/07/image-9.png" ,
+      img5: "https://ftechiz.com/wp-content/uploads/2022/08/corda.png" ,
+      img6: "https://ftechiz.com/wp-content/uploads/2022/07/image-10.png" ,
+      img7: "https://ftechiz.com/wp-content/uploads/2022/07/image-11.png" ,
+      img8: "https://ftechiz.com/wp-content/uploads/2022/07/image-12.png" ,
     },
   ];

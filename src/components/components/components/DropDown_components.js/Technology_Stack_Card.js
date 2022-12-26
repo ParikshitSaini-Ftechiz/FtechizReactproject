@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-export const Technology_Stack_javaCard = ({
+export const Technology_Stack_Card = ({
   img1,
   img2,
   img3,

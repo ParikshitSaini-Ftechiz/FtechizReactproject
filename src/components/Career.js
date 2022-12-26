@@ -51,7 +51,7 @@ const Career = () => {
       <Section>
         <div className="container">
           <div className="grid grid-two-column">
-            <div>
+            <div className="contact">
               <h2>Just Drop Your Resume And Details</h2>
               <Career_Contact />
             </div>
@@ -82,7 +82,7 @@ const Wrapper = styled.section`
       color: ${({ theme }) => theme.colors.color_white};
       text-align: center;
       margin-bottom: 2rem;
-    fon-size:2rem;
+
     }
     p {
       color: ${({ theme }) => theme.colors.color_white};
@@ -94,28 +94,31 @@ const Wrapper = styled.section`
 const Section = styled.section`
   .grid {
     display: grid;
-    gap: 9rem;
+    gap: 4rem;
     margin: 8rem 0rem ;
   }
 
   .grid-two-column {
     grid-template-columns: 1fr 1fr;
-    
+  }
+  .contact{ 
     h2 {
       color: ${({ theme }) => theme.colors.heading};
       text-align: center;
-      fon-size:1.6rem;
+      font-size:3rem;
       font-weight:500;
       margin-bottom: 1rem;
     }
   }
-   
+   .current_div{
   h3 {
     color: ${({ theme }) => theme.colors.heading};
     text-align: center;
-    fon-size:1s.8rem;
-    font-weight:600;
-    margin-bottom: 6rem;
+    font-size:2.6rem;
+    font-weight:500;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+  }
   }
 `;
 

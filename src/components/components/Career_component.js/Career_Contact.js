@@ -100,7 +100,7 @@ const Career_Contact = () => {
               <div className="col-md-12">
                 <div className="form-outline">
                   <label for="validationCustom02" className="form-label">
-                    technolgy
+                    Technolgy
                   </label>
                   <Field
                     type="text"

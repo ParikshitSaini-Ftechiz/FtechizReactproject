@@ -1,24 +1,28 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import InstagramIcon from '@mui/icons-material/Instagram';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import FacebookRoundedIcon from '@mui/icons-material/FacebookRounded';
 
 const Icons = () => {
   return (
     <>
       <Wrapper>
         <div className="icons">
-          <NavLink className="icon" to="#">
-            <i class="fa-brands fa-square-google-plus"></i>
-          </NavLink>
-          <NavLink className="icon" to="#">
-            <i class="fa-brands fa-square-facebook"></i>
-          </NavLink>
-          <NavLink className="icon" to="#">
-            <i class="fa-brands fa-square-twitter"></i>
-          </NavLink>
-          <NavLink className="icon" to="#">
-            <i class="fa-brands fa-linkedin"></i>
-          </NavLink>
+          <a className="icon" href="https://www.facebook.com/Ftechiz" target="_blank">
+            <FacebookRoundedIcon style={{fontSize:"2rem"}}/>
+          </a>
+          <a className="icon" href="https://twitter.com/Ftechiz" target="_blank">
+            <TwitterIcon style={{fontSize:"2rem"}}/>
+          </a>
+          <a className="icon" href="https://www.instagram.com/ftechiz_solutions/" target="_blank">
+            <InstagramIcon style={{fontSize:"2rem"}}/>
+          </a>
+          <a className="icon" href="https://www.linkedin.com/company/ftechizsolutions" target="_blank" >
+           <LinkedInIcon style={{fontSize:"2rem"}}/>
+          </a>
         </div>
       </Wrapper>
     </>

@@ -113,8 +113,22 @@ ${"" /* resuable code section  */}
        html {
       font-size: 60%;
     } 
+   
+   }
 
- }
+ @media (max-width: ${({ theme }) => theme.media.small_phone}) {
+       html {
+      font-size: 60%;
+    } 
+
+ } 
+ @media (max-width: ${({ theme }) => theme.media.extra_small}) {
+       html {
+      font-size: 60%;
+    } 
+
+ } 
+
 
  .grid{
   gap: 3.2rem;

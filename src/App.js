@@ -62,6 +62,7 @@ function App() {
       mobile: "768px",
       tab: "998px",
       small_phone: "612px",
+      extra_small:"400px",
     },
   };
   return (
@@ -74,6 +75,7 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
+            
             {/* drop down */}
             <Route
               path="/hireremotedevelopers"

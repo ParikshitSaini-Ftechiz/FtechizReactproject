@@ -49,7 +49,7 @@ const Sofware_Development_Services = () => {
 };
 const Wrapper = styled.section`
   background: ${({theme}) => theme.colors.color_grey};
-  padding: 1rem;
+  padding: 9rem 0;
   text-align: center;
   .content {
     h1,
@@ -68,35 +68,46 @@ const Wrapper = styled.section`
     grid-template-columns: repeat(3, 1fr);
   }
   .card_title {
-    p {
-      text-align: justify;
-      font-weight: 300;
-      font-size: 1.6rem;
+      p {
+        text-align: justify;
+        font-weight: 300;
+        font-size: 1.6rem;
+        color: ${({ theme }) => theme.colors.color_white};
+        margin-bottom: 2.6rem;
+       
+      }
+    
+      h3 {
+        color: ${({ theme }) => theme.colors.color_white};
+        margin-bottom: 2.6rem;
+        text-align:center;
+        margin-top:2rem;
+      }
     }
-    p,
-    h3 {
-      color: ${({ theme }) => theme.colors.heading};
-      margin-bottom: 2.6rem;
-    }
-  }
 
   .card {
     width: auto;
     height: auto;
-    padding:1rem 2rem;
-    border:none;
+    padding: 2rem 2rem;
+    border: none;
+    border-radius: 1rem;
+    box-shadow: ${({ theme }) => theme.colors.shadow};
+    background: ${({ theme }) => theme.colors.services_card_bg};
     .card_icon {
       width: 10rem;
       height: 10rem;
-      background: ${({ theme }) => theme.colors.hover_color};
+      background: ${({ theme }) => theme.colors.color_white};
       border-radius: 50%;
       display: inline-block;
       padding: 2rem 0rem;
-      margin: auto;
       margin-bottom: 2rem;
+      margin-top: 2rem;
+      margin-left:10rem; 
+      margin:auto;
       .icon {
+        margin-left:2.3rem; 
         font-size: 5rem;
-        color: ${({ theme }) => theme.colors.color_white};
+        color: ${({ theme }) => theme.colors.heading};
       }
     }
     .card_btn {
@@ -105,8 +116,83 @@ const Wrapper = styled.section`
         background: ${({ theme }) => theme.colors.card_bg};
         border-radius: 1rem;
         padding: 1rem 2.5rem;
+        margin-bottom:1rem;
       }
     }
   }
+
+     
+  @media (max-width: ${({ theme }) => theme.media.tab}) {
+    .container {
+      max-width: 130rem;
+      padding: 0 3.2rem;
+    }
+    .grid-three-column {
+      grid-template-columns: 1fr 1fr;
+    }
+    .content {
+    h1,
+    p {
+      text-align: center;
+      margin: 2rem 16rem;
+      color: ${({ theme }) => theme.colors.heading};
+    }
+  }
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.mobile}) {
+    html {
+      font-size: 60%;
+    }
+    .grid-three-column {
+      grid-template-columns: 1fr;
+    }
+    
+     .content {
+    h1,
+    p {
+      text-align: center;
+      margin: 2rem 6rem;
+      color: ${({ theme }) => theme.colors.heading};
+    }
+  }
+
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.small_phone}) {
+    html {
+      font-size: 60%;
+    }
+    .grid-three-column {
+      grid-template-columns: 1fr;
+    }
+    
+     .content {
+    h1,
+    p {
+      text-align: center;
+      margin: 2rem 6rem;
+      color: ${({ theme }) => theme.colors.heading};
+    }
+  }
+ 
+  }
+  @media (max-width: ${({ theme }) => theme.media.extra_small}) {
+       html {
+      font-size: 60%;
+    } 
+    .grid-three-column {
+      grid-template-columns: 1fr;
+    }
+     .content {
+    h1,
+    p {
+      text-align: center;
+      margin: 2rem 6rem;
+      color: ${({ theme }) => theme.colors.heading};
+    }
+  }
+ 
+ } 
 `;
 export default Sofware_Development_Services;

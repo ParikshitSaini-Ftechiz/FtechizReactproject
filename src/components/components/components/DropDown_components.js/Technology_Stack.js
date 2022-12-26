@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import {Technology_Stack_javaCard, Technology_Stack_blockchainCard , Technology_Stack_mobileCard} from "./Technology_Stack_Card";
+import {Technology_Stack_Card , Technology_Stack_mobileCard} from "./Technology_Stack_Card";
 import {  Technology_Stack_blockchainData, Technology_Stack_JavaData, Technology_Stack_mobileData } from "./Technology_Stack_Data";
 
 export const Technology_Stack_java = () => {
   const [state, setState] = useState(Technology_Stack_JavaData);
-  const heading = "Hire Spring Boot Developer As Per Your Need";
+  const heading = "Java Development Service Tools We Excel In";
   const para1 ="";
   return (
     <>
@@ -18,7 +18,7 @@ export const Technology_Stack_java = () => {
           <div className=" images ">
             {state.map((currentData) => {
               const { id } = currentData;
-              return <Technology_Stack_javaCard key={id} {...currentData} />;
+              return <Technology_Stack_Card key={id} {...currentData} />;
             })}
           </div>
         </div>
@@ -29,7 +29,7 @@ export const Technology_Stack_java = () => {
 
 export const Technology_Stack_blockchain = () => {
   const [state, setState] = useState(Technology_Stack_blockchainData);
-  const heading = "Hire Dedicated Blockchain Developers As Per Your Need";
+  const heading = "Blockchain Technology Stack We Excel In";
   const para1 =
     "";
   return (
@@ -43,7 +43,7 @@ export const Technology_Stack_blockchain = () => {
           <div className=" images ">
             {state.map((currentData) => {
               const { id } = currentData;
-              return <Technology_Stack_blockchainCard key={id} {...currentData} />;
+              return <Technology_Stack_Card key={id} {...currentData} />;
             })}
           </div>
         </div>

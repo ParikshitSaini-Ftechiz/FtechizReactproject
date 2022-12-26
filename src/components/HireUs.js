@@ -4,6 +4,8 @@ import PhoneIcon from "@mui/icons-material/Phone";
 import { NavLink } from "react-router-dom";
 import { Button } from "./components/components/Button";
 import Icons from "./components/components/Icons";
+import EmailIcon from "@mui/icons-material/Email";
+import AddCircleIcon from "@mui/icons-material/AddCircle";
 const HireUs = () => {
   return (
     <>
@@ -23,29 +25,33 @@ const HireUs = () => {
                 <div className="grid-two-rows contact_bottom">
                   <h3>Call Us</h3>
                   <h3>
-                    <NavLink className="link" to="tel:+917534078989">+917534078989</NavLink>
+                    <NavLink className="link" to="tel:+917534078989">
+                      +917534078989
+                    </NavLink>
                   </h3>
                 </div>
               </div>
               <div className="grid_two_column contact_side">
                 <div className="box">
-                  <PhoneIcon className="icon" />
+                  <EmailIcon className="icon" />
                 </div>
                 <div className="grid-two-rows contact_bottom">
                   <h3>Let's talk about your project</h3>
                   <h3>
-                    <NavLink className="link" to="">sales@ftechiz.com</NavLink>
+                    <NavLink className="link" to="#">
+                      sales@ftechiz.com
+                    </NavLink>
                   </h3>
                 </div>
               </div>
               <div className="grid_two_column contact_side">
                 <div className="box">
-                  <PhoneIcon className="icon" />
+                  <AddCircleIcon className="icon" />
                 </div>
                 <div className="grid-two-rows contact_bottom">
                   <h3>Follow Me</h3>
                   <h3>
-                    <NavLink to=""><Icons /></NavLink>
+                    <Icons />
                   </h3>
                 </div>
               </div>
@@ -105,7 +111,7 @@ const HireUs = () => {
         </div>
       </Wrapper>
 
-     {/* location */}
+      {/* location */}
       <Section>
         <div className="container">
           <h1 className="heading">Our Location</h1>
@@ -124,26 +130,30 @@ const HireUs = () => {
   );
 };
 
-
 const Section = styled.div`
+  ${"" /* location */}
+
   padding: 9rem 0;
   background: ${({ theme }) => theme.colors.color_white};
 
   .heading {
     color: ${({ theme }) => theme.colors.heading};
-    text-align:center;
-    margin-bottom:4rem; 
+    text-align: center;
+    margin-bottom: 4rem;
   }
 `;
+
 const Wrapper = styled.section`
   padding: 9rem 0;
-  background: ${({ theme }) => theme.colors.component_bg};
+  background: ${({ theme }) => theme.colors.services_card_bg};
   .grid {
     display: grid;
     gap: 9rem;
     margin: 8rem 0rem 0rem 0rem;
   }
-
+  .grid_two_column {
+    grid-template-columns: 1fr 1fr;
+  }
   .contact_side {
     display: flex;
     flex-direction: row;
@@ -154,12 +164,13 @@ const Wrapper = styled.section`
     .box {
       width: 7rem;
       height: 5rem;
-      background: ${({theme}) => theme.colors.btn_color};
+      background: ${({ theme }) => theme.colors.btn_color};
       border-radius: 1rem;
       .icon {
         font-size: 3rem;
         margin: 1rem;
         color: ${({ theme }) => theme.colors.color_white};
+        padding-left: 1rem;
       }
     }
     a {
@@ -172,11 +183,10 @@ const Wrapper = styled.section`
       background: ${({ theme }) => theme.colors.color_white};
       padding: 2rem 8rem;
       border-radius: 1rem;
-      h3 ,
-      .link{
+      h3,
+      .link {
         color: ${({ theme }) => theme.colors.heading};
       }
-     
     }
   }
   .form {
@@ -217,6 +227,41 @@ const Wrapper = styled.section`
             margin: auto;
           }
         }
+      }
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.tab}) {
+    .container {
+      max-width: 130rem;
+      padding: 0 3.2rem;
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.mobile}) {
+    html {
+      font-size: 60%;
+    }
+    .grid_two_column {
+      grid-template-columns: 1fr;
+    }
+    .contact{
+      h1{
+        text-align: center;
+      }
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.small_phone}) {
+    html {
+      font-size: 60%;
+    }
+    .grid_two_column {
+      grid-template-columns: 1fr;
+    }
+    .contact{
+      h1{
+        text-align: center;
       }
     }
   }
