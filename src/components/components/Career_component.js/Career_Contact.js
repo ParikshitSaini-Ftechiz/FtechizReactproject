@@ -16,20 +16,23 @@ const Career_Contact = () => {
     country: "",
     id: "",
     desc: "",
+    file: "",
   };
   const validationSchema = Yup.object().shape({
     name: Yup.string().min(2).max(24).required("Please enter your Name"),
     email: Yup.string().email().required("please enter your Email"),
-    number: Yup.string().min(10).max(12).required("Please enter your Contact Number"),
+    number: Yup.string()
+      .min(10)
+      .max(12)
+      .required("Please enter your Contact Number"),
     technolgy: Yup.string().required("Please enter your technolgy"),
     country: Yup.string().min(2).max(24).required("Please enter your Country"),
     id: Yup.string()
       .min(1)
       .max(25)
       .required("Please enter your Skype ID/Whatsapp No"),
-   desc: Yup.string()
-      .min(1)
-      .required("Required"),
+    file: Yup.string().required("Please upload your resume"),
+    desc: Yup.string().min(1).required("Required"),
   });
 
   const handleSubmit = (values) => {
@@ -142,29 +145,44 @@ const Career_Contact = () => {
                   </p>
                 </div>
               </div>
-     
               <div className="col-md-12">
-               <div className="form-outline">
-                 <label for="validationCustom02" className="form-label">
-                   Project Description
-                 </label>
-                 <Field as="textarea"
-                   type="text"
-                   class="form-control"
-                   rows="20"
-                   column="10"
-                   name="desc"
-                   id="desc"
-                 />
-                 <p><ErrorMessage name="desc"/></p>
-               </div>
-               </div>
+                <div className="form-outline">
+                  <label for="formFile" class="form-label">
+                    Upload Resume
+                  </label>
+                  <Field
+                    className="form-control file_input"
+                    type="file"
+                    id="formFile"
+                    name="file"
+                  />
+                  <p>
+                    <ErrorMessage name="file" />
+                  </p>
+                </div>
+              </div>
+              <div className="col-md-12">
+                <div className="form-outline">
+                  <label for="validationCustom02" className="form-label">
+                    Project Description
+                  </label>
+                  <Field
+                    as="textarea"
+                    type="text"
+                    class="form-control"
+                    rows="20"
+                    column="10"
+                    name="desc"
+                    id="desc"
+                  />
+                  <p>
+                    <ErrorMessage name="desc" />
+                  </p>
+                </div>
+              </div>
               <div className="col-12">
                 <NavLink to="/">
-                  <Button
-                    type="submit"
-                    className="submit_btn"
-                  >
+                  <Button type="submit" className="submit_btn">
                     Submit
                   </Button>
                 </NavLink>
@@ -184,18 +202,18 @@ const Wrapper = styled.div`
     padding: 4rem;
   }
   .contact_form {
-    background: ${({theme}) => theme.colors.bg};
-     p{
-      color:red;
+    background: ${({ theme }) => theme.colors.bg};
+    p {
+      color: red;
       font-size: 1.9rem;
-     }
+    }
     input,
     textarea {
       width: 100%;
       height: 5rem;
       font-size: 1.5rem;
     }
-
+ 
     .submit_btn {
       background: ${({ theme }) => theme.colors.btn_color};
       display: block;

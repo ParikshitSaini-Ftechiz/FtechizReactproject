@@ -1,10 +1,12 @@
-import React from "react";
+import React,{useState} from "react";
 import Main_Section from "./components/components/Main_Section";
 import Para_Heading from "./components/components/DropDown_components.js/Para_Heading";
 import styled from "styled-components";
 import Career_Contact from "./components/Career_component.js/Career_Contact";
-
+import Accordion from "./components/Career_component.js/Accordian";
+import {Accordian_Data} from "./components/Career_component.js/Accordian_Data";
 const Career = () => {
+  const [state , setState] = useState(Accordian_Data);
   const data = {
     nameData: "We Seek Innovators, Disrupters and Dreamers",
   };
@@ -47,15 +49,25 @@ const Career = () => {
       </Wrapper>
 
       <Section>
-<div className="container">
-<div className="grid grid-two-column">
-  <div>
-    <h2>Just Drop Your Resume And Details</h2>
-    <Career_Contact/>
-  </div>
-  <div></div>
-</div>
-</div>
+        <div className="container">
+          <div className="grid grid-two-column">
+            <div>
+              <h2>Just Drop Your Resume And Details</h2>
+              <Career_Contact />
+            </div>
+            <div className="current_div">
+              <h3>CURRENT OPENINGS</h3>
+              {
+                state.map((currentData) => {
+                  const{id} = currentData;
+                  return  <Accordion key={id} {...currentData}/>
+                })
+              }
+             
+          
+            </div>
+          </div>
+        </div>
       </Section>
     </>
   );
@@ -70,30 +82,41 @@ const Wrapper = styled.section`
       color: ${({ theme }) => theme.colors.color_white};
       text-align: center;
       margin-bottom: 2rem;
+    fon-size:2rem;
     }
     p {
       color: ${({ theme }) => theme.colors.color_white};
     }
   }
-
 `;
 // contact page//
 
-const Section = styled.section `
-.grid {
-  display: grid;
-  gap: 9rem;
-  margin:8rem 16rem 0rem 16rem;
-}
+const Section = styled.section`
+  .grid {
+    display: grid;
+    gap: 9rem;
+    margin: 8rem 0rem ;
+  }
 
-.grid_two_column {
-  grid-template-columns: 1fr 1fr;
-
-}
-h2{
-  color: ${({ theme }) => theme.colors.heading};
+  .grid-two-column {
+    grid-template-columns: 1fr 1fr;
+    
+    h2 {
+      color: ${({ theme }) => theme.colors.heading};
       text-align: center;
-}
+      fon-size:1.6rem;
+      font-weight:500;
+      margin-bottom: 1rem;
+    }
+  }
+   
+  h3 {
+    color: ${({ theme }) => theme.colors.heading};
+    text-align: center;
+    fon-size:1s.8rem;
+    font-weight:600;
+    margin-bottom: 6rem;
+  }
 `;
 
 export default Career;
