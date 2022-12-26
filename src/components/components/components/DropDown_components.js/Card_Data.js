@@ -168,25 +168,25 @@ export const Cloud_Data = [
 export const Flutter_Data = [
   // first
   {
-    icon1:"" ,
+    icon1:<img src="https://ftechiz.com/wp-content/uploads/2022/10/Flutter-App-Development.svg"  style={{ width: "3.8rem",}}/> ,
     para1: "Our Flutter app development services are devised to help your business to create a multi-platform existence. We help you right from finding the best product-market fit to seamlessly developing and deploying your application across a number of platforms. Our flutter app developer can help you design, develop, test, and deploy full-fledged Flutter apps.",
     title1: "Flutter App Development",
   },
   // second
   {
-    icon1:"" ,
+    icon1:<img src= "https://ftechiz.com/wp-content/uploads/2022/10/Flutter-App-Consulting-Services.svg"  style={{ width: "3.8rem",}}/> ,
     para1: "Flutter app development has come a long way since its origin both in terms of framework maturity and use cases. We are a flutter app development company that can help you authenticate your Flutter app idea and help you ensure that the framework is the best technical solution for your product idea.",
     title1: "Flutter Mobile App Consultation Services",
   },
   // third
   {
-    icon1:"" ,
+    icon1:<img src= "https://ftechiz.com/wp-content/uploads/2022/10/Flutter-App-UI-UX-Design.svg"   style={{ width: "3.8rem",}}/> ,
     para1: "Flutter Application is always known for their simple user-friendly interface and immersive design. Our expert Flutter UI/UX designers creates visually beautiful and easy to access applications with flexible user interface. As per your business model and domain we design the UI/UX of your app accordingly to give uniqueness to the social presence of your services.",
     title1: "Flutter App UI/UX Design ",
   },
   // fourth
   {
-    icon1:"",
+    icon1:<img src= "https://ftechiz.com/wp-content/uploads/2022/10/Flutter-App-Maintenance-Service.svg"  style={{ width: "3.8rem",}}/>,
     para1: "Looking for a company to maintain your Flutter app? We offer both Flutter app development and maintenance service to make your app up to date with the latest trends, improvise for user engagement, keep up with market demands, etc. Our squad refreshes your app content, analyzes your app performance, monitors user engagement, reviews user retention and takes other corrective actions, to maintain your app.",
     title1: "Flutter App Support & Maintenance",
   },

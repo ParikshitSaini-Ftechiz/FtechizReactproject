@@ -50,5 +50,6 @@ const Wrapper = styled.section`
     }
   
   }
+  
 `;
 export default Para_Heading;

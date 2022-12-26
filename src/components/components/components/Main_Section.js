@@ -35,14 +35,14 @@ const Wrapper = styled.section`
   background: ${({ theme }) => theme.colors.component_bg};
   .main_section {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     flex-direction: column;
   }
 
   Button {
     background: ${({ theme }) => theme.colors.btn_color};
-    margin-left: -26rem;
+ 
   }
   .grid {
     display: grid;
@@ -81,21 +81,23 @@ const Wrapper = styled.section`
   }
 
   @media (max-width: ${({ theme }) => theme.media.tab}) {
+    padding: 9rem 0;
     .grid {
       display: grid;
       align-items: center;
       justify-content: center;
-      margin: 0rem 16rem 0rem 16rem;
+      margin: 0rem 6rem 0rem 6rem;
     }
     .grid_two_column {
       grid-template-columns: repeat(2, 1fr);
     }
     img {
-      min-width: 24rem;
+      min-width: 15rem;
       height: 22rem;
     }
   }
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
+    padding: 15rem 0;
     html {
       font-size: 60%;
     }
@@ -104,17 +106,35 @@ const Wrapper = styled.section`
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      margin: 0rem 16rem 0rem 16rem;
+      margin: 0rem 6rem 0rem 6rem;
     }
     .grid_two_column {
-      grid-template-columns: (1, 2fr);
+      grid-template-columns: 1fr;
     }
     img {
-      min-width: 24rem;
+      min-width: 15rem;
       height: 22rem;
     }
   }
   @media (max-width: ${({ theme }) => theme.media.small_phone}) {
+    padding: 15rem 0;
+    html {
+      font-size: 60%;
+    }
+    .grid {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0rem 6rem 0rem 6rem;
+    }
+    .grid_two_column {
+      grid-template-columns: 1fr;
+    }
+    img {
+      min-width: 15rem;
+      height: 22rem;
+    }
   }
 `; // 1fr=25% of the available space.
 export default Main_Section;

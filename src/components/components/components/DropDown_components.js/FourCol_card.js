@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Button } from "../Button";
-import { NavLink } from "react-router-dom";
+
 
 const FourCol_card = ({ icon, title, para, icon1, para1, title1 }) => {
   return (
@@ -50,7 +49,7 @@ const Wrapper = styled.div`
       margin-left:8rem; 
       .icon {
         margin-left:2.3rem; 
-        font-size: 5rem;
+        ${'' /* font-size: .1rem; */}
         color: ${({ theme }) => theme.colors.heading};
       }
     }

@@ -28,6 +28,9 @@ const Card = ({ icon, title, para, icon1, para1, title1 }) => {
   );
 };
 const Wrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
   .card {
     width: 36rem;
     height: 65rem;
@@ -41,13 +44,12 @@ const Wrapper = styled.div`
       height: 10rem;
       background: ${({ theme }) => theme.colors.color_white};
       border-radius: 50%;
-      display: inline-block;
       padding: 2rem 0rem;
       margin-bottom: 2rem;
       margin-top: 2rem;
-      margin-left:10rem; 
+      margin-left: 10rem;
       .icon {
-        margin-left:2.3rem; 
+        margin-left: 2.3rem;
         font-size: 5rem;
         color: ${({ theme }) => theme.colors.heading};
       }
@@ -60,11 +62,60 @@ const Wrapper = styled.div`
         color: ${({ theme }) => theme.colors.color_white};
         margin-bottom: 2.6rem;
       }
-    
+
       h3 {
         color: ${({ theme }) => theme.colors.color_white};
         margin-bottom: 2.6rem;
-        text-align:center;
+        text-align: center;
+      }
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.mobile}) {
+    html {
+      font-size: 60%;
+    }
+
+    .card {
+      width: auto;
+      height: auto;
+      .card_icon {
+        margin: auto;
+        display: inline-block;
+      }
+    }
+    .card_title {
+      h3 {
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.small_phone}) {
+    html {
+      font-size: 60%;
+    }
+
+    .card {
+      width: auto;
+      height: auto;
+      .card_icon {
+        margin: auto;
+        display: inline-block;
+      }
+    }
+  }
+  @media (max-width: ${({ theme }) => theme.media.extra_small}) {
+    html {
+      font-size: 60%;
+    }
+
+    .card {
+      width: auto;
+      height: auto;
+      .card_icon {
+        margin: auto;
+        display: inline-block;
       }
     }
   }
