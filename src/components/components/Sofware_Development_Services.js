@@ -152,7 +152,7 @@ const Wrapper = styled.section`
     h1,
     p {
       text-align: center;
-      margin: 2rem 6rem;
+      margin: 2rem 2rem;
       color: ${({ theme }) => theme.colors.heading};
     }
   }
@@ -171,28 +171,12 @@ const Wrapper = styled.section`
     h1,
     p {
       text-align: center;
-      margin: 2rem 6rem;
+      margin: 2rem 2rem;
       color: ${({ theme }) => theme.colors.heading};
     }
   }
  
   }
-  @media (max-width: ${({ theme }) => theme.media.extra_small}) {
-       html {
-      font-size: 60%;
-    } 
-    .grid-three-column {
-      grid-template-columns: 1fr;
-    }
-     .content {
-    h1,
-    p {
-      text-align: center;
-      margin: 2rem 6rem;
-      color: ${({ theme }) => theme.colors.heading};
-    }
-  }
- 
- } 
+  
 `;
 export default Sofware_Development_Services;

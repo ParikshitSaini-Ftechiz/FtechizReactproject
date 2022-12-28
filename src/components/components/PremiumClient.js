@@ -125,5 +125,56 @@ const Wrapper = styled.section`
       }
     }
   }
+  @media (max-width: ${({ theme }) => theme.media.tab}) {
+    .container {
+      max-width: 130rem;
+      padding: 0 3.2rem;
+    }
+    .grid-four-column {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.mobile}) {
+  padding: 3rem 0 1rem 0;
+
+    html {
+      font-size: 60%;
+    }
+    .container {
+      max-width: 130rem;
+      padding: 0 3.2rem;
+    }
+
+    .content {
+      h1{
+        text-align: center;
+        margin: 1rem;
+      }
+      p {
+        text-align: justify;
+        margin: 0rem 2rem 2rem 2rem;
+      }
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.small_phone}) {
+    html {
+      font-size: 60%;
+    }
+
+    
+    .content {
+      h1{
+        text-align: center;
+        margin: 1rem;
+      }
+      p {
+        text-align: justify;
+        margin:0rem 2rem 2rem 2rem;
+      }
+    }
+  }
+
 `;
 export default PremiumClient;

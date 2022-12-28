@@ -8,6 +8,34 @@ import 'owl.carousel/dist/assets/owl.theme.default.css';
 
 const Testimonial = () => {
   const [state, setState] = useState(CardData);
+  const options = {
+    margin: 20,
+    responsiveClass: true,
+    nav: true,
+    dots: false,
+    autoplay: true,
+    smartSpeed: 1000,
+    autoplayTimeout: 2000,
+    loop: true,
+
+    responsive: {
+      0: {
+        items: 1,
+      },
+      400: {
+        items: 1,
+      },
+      600: {
+        items: 2,
+      },
+      700: {
+        items: 2,
+      },
+      1000: {
+        items: 3,
+      },
+    },
+  };
   return (
     <>
       <Wrapper>
@@ -21,16 +49,7 @@ const Testimonial = () => {
             </p>
           </div>
           <div className="card_detail">
-          <OwlCarousel
-          className="owl-theme"
-          items="3"
-          autoplay="true"
-          nav={false}
-          dots={false}
-          loop
-          margin={40}
-          autoplayTimeout = "3000"
-          >
+          <OwlCarousel className="owl-theme" {...options} >
             
             {state.map((currentData, index) => {
               const { description, title } = currentData;
@@ -51,7 +70,7 @@ const Testimonial = () => {
 };
 const Wrapper = styled.section`
   padding: 5rem 0;
-      border: none;
+  border: none;
   .grid {
     display: grid;
     gap: 2rem;
@@ -70,6 +89,36 @@ const Wrapper = styled.section`
     padding: 4rem 0;
   }
 
+  @media (max-width:${({ theme }) => theme.media.tab}) {
+    .content {
+    h1,
+    p {
+      color: ${({ theme }) => theme.colors.heading};
+      text-align: center;
+      margin: 0rem 6rem;
+    }
+  }
+}
+@media (max-width:${({ theme }) => theme.media.mobile}) {
+  .content {
+    h1,
+    p {
+      color: ${({ theme }) => theme.colors.heading};
+      text-align: center;
+      margin: 0rem 2rem;
+    }
+  }
+}
+@media (max-width:${({ theme }) => theme.media.small_phone}) {
+  .content {
+    h1,
+    p {
+      color: ${({ theme }) => theme.colors.heading};
+      text-align: center;
+      margin: 0rem 2rem;
+    }
+  }
+}
 `;
 
 export default Testimonial;

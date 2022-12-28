@@ -114,7 +114,7 @@ const Wrapper = styled.section`
     }
     .grid-four-column {
       grid-template-columns: repeat(4, 1fr);
-      gap: 5rem;
+      gap: 1rem;
       .grid_two_column {
         display: flex;
         flex-direction: column;
@@ -131,8 +131,8 @@ const Wrapper = styled.section`
           h3 {
             color: ${({ theme }) => theme.colors.heading};
             display: inline;
-            font-size:2.1rem;
-            font-weight:550;
+            font-size: 2.1rem;
+            font-weight: 550;
           }
           &:hover {
             background: ${({ theme }) => theme.colors.hover_color};
@@ -143,6 +143,186 @@ const Wrapper = styled.section`
             }
             .real_estate_icon path {
               fill: ${({ theme }) => theme.colors.color_white};
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.tab}) {
+    html {
+      font-size: 50%;
+    }
+    .container {
+      padding: 0 3.2rem;
+    }
+
+    .grid {
+    display: grid;
+    gap: 0rem;
+    margin: 2rem 1rem 0rem 1rem;
+  }
+  .industries_portion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .heading_portion {
+      .headings,
+      p {
+        color: ${({ theme }) => theme.colors.heading};
+        text-align: center;
+        margin: 0 6rem;
+      }
+    }
+    .industries_icons {
+      font-size: 2rem;
+
+      .icons {
+        display: flex;
+        margin: auto;
+        font-size: 4rem;
+      }
+    }
+    .grid-four-column {
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1rem;
+      .grid_two_column {
+        display: flex;
+        flex-direction: column;
+        gap: 4rem;
+        .grid_row {
+          border: none;
+          padding: 1rem 1.2rem;
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          justify-content: center;
+          gap: 2rem;
+          h3 {
+                color: ${({ theme }) => theme.colors.heading};
+                display: inline;
+                font-size: 1.9rem;
+                font-weight: 550;
+              }
+        }
+      }
+    }
+  }
+  }
+  @media (max-width: ${({ theme }) => theme.media.mobile}) {
+    html {
+      font-size: 50%;
+    }
+    .grid {
+      gap: 3.2rem;
+    }
+
+      .industries_portion {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .heading_portion {
+          .headings,
+          p {
+            color: ${({ theme }) => theme.colors.heading};
+            text-align: center;
+            margin: 0 2rem;
+          }
+        }
+        .industries_icons {
+          font-size: 2rem;
+
+          .icons {
+            display: flex;
+            margin: auto;
+            font-size: 4.5rem;
+          }
+        }
+        .grid-four-column {
+          grid-template-columns: 1fr;
+          gap: 5rem;
+          .grid_two_column {
+            display: flex;
+            flex-direction: column;
+            gap: 4rem;
+            .grid_row {
+              border: none;
+              padding: 2rem 10rem;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              justify-content: center;
+              gap: 2rem;
+
+              h3 {
+                color: ${({ theme }) => theme.colors.heading};
+                display: inline;
+                font-size: 2.5rem;
+                font-weight: 550;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+  @media (max-width: ${({ theme }) => theme.media.small_phone}) {
+    html {
+      font-size: 50%;
+    }
+    .grid {
+      gap: 3.2rem;
+    }
+
+    .industries_portion {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .heading_portion {
+        .headings,
+        p {
+          color: ${({ theme }) => theme.colors.heading};
+          text-align: center;
+          margin: 0 2rem;
+        }
+      }
+      .industries_icons {
+        font-size: 2rem;
+
+        .icons {
+          display: flex;
+          margin: auto;
+          font-size: 4.5rem;
+        }
+      }
+      .grid-four-column {
+        grid-template-columns: 1fr;
+        gap: 5rem;
+        .grid_two_column {
+          display: flex;
+          flex-direction: column;
+          gap: 4rem;
+          .grid_row {
+            border: none;
+            padding: 2rem 10rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+
+            h3 {
+              color: ${({ theme }) => theme.colors.heading};
+              display: inline;
+              font-size: 2.5rem;
+              font-weight: 550;
             }
           }
         }

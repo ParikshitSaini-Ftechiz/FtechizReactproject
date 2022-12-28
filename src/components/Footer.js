@@ -236,54 +236,6 @@ const Wrapper = styled.section`
 
   ${"" /* responsive */}
  
-  @media (max-width: ${({ theme }) => theme.media.tab}) {
-    .container {
-      max-width: 130rem;
-      padding: 0 3.2rem;
-    }
-    .grid {
-      display: grid;
-      gap: 1rem;
-      margin: 2rem 0rem 0rem 0rem;
-    }
-   .grid-three-column{
-      grid-template-columns:1fr ;
-    }
-  }
-
-  @media (max-width: ${({ theme }) => theme.media.mobile}) {
-    html {
-      font-size: 60%;
-    }
-    
-    .grid {
-      display: grid;
-      gap: 1rem;
-      margin: 2rem 0rem 0rem 0rem;
-    }
-   
-   .grid-three-column{
-      grid-template-columns: 1fr;
-  }
-  }
-
-  @media (max-width: ${({ theme }) => theme.media.small_phone}) {
-    html {
-      font-size: 60%;
-    }
-    
-    .grid {
-      display: grid;
-      gap: 1rem;
-      margin: 2rem 0rem 0rem 0rem;
-    }
-  
-    .grid-three-column {
-      grid-template-columns:  1fr;
-
-    }
-
-  }
 
 `;
 export default Footer;

@@ -2,18 +2,15 @@ import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 
-const Tool_Tech = ({tool_tech_para, tool_tech_heading}) => {
-
-  const {paraData} = tool_tech_para;
-  const {headingData} = tool_tech_heading;
+const Tool_Tech = ({ tool_tech_para, tool_tech_heading }) => {
+  const { paraData } = tool_tech_para;
+  const { headingData } = tool_tech_heading;
   return (
     <>
       <Wrapper>
         <div className="container">
           <h1>{headingData}</h1>
-          <p>
-            {paraData}
-          </p>
+          <p>{paraData}</p>
           <div className="grid grid-five-column">
             <div className="first_column active">
               <NavLink to="" activeClassName="active-link">
@@ -136,7 +133,8 @@ const Wrapper = styled.section`
     grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
     display: flex;
     align-items: center;
-    gap: 10rem;
+    justify-content:center;
+    gap: 8rem;
     .first_column {
       width: 25rem;
       height: 30rem;
@@ -161,6 +159,119 @@ const Wrapper = styled.section`
       width: 10rem;
       height: 10rem;
     }
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.tab}) {
+    .container {
+      padding: 0 3.2rem;
+    }
+    h1,
+  p {
+    color: ${({ theme }) => theme.colors.heading};
+    text-align: center;
+    margin: 0rem 6rem;
+  }
+  .grid-five-column {
+    grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    display: flex;
+    align-items: center;
+    gap: 4rem;
+    .first_column {
+      width: 25rem;
+      height: 30rem;
+      background: ${({ theme }) => theme.colors.color_grey};
+      .first_column_text {
+        padding: 1.4rem;
+        font-size: 1.8rem;
+        color: ${({ theme }) => theme.colors.heading};
+        
+      }
+    }
+    .tool_icons_column {
+      display: flex;
+      flex-direction: column;
+      gap: 6rem;
+    }
+    img {
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+  }
+  @media (max-width: ${({ theme }) => theme.media.mobile}) {
+  
+    .grid {
+      gap: 3.2rem;
+    }
+    .grid-five-column {
+      grid-template-columns: 1fr;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 5rem;
+    .first_column {
+      width: 100%;
+      height: 30rem;
+      background: ${({ theme }) => theme.colors.color_grey};
+      .first_column_text {
+        padding: 1.4rem;
+        font-size: 1.8rem;
+        color: ${({ theme }) => theme.colors.heading};
+      }
+    }
+    h1,
+    p {
+      color: ${({ theme }) => theme.colors.heading};
+      text-align: center;
+      margin: 0rem 2rem;
+    }
+    .tool_icons_column {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    img {
+      width: 20rem;
+      height: 20rem;
+    }
+  }
+  }
+  @media (max-width: ${({ theme }) => theme.media.small_phone}) {
+  
+    .grid {
+      gap: 3.2rem;
+    }
+    .grid-five-column {
+      grid-template-columns: 1fr;
+      display:flex;
+      flex-direction: column;
+      .first_column {
+      width: 100%;
+      height: 30rem;
+      background: ${({ theme }) => theme.colors.color_grey};
+      .first_column_text {
+        padding: 1.4rem;
+        font-size: 1.8rem;
+        color: ${({ theme }) => theme.colors.heading};
+        
+      }
+    }
+    h1,
+    p {
+      color: ${({ theme }) => theme.colors.heading};
+      text-align: center;
+      margin: 0rem 2rem;
+    }
+    .tool_icons_column {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    img {
+      width: 20rem;
+      height: 20rem;
+    }
+  }
   }
 `;
 export default Tool_Tech;

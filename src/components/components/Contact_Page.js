@@ -30,6 +30,37 @@ const Wrapper = styled.section`
       margin: 0rem 16rem;
     }
   }
+
+  @media (max-width:${({ theme }) => theme.media.tab}) {
+    .content {
+    h1,
+    p {
+      color: ${({ theme }) => theme.colors.heading};
+      text-align: center;
+      margin: 0rem 6rem;
+    }
+  }
+}
+@media (max-width:${({ theme }) => theme.media.mobile}) {
+  .content {
+    h1,
+    p {
+      color: ${({ theme }) => theme.colors.heading};
+      text-align: center;
+      margin: 0rem 2rem;
+    }
+  }
+}
+@media (max-width:${({ theme }) => theme.media.small_phone}) {
+  .content {
+    h1,
+    p {
+      color: ${({ theme }) => theme.colors.heading};
+      text-align: center;
+      margin: 0rem 2rem;
+    }
+  }
+}
 `;
 export default Contact_Page;
 

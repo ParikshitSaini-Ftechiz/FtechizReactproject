@@ -8,10 +8,13 @@ const Why_Choose_Us = () => {
     <>
       <Wrapper>
         <div class="container">
-        <div className="content">
-        <h1>Why Choose Us</h1>
-        <p>Here are the reasons you can depend on Ftechiz Solutions to keep you and your business up and running:</p>
-        </div>
+          <div className="content">
+            <h1>Why Choose Us</h1>
+            <p>
+              Here are the reasons you can depend on Ftechiz Solutions to keep
+              you and your business up and running:
+            </p>
+          </div>
           <div class="grid grid_two_column">
             {state.map((currentData) => {
               const { icon, title, para } = currentData;
@@ -47,95 +50,160 @@ const Wrapper = styled.section`
     gap: 3rem;
     margin: 8rem 2rem;
   }
-  .content{
-    margin-top:3rem;
-    text-align:center;
+  .content {
+    margin-top: 3rem;
+    text-align: center;
   }
   .card {
     width: auto;
-    height:auto;
+    height: auto;
     display: flex;
     flex-direction: row;
     background: ${({ theme }) => theme.colors.card_bg};
-    padding: 1rem 1.5rem;
+    padding: 1rem 2rem;
     border-radius: 1rem;
+    
     h3 {
       margin: 1rem 0rem;
     }
     .grid-two-column {
       display: flex;
       flex-direction: row;
-      gap: 6rem;
+      gap: 2rem;
       grid-template-columns: 0.5fr 1fr;
       .card_icon {
         width: 10rem;
         height: 10rem;
         background: ${({ theme }) => theme.colors.helper};
         border-radius: 50%;
-        display: inline-block;
+        display: flex;
         padding: 3rem 2.8rem;
-        margin: auto;
-        margin-bottom: 8rem;
       }
     }
   }
+ 
   @media (max-width: ${({ theme }) => theme.media.tab}) {
     .container {
-      max-width: 130rem;
       padding: 0 3.2rem;
+    }
+    html {
+      font-size: 60%;
     }
     .grid_two_column {
       grid-template-columns: 1fr 1fr;
     }
-    
+    .card {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: ${({ theme }) => theme.colors.card_bg};
+    padding: 2rem;
+    border-radius: 1rem;
+    align-items:center;
+    justify-content:center;
+    h3 {
+      text-align:center;
+      margin: 1rem 0rem;
+    }
+    .grid-two-column {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      grid-template-columns:  1fr;
+      .card_icon {
+        width: 10rem;
+        height: 10rem;
+        background: ${({ theme }) => theme.colors.helper};
+        border-radius: 50%;
+        display: flex;
+        padding: 3rem 2.8rem;
+        margin:auto;
+      }
+    }
   }
-
+  }
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
     html {
       font-size: 60%;
     }
+    .grid {
+      gap: 3.2rem;
+    }
     .grid_two_column {
       grid-template-columns: 1fr;
     }
-    
+    .card {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: ${({ theme }) => theme.colors.card_bg};
+    padding:  2rem;
+    border-radius: 1rem;
+    align-items:center;
+    justify-content:center;
+    h3 {
+      text-align:center;
+      margin: 1rem 0rem;
+    }
+    .grid-two-column {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      grid-template-columns:  1fr;
+      .card_icon {
+        width: 10rem;
+        height: 10rem;
+        background: ${({ theme }) => theme.colors.helper};
+        border-radius: 50%;
+        display: flex;
+        padding: 3rem 2.8rem;
+        margin:auto;
+      }
+    }
   }
-
+  }
   @media (max-width: ${({ theme }) => theme.media.small_phone}) {
-
     html {
       font-size: 60%;
     }
+    .grid {
+      gap: 3.2rem;
+    }
     .grid_two_column {
       grid-template-columns: 1fr;
+    }
+    .card {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: ${({ theme }) => theme.colors.card_bg};
+    padding: 2rem;
+    border-radius: 1rem;
+    align-items:center;
+    justify-content:center;
+    h3 {
+      text-align:center;
+      margin: 2rem 0rem;
     }
     .grid-two-column {
       display: flex;
       flex-direction: column;
-      align-content: center;
-    align-items: center;
-      justify-content:center;
-    
-  }
-  }
-  @media (max-width: ${({ theme }) => theme.media.extra_small}) {
-
-       html {
-      font-size: 60%;
-    } 
-    .grid_two_column {
-      grid-template-columns: 1fr;
+      gap: 2rem;
+      grid-template-columns:  1fr;
+      .card_icon {
+        width: 10rem;
+        height: 10rem;
+        background: ${({ theme }) => theme.colors.helper};
+        border-radius: 50%;
+        display: flex;
+        padding: 3rem 2.8rem;
+        margin:auto;
+      }
     }
-    .card{
-
-    .grid-two-column {
-      display: flex;
-      flex-direction: column;
-      align-content: center;
-      align-items: center;
-      justify-content:center;
-    }
-      
- } 
+  }
   }
 `;
 export default Why_Choose_Us;

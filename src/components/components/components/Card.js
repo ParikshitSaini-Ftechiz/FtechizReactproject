@@ -27,7 +27,7 @@ const Card = ({ description, title }) => {
 const Wrapper = styled.div`
   color: ${({ theme }) => theme.colors.heading};
   .card {
-    width: 35rem;
+    width: auto;
     height: auto;
     border: none;
     box-shadow: ${({ theme }) => theme.colors.shadow};
@@ -61,7 +61,9 @@ const Wrapper = styled.div`
         }
       }
       .quotes_icon {
-       margin-left:17rem;
+        display: flex;
+        align-items: space-around;
+        justify-content:center;
         img {
           width: 4.5rem;
           opacity: 0.6;
