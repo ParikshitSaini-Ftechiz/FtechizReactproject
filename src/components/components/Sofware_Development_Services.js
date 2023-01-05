@@ -127,14 +127,23 @@ const Wrapper = styled.section`
       max-width: 130rem;
       padding: 0 3.2rem;
     }
+    .grid {
+    display: grid;
+    gap: 2rem;
+    margin: 8rem 1.5rem;
+  }
     .grid-three-column {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
     }
     .content {
-    h1,
+    h1{
+      text-align: center;
+      margin: 1rem 6rem;
+      color: ${({ theme }) => theme.colors.heading};
+    }
     p {
       text-align: center;
-      margin: 2rem 16rem;
+      margin: 2rem 6rem;
       color: ${({ theme }) => theme.colors.heading};
     }
   }

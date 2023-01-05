@@ -44,9 +44,9 @@ const DropDown_MainSection = ({ myData, para, image, btn }) => {
                 {paraData5}
                 <br /> <i class="fa fa-check" aria-hidden="true"></i>
                 {paraData6}
-                <br /><i class="fa fa-check" aria-hidden="true"></i>
+                <br />
+                <i class="fa fa-check" aria-hidden="true"></i>
                 {paraData7}
-                
               </p>
               <NavLink>
                 <Button className="anim">{btnData}</Button>
@@ -66,8 +66,8 @@ const Wrapper = styled.section`
   background: ${({ theme }) => theme.colors.component_bg};
   .main_section {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     flex-direction: column;
 
     i {
@@ -76,19 +76,17 @@ const Wrapper = styled.section`
     }
     Button {
       background: ${({ theme }) => theme.colors.helper};
-      margin-left: -26rem;
-      font-weight:300;
-      font-size:1.5rem;
+      font-weight: 300;
+      font-size: 1.5rem;
       color: ${({ theme }) => theme.colors.color_white};
-      margin-top:-4rem;
+      margin-top: -4rem;
     }
-   
   }
 
   .grid {
     display: grid;
-    gap: 12rem;
-    margin: 8rem 0rem 0rem 0rem;
+    gap: 5rem;
+    margin: 8rem 2rem 0rem 2rem;
   }
 
   .image {
@@ -123,18 +121,27 @@ const Wrapper = styled.section`
   }
 
   @media (max-width: ${({ theme }) => theme.media.tab}) {
+    padding: 15rem 0;
+    html {
+      font-size: 60%;
+    }
     .grid {
       display: grid;
-      align-items: center;
-      justify-content: center;
-      margin: 0rem 16rem 0rem 16rem;
+      gap: 3rem;
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+      margin: 0rem 2rem;
     }
     .grid_two_column {
       grid-template-columns: repeat(2, 1fr);
     }
-    img {
-      min-width: 24rem;
-      height: 22rem;
+    h1 {
+      font-size: 4rem;
+    }
+    .image {
+      width: 45rem;
+      height: 35rem;
     }
   }
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
@@ -146,17 +153,34 @@ const Wrapper = styled.section`
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      margin: 0rem 16rem 0rem 16rem;
+      margin: 0rem 0rem;
     }
     .grid_two_column {
-      grid-template-columns: (1, 2fr);
+      grid-template-columns: 1fr;
     }
-    img {
-      min-width: 24rem;
-      height: 22rem;
+    .image {
+      width: auto;
+      height: 35rem;
     }
   }
   @media (max-width: ${({ theme }) => theme.media.small_phone}) {
+    html {
+      font-size: 60%;
+    }
+    .grid {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0rem 2rem;
+    }
+    .grid_two_column {
+      grid-template-columns: 1fr;
+    }
+    .image {
+      width: 50rem;
+      height: 35rem;
+    }
   }
 `; // 1fr=25% of the available space.
 export default DropDown_MainSection;

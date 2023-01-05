@@ -138,9 +138,10 @@ return (
 )
 }
 const Wrapper = styled.section`
+padding:0 1rem;
   .grid {
     display: grid;
-    gap: 2rem;
+    gap: 1rem;
     margin: 8rem 2rem ;
   }
   .grid-three-column {
@@ -149,21 +150,27 @@ const Wrapper = styled.section`
 
      
   @media (max-width: ${({ theme }) => theme.media.tab}) {
-    .container {
-      max-width: 130rem;
-      padding: 0 3.2rem;
+    html {
+      font-size: 60%;
     }
+    .grid {
+    display: grid;
+    gap: 2rem;
+    margin: 8rem 2rem ;
+  }
     .grid-three-column {
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: 1fr;
     }
-    .content {
+    
+     .content {
     h1,
     p {
       text-align: center;
-      margin: 2rem 16rem;
+      margin: 2rem 6rem;
       color: ${({ theme }) => theme.colors.heading};
     }
   }
+
   }
 
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
@@ -211,24 +218,6 @@ const Wrapper = styled.section`
     height: 65rem;
     }
   }
-  @media (max-width: ${({ theme }) => theme.media.extra_small}) {
-       html {
-      font-size: 60%;
-    } 
-    .grid-three-column {
-      grid-template-columns: 1fr;
-    }
-    .card {
-    width: auto;
-    height: 65rem;
-    }
-     .content {
-    h1,
-    p {
-      text-align: center;
-      margin: 2rem 6rem;
-      color: ${({ theme }) => theme.colors.heading};
-    }
-  }
+
 `;
 

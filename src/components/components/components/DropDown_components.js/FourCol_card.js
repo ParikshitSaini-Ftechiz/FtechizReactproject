@@ -69,5 +69,62 @@ const Wrapper = styled.div`
       }
     }
   }
+
+  @media (max-width: ${({ theme }) => theme.media.tab}) {
+    html {
+      font-size: 60%;
+    }
+
+    .card {
+      width: auto;
+      height: 45rem;
+      .card_icon {
+        margin: auto;
+        margin-top: -0.4rem;
+        margin-bottom: 1rem;
+        display: inline-block;
+      }
+    }
+  }
+  @media (max-width: ${({ theme }) => theme.media.mobile}) {
+    html {
+      font-size: 60%;
+    }
+
+    .card {
+      width: auto;
+      height: auto;
+      .card_icon {
+        margin: auto;
+        margin-top: -0.4rem;
+        margin-bottom: -0.1rem;
+        display: inline-block;
+      }
+    }
+    .card_title {
+      h3 {
+        margin-top: 2rem;
+      }
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.small_phone}) {
+    html {
+      font-size: 60%;
+    }
+
+    .card {
+      width: auto;
+      height: auto;
+      .card_icon {
+        margin: auto;
+        margin-top: -0.4rem;
+        margin-bottom: -0.1rem;
+        display: inline-block;
+      }
+    }
+  }
+
+
 `;
 export default FourCol_card;

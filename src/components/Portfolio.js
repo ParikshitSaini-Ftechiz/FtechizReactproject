@@ -1,5 +1,6 @@
 import React from 'react'
 import Main_Section from './components/components/Main_Section'
+import Portfolio_Page from './components/Portfolio_components/Portfolio_Page';
 
 const Portfolio = () => {
   const data = {
@@ -18,6 +19,7 @@ const Portfolio = () => {
     <>
       {/* {myName} */}
       <Main_Section myData={data} para={para} image={image} btn={btn}/>
+      <Portfolio_Page/>
     </>
   );
 }

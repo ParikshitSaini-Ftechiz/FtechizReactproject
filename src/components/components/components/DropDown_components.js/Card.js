@@ -32,7 +32,7 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   .card {
-    width: 36rem;
+    width: 35rem;
     height: 65rem;
     padding: 2rem 2rem;
     border: none;
@@ -71,6 +71,22 @@ const Wrapper = styled.div`
     }
   }
 
+  @media (max-width: ${({ theme }) => theme.media.tab}) {
+    html {
+      font-size: 60%;
+    }
+
+    .card {
+      width: auto;
+      height: auto;
+      .card_icon {
+        margin: auto;
+        margin-top: -0.4rem;
+        margin-bottom: 1rem;
+        display: inline-block;
+      }
+    }
+  }
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
     html {
       font-size: 60%;
@@ -81,6 +97,8 @@ const Wrapper = styled.div`
       height: auto;
       .card_icon {
         margin: auto;
+        margin-top: -0.4rem;
+        margin-bottom: -0.1rem;
         display: inline-block;
       }
     }
@@ -101,20 +119,8 @@ const Wrapper = styled.div`
       height: auto;
       .card_icon {
         margin: auto;
-        display: inline-block;
-      }
-    }
-  }
-  @media (max-width: ${({ theme }) => theme.media.extra_small}) {
-    html {
-      font-size: 60%;
-    }
-
-    .card {
-      width: auto;
-      height: auto;
-      .card_icon {
-        margin: auto;
+        margin-top: -0.4rem;
+        margin-bottom: -0.1rem;
         display: inline-block;
       }
     }

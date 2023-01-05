@@ -114,11 +114,83 @@ const FlutterAppDevelopment = () => {
 const Wrapper = styled.section`
   .grid {
     display: grid;
-    gap: 2rem;
+    gap: 1.5rem;
     margin: 8rem 0rem;
   }
   .grid-four-column {
     grid-template-columns: repeat(4, 1fr);
   }
+  
+     
+  @media (max-width: ${({ theme }) => theme.media.tab}) {
+    html {
+      font-size: 60%;
+    }
+    .grid {
+    display: grid;
+    gap: 2rem;
+    margin: 8rem 2rem ;
+  }
+    .grid-four-column {
+    grid-template-columns: repeat(2, 1fr);
+    }
+    
+     .content {
+    h1,
+    p {
+      text-align: center;
+      margin: 2rem 6rem;
+      color: ${({ theme }) => theme.colors.heading};
+    }
+  }
+
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.mobile}) {
+    html {
+      font-size: 60%;
+    }
+    .grid {
+    display: grid;
+    gap: 2rem;
+    margin: 8rem 2rem ;
+  }
+    .grid-four-column {
+      grid-template-columns: 1fr;
+    }
+    
+     .content {
+    h1,
+    p {
+      text-align: center;
+      margin: 2rem 6rem;
+      color: ${({ theme }) => theme.colors.heading};
+    }
+  }
+
+  }
+  
+  @media (max-width: ${({ theme }) => theme.media.small_phone}) {
+    html {
+      font-size: 60%;
+    }
+    .grid-four-column {
+      grid-template-columns: 1fr;
+    }
+    
+     .content {
+    h1,
+    p {
+      text-align: center;
+      margin: 2rem 6rem;
+      color: ${({ theme }) => theme.colors.heading};
+    }
+  }
+  .card {
+    width: auto;
+    height: auto;
+    }
+  }
+
 `;
 export default FlutterAppDevelopment;
