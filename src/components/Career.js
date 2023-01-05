@@ -120,6 +120,45 @@ const Section = styled.section`
     margin-bottom: 5rem;
   }
   }
+  @media (max-width: ${({ theme }) => theme.media.tab}) {
+    html {
+      font-size: 60%;
+    }
+    .container {
+      max-width: 130rem;
+      padding: 0 3.2rem;
+    }
+    
+  }
+  
+
+  @media (max-width: ${({ theme }) => theme.media.mobile}) {
+    html {
+      font-size: 60%;
+    }
+    .grid-two-column {
+      grid-template-columns: 1fr;
+    }
+    .contact{
+      h1{
+        text-align: center;
+      }
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.small_phone}) {
+    html {
+      font-size: 60%;
+    }
+     .grid-two-column {
+      grid-template-columns: 1fr;
+    }
+    .contact{
+      h1{
+        text-align: center;
+      }
+    }
+  }
 `;
 
 export default Career;

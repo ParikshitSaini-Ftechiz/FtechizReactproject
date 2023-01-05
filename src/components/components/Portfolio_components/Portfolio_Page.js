@@ -3,8 +3,6 @@ import Image_Card from "./Image_Card";
 import Header from "./Header";
 import {Portfolio_Data} from "./Portfolio_Data";
 
-import { SetMealOutlined } from "@mui/icons-material";
-
 const categoryList = [
     ...new Set(Portfolio_Data.map((currentData)=>{
     return currentData.category;

@@ -30,6 +30,7 @@ import Footer from "./components/Footer";
 import PrivacyPolicy from "./components/components/Footer_component/PrivacyPolicy"
 import Disclaimer from "./components/components/Footer_component/Disclaimer"
 import TermOfUse from "./components/components/Footer_component/TermOfUse"
+import Scroll_Up from "./components/components/components/Scroll_Up/Scroll_Up";
 
 function App() {
   const theme = {
@@ -71,6 +72,7 @@ function App() {
         <Router>
           <GlobalStyle />
           <Header />
+          <Scroll_Up/>
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />

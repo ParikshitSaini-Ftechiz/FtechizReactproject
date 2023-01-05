@@ -149,7 +149,7 @@ const Wrapper = styled.section`
   .grid {
     display: grid;
     gap: 9rem;
-    margin: 8rem 0rem 0rem 0rem;
+    margin: 8rem 2rem ;
   }
   .grid_two_column {
     grid-template-columns: 1fr 1fr;
@@ -170,7 +170,7 @@ const Wrapper = styled.section`
         font-size: 3rem;
         margin: 1rem;
         color: ${({ theme }) => theme.colors.color_white};
-        padding-left: 1rem;
+        padding-left: .8rem;
       }
     }
     a {
@@ -183,7 +183,10 @@ const Wrapper = styled.section`
       background: ${({ theme }) => theme.colors.color_white};
       padding: 2rem 8rem;
       border-radius: 1rem;
-      h3,
+      h3{
+        color: ${({ theme }) => theme.colors.heading};
+        font-size:2rem;
+      }
       .link {
         color: ${({ theme }) => theme.colors.heading};
       }
@@ -212,13 +215,14 @@ const Wrapper = styled.section`
         .contact-inputs {
           display: flex;
           flex-direction: column;
-          font-size: 1.4rem;
+          font-size: 1.6rem;
           border-radius: 2rem;
-          margin: 5rem 2rem;
+          margin: 3rem 2rem;
 
           input {
             width: 38rem;
-            height: 4rem;
+            height: 4.7rem;
+            border-radius:1rem;
           }
           Button {
             padding: 0.8rem 2rem;
@@ -232,11 +236,28 @@ const Wrapper = styled.section`
   }
 
   @media (max-width: ${({ theme }) => theme.media.tab}) {
+    html {
+      font-size: 60%;
+    }
     .container {
       max-width: 130rem;
       padding: 0 3.2rem;
     }
+    .contact_form {
+      width: auto;
+      height: auto;
+      }
+    
+    .grid_two_column {
+      grid-template-columns: 1fr;
+    }
+    .contact{
+      h1{
+        text-align: center;
+      }
+    }
   }
+  
 
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
     html {
