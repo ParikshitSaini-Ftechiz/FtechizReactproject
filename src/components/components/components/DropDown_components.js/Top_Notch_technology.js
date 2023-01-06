@@ -80,8 +80,8 @@ const Wrapper = styled.section`
   padding: 4rem 0 -4rem 0;
   .grid {
     display: grid;
-    gap: 9rem;
-    margin: 8rem 0rem;
+    gap: 5rem;
+    margin: 8rem 2rem;
   }
   .grid-two-columns {
     grid-template-columns: 1fr 1fr;
@@ -95,7 +95,7 @@ const Wrapper = styled.section`
     }
     .grid-four-rows {
       display: flex;
-      gap: 8rem;
+      gap: 6rem;
       img {
         width: 8.5rem;
         height:7rem;
@@ -113,6 +113,110 @@ const Wrapper = styled.section`
       margin-bottom:2rem;
       text-align: justify;
     }
+  }
+  @media (max-width: ${({ theme }) => theme.media.tab}) {
+    padding: 15rem 0rem;
+    .grid {
+      display: grid;
+      gap: 4rem;
+      align-items: center;
+      justify-content: center;
+      margin: 0rem 2rem ;
+    }
+    .grid-two-column {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .images {
+    display: flex;
+    align-items:center;
+    justify-content:center; 
+    .grid-four-coumns {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .grid-four-rows {
+      display: flex;
+      gap: 4rem;
+      img {
+        width: 6.5rem;
+        height:5rem;
+        margin-bottom:4.8rem;
+      }
+    }
+  }
+  .content {
+    h1 {
+     font-size:3rem;
+    }
+  
+  }
+  }
+  @media (max-width: ${({ theme }) => theme.media.mobile}) {
+    padding: 15rem 0;
+    html {
+      font-size: 60%;
+    }
+    .grid {
+      display: grid;
+      gap: 4rem;
+      align-items: center;
+      justify-content: center;
+      margin: 0rem 2rem ;
+    }
+    .grid-two-column {
+      grid-template-columns:  1fr;
+    }
+    .images {
+    display: flex;
+    align-items:center;
+    justify-content:center; 
+    .grid-four-coumns {
+      grid-template-columns: repeat(4, 1fr);
+    }
+    .grid-four-rows {
+      display: flex;
+      gap: 4rem;
+      img {
+        width: 5.5rem;
+        height:4rem;
+        margin-bottom:4.8rem;
+      }
+    }
+  }
+
+  }
+  @media (max-width: ${({ theme }) => theme.media.small_phone}) {
+    padding: 15rem 0;
+    html {
+      font-size: 60%;
+    }
+    .grid {
+      display: grid;
+      gap: 4rem;
+      align-items: center;
+      justify-content: center;
+      margin: 0rem 2rem ;
+    }
+    .grid-two-column {
+      grid-template-columns:  1fr;
+    }
+    .images {
+    display: flex;
+    align-items:center;
+    justify-content:center; 
+    .grid-four-coumns {
+      grid-template-columns: repeat(4 , 1fr);
+    }
+    .grid-four-rows {
+      display: flex;
+      gap: 4rem;
+      img {
+        width: 4.5rem;
+        height:4rem;
+        margin-bottom:4.8rem;
+      }
+    }
+  }
+
   }
 `;
 export default Top_Notch_technology;

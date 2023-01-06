@@ -39,8 +39,8 @@ const Wrapper = styled.section`
   }
   .main_section {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    align-items: flex-start;
+    justify-content: flex-start;
     flex-direction: column;
     p {
       text-align: justify;
@@ -48,7 +48,7 @@ const Wrapper = styled.section`
     h1{
 
       display: flex;
-      align-items: center;
+      align-items: flex-start;
       justify-content: flex-start;
     }
     
@@ -61,19 +61,16 @@ const Wrapper = styled.section`
     
   }
 
-  Button {
-    background: ${({ theme }) => theme.colors.btn_color};
-    margin-left: -26rem;
-  }
+
   .grid {
     display: grid;
     gap: 12rem;
-    margin: 8rem 0rem 0rem 0rem;
+    margin: 8rem 2rem 0rem 2rem;
   }
 
   .image {
     width: 55rem;
-    height: 45rem;
+    height: 40rem;
   }
   .heading.anim {
     animation-delay: 0.5s;
@@ -101,22 +98,29 @@ const Wrapper = styled.section`
     }
   }
 
+ 
   @media (max-width: ${({ theme }) => theme.media.tab}) {
+    padding: 15rem 0rem;
     .grid {
       display: grid;
+      gap: 2rem;
       align-items: center;
       justify-content: center;
-      margin: 0rem 16rem 0rem 16rem;
+      margin: 0rem 2rem ;
     }
     .grid_two_column {
       grid-template-columns: repeat(2, 1fr);
     }
-    img {
-      min-width: 24rem;
-      height: 22rem;
+    h1{
+      font-size:3rem;
     }
+    .image {
+    width: 40rem;
+    height: 37rem;
+  }
   }
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
+    padding: 15rem 0;
     html {
       font-size: 60%;
     }
@@ -125,17 +129,35 @@ const Wrapper = styled.section`
       align-items: center;
       justify-content: center;
       flex-direction: column;
-      margin: 0rem 16rem 0rem 16rem;
+      margin: 0rem 2rem;
     }
     .grid_two_column {
-      grid-template-columns: (1, 2fr);
+      grid-template-columns: 1fr;
     }
     img {
-      min-width: 24rem;
+      min-width: 70rem;
       height: 22rem;
     }
   }
   @media (max-width: ${({ theme }) => theme.media.small_phone}) {
+    padding: 15rem 0;
+    html {
+      font-size: 60%;
+    }
+    .grid {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0rem 2rem;
+    }
+    .grid_two_column {
+      grid-template-columns: 1fr;
+    }
+    img {
+      min-width: 50rem;
+      height: 22rem;
+    }
   }
 `; // 1fr=25% of the available space.
 export default Main_Section_DropDown;

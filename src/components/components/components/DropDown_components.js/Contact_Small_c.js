@@ -148,5 +148,95 @@ const Wrapper = styled.div`
       font-size: 1.5rem;
     }
   }
+  @media (max-width: ${({ theme }) => theme.media.tab}) {
+    .container {
+      padding: 0 3.2rem;
+    }
+     .contact_form {
+    background: ${({ theme }) => theme.colors.bg};
+    p {
+      color: red;
+      font-size: 1.9rem;
+    }
+    input,
+    textarea {
+      width: 100%;
+      height: 5rem;
+      font-size: 1.5rem;
+    }
+
+    .submit_btn {
+      background: ${({ theme }) => theme.colors.btn_color};
+      display: block;
+      margin: auto;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+      padding: 1rem 6rem;
+      color: ${({ theme }) => theme.colors.color_white};
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+  }
+  }
+  @media (max-width: ${({ theme }) => theme.media.mobile}) {
+    html {
+      font-size: 50%;
+    }
+     .contact_form {
+    background: ${({ theme }) => theme.colors.bg};
+    p {
+      color: red;
+      font-size: 1.9rem;
+    }
+    input,
+    textarea {
+      width: 100%;
+      height: 5rem;
+      font-size: 1.5rem;
+    }
+
+    .submit_btn {
+      background: ${({ theme }) => theme.colors.btn_color};
+      display: block;
+      margin: auto;
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+      padding: 1rem 6rem;
+      color: ${({ theme }) => theme.colors.color_white};
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+  }
+  }
+  @media (max-width: ${({ theme }) => theme.media.small_phone}) {
+    html {
+      font-size: 50%;
+    }
+     .contact_form {
+    background: ${({ theme }) => theme.colors.bg};
+    p {
+      color: red;
+      font-size: 1.9rem;
+    }
+    input,
+    textarea {
+      width: 100%;
+      height: 5rem;
+      font-size: 1.5rem;
+    }
+
+    .submit_btn {
+      background: ${({ theme }) => theme.colors.btn_color};
+      display: block;
+      margin: auto;
+      margin-bottom: 2rem;
+      margin-top: 2rem;
+      padding: 1rem 6rem;
+      color: ${({ theme }) => theme.colors.color_white};
+      font-weight: 600;
+      font-size: 1.5rem;
+    }
+  }
+  }
 `;
 export default Contact_Small_c;

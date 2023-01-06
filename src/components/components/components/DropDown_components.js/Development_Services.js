@@ -213,11 +213,7 @@ padding:0 1rem;
       color: ${({ theme }) => theme.colors.heading};
     }
   }
-  .card {
-    width: auto;
-    height: 65rem;
-    }
-  }
+ 
 
 `;
 

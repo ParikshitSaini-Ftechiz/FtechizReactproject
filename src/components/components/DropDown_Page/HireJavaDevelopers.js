@@ -11,7 +11,7 @@ import { Hire_Best_Team_java } from "../components/DropDown_components.js/Hire_B
 import Testimonial from "../Testimonial";
 import {Why_Hire_developers_javaDev} from "../components/DropDown_components.js/Why_Hire_developers";
 import  {Hire_SpringBoot_Dev_java}  from "../components/DropDown_components.js/Hire_SpringBoot_Dev";
-import { Technology_Stack_mobile } from "../components/DropDown_components.js/Technology_Stack";
+import { Technology_Stack_java, Technology_Stack_mobile } from "../components/DropDown_components.js/Technology_Stack";
 
 
 const HireJavaDevelopers = () => {
@@ -64,7 +64,7 @@ const HireJavaDevelopers = () => {
       {/* Development_Services */}
 
       {/* Technology_Stack_mobile */}
-      <Technology_Stack_mobile/>
+      <Technology_Stack_java/>
       {/* Technology_Stack_mobile */}
 
       {/* Why_Hire_developers */}

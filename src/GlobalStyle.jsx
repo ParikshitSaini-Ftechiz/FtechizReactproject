@@ -142,10 +142,6 @@ ${"" /* resuable code section  */}
         grid-template-columns: 1fr;
       }
 }
-
-
-
- 
-    
+   
 
 `;

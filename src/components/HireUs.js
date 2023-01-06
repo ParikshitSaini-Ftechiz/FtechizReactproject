@@ -82,7 +82,6 @@ const HireUs = () => {
                       required
                     />
                     <br />
-                    <br />
                     <label for="lname">Subject</label>
                     <br />
                     <input
@@ -167,10 +166,10 @@ const Wrapper = styled.section`
       background: ${({ theme }) => theme.colors.btn_color};
       border-radius: 1rem;
       .icon {
-        font-size: 3rem;
+        font-size: 3.2rem;
         margin: 1rem;
         color: ${({ theme }) => theme.colors.color_white};
-        padding-left: .8rem;
+        
       }
     }
     a {

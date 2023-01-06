@@ -33,11 +33,7 @@ const Right_Technology = () => {
                 </div>
                 <div className="content">
                   <NavLink to="">
-                    <i
-                      aria-hidden="true"
-                      class="icons fas fa-medal"
-                      style={{ fontSize: "4rem" }}
-                    ></i>
+                    <i aria-hidden="true" class="icons fas fa-medal"></i>
                   </NavLink>
                   <h3>UNCOMPROMISED QUALITY</h3>
                 </div>
@@ -47,11 +43,7 @@ const Right_Technology = () => {
               <div className="grid_two_rows  icons_content">
                 <div className="content">
                   <NavLink to="">
-                    <i
-                      aria-hidden="true"
-                      class="icons fas fa-search"
-                      style={{ fontSize: "3.8rem" , marginLeft:"-4rem" }}
-                    ></i>
+                    <i aria-hidden="true" class="icons fas fa-search"></i>
                   </NavLink>
                   <h3>PROFOUND R&D</h3>
                 </div>
@@ -94,10 +86,13 @@ const Wrapper = styled.section`
     margin: 8rem 3rem 0rem 4rem;
   }
   .content_section {
-    h1,
-    p {
+    h1 {
       color: ${({ theme }) => theme.colors.heading};
       text-align: center;
+    }
+    p {
+      color: ${({ theme }) => theme.colors.heading};
+      text-align: justify;
     }
   }
   .grid-three-column {
@@ -105,11 +100,11 @@ const Wrapper = styled.section`
     .grid-two-rows {
       grid-template-columns: 1fr 1fr;
     }
- 
+
     .icons_content {
       display: flex;
-      align-items: center;
-      justify-content: center;
+      align-items: flex-start;
+      justify-content: flex-start;
       flex-direction: column;
       gap: 6rem;
       .content {
@@ -123,13 +118,145 @@ const Wrapper = styled.section`
           font-size: 3.5rem;
           color: ${({ theme }) => theme.colors.heading};
           background: ${({ theme }) => theme.colors.helper};
-          padding: 2rem;
+          padding: 2.1rem;
           border-radius: 1rem;
         }
         h3 {
           color: ${({ theme }) => theme.colors.heading};
           font-weight: 600;
-          font-size: 2.3rem;
+          font-size: 2rem;
+        }
+      }
+    }
+  }
+  @media (max-width: ${({ theme }) => theme.media.tab}) {
+    .container {
+      padding: 0 3.2rem;
+    }
+    .grid-three-column {
+      grid-template-columns: repeat(3, 1fr);
+      .grid-two-rows {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .icons_content {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        gap: 6rem;
+        .content {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: rows;
+          gap: 1rem;
+
+          .icons {
+            font-size: 1.7rem;
+            color: ${({ theme }) => theme.colors.heading};
+            background: ${({ theme }) => theme.colors.helper};
+            padding: 1.1rem;
+            border-radius: 1rem;
+          }
+          h3 {
+            color: ${({ theme }) => theme.colors.heading};
+            font-weight: 600;
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: ${({ theme }) => theme.media.mobile}) {
+    html {
+      font-size: 50%;
+    }
+    .grid {
+      display: grid;
+      gap: 3rem;
+      margin: 8rem 0rem 0rem 1rem;
+    }
+    .container {
+      padding: 0 3.2rem;
+    }
+    .grid-three-column {
+      grid-template-columns: 1fr;
+      .grid-two-rows {
+        grid-template-columns: 1fr;
+      }
+
+      .icons_content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 3rem;
+        .content {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
+          gap: 1rem;
+
+          .icons {
+            font-size: 2.3rem;
+            color: ${({ theme }) => theme.colors.heading};
+            background: ${({ theme }) => theme.colors.helper};
+            padding: 1.1rem;
+            border-radius: 1rem;
+          }
+          h3 {
+            color: ${({ theme }) => theme.colors.heading};
+            font-weight: 600;
+            font-size: 1.8rem;
+          }
+        }
+      }
+    }
+  }
+  @media (max-width: ${({ theme }) => theme.media.small_phone}) {
+    html {
+      font-size: 50%;
+    }
+    .grid {
+      display: grid;
+      gap: 3rem;
+      margin: 8rem 0rem 0rem 1rem;
+    }
+    .container {
+      padding: 0 3.2rem;
+    }
+    .grid-three-column {
+      grid-template-columns: 1fr;
+      .grid-two-rows {
+        grid-template-columns: 1fr;
+      }
+
+      .icons_content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-direction: column;
+        gap: 3rem;
+        .content {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
+          gap: 1rem;
+          .icons {
+            font-size: 1.9rem;
+            color: ${({ theme }) => theme.colors.heading};
+            background: ${({ theme }) => theme.colors.helper};
+            padding: 1.1rem;
+            border-radius: 1rem;
+          }
+          h3 {
+            color: ${({ theme }) => theme.colors.heading};
+            font-weight: 600;
+            font-size: 1.6rem;
+          }
         }
       }
     }

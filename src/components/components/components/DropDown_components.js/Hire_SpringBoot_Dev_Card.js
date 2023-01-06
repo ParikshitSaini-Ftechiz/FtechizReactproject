@@ -41,11 +41,11 @@ const Wrapper = styled.section`
     .card_body {
       .card_header {
         .price_div {
-          padding: 1rem;
+          padding: 1.5rem 1rem;
           border-top-left-radius: 3rem;
           border-bottom-left-radius: 3rem;
           margin-left: 2rem;
-          height: 6rem;
+          height: auto;
           background: ${({ theme }) => theme.colors.helper};
           h4 {
             color: ${({ theme }) => theme.colors.heading};

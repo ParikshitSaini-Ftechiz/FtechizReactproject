@@ -68,5 +68,6 @@ const Wrapper = styled.section`
       }
     }
   }
+  
 `;
 export default MyAccordion;

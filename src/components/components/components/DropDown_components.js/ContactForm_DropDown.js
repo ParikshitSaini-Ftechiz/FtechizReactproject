@@ -28,6 +28,48 @@ const Wrapper = styled.section`
       margin: 0rem 10rem;
     }
   }
+  @media (max-width:${({ theme }) => theme.media.tab}) {
+      .container{
+        padding: 0 3.2rem;
+      }
+      .content {
+    h1,
+    p {
+      color: ${({ theme }) => theme.colors.heading};
+      text-align: center;
+      margin: 0rem 10rem;
+    }
+  }
+}
+@media (max-width:${({ theme }) => theme.media.mobile}) {
+      html{
+        font-size: 50%;
+      }
+     
+      .content {
+    h1,
+    p {
+      color: ${({ theme }) => theme.colors.heading};
+      text-align: center;
+      margin: 0rem 2rem;
+    }
+  }
+}
+@media (max-width:${({ theme }) => theme.media.small_phone}) {
+      html{
+        font-size: 50%;
+      }
+     
+      .content {
+    h1,
+    p {
+      color: ${({ theme }) => theme.colors.heading};
+      text-align: center;
+      margin: 0rem 2rem;
+    }
+  }
+}
+   
 `;
 export default ContactForm_DropDown;
 
