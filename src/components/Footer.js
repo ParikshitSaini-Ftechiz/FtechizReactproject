@@ -184,8 +184,8 @@ const Wrapper = styled.section`
 
     .grid {
       display: grid;
-      gap: 9rem;
-      margin: 8rem 0rem 0rem 0rem;
+      gap: 6rem;
+      margin: 8rem 1rem 0rem 1rem;
     }
     .container {
       text-transform: capitalize;
@@ -194,14 +194,14 @@ const Wrapper = styled.section`
     .grid-three-column {
       grid-template-columns: 1fr 1fr 1fr;
     }
-      a {
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
-        gap: 1rem;
-        color: ${({ theme }) => theme.colors.color_white};
-      }
-    
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 1rem;
+      color: ${({ theme }) => theme.colors.color_white};
+    }
+
     .flutter {
       display: flex;
       gap: 0.6rem;
@@ -235,7 +235,155 @@ const Wrapper = styled.section`
   }
 
   ${"" /* responsive */}
- 
+  @media (max-width: ${({ theme }) => theme.media.tab}) {
+  
+    h3{
+  font-size:2.2rem;
+ }
+ a{
+  font-size:1.3rem;
+ }
+ p{
+  font-size:1.3rem;
+ }
+    .footer_portion {
+      padding: 1rem 0 7rem 0;
+      background: ${({ theme }) => theme.colors.bg};
+      color: ${({ theme }) => theme.colors.color_white};
 
+      .grid {
+        display: grid;
+        gap: 1rem;
+        margin: 8rem 0rem 0rem 0rem;
+      }
+    
+      .grid-three-column {
+        grid-template-columns: .5fr 1fr 1fr;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+        color: ${({ theme }) => theme.colors.color_white};
+      }
+
+      .flutter {
+        display: flex;
+        gap: 0.6rem;
+        img {
+          width: 1.6rem;
+        }
+      }
+      .contact {
+        h3 {
+          margin-top: 2.4rem;
+        }
+        p {
+          display: flex;
+          align-items: center;
+          line-height: 3.4rem;
+          gap: 1rem;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+
+    ${"" /* copyright */}
+    .footer_bottom {
+      text-align: center;
+      text-transform: capitalize;
+      p {
+        color: ${({ theme }) => theme.colors.bg};
+        font-size: 1.5rem;
+        margin: 4rem 0;
+      }
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.mobile}) {
+ h3{
+  font-size:3rem;
+ }
+ a{
+  font-size:1.7rem;
+ }
+    .footer_portion {
+      padding: 1rem 0 7rem 0;
+      background: ${({ theme }) => theme.colors.bg};
+      color: ${({ theme }) => theme.colors.color_white};
+
+    .grid {
+      display: grid;
+      margin: 8rem 10rem;
+    }
+      .grid-three-column {
+        grid-template-columns: 1fr;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 1rem;
+        color: ${({ theme }) => theme.colors.color_white};
+      }
+
+      .flutter {
+        display: flex;
+        gap: 0.6rem;
+        img {
+          width: 1.6rem;
+        }
+      }
+      .contact {
+        h3 {
+          margin-top: 2.4rem;
+        }
+        p {
+          display: flex;
+          align-items: center;
+          line-height: 3.4rem;
+          gap: 1rem;
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.small_phone}) {
+    html {
+      font-size: 60%;
+    }
+    .footer_portion {
+      padding: 1rem 0 7rem 0;
+      background: ${({ theme }) => theme.colors.bg};
+      color: ${({ theme }) => theme.colors.color_white};
+    .grid {
+      display: grid;
+      gap: 2rem;
+      margin: 8rem 5rem;
+    }
+      .grid-three-column {
+        grid-template-columns: 1fr;
+      }
+      a {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-direction: row;
+        gap: 1rem;
+        color: ${({ theme }) => theme.colors.color_white};
+      }
+
+      .flutter {
+        display: flex;
+        gap: 0.6rem;
+      
+        img {
+          width: 1.6rem;
+        }
+      }
+    }
+  }
 `;
 export default Footer;

@@ -51,13 +51,114 @@ const Wrapper = styled.section`
       grid-template-columns: 1fr 1fr;
       margin: 0.5rem 1rem;
       .card_icon {
-        margin-top: 2rem;
-        margin-left: 1rem;
+        width: 10rem;
+        height: 10rem;
+        background: ${({ theme }) => theme.colors.helper};
+        border-radius: 50%;
+        display: flex;
+        padding: 2.4rem 2.4rem 1rem 2.4rem;
+        margin:auto;
         .icon {
-          color: ${({ theme }) => theme.colors.helper};
+          color: ${({ theme }) => theme.colors.bg};
+     
+
         }
       }
     }
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.mobile}) {
+    html {
+      font-size: 60%;
+    }
+    .grid {
+      gap: 3.2rem;
+    }
+    .grid-two-column {
+      grid-template-columns: 1fr;
+    }
+    .card {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: ${({ theme }) => theme.colors.services_card_bg};
+    padding:  2rem;
+    border-radius: 1rem;
+    align-items:center;
+    justify-content:center;
+    h3 {
+      text-align:center;
+      margin: 1rem 0rem;
+    }
+    .grid-two-column {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      grid-template-columns:  1fr;
+      .card_icon {
+        width: 10rem;
+        height: 10rem;
+        background: ${({ theme }) => theme.colors.helper};
+        border-radius: 50%;
+        display: flex;
+        padding: 3rem 2.8rem;
+        margin:auto;
+        .icon {
+          color: ${({ theme }) => theme.colors.bg};
+        
+
+        }
+      }
+    }
+  }
+  }
+  @media (max-width: ${({ theme }) => theme.media.small_phone}) {
+    html {
+      font-size: 60%;
+    }
+    .grid {
+      gap: 3.2rem;
+    }
+    .grid-two-column  {
+      grid-template-columns: 1fr;
+    }
+    .card {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    background: ${({ theme }) => theme.colors.services_card_bg};
+    padding: 2rem;
+    border-radius: 1rem;
+    align-items:center;
+    justify-content:center;
+    h3 {
+      text-align:center;
+      margin: 2rem 0rem;
+    }
+    .grid-two-column {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      grid-template-columns:  1fr;
+      .card_icon {
+        width: 10rem;
+        height: 10rem;
+        background: ${({ theme }) => theme.colors.helper};
+        border-radius: 50%;
+        display: flex;
+        padding: 3rem 2.8rem;
+        margin:auto;
+        .icon {
+          color: ${({ theme }) => theme.colors.bg};
+
+
+        }
+      }
+
+    }
+  }
   }
 `;
 export default Vertical_Card;

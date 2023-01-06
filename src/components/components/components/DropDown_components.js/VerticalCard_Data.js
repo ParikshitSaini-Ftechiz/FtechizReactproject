@@ -11,22 +11,22 @@ import CheckCircleOutlineOutlinedIcon from '@mui/icons-material/CheckCircleOutli
 export const android_dev_process = [
 
   {
-    icon: <ContentPasteSearchIcon style={{ fontSize: "6rem" }} />,
+    icon: <ContentPasteSearchIcon style={{ fontSize: "5rem" }} />,
     title: "Research & Planning",
     para: "At the very first step, our development team will get familiar with your project idea and get detail insights about it. After thorough research, refining the plan and preparing a detailed documentation about the project, we will create a design for every page that has a smooth flow. Then, we’ll develop the app as per the wireframe of android development services.",
   },
   {
-    icon: <DesignServicesIcon style={{ fontSize: "6rem" }} />,
+    icon: <DesignServicesIcon style={{ fontSize: "5rem" }} />,
     title: "Design & Development",
     para: "The second phase is to design the app. In this phase, we will add graphics, icons, and features as per the documentation to produce a visually appealing app. In this stage, we’ll also develop the app by adding the required functionalities and server-side elements in our android development services.",
   },
   {
-    icon: <CodeIcon style={{ fontSize: "6rem" }} />,
+    icon: <CodeIcon style={{ fontSize: "5rem" }} />,
     title: " QA & Testing",
     para: "At this phase, after developing the application our testing team will check the app for bugs or errors and take the necessary steps to ensure that the app runs smoothly. Finishing touches will be given to the app and all the issues will be resolved.",
   },
   {
-    icon: <StorageIcon style={{ fontSize: "6rem" }} />,
+    icon: <StorageIcon style={{ fontSize: "5rem" }} />,
     title: "Deployment",
     para: "This is the final stage! In this phase we will deploy the application in the Play Store. Now, your customers can download the app and you can generate a profitable ROI through it.",
   },
@@ -34,27 +34,27 @@ export const android_dev_process = [
 
 export const blockChain_dev_process = [
   {
-    icon: <ForumIcon  style={{ fontSize: "6rem" }}/>,
+    icon: <ForumIcon  style={{ fontSize: "5rem" }}/>,
     title: "Blockchain technology consulting	",
     para: "	This is the first stage of the development process and we begin with what, why, and how blockchain technology can benefit your business and bring trust, security and transparency to the business. 		",
   },
   {
-    icon: <ContentPasteSearchIcon style={{ fontSize: "6rem" }} />,
+    icon: <ContentPasteSearchIcon style={{ fontSize: "5rem" }} />,
     title: "Requirement Analysis	",
     para: "	In this stage we analyze your business requirements to understand the features and functionalities to be integrated in your project. We do market research, project’s feasibility assessment, analysis of blockchain platforms, tools, technologies and right features prioritization for your project. This will helps us draw an effective development strategy for you.",
   },
   {
-    icon: <DesignServicesIcon style={{ fontSize: "6rem" }} />,
+    icon: <DesignServicesIcon style={{ fontSize: "5rem" }} />,
     title: "UI/UX design",
     para: "	In the very next stage, our Blockchain Designing team creates cutting-edge intuitive UI designs that are simple, user-friendly and convenient for the end users. Simultaneously, our designers also work on the blueprint designs, user designs and database designs.	",
   },
   {
-    icon: <DescriptionIcon style={{ fontSize: "6rem" }}/>,
+    icon: <DescriptionIcon style={{ fontSize: "5rem" }}/>,
     title: "	Prototype			",
     para: "	With client approval, we develop a prototype of what your Blockchain application or software would look like. Further, we test the prototype of your app or software for convenient UI and UX designs.	",
   },
   {
-    icon: <CheckCircleOutlineOutlinedIcon style={{ fontSize: "6rem" }}/>,
+    icon: <CheckCircleOutlineOutlinedIcon style={{ fontSize: "5rem" }}/>,
     title: "Development		",
     para: "Based on the initial feedbacks, our Blockchain development team develops a high-quality blockchain product for your organization as per your business requirements.",
   },
@@ -70,7 +70,7 @@ export const blockChain_dev_process = [
   },
   {
     icon:<i class="fa fa-handshake-o" aria-hidden="true"
-    style={{ fontSize: "6rem" }} ></i>,
+    style={{ fontSize: "5rem" }} ></i>,
     title: "Support &amp; Maintenance	",
     para: "After the development process all digital solutions require improvement with time. We also offer post maintenance services to our all clients. We monitor, maintain, and provide support for OS releases, 3rd party upgrades, and new releases. 		",
   },
@@ -78,7 +78,7 @@ export const blockChain_dev_process = [
 
 export const cloud_dev_process = [
   {
-    icon:  <ContentPasteSearchIcon style={{ fontSize: "6rem" }} />,
+    icon:  <ContentPasteSearchIcon style={{ fontSize: "5rem" }} />,
     title: "Requirement Gathering	",
     para: "Focus would be on documentation first for clarity and better understanding from both sides and come to the same page.",
   },
