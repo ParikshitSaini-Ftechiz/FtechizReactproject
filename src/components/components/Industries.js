@@ -82,7 +82,7 @@ const Industries = () => {
   );
 };
 const Wrapper = styled.section`
-  padding: 5rem 0 0rem 0;
+  padding: 2rem 0 0rem 0;
   background: ${({ theme }) => theme.colors.color_white};
   .grid {
     display: grid;

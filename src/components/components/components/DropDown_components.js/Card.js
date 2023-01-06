@@ -32,7 +32,7 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
   .card {
-    width: 35rem;
+    width: 34rem;
     height: 65rem;
     padding: 2rem 2rem;
     border: none;
@@ -49,8 +49,9 @@ const Wrapper = styled.div`
       margin-top: 2rem;
       margin-left: 10rem;
       .icon {
-        margin-left: 2.3rem;
-        font-size: 5rem;
+        margin-left: 2.6rem;
+        margin-bottom: 1.2rem;
+        font-size: 4.3rem;
         color: ${({ theme }) => theme.colors.heading};
       }
     }
@@ -78,7 +79,7 @@ const Wrapper = styled.div`
 
     .card {
       width: auto;
-      height: auto;
+    height: 90rem;
       .card_icon {
         margin: auto;
         margin-top: -0.4rem;

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Carousel } from "react-bootstrap";
 
 const Carousel_img = () => {
-  const style = { height: "55rem" };
+  const style = {width:"auto", height: "55rem" };
   return (
     <>
       <Wrapper>
@@ -12,7 +12,7 @@ const Carousel_img = () => {
             <img
               style={style}
               className="d-block w-100"
-              src="https://ftechiz.com/wp-content/uploads/2022/08/Website-min.jpg"
+              src="./images/bg1.jpg"
               alt="First slide"
             />
           </Carousel.Item>
@@ -20,7 +20,7 @@ const Carousel_img = () => {
             <img
               style={style}
               className="d-block w-100"
-              src="https://ftechiz.com/wp-content/uploads/2022/08/Software-min.jpg"
+              src="./images/bg2.jpg"
               alt="Second slide"
             />
           </Carousel.Item>
@@ -28,7 +28,7 @@ const Carousel_img = () => {
             <img
               style={style}
               className="d-block w-100"
-              src="https://ftechiz.com/wp-content/uploads/2022/08/mobile-app-min.jpg"
+              src="./images/bg3.jpg"
               alt="Third slide"
             />
           </Carousel.Item>
@@ -36,7 +36,7 @@ const Carousel_img = () => {
             <img
               style={style}
               className="d-block w-100"
-              src="https://ftechiz.com/wp-content/uploads/2022/08/Blockchain-min-e1668078952601.jpg"
+              src="./images/bg4.jpg"
               alt="Third slide"
             />
           </Carousel.Item>

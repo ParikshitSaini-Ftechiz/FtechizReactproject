@@ -20,15 +20,14 @@ const Para_Heading = ({ heading, para1 }) => {
         <div className="container">
           <div className="content">
             <h1>{headingData} </h1>
-            <p>{paraData} </p> 
-            <p>{paraData2} </p> 
-            <p>{paraData3} </p> 
-            <p>{paraData4} </p> 
-            <p>{paraData5} </p> 
-            <p>{paraData6} </p> 
-            <p>{paraData7} </p> 
-            <p>{paraData8} </p> 
-           
+            <p>{paraData} </p>
+            <p>{paraData2} </p>
+            <p>{paraData3} </p>
+            <p>{paraData4} </p>
+            <p>{paraData5} </p>
+            <p>{paraData6} </p>
+            <p>{paraData7} </p>
+            <p>{paraData8} </p>
           </div>
         </div>
       </Wrapper>
@@ -38,18 +37,32 @@ const Para_Heading = ({ heading, para1 }) => {
 const Wrapper = styled.section`
   padding: 5rem 0 0rem 0;
    {
-    h1{
+    h1 {
       color: ${({ theme }) => theme.colors.heading};
-      text-align:center;
-      margin-bottom:4rem;
+      text-align: center;
+      margin-bottom: 4rem;
     }
     p {
       color: ${({ theme }) => theme.colors.heading};
       text-align: justify;
-      margin-bottom:2rem;
+      margin-bottom: 2rem;
     }
-  
   }
-  
+  @media (max-width: ${({ theme }) => theme.media.mobile}) {
+    h1 {
+      font-size: 3.5rem;
+    }
+    p {
+      text-align: justify;
+    }
+  }
+  @media (max-width: ${({ theme }) => theme.media.small_phone}) {
+    h1 {
+      font-size: 3.5rem;
+    }
+    p {
+      text-align: justify;
+    }
+  }
 `;
 export default Para_Heading;
