@@ -1,7 +1,7 @@
 import ContentPasteSearchIcon from "@mui/icons-material/ContentPasteSearch";
 import DesignServicesIcon from "@mui/icons-material/DesignServices";
 import StorageIcon from "@mui/icons-material/Storage";
-import CodeIcon from "@mui/icons-material/Code";
+import CodeOffIcon from '@mui/icons-material/CodeOff';
 import ForumIcon from '@mui/icons-material/Forum';
 import DescriptionIcon from '@mui/icons-material/Description';
 import CheckCircleOutlineOutlinedIcon from '@mui/icons-material/CheckCircleOutlineOutlined';
@@ -21,7 +21,7 @@ export const android_dev_process = [
     para: "The second phase is to design the app. In this phase, we will add graphics, icons, and features as per the documentation to produce a visually appealing app. In this stage, we’ll also develop the app by adding the required functionalities and server-side elements in our android development services.",
   },
   {
-    icon: <CodeIcon style={{ fontSize: "5rem" }} />,
+    icon: < CodeOffIcon style={{ fontSize: "5rem" }} />,
     title: " QA & Testing",
     para: "At this phase, after developing the application our testing team will check the app for bugs or errors and take the necessary steps to ensure that the app runs smoothly. Finishing touches will be given to the app and all the issues will be resolved.",
   },

@@ -51,15 +51,10 @@ const Wrapper = styled.section`
       grid-template-columns: 1fr 1fr;
       margin: 0.5rem 1rem;
       .card_icon {
-        width: 10rem;
-        height: 10rem;
-        background: ${({ theme }) => theme.colors.helper};
-        border-radius: 50%;
-        display: flex;
-        padding: 2.4rem 2.4rem 1rem 2.4rem;
-        margin:auto;
+      
+        
         .icon {
-          color: ${({ theme }) => theme.colors.bg};
+          color: ${({ theme }) => theme.colors.helper};
      
 
         }
@@ -89,7 +84,7 @@ const Wrapper = styled.section`
     justify-content:center;
     h3 {
       text-align:center;
-      margin: 1rem 0rem;
+      margin: 0 0 2rem 0rem;
     }
     .grid-two-column {
       display: flex;
@@ -97,15 +92,11 @@ const Wrapper = styled.section`
       gap: 2rem;
       grid-template-columns:  1fr;
       .card_icon {
-        width: 10rem;
-        height: 10rem;
-        background: ${({ theme }) => theme.colors.helper};
-        border-radius: 50%;
         display: flex;
-        padding: 3rem 2.8rem;
-        margin:auto;
+ 
+ margin:auto;
         .icon {
-          color: ${({ theme }) => theme.colors.bg};
+          color: ${({ theme }) => theme.colors.helper};
         
 
         }
@@ -135,7 +126,7 @@ const Wrapper = styled.section`
     justify-content:center;
     h3 {
       text-align:center;
-      margin: 2rem 0rem;
+      margin:0 0 2rem 0rem;
     }
     .grid-two-column {
       display: flex;
@@ -143,15 +134,12 @@ const Wrapper = styled.section`
       gap: 2rem;
       grid-template-columns:  1fr;
       .card_icon {
-        width: 10rem;
-        height: 10rem;
-        background: ${({ theme }) => theme.colors.helper};
-        border-radius: 50%;
+     
         display: flex;
-        padding: 3rem 2.8rem;
+ 
         margin:auto;
         .icon {
-          color: ${({ theme }) => theme.colors.bg};
+          color: ${({ theme }) => theme.colors.helper};
 
 
         }
