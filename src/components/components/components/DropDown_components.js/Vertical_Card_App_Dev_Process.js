@@ -19,6 +19,7 @@ export const Vertical_Card_App_Dev_Process_Android = () => {
             <h1>{dev_process_heading}</h1>
             <p>{dev_process_para}</p>
           </div>
+          <div class="grid">
 
           {devProcess.map((currentData) => {
             const { icon, title, para } = currentData;
@@ -30,6 +31,7 @@ export const Vertical_Card_App_Dev_Process_Android = () => {
               </>
             );
           })}
+</div>
         </div>
       </Section>
     </>
@@ -48,6 +50,7 @@ export const Vertical_Card_App_Dev_Process_BlockChain = () => {
             <h1>{dev_process_heading}</h1>
             <p>{dev_process_para}</p>
           </div>
+          <div class="grid">
 
           {devProcess.map((currentData) => {
             const { icon, title, para } = currentData;
@@ -59,6 +62,7 @@ export const Vertical_Card_App_Dev_Process_BlockChain = () => {
               </>
             );
           })}
+</div>
         </div>
       </Section>
     </>
@@ -80,6 +84,7 @@ export const Vertical_Card_App_Dev_Process_Cloud = () => {
             <h1>{dev_process_heading}</h1>
             <p>{dev_process_para}</p>
           </div>
+          <div class="grid">
 
           {devProcess.map((currentData) => {
             const { icon, title, para } = currentData;
@@ -91,6 +96,7 @@ export const Vertical_Card_App_Dev_Process_Cloud = () => {
               </>
             );
           })}
+</div>
         </div>
       </Section>
     </>
@@ -111,7 +117,8 @@ export const Vertical_Card_App_Dev_Process_Flutter = () => {
             <h1>{dev_process_heading}</h1>
             <p>{dev_process_para}</p>
           </div>
-
+          <div class="grid">
+          <div class="grid">
           {devProcess.map((currentData) => {
             const { icon, title, para } = currentData;
             return (
@@ -122,7 +129,10 @@ export const Vertical_Card_App_Dev_Process_Flutter = () => {
               </>
             );
           })}
+        </div></div>
+
         </div>
+
       </Section>
     </>
   );
@@ -142,6 +152,7 @@ export const Vertical_Card_App_Dev_Process_IOS = () => {
             <h1>{dev_process_heading}</h1>
             <p>{dev_process_para}</p>
           </div>
+          <div class="grid">
 
           {devProcess.map((currentData) => {
             const { icon, title, para } = currentData;
@@ -153,6 +164,7 @@ export const Vertical_Card_App_Dev_Process_IOS = () => {
               </>
             );
           })}
+</div>
         </div>
       </Section>
     </>
@@ -174,6 +186,7 @@ export const Vertical_Card_App_Dev_Process_ReactNative = () => {
             <h1>{dev_process_heading}</h1>
             <p>{dev_process_para}</p>
           </div>
+          <div class="grid">
 
           {devProcess.map((currentData) => {
             const { icon, title, para } = currentData;
@@ -185,6 +198,7 @@ export const Vertical_Card_App_Dev_Process_ReactNative = () => {
               </>
             );
           })}
+</div>
         </div>
       </Section>
     </>
@@ -205,6 +219,7 @@ export const Vertical_Card_App_Dev_Process_WebApp = () => {
             <h1>{dev_process_heading}</h1>
             <p>{dev_process_para}</p>
           </div>
+          <div class="grid">
 
           {devProcess.map((currentData) => {
             const { icon, title, para } = currentData;
@@ -216,6 +231,7 @@ export const Vertical_Card_App_Dev_Process_WebApp = () => {
               </>
             );
           })}
+</div>
         </div>
       </Section>
     </>
@@ -236,6 +252,7 @@ export const Vertical_Card_App_Dev_Process_WebDesigning = () => {
             <h1>{dev_process_heading}</h1>
             <p>{dev_process_para}</p>
           </div>
+          <div class="grid">
 
           {devProcess.map((currentData) => {
             const { icon, title, para } = currentData;
@@ -247,6 +264,7 @@ export const Vertical_Card_App_Dev_Process_WebDesigning = () => {
               </>
             );
           })}
+</div>
         </div>
       </Section>
     </>
@@ -268,6 +286,7 @@ export const Vertical_Card_App_Dev_Process_WebDevelopment = () => {
             <h1>{dev_process_heading}</h1>
             <p>{dev_process_para}</p>
           </div>
+          <div class="grid">
 
           {devProcess.map((currentData) => {
             const { icon, title, para } = currentData;
@@ -279,6 +298,7 @@ export const Vertical_Card_App_Dev_Process_WebDevelopment = () => {
               </>
             );
           })}
+</div>
         </div>
       </Section>
         </>
@@ -286,11 +306,18 @@ export const Vertical_Card_App_Dev_Process_WebDevelopment = () => {
 }
 
 const Section = styled.section`
-  padding: 12rem 0 5rem 0;
+  padding: 9rem 0 2rem 0;
+  .grid {
+    display: grid;
+    gap: 1rem;
+    margin: 1rem 0rem;
+  }
   .content {
     h1 {
       color: ${({ theme }) => theme.colors.heading};
       text-align: center;
+      margin: 0 0 2rem 0;
+
     }
     p {
       color: ${({ theme }) => theme.colors.heading};
@@ -298,4 +325,5 @@ const Section = styled.section`
       margin: 0 0 4rem 0;
     }
   }
+
 `;
