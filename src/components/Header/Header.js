@@ -6,29 +6,19 @@ import styled from "styled-components";
 const Header = () => {
   return (
     <MainHeader>
-      <NavLink to="/">
-      <img class="logo" style ={{width:"20rem", height:"auto"}}src="https://ftechiz.com/wp-content/uploads/2022/11/FtechizLogo.png" alt="logo"/>
-      </NavLink>
-      <Navbar/>
+      <Navbar />
     </MainHeader>
   );
 };
 
 const MainHeader = styled.header`
-  width:100%;
+  width: 100%;
   height: auto;
-  background-color:${({theme}) => theme.colors.bg};
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: ${({ theme }) => theme.colors.bg};
+  color: ${({ theme }) => theme.colors.color_white};
   position: fixed;
-  padding:2rem 7rem;
-  z-index:999999;
-
-  .logo{
-    width:13rem;
-    height: 5rem;
-  }
+  padding: 1rem 0rem;
+  z-index: 999999;
 `;
 
 export default Header;

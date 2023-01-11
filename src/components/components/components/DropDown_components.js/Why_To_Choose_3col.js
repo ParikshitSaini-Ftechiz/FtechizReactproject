@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-const Why_To_Choose = ({title,icon}) => {
+const Why_To_Choose_3col = ({title,icon}) => {
   const {title1, title2 , title3, title4 , title5, title6, title7, title8} = title;
   const {icon1, icon2 , icon3, icon4 , icon5, icon6, icon7, icon8} = icon;
 
@@ -9,7 +9,7 @@ const Why_To_Choose = ({title,icon}) => {
     <>
       <Wrapper>
         <div className="container">
-          <div className="grid grid-four-column">
+          <div className="grid grid-three-column">
           <div className="grid-two-rows">
               <div className="icon">
                <p>{icon1}</p>
@@ -40,16 +40,6 @@ const Why_To_Choose = ({title,icon}) => {
                 <h3>{title6}</h3>
               </div>
             </div>
-            <div className="grid-two-rows">
-              <div className="icon">
-               <p>{icon7}</p>
-                <h3>{title7}</h3>
-              </div>
-              <div className="icon">
-               <p>{icon8}</p>
-                <h3>{title8}</h3>
-              </div>
-            </div>
           </div>
         </div>
       </Wrapper>
@@ -69,7 +59,7 @@ padding:0 2rem;
     gap:.8rem;
     margin: 5rem 2rem 0rem 2rem;
   }
-  .grid-four-column {
+  .grid-three-column {
     grid-template-columns: repeat(4, 1fr);
   }
   .grid-two-rows {
@@ -107,7 +97,7 @@ padding:0 2rem;
       .container{
         padding: 0 3.2rem;
       }
-        .grid-four-column {
+        .grid-three-column {
       grid-template-columns: 1fr 1fr;
     }
 }
@@ -118,7 +108,7 @@ padding:0 2rem;
       .grid{
         gap: 3.2rem;
       }
-      .grid-four-column{
+      .grid-three-column{
         grid-template-columns: 1fr;
       }
 }
@@ -129,10 +119,10 @@ padding:0 2rem;
       .grid{
         gap: 3.2rem;
       }
-      .grid-four-column{
+      .grid-three-column{
         grid-template-columns: 1fr;
       }
 }
    
 `;
-export default Why_To_Choose;
+export default Why_To_Choose_3col;

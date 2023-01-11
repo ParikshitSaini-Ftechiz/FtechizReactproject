@@ -79,7 +79,7 @@ const Wrapper = styled.div`
 
     .card {
       width: auto;
-    height: 90rem;
+    height: auto;
       .card_icon {
         margin: auto;
         margin-top: -0.4rem;

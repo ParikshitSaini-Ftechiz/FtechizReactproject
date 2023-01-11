@@ -188,7 +188,7 @@ const Wrapper = styled.section`
     margin: 8rem 1.5rem;
   }
     .grid-three-column {
-      grid-template-columns: 1fr 1fr 1fr;
+      grid-template-columns:1fr 1fr;
     }
     .content {
     h1{
