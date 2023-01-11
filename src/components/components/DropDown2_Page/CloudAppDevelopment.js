@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Main_Section from "../components/Main_Section";
 import Para_Heading from "../components/DropDown_components.js/Para_Heading";
-import {Why_To_Choose_cloud} from "../components/DropDown_components.js/Why_To_Choose_Data";
+import { Why_To_Choose_cloud } from "../components/DropDown_components.js/Why_To_Choose_Data";
 import { Cloud_Data } from "../components/DropDown_components.js/Card_Data";
 import Card from "../components/DropDown_components.js/Card";
 import styled from "styled-components";
@@ -9,14 +9,12 @@ import { Cloud_Para_Data } from "../components/DropDown_components.js/Para_Data"
 import Para_Heading_Component from "../components/DropDown_components.js/Para_Heading_component";
 import Contact_Page from "../Contact_Page";
 import Industries from "../Industries";
-import { cloud_dev_process } from "../components/DropDown_components.js/VerticalCard_Data";
-import Vertical_Card from "../components/DropDown_components.js/Vertical_Card";
 import { Questions_cloud } from "../components/DropDown_components.js/Questions";
+import { Vertical_Card_App_Dev_Process_Cloud } from "../components/DropDown_components.js/Vertical_Card_App_Dev_Process";
 
 const CloudAppDevelopment = () => {
   const [state1, setState1] = useState(Cloud_Data);
   const [paraHeading, setParaHeading] = useState(Cloud_Para_Data);
-  const [devProcess, setDevProcess] = useState(cloud_dev_process);
   const data = {
     nameData: "Leading Cloud Application Development Company",
   };
@@ -55,17 +53,14 @@ const CloudAppDevelopment = () => {
       "Feel free to connect with us by filling out this form! Our team will be happy to guide you through our process.",
   };
 
-  // development process para and heading//
-  const dev_process_heading = "Development Process We Follow";
-  const dev_process_para =
-    "Ftechiz is one of the most trusted partners to help guide your cloud journey. We help you in quickly build, test, launch and deliver your cloud strategy, new services and products. We fit in the best of all the major cloud providers into a flawless experience for your customers, employees and other stakeholders. While modernizing your business we focus on reducing complexity, costs and operational challenges.";
 
   return (
     <>
       <Wrapper>
         <Main_Section myData={data} para={para} image={image} btn={btn} />
         <Para_Heading heading={heading} para1={para1} />
-        <Why_To_Choose_cloud/>
+        <Why_To_Choose_cloud />
+
         {/* services para or heading through map method */}
         <div>
           {paraHeading.map((currentData) => {
@@ -105,29 +100,10 @@ const CloudAppDevelopment = () => {
         {/* industries we serve */}
 
         {/* development process we follow */}
-        <Section>
-          <div class="container">
-            <div className="content">
-              <h1>{dev_process_heading}</h1>
-              <p>{dev_process_para}</p>
-            </div>
-
-            {devProcess.map((currentData) => {
-              const { icon, title, para } = currentData;
-              return (
-                <>
-                  <div>
-                    <Vertical_Card icon={icon} title={title} para={para} />
-                  </div>
-                </>
-              );
-            })}
-          </div>
-        </Section>
-
+        <Vertical_Card_App_Dev_Process_Cloud />
         {/* development process we follow */}
 
-        <Questions_cloud/>
+        <Questions_cloud />
 
         {/* contact page */}
         <Contact_Page
@@ -154,25 +130,25 @@ const Wrapper = styled.section`
       padding: 0 3.2rem;
     }
     .grid {
-    display: grid;
-    gap: 1rem;
-    margin: 8rem 1.5rem;
-  }
+      display: grid;
+      gap: 1rem;
+      margin: 8rem 1.5rem;
+    }
     .grid-three-column {
-      grid-template-columns:  1fr;
+      grid-template-columns: 1fr;
     }
     .content {
-    h1{
-      text-align: center;
-      margin: 1rem 6rem;
-      color: ${({ theme }) => theme.colors.heading};
+      h1 {
+        text-align: center;
+        margin: 1rem 6rem;
+        color: ${({ theme }) => theme.colors.heading};
+      }
+      p {
+        text-align: justify;
+        margin: 2rem 6rem;
+        color: ${({ theme }) => theme.colors.heading};
+      }
     }
-    p {
-      text-align: justify;
-      margin: 2rem 6rem;
-      color: ${({ theme }) => theme.colors.heading};
-    }
-  }
   }
 
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
@@ -180,25 +156,24 @@ const Wrapper = styled.section`
       font-size: 60%;
     }
     .grid {
-    display: grid;
-    gap: 2rem;
-    margin: 8rem 2rem;
-  }
+      display: grid;
+      gap: 2rem;
+      margin: 8rem 2rem;
+    }
     .grid-three-column {
       grid-template-columns: 1fr;
     }
-    
-     .content {
-    h1{
-      text-align: justify;
-    }
-    p {
-      text-align: center;
-      margin: 2rem 2rem;
-      color: ${({ theme }) => theme.colors.heading};
-    }
-  }
 
+    .content {
+      h1 {
+        text-align: justify;
+      }
+      p {
+        text-align: center;
+        margin: 2rem 2rem;
+        color: ${({ theme }) => theme.colors.heading};
+      }
+    }
   }
 
   @media (max-width: ${({ theme }) => theme.media.small_phone}) {
@@ -206,50 +181,29 @@ const Wrapper = styled.section`
       font-size: 60%;
     }
     .grid {
-    display: grid;
-    gap: 2rem;
-    margin: 8rem 2rem;
-  }
+      display: grid;
+      gap: 2rem;
+      margin: 8rem 2rem;
+    }
     .grid-three-column {
       grid-template-columns: 1fr;
     }
-    
-     .content {
-    h1{
-      {
-      text-align: center;
-      margin: 2rem 2rem;
-      color: ${({ theme }) => theme.colors.heading};
+
+    .content {
+      h1 {
+         {
+          text-align: center;
+          margin: 2rem 2rem;
+          color: ${({ theme }) => theme.colors.heading};
+        }
+      }
+      p {
+        text-align: justify;
+        margin: 2rem 2rem;
+        color: ${({ theme }) => theme.colors.heading};
+      }
     }
-    }
-    p {
-      text-align: justify;
-      margin: 2rem 2rem;
-      color: ${({ theme }) => theme.colors.heading};
-    }
-  }
- 
   }
 `;
 
-const Section = styled.section`
-  padding: 12rem 0 4rem 0;
-  .grid {
-    display: grid;
-    gap: 2rem;
-    margin: 1rem 0rem;
-  }
-  .content {
-    h1 {
-      color: ${({ theme }) => theme.colors.heading};
-      text-align: center;
-    }
-    p {
-      color: ${({ theme }) => theme.colors.heading};
-      text-align: justify;
-      margin: 0 0 4rem 0;
-    }
-  }
- 
-`;
 export default CloudAppDevelopment;

@@ -10,6 +10,7 @@ import Contact_Page from "../Contact_Page";
 import Industries from "../Industries";
 import { Questions_flutter } from "../components/DropDown_components.js/Questions";
 import { Why_To_Choose_flutter } from "../components/DropDown_components.js/Why_To_Choose_Data";
+import { Vertical_Card_App_Dev_Process_Flutter } from "../components/DropDown_components.js/Vertical_Card_App_Dev_Process";
 
 const FlutterAppDevelopment = () => {
   const [state1, setState1] = useState(Flutter_Data);
@@ -98,6 +99,11 @@ const FlutterAppDevelopment = () => {
         {/* industries we serve */}
         <Industries />
         {/* industries we serve */}
+
+
+        {/* development process we follow */}
+        <Vertical_Card_App_Dev_Process_Flutter/>
+        {/* development process we follow */}
 
         <Questions_flutter/>
 

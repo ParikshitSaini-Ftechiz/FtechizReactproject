@@ -10,6 +10,7 @@ import Contact_Page from "../Contact_Page";
 import Industries from "../Industries";
 import { Questions_webdesigning } from "../components/DropDown_components.js/Questions";
 import { Why_To_Choose_webdesigning } from "../components/DropDown_components.js/Why_To_Choose_Data";
+import { Vertical_Card_App_Dev_Process_WebDesigning } from "../components/DropDown_components.js/Vertical_Card_App_Dev_Process";
 
 const WebsiteDesigning = () => {
   const [state1, setState1] = useState(WebsiteDesigning_Data);
@@ -60,7 +61,7 @@ const WebsiteDesigning = () => {
       <Wrapper>
         <Main_Section myData={data} para={para} image={image} btn={btn} />
         <Para_Heading heading={heading} para1={para1} />
-        <Why_To_Choose_webdesigning/>
+        <Why_To_Choose_webdesigning />
 
         {/*services para or heading through map method */}
         <div>
@@ -100,7 +101,11 @@ const WebsiteDesigning = () => {
         <Industries />
         {/* industries we serve */}
 
-        <Questions_webdesigning/>
+        {/* development process we follow */}
+        <Vertical_Card_App_Dev_Process_WebDesigning />
+        {/* development process we follow */}
+
+        <Questions_webdesigning />
 
         {/* contact page */}
         <Contact_Page
@@ -113,7 +118,6 @@ const WebsiteDesigning = () => {
   );
 };
 const Wrapper = styled.section`
-
   .grid {
     display: grid;
     gap: 2rem;
@@ -128,25 +132,25 @@ const Wrapper = styled.section`
       padding: 0 3.2rem;
     }
     .grid {
-    display: grid;
-    gap: 1rem;
-    margin: 8rem 1.5rem;
-  }
+      display: grid;
+      gap: 1rem;
+      margin: 8rem 1.5rem;
+    }
     .grid-three-column {
       grid-template-columns: 1fr;
     }
     .content {
-    h1{
-      text-align: center;
-      margin: 1rem 6rem;
-      color: ${({ theme }) => theme.colors.heading};
+      h1 {
+        text-align: center;
+        margin: 1rem 6rem;
+        color: ${({ theme }) => theme.colors.heading};
+      }
+      p {
+        text-align: justify;
+        margin: 2rem 6rem;
+        color: ${({ theme }) => theme.colors.heading};
+      }
     }
-    p {
-      text-align: justify;
-      margin: 2rem 6rem;
-      color: ${({ theme }) => theme.colors.heading};
-    }
-  }
   }
 
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
@@ -154,25 +158,24 @@ const Wrapper = styled.section`
       font-size: 60%;
     }
     .grid {
-    display: grid;
-    gap: 2rem;
-    margin: 8rem 2rem;
-  }
+      display: grid;
+      gap: 2rem;
+      margin: 8rem 2rem;
+    }
     .grid-three-column {
       grid-template-columns: 1fr;
     }
-    
-     .content {
-    h1{
-      text-align: justify;
-    }
-    p {
-      text-align: center;
-      margin: 2rem 2rem;
-      color: ${({ theme }) => theme.colors.heading};
-    }
-  }
 
+    .content {
+      h1 {
+        text-align: justify;
+      }
+      p {
+        text-align: center;
+        margin: 2rem 2rem;
+        color: ${({ theme }) => theme.colors.heading};
+      }
+    }
   }
 
   @media (max-width: ${({ theme }) => theme.media.small_phone}) {
@@ -180,29 +183,28 @@ const Wrapper = styled.section`
       font-size: 60%;
     }
     .grid {
-    display: grid;
-    gap: 2rem;
-    margin: 8rem 2rem;
-  }
+      display: grid;
+      gap: 2rem;
+      margin: 8rem 2rem;
+    }
     .grid-three-column {
       grid-template-columns: 1fr;
     }
-    
-     .content {
-    h1{
-      {
-      text-align: center;
-      margin: 2rem 2rem;
-      color: ${({ theme }) => theme.colors.heading};
+
+    .content {
+      h1 {
+         {
+          text-align: center;
+          margin: 2rem 2rem;
+          color: ${({ theme }) => theme.colors.heading};
+        }
+      }
+      p {
+        text-align: justify;
+        margin: 2rem 2rem;
+        color: ${({ theme }) => theme.colors.heading};
+      }
     }
-    }
-    p {
-      text-align: justify;
-      margin: 2rem 2rem;
-      color: ${({ theme }) => theme.colors.heading};
-    }
-  }
- 
   }
 `;
 export default WebsiteDesigning;

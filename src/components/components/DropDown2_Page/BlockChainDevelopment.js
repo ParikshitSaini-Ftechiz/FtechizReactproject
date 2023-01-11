@@ -7,15 +7,13 @@ import { BlockChain_Para_Data } from "../components/DropDown_components.js/Para_
 import Para_Heading_Component from "../components/DropDown_components.js/Para_Heading_component";
 import Contact_Page from "../Contact_Page";
 import Industries from "../Industries";
-import Vertical_Card from "../components/DropDown_components.js/Vertical_Card";
-import { blockChain_dev_process } from "../components/DropDown_components.js/VerticalCard_Data";
 import { Questions_blockchain } from "../components/DropDown_components.js/Questions";
 import { Why_To_Choose_blockchain } from "../components/DropDown_components.js/Why_To_Choose_Data";
+import { Vertical_Card_App_Dev_Process_BlockChain } from "../components/DropDown_components.js/Vertical_Card_App_Dev_Process";
 
 const BlockChainDevelopment = () => {
   const [state1, setState1] = useState(BlockChain_Data);
   const [paraHeading, setParaHeading] = useState(BlockChain_Para_Data);
-  const [devProcess, setDevProcess] = useState(blockChain_dev_process);
   
   const data = {
     nameData: "Blockchain Development Company",
@@ -55,9 +53,7 @@ const BlockChainDevelopment = () => {
       "Feel free to connect with us by filling out this form! Our team will be happy to guide you through our process.",
   };
 
-    // development process para and heading//
-    const dev_process_heading = "Our Blockchain App Development Process";
-    const dev_process_para = "We convert your ideas into real world applications that are scalable, efficient and reliable. Our experienced blockchain developers follow a sound process to develop & test quickly and get product maturity at an early stage. We are also a prominent Blockchain development company that has helped many businesses to design high-quality blockchain applications. With the experience of developing 10+ blockchain-powered solutions, we have tailored our process to align with the constant evolution of blockchain technology."
+    
     ;
 
   return (
@@ -107,29 +103,10 @@ const BlockChainDevelopment = () => {
         <Industries />
         {/* Industries_We_Serve */}
 
+        {/* development process */}
+        <Vertical_Card_App_Dev_Process_BlockChain/>
+        {/* development process */}
 
-      {/* development process we follow */}
-      <Section>
-        <div class="container">
-          <div className="content">
-            <h1>{dev_process_heading}</h1>
-            <p>{dev_process_para}</p>
-          </div>
-
-          {devProcess.map((currentData) => {
-            const { icon, title, para } = currentData;
-            return (
-              <>
-                <div>
-                  <Vertical_Card icon={icon} title={title} para={para} />
-                </div>
-              </>
-            );
-          })}
-        </div>
-      </Section>
-
-      {/* development process we follow */}
 
       <Questions_blockchain/>
 
@@ -262,24 +239,6 @@ const Wrapper = styled.section`
 `;
 
 
-const Section = styled.section`
-  padding: 12rem 0 4rem 0;
-  .grid {
-    display: grid;
-    gap: 2rem;
-    margin: 1rem 0rem;
-  }
-  .content {
-    h1 {
-      color: ${({ theme }) => theme.colors.heading};
-      text-align: center;
-    }
-    p {
-      color: ${({ theme }) => theme.colors.heading};
-      text-align: justify;
-      margin: 0 0 4rem 0;
-    }
-  }
- 
-`;
+
+
 export default BlockChainDevelopment;

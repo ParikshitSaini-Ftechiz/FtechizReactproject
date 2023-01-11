@@ -129,7 +129,7 @@ export const Why_To_Choose_blockchain = () => {
 export const Why_To_Choose_cloud = () => {
   
   const icon = {
-    icon1: "",
+    icon1: <i class="fa-solid fa-diamond"  style={{ fontSize: "4rem", color: "white", marginBottom: "-.8rem" }}></i>,
     icon2: (
       <i
         aria-hidden="true"

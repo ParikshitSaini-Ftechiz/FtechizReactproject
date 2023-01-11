@@ -8,6 +8,7 @@ import Contact_Page from "../Contact_Page";
 import Industries from "../Industries";
 import { Questions_webdevelopment } from "../components/DropDown_components.js/Questions";
 import { Why_To_Choose_webdevelopment } from "../components/DropDown_components.js/Why_To_Choose_Data";
+import { Vertical_Card_App_Dev_Process_WebDevelopment } from "../components/DropDown_components.js/Vertical_Card_App_Dev_Process";
 
 const WebsiteDevelopment = () => {
   const [paraHeading, setParaHeading] = useState(WebDevelopment_Para_Data);
@@ -53,7 +54,7 @@ const WebsiteDevelopment = () => {
     <>
       <Main_Section myData={data} para={para} image={image} btn={btn} />
       <Para_Heading heading={heading} para1={para1} />
-      <Why_To_Choose_webdevelopment/>
+      <Why_To_Choose_webdevelopment />
 
       {/*services para or heading through map method */}
       <div>
@@ -80,7 +81,11 @@ const WebsiteDevelopment = () => {
       <Industries />
       {/* indusrties we serve */}
 
-      <Questions_webdevelopment/>
+      {/* development process we follow */}
+      <Vertical_Card_App_Dev_Process_WebDevelopment />
+      {/* development process we follow */}
+
+      <Questions_webdevelopment />
 
       {/* contact page */}
       <Contact_Page contactPara={contactPara} contactHeading={contactHeading} />

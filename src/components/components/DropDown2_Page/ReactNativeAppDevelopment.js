@@ -8,8 +8,9 @@ import { ReactNative_Para_Data } from "../components/DropDown_components.js/Para
 import Para_Heading_Component from "../components/DropDown_components.js/Para_Heading_component";
 import Contact_Page from "../Contact_Page";
 import Industries from "../Industries";
-import {  Questions_reactnative } from "../components/DropDown_components.js/Questions";
+import { Questions_reactnative } from "../components/DropDown_components.js/Questions";
 import { Why_To_Choose_reactnative } from "../components/DropDown_components.js/Why_To_Choose_Data";
+import { Vertical_Card_App_Dev_Process_ReactNative } from "../components/DropDown_components.js/Vertical_Card_App_Dev_Process";
 
 const ReactNativeAppDevelopment = () => {
   const [state1, setState1] = useState(ReactNative_Data);
@@ -55,7 +56,7 @@ const ReactNativeAppDevelopment = () => {
       <Wrapper>
         <Main_Section myData={data} para={para} image={image} btn={btn} />
         <Para_Heading heading={heading} para1={para1} />
-        <Why_To_Choose_reactnative/>
+        <Why_To_Choose_reactnative />
 
         {/* services para or heading through map method */}
         <div>
@@ -95,7 +96,11 @@ const ReactNativeAppDevelopment = () => {
         <Industries />
         {/* industries we serve */}
 
-        <Questions_reactnative/>
+        {/* development process we follow */}
+        <Vertical_Card_App_Dev_Process_ReactNative />
+        {/* development process we follow */}
+
+        <Questions_reactnative />
 
         {/* contact page */}
         <Contact_Page
@@ -122,25 +127,25 @@ const Wrapper = styled.section`
       padding: 0 3.2rem;
     }
     .grid {
-    display: grid;
-    gap: 1rem;
-    margin: 8rem 1.5rem;
-  }
+      display: grid;
+      gap: 1rem;
+      margin: 8rem 1.5rem;
+    }
     .grid-four-column {
-      grid-template-columns: 1fr 1fr ;
+      grid-template-columns: 1fr 1fr;
     }
     .content {
-    h1{
-      text-align: center;
-      margin: 1rem 6rem;
-      color: ${({ theme }) => theme.colors.heading};
+      h1 {
+        text-align: center;
+        margin: 1rem 6rem;
+        color: ${({ theme }) => theme.colors.heading};
+      }
+      p {
+        text-align: justify;
+        margin: 2rem 6rem;
+        color: ${({ theme }) => theme.colors.heading};
+      }
     }
-    p {
-      text-align: justify;
-      margin: 2rem 6rem;
-      color: ${({ theme }) => theme.colors.heading};
-    }
-  }
   }
 
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
@@ -148,25 +153,24 @@ const Wrapper = styled.section`
       font-size: 60%;
     }
     .grid {
-    display: grid;
-    gap: 2rem;
-    margin: 8rem 2rem;
-  }
+      display: grid;
+      gap: 2rem;
+      margin: 8rem 2rem;
+    }
     .grid-four-column {
       grid-template-columns: 1fr;
     }
-    
-     .content {
-    h1{
-      text-align: justify;
-    }
-    p {
-      text-align: center;
-      margin: 2rem 2rem;
-      color: ${({ theme }) => theme.colors.heading};
-    }
-  }
 
+    .content {
+      h1 {
+        text-align: justify;
+      }
+      p {
+        text-align: center;
+        margin: 2rem 2rem;
+        color: ${({ theme }) => theme.colors.heading};
+      }
+    }
   }
 
   @media (max-width: ${({ theme }) => theme.media.small_phone}) {
@@ -174,29 +178,28 @@ const Wrapper = styled.section`
       font-size: 60%;
     }
     .grid {
-    display: grid;
-    gap: 2rem;
-    margin: 8rem 2rem;
-  }
+      display: grid;
+      gap: 2rem;
+      margin: 8rem 2rem;
+    }
     .grid-four-column {
       grid-template-columns: 1fr;
     }
-    
-     .content {
-    h1{
-      {
-      text-align: center;
-      margin: 2rem 2rem;
-      color: ${({ theme }) => theme.colors.heading};
+
+    .content {
+      h1 {
+         {
+          text-align: center;
+          margin: 2rem 2rem;
+          color: ${({ theme }) => theme.colors.heading};
+        }
+      }
+      p {
+        text-align: justify;
+        margin: 2rem 2rem;
+        color: ${({ theme }) => theme.colors.heading};
+      }
     }
-    }
-    p {
-      text-align: justify;
-      margin: 2rem 2rem;
-      color: ${({ theme }) => theme.colors.heading};
-    }
-  }
- 
   }
 `;
 export default ReactNativeAppDevelopment;
