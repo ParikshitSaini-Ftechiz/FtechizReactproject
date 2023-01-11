@@ -21,7 +21,7 @@ const Sofware_Development_Services = () => {
           </div>
           <div className="grid grid-three-column">
             {state.map((currentData) => {
-              const { icon, title, para } = currentData;
+              const { icon, title, para ,btn_text} = currentData;
               return (
                 <>
                   <div className="card">
@@ -33,9 +33,9 @@ const Sofware_Development_Services = () => {
                       <p className="card_para">{para}</p>
                     </div>
                     <div className="card_btn">
-                      <NavLink to="">
-                        <Button className="btn"> Read Me </Button>
-                      </NavLink>
+                     
+                        <Button className="btn"> {btn_text} </Button>
+                      
                     </div>
                   </div>
                 </>
