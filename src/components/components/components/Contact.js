@@ -159,7 +159,7 @@ const Contact = () => {
                </div>
                </div>
               <div className="col-12">
-                <NavLink to="/">
+                <NavLink to="">
                   <Button
                     type="submit"
                     className="submit_btn"

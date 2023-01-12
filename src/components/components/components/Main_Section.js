@@ -16,7 +16,7 @@ const Main_Section = ({ myData, para, image, btn }) => {
             <div className="main_section">
               <h1 className="heading animX">{nameData}</h1>
               <p className="main_para para anim">{paraData}</p>
-              <NavLink>
+              <NavLink to="/contact" target="_blank">
                 <Button className="anim">{btnData}</Button>
               </NavLink>
             </div>

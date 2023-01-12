@@ -41,6 +41,9 @@ const Wrapper = styled.div`
       color:${({theme}) => theme.colors.bg};
       font-size: ${({ theme }) => theme.colors.fontSize};
       cursor: pointer;
+      &:hover{
+        opacity:.6;
+      }
     }
   }
 `;

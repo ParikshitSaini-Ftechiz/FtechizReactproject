@@ -16,7 +16,7 @@ const PremiumClient = () => {
     dots: false,
     autoplay: true,
     smartSpeed: 1000,
-    autoplayTimeout: 3000,
+    autoplayTimeout: 1000,
     loop: false,
 
     responsive: {

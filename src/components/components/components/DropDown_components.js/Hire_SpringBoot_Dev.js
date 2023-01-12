@@ -25,9 +25,38 @@ export const Hire_SpringBoot_Dev_java = () => {
             })}
           </div>
           <div className="button">
-            <NavLink>
+            <a href="https://calendly.com/business-ftechizsolutions/discovery-call?month=2022-10">
               <Button>Schedule an interview with developer</Button>
-            </NavLink>
+            </a>
+          </div>
+        </div>
+      </Wrapper>
+    </>
+  );
+};
+export const Hire_SpringBoot_Dev_remote = () => {
+  const [state, setState] = useState(Hire_SpringBoot_Dev_Data);
+  const heading = "Hire Offshore Developers as Per Your Need in 24 Hours";
+  const para1 =
+    "Simple & Transparent Pricing | Fully Signed NDA | Code Security | No Hidden Cost";
+  return (
+    <>
+      <Wrapper>
+        <div className="container">
+          <div className="content">
+            <h1>{heading} </h1>
+            <p>{para1} </p>
+          </div>
+          <div className="grid grid-three-column ">
+            {state.map((currentData) => {
+              const { id } = currentData;
+              return <Hire_SpringBoot_Dev_Card key={id} {...currentData} />;
+            })}
+          </div>
+          <div className="button">
+            <a href="https://calendly.com/business-ftechizsolutions/discovery-call?month=2022-10">
+              <Button>Schedule an interview with developer</Button>
+            </a>
           </div>
         </div>
       </Wrapper>
@@ -55,9 +84,9 @@ export const Hire_SpringBoot_Dev_blockchain = () => {
             })}
           </div>
           <div className="button">
-            <NavLink>
+          <a href="https://calendly.com/business-ftechizsolutions/discovery-call?month=2022-10">
               <Button>Schedule an interview with developer</Button>
-            </NavLink>
+            </a>
           </div>
         </div>
       </Wrapper>
@@ -85,9 +114,9 @@ export const Hire_SpringBoot_Dev_mobile = () => {
             })}
           </div>
           <div className="button">
-            <NavLink>
+            <a href="https://calendly.com/business-ftechizsolutions/discovery-call?month=2022-10">
               <Button>Schedule an interview with developer</Button>
-            </NavLink>
+            </a>
           </div>
         </div>
       </Wrapper>
@@ -115,9 +144,9 @@ export const Hire_SpringBoot_Dev_fullstack = () => {
             })}
           </div>
           <div className="button">
-            <NavLink>
+            <a href="https://calendly.com/business-ftechizsolutions/discovery-call?month=2022-10">
               <Button>Schedule an interview with developer</Button>
-            </NavLink>
+            </a>
           </div>
         </div>
       </Wrapper>

@@ -12,7 +12,7 @@ const Extra_div = () => {
               <h3>Hire Remote Developers Now</h3>
             </div>
             <div>
-              <NavLink to="">
+              <NavLink to="/hire">
                 <Button>Talk With Our Expert</Button>
               </NavLink>
             </div>

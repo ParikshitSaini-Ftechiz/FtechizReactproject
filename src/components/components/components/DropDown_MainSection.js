@@ -48,7 +48,7 @@ const DropDown_MainSection = ({ myData, para, image, btn }) => {
                 <i class="fa fa-check" aria-hidden="true"></i>
                 {paraData7}
               </p>
-              <NavLink>
+              <NavLink to="/hire">
                 <Button className="anim">{btnData}</Button>
               </NavLink>
             </div>

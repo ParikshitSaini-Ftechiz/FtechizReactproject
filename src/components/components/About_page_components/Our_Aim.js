@@ -25,7 +25,7 @@ const Our_Aim = () => {
                 As a leading Software Development Company, we are trusted to
                 solve complex problems with innovation and creativity.”
               </p>
-              <NavLink>
+              <NavLink to="/hire">
                 <Button> Contact Us</Button>
               </NavLink>
             </div>

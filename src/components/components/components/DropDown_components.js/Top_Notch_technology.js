@@ -66,7 +66,7 @@ const Top_Notch_technology = () => {
                 to worry, Schedule a completely free 30-minute consultation with
                 our Senior Business Development Executive.
               </p>
-              <NavLink>
+              <NavLink to="/hire">
                 <Button>Book A Call</Button>
               </NavLink>
             </div>

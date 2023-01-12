@@ -12,6 +12,7 @@ import Top_Notch_technology from "../components/DropDown_components.js/Top_Notch
 import Why_Hire_Remote_dev from "../components/DropDown_components.js/Why_Hire_Remote_dev";
 import Hire_Top_Software_In_Steps from "../components/DropDown_components.js/Hire_Top_Software_In_Steps";
 import Quality_Services from "../components/DropDown_components.js/Quality_Services";
+import { Hire_SpringBoot_Dev_remote } from "../components/DropDown_components.js/Hire_SpringBoot_Dev";
 
 
 const HireRemoteDevelopers = () => {
@@ -60,6 +61,8 @@ const HireRemoteDevelopers = () => {
       
       {/* Top_Notch_technology */}
       <Industries_We_Serve industries_para={industries_para} />
+
+      <Hire_SpringBoot_Dev_remote/>
 
       <ContactForm_DropDown />
 

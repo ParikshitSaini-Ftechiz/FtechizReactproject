@@ -76,7 +76,7 @@ const Industries_We_Serve = ({ industries_para }) => {
               </div>
             </div>
           </div>
-          <NavLink>
+          <NavLink to="/pricing">
             <Button>PLANS AND PRICING</Button>
           </NavLink>
         </div>

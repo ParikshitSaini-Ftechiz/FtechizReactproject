@@ -5,6 +5,7 @@ import Who_We_Are from './components/About_page_components/Who_We_Are';
 import Our_Proficiency from './components/About_page_components/Our_Proficiency';
 import Right_Technology from './components/About_page_components/Right_Technology';
 import Contact_Page from './components/Contact_Page';
+import Testing from './components/Testing';
 
 function About() {
   //main section 
@@ -40,6 +41,7 @@ function About() {
       <Our_Proficiency/>
       <Right_Technology/>
       <Contact_Page contactPara={contactPara} contactHeading={contactHeading} />
+      <Testing/>
     </>
   );
 }

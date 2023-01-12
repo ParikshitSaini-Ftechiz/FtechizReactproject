@@ -20,9 +20,9 @@ const Hire_SpringBoot_Dev_Card = ({ para, price, time }) => {
             </div>
             <div className="card_bottom">
               <p>
-                <NavLink to="" className="bottom_div">
+                <a href="https://calendly.com/business-ftechizsolutions/discovery-call?month=2022-10"className="bottom_div">
                   Schedule an Inrterview
-                </NavLink>
+                </a>
               </p>
             </div>
           </div>

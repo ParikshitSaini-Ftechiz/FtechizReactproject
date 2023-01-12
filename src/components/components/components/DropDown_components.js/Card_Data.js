@@ -252,25 +252,25 @@ export const Mobile_Data = [
     // first
     {
       icon1:<img src="./images/android.png" style={{width:"7.3rem" ,marginLeft:"0rem", marginBottom:"1.7rem"}}/> ,
-      title1: <NavLink to="" style={{textDecoration:"underline" ,fontSize:"2.6rem",color:"white",}}>Android App Development</NavLink>,
+      title1: <NavLink to="/androidappdevelopment" target="_blank" style={{textDecoration:"underline" ,fontSize:"2.6rem",color:"white",}}>Android App Development</NavLink>,
       para1: "At Ftechiz, you get a separate team of experienced and qualified Android app developers who have successfully delivered android apps in food delivery, ecommerce, Education, Blockchain, Healthcare, and many categories. The team is focused and does constant R&D that keeps us a step ahead from our competitors in the market.",
     },
     // second
     {
       icon1:<img src="./images/ios.svg" style={{width:"7.3rem" ,marginLeft:"0rem", marginBottom:"1.7rem"}}/> ,
-      title1: <NavLink to="" style={{textDecoration:"underline" ,fontSize:"2.6rem",color:"white"}}>iOS App Development	</NavLink>,
+      title1: <NavLink to="/iosappdevelopment" target="_blank"  style={{textDecoration:"underline" ,fontSize:"2.6rem",color:"white"}}>iOS App Development	</NavLink>,
       para1: "For companies whose target consumers are iPhone users, we have dedicated iOS development team to build platform-specific solutions as per their business requirements. We have build more than 50 apps of our clients in different categories like lifestyle, blockchain, healthcare, education, ecommerce and many more regardless of complexity and size. It's the right time to leverage our rich expertise in iOS app development to build an interactive, user-friedly, engaging, and consistent app for your business.",
     },
     // third
     {
       icon1:<img src="./images/flutter.svg" style={{width:"7.3rem" ,marginLeft:"0rem", marginBottom:"1.7rem"}}/> ,
-      title1: <NavLink to="" style={{textDecoration:"underline" ,fontSize:"2.6rem",color:"white"}}>Flutter App Development</NavLink>,
+      title1: <NavLink to="/flutterappdevelopment" target="_blank"  style={{textDecoration:"underline" ,fontSize:"2.6rem",color:"white"}}>Flutter App Development</NavLink>,
       para1: "As one of the prominent mobile app Development Company, Ftechiz provides next-gen app development services using Google’s innovative framework, Flutter. Flutter is an open-source mobile app SDK, which supports both Android and iOS platforms powered by Google. We have a separate seasoned team of flutter app developers having years of experience in creating user-friendly and functionally rich apps. We have created several smooth performing app for iOS, Android, and web platforms using flutter’s single code base.",
     },
     // fourth
     {
       icon1:<img src="./images/react_native.svg" style={{width:"4.8rem" ,marginLeft:".4rem", marginBottom:"1.7rem"}}/>,
-      title1: <NavLink to="" style={{textDecoration:"underline" ,fontSize:"2.6rem",color:"white"}}>React Native App Development</NavLink>,
+      title1: <NavLink to="/reactnativeappdevelopment" target="_blank"  style={{textDecoration:"underline" ,fontSize:"2.6rem",color:"white"}}>React Native App Development</NavLink>,
       para1: "With a pool of skilled professionals in react native framework, we deliver top quality mobile apps that are futuristic, secure and flexible. Our react native development team have successfully delivered many cross-platform apps in food delivery, ecommerce, Education, Blockchain, Healthcare, and many categories and they are passionate about building intuitive user interfaces, enabling data security and integrating key enterprise systems.",
     },
     // fifth

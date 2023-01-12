@@ -22,7 +22,7 @@ import ErrorPage from "./components/ErrorPage";
 import { ThemeProvider } from "styled-components";
 import Header from "./components/Header/Header";
 import { GlobalStyle } from "./GlobalStyle";
-import Services from "./components/Services";
+
 import Career from "./components/Career";
 import Portfolio from "./components/Portfolio";
 import HireUs from "./components/HireUs";
@@ -31,6 +31,8 @@ import PrivacyPolicy from "./components/components/Footer_component/PrivacyPolic
 import Disclaimer from "./components/components/Footer_component/Disclaimer"
 import TermOfUse from "./components/components/Footer_component/TermOfUse"
 import Scroll_Up from "./components/components/components/Scroll_Up/Scroll_Up";
+import Contact from "./components/components/components/Contact";
+import  { Hire_SpringBoot_Dev_blockchain, Hire_SpringBoot_Dev_fullstack, Hire_SpringBoot_Dev_mobile, Hire_SpringBoot_Dev_remote ,Hire_SpringBoot_Dev_java} from "./components/components/components/DropDown_components.js/Hire_SpringBoot_Dev";
 
 function App() {
   const theme = {
@@ -140,7 +142,7 @@ function App() {
               path="/cloudappdevelopment"
               element={<CloudAppDevelopment />}
             />
-            <Route path="/services" element={<Services />} />
+
             <Route path="/career" element={<Career />} />
             <Route path="/portfolio" element={<Portfolio />} />
             <Route path="/hire" element={<HireUs />} />
@@ -150,6 +152,13 @@ function App() {
             <Route path="/disclaimer" element={<Disclaimer/>} />
             <Route path="/privacy" element={<PrivacyPolicy />} />
             <Route path="/terms" element={<TermOfUse />} />
+            <Route path="/contact" element={<Contact/>}/>
+            <Route path="/pricing" element={<Hire_SpringBoot_Dev_remote/>}/>
+            <Route path="/pricing" element={<Hire_SpringBoot_Dev_mobile/>}/>
+            <Route path="/pricing" element={<Hire_SpringBoot_Dev_fullstack/>}/>
+            <Route path="/pricing" element={<Hire_SpringBoot_Dev_blockchain/>}/>
+            <Route path="/pricing" element={<Hire_SpringBoot_Dev_java/>}/>
+
           </Routes>
           <Footer />
         </Router>

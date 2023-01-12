@@ -16,9 +16,7 @@ const Main_Section_DropDown = ({ myData, para, image, btn }) => {
             <div className="main_section">
               <h1 className="heading animX">{nameData}</h1>
               <p className="main_para para anim">{paraData}<br/><br/>{para2}</p>
-           
-           
-              <NavLink>
+              <NavLink to="/hire">
                 <Button className="anim">{btnData}</Button>
               </NavLink>
             </div>
