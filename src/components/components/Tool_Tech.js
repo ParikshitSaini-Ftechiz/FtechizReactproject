@@ -1,6 +1,14 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
+import {
+  Tool_Tech_Map_BackEnd,
+  Tool_Tech_Map_Blockchain,
+  Tool_Tech_Map_Cloud,
+  Tool_Tech_Map_Database,
+  Tool_Tech_Map_FrontEnd,
+  Tool_Tech_Map_Mobile,
+} from "./Tool_Tech_Map";
 
 const Tool_Tech = ({ tool_tech_para, tool_tech_heading }) => {
   const [active, setActive] = useState("");
@@ -18,7 +26,7 @@ const Tool_Tech = ({ tool_tech_para, tool_tech_heading }) => {
           <p>{paraData}</p>
           <div className="grid grid-five-column">
             <div className="first_column">
-            <NavLink to="" className="first_column_text">
+              <NavLink to="" className="first_column_text">
                 <div
                   key={1}
                   className={active === "1" ? "active " : undefined}
@@ -79,83 +87,25 @@ const Tool_Tech = ({ tool_tech_para, tool_tech_heading }) => {
                 </div>
               </NavLink>
             </div>
-            <div className="tool_icons_column">
-              <img
-                decoding="async"
-                src="https://ftechiz.com/wp-content/uploads/2022/07/4373284_angular_logo_logos_icon.svg"
-                class="attachment-large size-large wp-image-711"
-                alt=""
-                loading="lazy"
-              />
-              <img
-                decoding="async"
-                src="https://ftechiz.com/wp-content/uploads/2022/08/652581_code_command_develop_javascript_language_icon-1024x1024.png"
-                class="attachment-large size-large wp-image-1257"
-                alt=""
-                loading="lazy"
-                srcset="https://ftechiz.com/wp-content/uploads/2022/08/652581_code_command_develop_javascript_language_icon-1024x1024.png 1024w, https://ftechiz.com/wp-content/uploads/2022/08/652581_code_command_develop_javascript_language_icon-300x300.png 300w, https://ftechiz.com/wp-content/uploads/2022/08/652581_code_command_develop_javascript_language_icon-150x150.png 150w, https://ftechiz.com/wp-content/uploads/2022/08/652581_code_command_develop_javascript_language_icon-768x768.png 768w, https://ftechiz.com/wp-content/uploads/2022/08/652581_code_command_develop_javascript_language_icon-1536x1536.png 1536w, https://ftechiz.com/wp-content/uploads/2022/08/652581_code_command_develop_javascript_language_icon-2048x2048.png 2048w"
-                sizes="(max-width: 1024px) 100vw, 1024px"
-              ></img>
+
+            {/* tab 1 start */}
+            <div className="tool_icons_column fade show">
+              <Tool_Tech_Map_FrontEnd />
             </div>
-            <div className="tool_icons_column">
-              <img
-                decoding="async"
-                src="https://ftechiz.com/wp-content/uploads/2022/07/7423888_react_react-native_icon.svg"
-                class="attachment-large size-large wp-image-712"
-                alt=""
-                loading="lazy"
-              />
-              <img
-                decoding="async"
-                width="1024"
-                height="1024"
-                src="https://ftechiz.com/wp-content/uploads/2022/08/4375066_logo_sass_icon-1024x1024.png"
-                class="attachment-large size-large wp-image-1258"
-                alt=""
-                loading="lazy"
-                srcset="https://ftechiz.com/wp-content/uploads/2022/08/4375066_logo_sass_icon-1024x1024.png 1024w, https://ftechiz.com/wp-content/uploads/2022/08/4375066_logo_sass_icon-300x300.png 300w, https://ftechiz.com/wp-content/uploads/2022/08/4375066_logo_sass_icon-150x150.png 150w, https://ftechiz.com/wp-content/uploads/2022/08/4375066_logo_sass_icon-768x768.png 768w, https://ftechiz.com/wp-content/uploads/2022/08/4375066_logo_sass_icon-1536x1536.png 1536w, https://ftechiz.com/wp-content/uploads/2022/08/4375066_logo_sass_icon-2048x2048.png 2048w"
-                sizes="(max-width: 1024px) 100vw, 1024px"
-              ></img>
+            <div className="tool_icons_column fade show">
+              <Tool_Tech_Map_BackEnd />
             </div>
-            <div className="tool_icons_column">
-              <img
-                decoding="async"
-                src="https://ftechiz.com/wp-content/uploads/2022/07/317755_badge_html_html5_achievement_award_icon.png"
-                class="attachment-large size-large wp-image-710"
-                alt=""
-                loading="lazy"
-              />
-              <img
-                decoding="async"
-                width="1024"
-                height="1024"
-                src="https://ftechiz.com/wp-content/uploads/2022/08/282806_jquery_logo_icon-1024x1024.png"
-                class="attachment-large size-large wp-image-1259"
-                alt=""
-                loading="lazy"
-                srcset="https://ftechiz.com/wp-content/uploads/2022/08/282806_jquery_logo_icon-1024x1024.png 1024w, https://ftechiz.com/wp-content/uploads/2022/08/282806_jquery_logo_icon-300x300.png 300w, https://ftechiz.com/wp-content/uploads/2022/08/282806_jquery_logo_icon-150x150.png 150w, https://ftechiz.com/wp-content/uploads/2022/08/282806_jquery_logo_icon-768x768.png 768w, https://ftechiz.com/wp-content/uploads/2022/08/282806_jquery_logo_icon-1536x1536.png 1536w, https://ftechiz.com/wp-content/uploads/2022/08/282806_jquery_logo_icon-2048x2048.png 2048w"
-                sizes="(max-width: 1024px) 100vw, 1024px"
-              ></img>
+            <div className="tool_icons_column fade show">
+              <Tool_Tech_Map_Blockchain />
             </div>
-            <div className="tool_icons_column">
-              <img
-                decoding="async"
-                src="https://ftechiz.com/wp-content/uploads/2022/07/317756_badge_css_css3_achievement_award_icon.png"
-                class="attachment-large size-large wp-image-707"
-                alt=""
-                loading="lazy"
-              />
-              <img
-                decoding="async"
-                width="1024"
-                height="1024"
-                src="https://ftechiz.com/wp-content/uploads/2022/08/8546808_bootstrap_icon-1024x1024.png"
-                class="attachment-large size-large wp-image-1260"
-                alt=""
-                loading="lazy"
-                srcset="https://ftechiz.com/wp-content/uploads/2022/08/8546808_bootstrap_icon-1024x1024.png 1024w, https://ftechiz.com/wp-content/uploads/2022/08/8546808_bootstrap_icon-300x300.png 300w, https://ftechiz.com/wp-content/uploads/2022/08/8546808_bootstrap_icon-150x150.png 150w, https://ftechiz.com/wp-content/uploads/2022/08/8546808_bootstrap_icon-768x768.png 768w, https://ftechiz.com/wp-content/uploads/2022/08/8546808_bootstrap_icon-1536x1536.png 1536w, https://ftechiz.com/wp-content/uploads/2022/08/8546808_bootstrap_icon-2048x2048.png 2048w"
-                sizes="(max-width: 1024px) 100vw, 1024px"
-              ></img>
+            <div className="tool_icons_column fade show">
+              <Tool_Tech_Map_Cloud />
+            </div>
+            <div className="tool_icons_column fade show">
+              <Tool_Tech_Map_Database />
+            </div>
+            <div className="tool_icons_column fade show">
+              <Tool_Tech_Map_Mobile />
             </div>
           </div>
         </div>
@@ -214,112 +164,108 @@ const Wrapper = styled.section`
       padding: 0 3.2rem;
     }
     h1,
-  p {
-    color: ${({ theme }) => theme.colors.heading};
-    text-align: center;
-    margin: 0rem 6rem;
-  }
-  .grid-five-column {
-    grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
-    display: flex;
-    align-items: center;
-    gap: 4rem;
-    .first_column {
-      width: 25rem;
-      height: 30rem;
-      background: ${({ theme }) => theme.colors.color_grey};
-      .first_column_text {
-        padding: 1.4rem;
-        font-size: 1.8rem;
-        color: ${({ theme }) => theme.colors.heading};
-        
+    p {
+      color: ${({ theme }) => theme.colors.heading};
+      text-align: center;
+      margin: 0rem 6rem;
+    }
+    .grid-five-column {
+      grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
+      display: flex;
+      align-items: center;
+      gap: 4rem;
+      .first_column {
+        width: 25rem;
+        height: 30rem;
+        background: ${({ theme }) => theme.colors.color_grey};
+        .first_column_text {
+          padding: 1.4rem;
+          font-size: 1.8rem;
+          color: ${({ theme }) => theme.colors.heading};
+        }
+      }
+      .tool_icons_column {
+        display: flex;
+        flex-direction: column;
+        gap: 6rem;
+      }
+      img {
+        width: 10rem;
+        height: 10rem;
       }
     }
-    .tool_icons_column {
-      display: flex;
-      flex-direction: column;
-      gap: 6rem;
-    }
-    img {
-      width: 10rem;
-      height: 10rem;
-    }
-  }
   }
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
-  
     .grid {
       gap: 3.2rem;
     }
     .grid-five-column {
       grid-template-columns: 1fr;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 5rem;
-    .first_column {
-      width: 100%;
-      height: 30rem;
-      background: ${({ theme }) => theme.colors.color_grey};
-      .first_column_text {
-        padding: 1.4rem;
-        font-size: 1.8rem;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 5rem;
+      .first_column {
+        width: 100%;
+        height: 30rem;
+        background: ${({ theme }) => theme.colors.color_grey};
+        .first_column_text {
+          padding: 1.4rem;
+          font-size: 1.8rem;
+          color: ${({ theme }) => theme.colors.heading};
+        }
+      }
+      h1,
+      p {
         color: ${({ theme }) => theme.colors.heading};
+        text-align: center;
+        margin: 0rem 2rem;
+      }
+      .tool_icons_column {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+      img {
+        width: 20rem;
+        height: 20rem;
       }
     }
-    h1,
-    p {
-      color: ${({ theme }) => theme.colors.heading};
-      text-align: center;
-      margin: 0rem 2rem;
-    }
-    .tool_icons_column {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-    }
-    img {
-      width: 20rem;
-      height: 20rem;
-    }
-  }
   }
   @media (max-width: ${({ theme }) => theme.media.small_phone}) {
-  
     .grid {
       gap: 3.2rem;
     }
     .grid-five-column {
       grid-template-columns: 1fr;
-      display:flex;
-      flex-direction: column;
-      .first_column {
-      width: 100%;
-      height: 30rem;
-      background: ${({ theme }) => theme.colors.color_grey};
-      .first_column_text {
-        padding: 1.4rem;
-        font-size: 1.8rem;
-        color: ${({ theme }) => theme.colors.heading};
-        
-      }
-    }
-    h1,
-    p {
-      color: ${({ theme }) => theme.colors.heading};
-      text-align: center;
-      margin: 0rem 2rem;
-    }
-    .tool_icons_column {
       display: flex;
       flex-direction: column;
-      gap: 2rem;
+      .first_column {
+        width: 100%;
+        height: 30rem;
+        background: ${({ theme }) => theme.colors.color_grey};
+        .first_column_text {
+          padding: 1.4rem;
+          font-size: 1.8rem;
+          color: ${({ theme }) => theme.colors.heading};
+        }
+      }
+      h1,
+      p {
+        color: ${({ theme }) => theme.colors.heading};
+        text-align: center;
+        margin: 0rem 2rem;
+      }
+      .tool_icons_column {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+      img {
+        width: 20rem;
+        height: 20rem;
+      }
     }
-    img {
-      width: 20rem;
-      height: 20rem;
-    }
-  }
   }
 `;
 export default Tool_Tech;
