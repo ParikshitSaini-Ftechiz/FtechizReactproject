@@ -12,5 +12,5 @@ padding: 1.1rem 1.6rem;
 cursor: pointer;
 background: ${({theme}) =>theme.colors.helper};
 box-shadow:${({theme}) => theme.colors.shadow};
-
+border-radius:.6rem;
 `;

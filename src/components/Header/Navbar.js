@@ -7,13 +7,12 @@ import { Button } from "../components/components/Button";
 import DropDown from "../components/components/DropDown";
 import Second_DropDown from "../components/components/Second_DropDown";
 
-
 const Navbar = () => {
   const [menuIcon, setMenuIcon] = useState(false);
 
   return (
     <>
-       <Nav>
+      <Nav>
         <div className="main-nav">
           {/* 1st logo part  */}
           <div className="logo">
@@ -81,7 +80,7 @@ const Navbar = () => {
                   className="navbar-link-btn"
                   onClick={() => setMenuIcon(false)}
                 >
-                Hire Us
+                  Hire Us
                 </NavLink>
               </li>
             </ul>
@@ -102,7 +101,6 @@ const Navbar = () => {
   );
 };
 const Nav = styled.nav`
-
   a {
     text-decoration: none;
     color: white;
@@ -112,84 +110,83 @@ const Nav = styled.nav`
     list-style: none;
   }
 
-.main-nav {
-  width: 100%;
-  height: 7rem;
-  display: grid;
-  grid-template-columns:0rem 1fr 2fr 0rem;
-}
-
-.logo {
-  display:flex;
-  justify-content: start;
-  align-items: center;
-  margin-left:3rem;
-}
-
-.menu-link {
-  grid-column: 3/4;
-  color: ${({ theme }) => theme.colors.color_white};
-}
-
-.menu-link ul {
-  height: 7rem;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-}
-
-
-.navbar-link-btn{
-  background: ${({ theme }) => theme.colors.helper};
-  padding:.8rem 1.5rem;
-}
-
-/* ----------- Grid part ends ----------------- */
-
-.menu-link ul li {
-  font-size: 1.8rem;
-  padding:0 .5rem;
-
-  &:hover{
-    background: ${({ theme }) => theme.colors.helper};
-    padding:.5rem;
+  .main-nav {
+    width: 100%;
+    height: 7rem;
+    display: grid;
+    grid-template-columns: 0rem 1fr 2fr 0rem;
   }
-}
 
-.menu-link ul li a {
-  text-transform: capitalize;
-  color: ${({ theme }) => theme.colors.color_white};
-  transition: 0.5s;
-  font-size: 1.7rem;
-}
-.menu-link ul li:hover > a {
-  transform-origin: left;
-  opacity: 0.9;
-  transition: 0.5s;
-}
+  .logo {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    margin-left: 3rem;
+  }
 
+  .menu-link {
+    grid-column: 3/4;
+    color: ${({ theme }) => theme.colors.color_white};
+  }
 
-.social-media .hamburger-menu {
-  display: none;
-}
+  .menu-link ul {
+    height: 7rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  .navbar-link-btn {
+    background: ${({ theme }) => theme.colors.helper};
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.6rem;
+  }
+
+  /* ----------- Grid part ends ----------------- */
+
+  .menu-link ul li {
+    font-size: 1.8rem;
+    padding: 0 1rem;
+
+    &:hover {
+      background: ${({ theme }) => theme.colors.helper};
+      padding: 0.5rem 1rem;
+      border-radius: 0.6rem;
+    }
+  }
+
+  .menu-link ul li a {
+    text-transform: capitalize;
+    color: ${({ theme }) => theme.colors.color_white};
+    transition: 0.5s;
+    font-size: 1.7rem;
+  }
+  .menu-link ul li:hover > a {
+    transform-origin: left;
+    opacity: 0.9;
+    transition: 0.5s;
+  }
+
+  .social-media .hamburger-menu {
+    display: none;
+  }
   /* responsive css style  */
   @media (max-width: 1080px) {
     .main-nav {
-  width: 100%;
-  height: 7rem;
-  display: grid;
-  grid-template-columns:0rem .8fr 2fr 0rem;
-}
-.menu-link ul li {
-  font-size: 1.8rem;
-  padding:0 .5rem;
+      width: 100%;
+      height: 7rem;
+      display: grid;
+      grid-template-columns: 0rem 0.8fr 2fr 0rem;
+    }
+    .menu-link ul li {
+      font-size: 1.8rem;
+      padding: 0 0.5rem;
 
-  &:hover{
-    background: ${({ theme }) => theme.colors.helper};
-    padding:.5rem;
-  }
-}
+      &:hover {
+        background: ${({ theme }) => theme.colors.helper};
+        padding: 0.5rem;
+      }
+    }
 
     .logo,
     .menu-link ul,
@@ -200,7 +197,7 @@ const Nav = styled.nav`
 
   /* responsive css style  */
   @media (max-width: 998px) {
-    line-height:5.5rem;
+    line-height: 5.5rem;
     .main-nav {
       height: 7rem;
       grid-template-columns: 1rem 2fr 3fr 0rem;
@@ -238,22 +235,21 @@ const Nav = styled.nav`
 
     .mobile-menu-link ul {
       display: flex;
-      justify-content:center;
+      justify-content: center;
       flex-direction: column;
       align-items: center;
       color: ${({ theme }) => theme.colors.color_white};
-       }
+    }
     .menu-link ul li {
-  font-size: 1.6rem;
-    padding:.1rem 1.6rem;
+      font-size: 1.6rem;
+      padding: 0.1rem 1.6rem;
 
-  &:hover{
-    background: ${({ theme }) => theme.colors.helper};
-    padding:.1rem 1.6rem;
-    border-radius:.5rem;
-
-  }
-}
+      &:hover {
+        background: ${({ theme }) => theme.colors.helper};
+        padding: 0.1rem 1.6rem;
+        border-radius: 0.5rem;
+      }
+    }
     .mobile-menu-link ul li a {
       color: ${({ theme }) => theme.colors.color_white};
       font-size: 2rem;
@@ -279,13 +275,13 @@ const Nav = styled.nav`
       font-size: 2.5rem;
       margin-right: 1rem;
     }
-  .hire-btn{
-  padding:0rem 4rem ;
-  font-size:1rem;
-}
+    .hire-btn {
+      padding: 0rem 4rem;
+      font-size: 1rem;
+    }
   }
   @media (max-width: 798px) {
-    line-height:8rem;
+    line-height: 8rem;
 
     .main-nav {
       height: 7rem;
@@ -306,15 +302,15 @@ const Nav = styled.nav`
       align-items: center;
     }
     .menu-link ul li {
-  font-size: 1.8rem;
-  padding:.1rem 1.6rem;
+      font-size: 1.8rem;
+      padding: 0.1rem 1.6rem;
 
-  &:hover{
-    background: ${({ theme }) => theme.colors.helper};
-    padding:-.1rem 1.6rem;
-    border-radius:.5rem;
-  }
-}
+      &:hover {
+        background: ${({ theme }) => theme.colors.helper};
+        padding: -0.1rem 1.6rem;
+        border-radius: 0.5rem;
+      }
+    }
     .mobile-menu-link {
       background-color: ${({ theme }) => theme.colors.bg};
       position: absolute;
@@ -328,16 +324,15 @@ const Nav = styled.nav`
       align-items: center;
       padding: 36rem 0;
       ${"" /* transform-origin: top; */}
-      
     }
     .hamburger-menu {
       display: block;
       font-size: 2.5rem;
     }
   }
-  
+
   @media (max-width: 520px) {
-    line-height:8rem;
+    line-height: 8rem;
     .main-nav {
       height: 7rem;
       grid-template-columns: 1rem 4fr 1fr 0rem;
@@ -354,15 +349,15 @@ const Nav = styled.nav`
       padding-left: 1rem;
     }
     .menu-link ul li {
-  font-size: 1.8rem;
-  padding:.1rem 1.6rem;
+      font-size: 1.8rem;
+      padding: 0.1rem 1rem;
 
-  &:hover{
-    background: ${({ theme }) => theme.colors.helper};
-    padding:-.1rem 1.6rem;
-    border-radius:.5rem;
-  }
-}
+      &:hover {
+        background: ${({ theme }) => theme.colors.helper};
+        padding: 0rem 1rem;
+        border-radius: 0.5rem;
+      }
+    }
     .mobile-menu-link {
       ${"" /* grid-column: 2/4; */}
       position: relative;
@@ -382,7 +377,6 @@ const Nav = styled.nav`
       align-items: center;
       padding: 10rem 0;
       ${"" /* transform-origin: top; */}
-     
     }
     .mobile-menu-link ul {
       height: auto;
@@ -391,6 +385,11 @@ const Nav = styled.nav`
       flex-direction: column;
       align-items: center;
       color: ${({ theme }) => theme.colors.color_white};
+      .navbar-link-btn {
+        background: ${({ theme }) => theme.colors.helper};
+        padding: 0.8rem 1.5rem;
+        border-radius: 0.6rem;
+      }
     }
     .mobile-menu-link ul li a {
       color: ${({ theme }) => theme.colors.color_white};
