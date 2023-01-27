@@ -100,7 +100,7 @@ const Career_Contact = () => {
               <div className="col-md-12">
                 <div className="form-outline">
                   <label for="validationCustom02" className="form-label">
-                    Technolgy
+                    Technology
                   </label>
                   <Field
                     type="text"
@@ -203,6 +203,7 @@ const Wrapper = styled.div`
   }
   .contact_form {
     background: ${({ theme }) => theme.colors.bg};
+    border-radius:1rem;
     p {
       color: red;
       font-size: 1.9rem;

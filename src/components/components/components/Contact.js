@@ -184,6 +184,7 @@ const Wrapper = styled.div`
   }
   .contact_form {
     background: ${({theme}) => theme.colors.bg};
+    border-radius:1rem;
      p{
       color:red;
       font-size: 1.9rem;

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useState } from "react";
 import styled from "styled-components";
 
@@ -28,9 +28,15 @@ const Accordion = ({
   answer20,
   answer21,
 }) => {
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState(true);
   const [show1, setShow1] = useState(false);
 
+  if(show){
+
+  }
+  useEffect (() =>{
+return setShow(true);
+  },[show])
   return (
     <>
       <Wrapper>
