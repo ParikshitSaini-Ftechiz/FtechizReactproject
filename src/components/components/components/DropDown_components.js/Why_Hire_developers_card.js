@@ -112,7 +112,9 @@ const Wrapper = styled.section`
         font-size: 50%;
       }
       .grid{
-        gap: 3.2rem;
+        display: grid;
+      gap: 3rem;
+      margin: 18rem 0rem 0rem 1rem;
       }
       .grid-two-rows {
     grid-template-columns: 1fr ;
@@ -123,7 +125,7 @@ const Wrapper = styled.section`
     .content {
       display: flex;
       align-items: center;
-      gap: rem;
+      gap: 1rem;
 
       .icons {
         font-size: 1.5rem;
@@ -140,5 +142,6 @@ const Wrapper = styled.section`
     }
   }
 }
+
 `;
 export default Why_Hire_developers_card;

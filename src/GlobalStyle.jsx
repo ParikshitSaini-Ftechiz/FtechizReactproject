@@ -142,6 +142,16 @@ ${"" /* resuable code section  */}
         grid-template-columns: 1fr;
       }
 }
-   
+@media (max-width:${({ theme }) => theme.media.extra_small}) {
+      html{
+        font-size: 50%;
+      }
+      .grid{
+        gap: 3.2rem;
+      }
+      .grid-two-column, .grid-three-column, .grid-four-column{
+        grid-template-columns: 1fr;
+      }
+}  
 
 `;

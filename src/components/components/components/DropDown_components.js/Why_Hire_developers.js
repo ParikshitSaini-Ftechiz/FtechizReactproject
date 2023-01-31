@@ -143,9 +143,7 @@ const Wrapper = styled.section`
     grid-template-columns: 1fr 1fr;
   }
  
-  .grid-two-rows {
-    grid-template-columns: 1fr 1fr;
-  }
+
 
   .main_div {
     display: flex;
@@ -153,5 +151,18 @@ const Wrapper = styled.section`
    marign-left:auto;
    position:relative;
   }
+  @media (max-width:${({ theme }) => theme.media.small_phone}) {
+      html{
+        font-size: 50%;
+      }
+      
+      .grid {
+    display: grid;
+    margin: 8rem 3rem 0rem 3rem;
+  }
+      .grid-two-column, .grid-three-column, .grid-four-column{
+        grid-template-columns: 1fr;
+      }
+}
 `;
 

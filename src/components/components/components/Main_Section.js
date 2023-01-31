@@ -95,7 +95,7 @@ const Wrapper = styled.section`
       font-size:3rem;
     }
     .image {
-    width: 40rem;
+    width: 100%;
     height: 37rem;
   }
   }
@@ -116,7 +116,7 @@ const Wrapper = styled.section`
     }
     img {
       min-width: 70rem;
-      height: 22rem;
+      height: auto;
     }
   }
   @media (max-width: ${({ theme }) => theme.media.small_phone}) {
@@ -134,8 +134,28 @@ const Wrapper = styled.section`
     .grid_two_column {
       grid-template-columns: 1fr;
     }
-    img {
-      min-width: 50rem;
+    .image {
+      min-width: 50rem ;
+      height: 22rem;
+    }
+  }
+  @media (max-width: 425px ) {
+    padding: 15rem 0;
+    html {
+      font-size: 60%;
+    }
+    .grid {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      margin: 0rem 2rem;
+    }
+    .grid_two_column {
+      grid-template-columns: 1fr;
+    }
+    .image {
+      min-width: 38rem ;
       height: 22rem;
     }
   }

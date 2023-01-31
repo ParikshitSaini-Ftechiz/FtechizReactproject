@@ -91,7 +91,23 @@ const Wrapper = styled.section`
     justify-content:center;
     gap:5rem;
   }
-
+  @media (max-width:${({ theme }) => theme.media.small_phone}) {
+      html{
+        font-size: 50%;
+      }
+      .content {
+    h1{
+        
+     font-size:3.5rem;
+    }
+  }
+      .grid{
+        gap: 3.2rem;
+      }
+      .grid-two-column, .grid-three-column, .grid-four-column{
+        grid-template-columns: 1fr;
+      }
+}
 
  
 `;

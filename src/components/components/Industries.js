@@ -82,12 +82,12 @@ const Industries = () => {
   );
 };
 const Wrapper = styled.section`
-  padding: 2rem 0 0rem 0;
+  padding: 8rem 0 0 0;
   background: ${({ theme }) => theme.colors.color_white};
   .grid {
     display: grid;
     gap: 0rem;
-    margin: 2rem 3rem 0rem 3rem;
+    margin:  5rem 3rem;
   }
   .industries_portion {
     display: flex;
@@ -100,7 +100,7 @@ const Wrapper = styled.section`
       p {
         color: ${({ theme }) => theme.colors.heading};
         text-align: center;
-        margin: 0 16rem;
+        margin: 0 6rem;
       }
     }
     .industries_icons {
@@ -159,119 +159,60 @@ const Wrapper = styled.section`
     }
 
     .grid {
-    display: grid;
-    gap: 0rem;
-    margin: 2rem 1rem 0rem 1rem;
-  }
-  .industries_portion {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
-    .heading_portion {
-      .headings,
-      p {
-        color: ${({ theme }) => theme.colors.heading};
-        text-align: center;
-        margin: 0 6rem;
-      }
+      display: grid;
+      gap: 0rem;
+      margin: 2rem 1rem 0rem 1rem;
     }
-    .industries_icons {
-      font-size: 2rem;
+    .industries_portion {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
-      .icons {
-        display: flex;
-        margin: auto;
-        font-size: 4rem;
+      .heading_portion {
+        .headings,
+        p {
+          color: ${({ theme }) => theme.colors.heading};
+          text-align: center;
+          margin: 0 6rem;
+        }
       }
-    }
-    .grid-four-column {
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1rem;
-      .grid_two_column {
-        display: flex;
-        flex-direction: column;
-        gap: 4rem;
-        .grid_row {
-          border: none;
-          padding: 1rem 1.2rem;
+      .industries_icons {
+        font-size: 2rem;
+
+        .icons {
+          display: flex;
+          margin: auto;
+          font-size: 4rem;
+        }
+      }
+      .grid-four-column {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1rem;
+        .grid_two_column {
           display: flex;
           flex-direction: column;
-          align-items: center;
-          justify-content: center;
-          gap: 2rem;
-          h3 {
-                color: ${({ theme }) => theme.colors.heading};
-                display: inline;
-                font-size: 1.9rem;
-                font-weight: 550;
-              }
-        }
-      }
-    }
-  }
-  }
-  @media (max-width: ${({ theme }) => theme.media.mobile}) {
-    html {
-      font-size: 50%;
-    }
-    .grid {
-      gap: 3.2rem;
-    }
-
-      .industries_portion {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-
-        .heading_portion {
-          .headings,
-          p {
-            color: ${({ theme }) => theme.colors.heading};
-            text-align: center;
-            margin: 0 2rem;
-          }
-        }
-        .industries_icons {
-          font-size: 2rem;
-
-          .icons {
-            display: flex;
-            margin: auto;
-            font-size: 4.5rem;
-          }
-        }
-        .grid-four-column {
-          grid-template-columns: 1fr;
-          gap: 5rem;
-          .grid_two_column {
+          gap: 4rem;
+          .grid_row {
+            border: none;
+            padding: 1rem 1.2rem;
             display: flex;
             flex-direction: column;
-            gap: 4rem;
-            .grid_row {
-              border: none;
-              padding: 2rem 10rem;
-              display: flex;
-              flex-direction: column;
-              align-items: center;
-              justify-content: center;
-              gap: 2rem;
-
-              h3 {
-                color: ${({ theme }) => theme.colors.heading};
-                display: inline;
-                font-size: 2.5rem;
-                font-weight: 550;
-              }
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+            h3 {
+              color: ${({ theme }) => theme.colors.heading};
+              display: inline;
+              font-size: 1.9rem;
+              font-weight: 550;
             }
           }
         }
       }
     }
-  
-  @media (max-width: ${({ theme }) => theme.media.small_phone}) {
+  }
+  @media (max-width: ${({ theme }) => theme.media.mobile}) {
     html {
       font-size: 50%;
     }
@@ -322,6 +263,71 @@ const Wrapper = styled.section`
               color: ${({ theme }) => theme.colors.heading};
               display: inline;
               font-size: 2.5rem;
+              font-weight: 550;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: ${({ theme }) => theme.media.small_phone}) {
+    html {
+      font-size: 50%;
+    }
+    .grid {
+      display: grid;
+    gap: 0rem;
+    margin: 2rem 1rem 5rem 1rem;
+    }
+
+    .industries_portion {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      .heading_portion {
+        .headings{
+          color: ${({ theme }) => theme.colors.heading};
+          text-align: center;
+          margin: 1rem 2rem;
+        }
+        p {
+          color: ${({ theme }) => theme.colors.heading};
+          text-align: justify;
+          margin: 0 2rem;
+        }
+      }
+      .industries_icons {
+        font-size: 2rem;
+
+        .icons {
+          display: flex;
+          margin: auto;
+          font-size: 4.5rem;
+        }
+      }
+      .grid-four-column {
+        grid-template-columns: 1fr;
+        gap: 5rem;
+        .grid_two_column {
+          display: flex;
+          flex-direction: column;
+          gap: 4rem;
+          .grid_row {
+            border: none;
+            padding: 2rem 8rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 2rem;
+
+            h3 {
+              color: ${({ theme }) => theme.colors.heading};
+              display: inline;
+              font-size: 2rem;
               font-weight: 550;
             }
           }

@@ -9,7 +9,7 @@ const ContactPage_Small = ({contactPara, contactHeading}) => {
   return (
     <>
       <Wrapper>
-        <div class="container">
+        <div class="container grid">
           <div className="content">
             <h1>{contactHeadingData}</h1>
             <p>
@@ -25,14 +25,42 @@ const ContactPage_Small = ({contactPara, contactHeading}) => {
 };
 const Wrapper = styled.section`
   padding: 6rem 0 0 0 ;
+  .grid {
+    display: grid;
+
+    margin: 2rem 1rem 0rem 1rem;
+  }
   .content {
-    h1,
+    h1 {
+      color: ${({ theme }) => theme.colors.heading};
+      text-align: center;
+      margin: 0rem 0rem 2rem 0;
+      
+    }
+    p {
+      color: ${({ theme }) => theme.colors.heading};
+      text-align: justify;
+      margin:0rem 0rem;
+    }
+  }
+  @media (max-width:${({ theme }) => theme.media.small_phone}) {
+      html{
+        font-size: 50%;
+      }
+      .grid{
+        gap: 3.2rem;
+      }
+      .content {
+    h1{
+      text-align:center;
+    }
     p {
       color: ${({ theme }) => theme.colors.heading};
       text-align: center;
-      margin: 0rem 3rem;
+      margin: 0rem 2rem;
     }
   }
+}
 `;
 export default ContactPage_Small;
 

@@ -66,8 +66,8 @@ const Wrapper = styled.section`
   background: ${({ theme }) => theme.colors.component_bg};
   .main_section {
     display: flex;
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
 
     i {
@@ -90,7 +90,7 @@ const Wrapper = styled.section`
   }
 
   .image {
-    width: 55rem;
+    width: 100%;
     height: 45rem;
   }
 
@@ -129,8 +129,8 @@ const Wrapper = styled.section`
       display: grid;
       gap: 3rem;
       display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
+      align-items: center;
+    justify-content: center;
       margin: 0rem 2rem;
     }
     .grid_two_column {
@@ -140,7 +140,7 @@ const Wrapper = styled.section`
       font-size: 4rem;
     }
     .image {
-      width: 45rem;
+      width: 100%;
       height: 35rem;
     }
   }
@@ -159,7 +159,7 @@ const Wrapper = styled.section`
       grid-template-columns: 1fr;
     }
     .image {
-      width: auto;
+      width: 100%;
       height: 35rem;
     }
   }
@@ -178,8 +178,8 @@ const Wrapper = styled.section`
       grid-template-columns: 1fr;
     }
     .image {
-      width: 50rem;
-      height: 35rem;
+      width: 100%;
+      height: auto;
     }
   }
 `; // 1fr=25% of the available space.

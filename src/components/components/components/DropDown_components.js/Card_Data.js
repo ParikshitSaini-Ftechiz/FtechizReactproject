@@ -493,7 +493,7 @@ export const hirejava = [
 ]
 export const hiremobile = [
   {
-    icon1:<img src="./images/android.png" style={{width:"7.3rem" ,marginLeft:"0rem", marginBottom:"1.7rem"}}/> ,
+    icon1:<img src="./images/android.png" style={{width:"7.3rem" ,marginLeft:"0rem", marginBottom:"1rem"}}/> ,
     title1: <NavLink to="" style={{fontSize:"2.55rem", color:"white",textDecoration:"underline"}}>Android App Development</NavLink>  ,
     para1: "At Ftechiz, you get a separate team of dedicated skilled professionals for Android app development. The team is focused and does constant R&D with Android apps that keep us a step ahead of everyone in the industry. You may check our portfolio for the versatile range of android applications to hire android developers from our experienced team.    "
   },
@@ -503,12 +503,12 @@ export const hiremobile = [
     para1: "For businesses houses whose target consumers are on iPhones, we have dedicated ios App Developers for hire having years of industry experience in building platform-specific solutions. We provide custom solutions to start-ups and enterprises across the globe, making them go mobile. It's time to leverage our rich expertise in iOS app development to build an interactive, engaging, secure and consistent app for your industry, regardless of complexity and business domain.    "
   },
   {
-    icon1:<img src="./images/flutter.svg" style={{width:"7.3rem" ,marginLeft:"0rem", marginBottom:"1.7rem"}}/> ,
+    icon1:<img src="./images/flutter.svg" style={{width:"7.3rem" ,marginLeft:"0rem", marginBottom:"1rem"}}/> ,
     title1:"Flutter App Development    "  ,
     para1: "We have a talented team of flutter app developers experienced in creating beautiful, high quality and functionally rich apps. By using flutter’s single code base, we have developed smooth performing apps for iOS, Android, and web platforms. Our team of talented flutter app developers has experience in developing mobile apps across a variety of platforms. We use the trending technologies to create cross-platform that effectively works on multiple devices across different industries. It is also one of the best choices for integrating ML in apps.    "
   },
   {
-    icon1:<img src="./images/react_native.svg" style={{width:"4.8rem" ,marginLeft:".8rem", marginBottom:"1.7rem"}}/> ,
+    icon1:<img src="./images/react_native.svg" style={{width:"4.8rem" ,marginLeft:".4rem", marginBottom:".8rem"}}/> ,
     title1: " React-Native App Development   ",
     para1: "We have a team of passionate & experienced React Native App developers who got maestro in building beautiful cross-platform mobile applications for both Android & iOS. For most of our client’s mobile solutions, we use this versatile mobile app cross-platform development tool. You can hire react native app developers from our team to create robust applications for your business as per your desired technology.    "
   },  {
@@ -517,7 +517,7 @@ export const hiremobile = [
     para1: "We at Ftechiz provide ionic app development services including up-to-date integrated technologies with highly functional solutions having some irresistible features which suit your business. We use the trending technology to create an outstanding Ionic mobile app for your business as a mobile app development company. We use the business-ready framework to create a dynamic, secure & complex app.    "
   },
   {
-    icon1: <DashboardIcon style={{fontSize:"5.3rem" ,marginLeft:".8rem", marginBottom:"1.7rem"}}/>,
+    icon1: <DashboardIcon style={{fontSize:"5.3rem" ,marginLeft:"0rem", marginBottom:"1rem"}}/>,
     title1: "Advance App Development    ",
     para1: "We have a team of professionals that transform your current app from good to great. We deliver everything from easy integration, Highly Secure, highly-optimized performance to user-friendly interfaces with responsive design. We use latest cutting-edge technologies, including UI/UX matching operating system standards and custom methodologies for a seamless experience you'll love!    "
   },

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 
-const Tool_Tech = ({ menuList, filterData }) => {
+const Tool_Tech = ({ menuList, filterData , filterData1}) => {
   // const [active, setActive] = useState("");
 
   return (
@@ -16,7 +16,7 @@ const Tool_Tech = ({ menuList, filterData }) => {
           </button>
           <button
             className="first_column_text"
-            onClick={() => filterData("backend")}
+            onClick={() => filterData1("backend")}
           >
             backend
           </button>
@@ -24,20 +24,26 @@ const Tool_Tech = ({ menuList, filterData }) => {
             className="first_column_text"
             onClick={() => filterData("mobile")}
           >
-            mobile
+            Mobile App Development
           </button>
 
           <button
             className="first_column_text"
-            onClick={() => filterData("blockchain")}
+            onClick={() => filterData("database")}
           >
-            blockchain
+            databases
           </button>
           <button
             className="first_column_text"
-            onClick={() => filterData("database")}
+            onClick={() => filterData("blockchain")}
           >
-            database
+            Blockchain Technology
+          </button>
+          <button
+            className="first_column_text"
+            onClick={() => filterData("blockchain")}
+          >
+            Cloud Services
           </button>
         </div>
       </Wrapper>
@@ -45,7 +51,6 @@ const Tool_Tech = ({ menuList, filterData }) => {
   );
 };
 const Wrapper = styled.section`
-
   .first_column {
     width: 25rem;
     height: auto;
@@ -81,7 +86,6 @@ const Wrapper = styled.section`
         color: ${({ theme }) => theme.colors.heading};
       }
     }
-
   }
 
   @media (max-width: ${({ theme }) => theme.media.mobile}) {

@@ -48,5 +48,32 @@ Button{
 .grid-two-column{
     grid-template-columns:1fr .3fr;
 }
+@media (max-width:${({ theme }) => theme.media.small_phone}) {
+  .extra_div{
+background: ${({theme}) =>theme.colors.component_bg};
+display:flex;
+align-items:center;
+justify-content:space-around;
+padding: 2.7rem;
+border-radius:1rem;
+h3{
+    font-weight:600;
+    margin-left:1rem;
+}
+Button{
+    color:${({theme}) => theme.colors.heading};
+    background: ${({theme}) => theme.colors.color_white};
+}
+}
+
+.grid {
+  display: grid;
+  gap: 2.5rem;
+  margin:0rem 0rem 5rem 0rem;
+}
+.grid-two-column{
+    grid-template-columns:1fr .3fr;
+}
+}
 `;
 export default Extra_div;
