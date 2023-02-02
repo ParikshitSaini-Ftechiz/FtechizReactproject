@@ -28,15 +28,11 @@ const Accordion = ({
   answer20,
   answer21,
 }) => {
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState([0]);
   const [show1, setShow1] = useState(false);
 
-  if(show){
 
-  }
-  useEffect (() =>{
-return setShow(true);
-  },[show])
+
   return (
     <>
       <Wrapper>
@@ -112,7 +108,6 @@ return setShow(true);
               )}
               {show && (
                 <p>
-                  {" "}
                   <b>Salary:</b> No Bar for the right Candidate
                 </p>
               )}
@@ -123,7 +118,6 @@ return setShow(true);
               )}
               {show && (
                 <p>
-                  {" "}
                   <b>Location:</b> Dehradun, Uttarakhand
                 </p>
               )}
@@ -192,7 +186,6 @@ return setShow(true);
               )}
               {show1 && (
                 <p>
-                  {" "}
                   <b>Salary:</b> No Bar for the right Candidate
                 </p>
               )}
@@ -203,7 +196,6 @@ return setShow(true);
               )}
               {show1 && (
                 <p>
-                  {" "}
                   <b>Location:</b> Dehradun, Uttarakhand
                 </p>
               )}
