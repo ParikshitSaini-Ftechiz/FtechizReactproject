@@ -16,14 +16,12 @@ const Navbar = () => {
         <div className="main-nav">
           {/* 1st logo part  */}
           <div className="logo">
-            <NavLink to="/">
-              <img
-                className="logo_image"
-                style={{ width: "17rem", height: "auto" }}
-                src="https://ftechiz.com/wp-content/uploads/2022/11/FtechizLogo.png"
-                alt="logo"
-              />
-            </NavLink>
+            <img
+              className="logo_image"
+              style={{ width: "17rem", height: "auto" }}
+              src="https://ftechiz.com/wp-content/uploads/2022/11/FtechizLogo.png"
+              alt="logo"
+            />
           </div>
 
           {/* 2nd menu part  */}
@@ -33,7 +31,7 @@ const Navbar = () => {
             <ul className="">
               <li>
                 <NavLink
-                  to="/"
+                  to="/home"
                   className="navbar-link"
                   onClick={() => setMenuIcon(false)}
                 >
@@ -88,7 +86,7 @@ const Navbar = () => {
 
           {/* 3rd social media links */}
           <div className="social-media">
-            {/* hamburget menu start  */}
+            {/* hamburger menu start  */}
             <div className="hamburger-menu">
               <a href="#" onClick={() => setMenuIcon(!menuIcon)}>
                 <MenuIcon style={{ width: "4rem", height: "4rem" }} />
@@ -138,23 +136,27 @@ const Nav = styled.nav`
 
   .navbar-link-btn {
     background: ${({ theme }) => theme.colors.helper};
-    padding: 0.8rem 1.5rem;
-    border-radius: 0.6rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 1.6rem;
   }
 
   /* ----------- Grid part ends ----------------- */
 
   .menu-link ul li {
     font-size: 1.8rem;
-    padding: 0 1rem;
+    padding: 0.4rem 1.3rem;
 
     &:hover {
       background: ${({ theme }) => theme.colors.helper};
-      padding: 0.5rem 1rem;
-      border-radius: 0.6rem;
+      padding: 0.4rem 1.3rem;
+      border-radius: 1.6rem;
     }
   }
-
+  .active {
+    background: ${({ theme }) => theme.colors.helper};
+    padding: 0.6rem 1.6rem;
+    border-radius: 1.6rem;
+  }
   .menu-link ul li a {
     text-transform: capitalize;
     color: ${({ theme }) => theme.colors.color_white};
@@ -197,7 +199,7 @@ const Nav = styled.nav`
 
   /* responsive css style  */
   @media (max-width: 998px) {
-    line-height: 5.5rem;
+    line-height: 4.5rem;
     .main-nav {
       height: 7rem;
       grid-template-columns: 1rem 2fr 3fr 0rem;
@@ -246,13 +248,13 @@ const Nav = styled.nav`
 
       &:hover {
         background: ${({ theme }) => theme.colors.helper};
-        padding: 0.1rem 1.6rem;
-        border-radius: 0.5rem;
+        padding: .1rem .9rem;
+        border-radius: 1.6rem;
       }
     }
     .mobile-menu-link ul li a {
       color: ${({ theme }) => theme.colors.color_white};
-      font-size: 2rem;
+      font-size: 2.2rem;
     }
 
     .social-media {
@@ -281,12 +283,11 @@ const Nav = styled.nav`
     }
   }
   @media (max-width: 798px) {
-    line-height: 8rem;
+    line-height: 4.5rem;
 
     .main-nav {
       height: 7rem;
       padding: 0 1rem;
-
       grid-template-columns: 1rem 2fr 1fr 0rem;
     }
 
@@ -307,9 +308,13 @@ const Nav = styled.nav`
 
       &:hover {
         background: ${({ theme }) => theme.colors.helper};
-        padding: -0.1rem 1.6rem;
-        border-radius: 0.5rem;
+        padding: .1rem .9rem;
+        border-radius: 1.6rem;
       }
+    }
+    .mobile-menu-link ul li a {
+      color: ${({ theme }) => theme.colors.color_white};
+      font-size: 2.2rem;
     }
     .mobile-menu-link {
       background-color: ${({ theme }) => theme.colors.bg};
@@ -322,7 +327,7 @@ const Nav = styled.nav`
       display: block;
       ${"" /* grid-column: 2/5; */}
       align-items: center;
-      padding: 36rem 0;
+      padding: 35rem 0;
       ${"" /* transform-origin: top; */}
     }
     .hamburger-menu {
@@ -332,7 +337,7 @@ const Nav = styled.nav`
   }
 
   @media (max-width: 520px) {
-    line-height: 8rem;
+    line-height: 5rem;
     .main-nav {
       height: 7rem;
       grid-template-columns: 1rem 4fr 1fr 0rem;
@@ -354,8 +359,8 @@ const Nav = styled.nav`
 
       &:hover {
         background: ${({ theme }) => theme.colors.helper};
-        padding: 0rem 1rem;
-        border-radius: 0.5rem;
+        padding: .1rem .9rem;
+        border-radius: 2rem;
       }
     }
     .mobile-menu-link {
@@ -375,7 +380,7 @@ const Nav = styled.nav`
       display: block;
       ${"" /* grid-column: 2/5; */}
       align-items: center;
-      padding: 10rem 0;
+      padding: 25rem 0;
       ${"" /* transform-origin: top; */}
     }
     .mobile-menu-link ul {
@@ -388,14 +393,14 @@ const Nav = styled.nav`
       .navbar-link-btn {
         background: ${({ theme }) => theme.colors.helper};
         padding: 0.8rem 1.5rem;
-        border-radius: 0.6rem;
+        border-radius: 3rem;
       }
     }
     .mobile-menu-link ul li a {
       color: ${({ theme }) => theme.colors.color_white};
       font-size: 2.2rem;
-      padding: 0rem 0;
     }
+
   }
 `;
 export default Navbar;

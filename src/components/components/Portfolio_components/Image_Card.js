@@ -174,13 +174,13 @@ const Wrapper = styled.section`
     max-height:100%;
     display:block;
     line-height:0;
-    padding:10rem 0 2rem 0 ;
+    padding:13rem 4rem 5rem 4rem ;
     margin:0 auto; 
   }
   .model.open svg{
     position:fixed;
     top:10rem;
-    right:5rem;
+    right:3rem;
     width:3rem;
     height:3rem;
     padding:.5rem;

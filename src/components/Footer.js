@@ -29,7 +29,7 @@ const Footer = () => {
                   <div className="contact">
                     <h3>Contact Details</h3>
                     <p>
-                      <CallIcon />{" "}
+                      <CallIcon />
                       <NavLink to="tel:+917534078989">+917534078989</NavLink>
                     </p>
                     <p>
@@ -189,11 +189,12 @@ const Wrapper = styled.section`
     }
     .container {
       text-transform: capitalize;
-      line-height: 4.4rem;
+      line-height: 4.5rem;
     }
     .grid-three-column {
       grid-template-columns: 1fr 1fr 1fr;
     }
+   
     a {
       display: flex;
       align-items: center;
@@ -216,9 +217,9 @@ const Wrapper = styled.section`
       p {
         display: flex;
         align-items: center;
-        line-height: 3.4rem;
+        line-height: 1.4rem;
         gap: 1rem;
-        margin-bottom: 2rem;
+        margin: 2rem 0;
       }
     }
   }
@@ -236,16 +237,15 @@ const Wrapper = styled.section`
 
   ${"" /* responsive */}
   @media (max-width: ${({ theme }) => theme.media.tab}) {
-  
-    h3{
-  font-size:2.2rem;
- }
- a{
-  font-size:1.3rem;
- }
- p{
-  font-size:1.3rem;
- }
+    h3 {
+      font-size: 2.2rem;
+    }
+    a {
+      font-size: 1.3rem;
+    }
+    p {
+      font-size: 1.3rem;
+    }
     .footer_portion {
       padding: 1rem 0 7rem 0;
       background: ${({ theme }) => theme.colors.bg};
@@ -253,12 +253,12 @@ const Wrapper = styled.section`
 
       .grid {
         display: grid;
-        gap: 1rem;
+        gap: .4rem;
         margin: 8rem 0rem 0rem 0rem;
       }
-    
+
       .grid-three-column {
-        grid-template-columns: .5fr 1fr 1fr;
+        grid-template-columns: 0.2fr 1.3fr 1.2fr;
       }
       a {
         display: flex;
@@ -267,10 +267,16 @@ const Wrapper = styled.section`
         gap: 1rem;
         color: ${({ theme }) => theme.colors.color_white};
       }
-
+      ${'' /* .services,
+      .resources {
+        h3 {
+          text-align: center;
+        }
+      } */}
       .flutter {
         display: flex;
         gap: 0.6rem;
+    
         img {
           width: 1.6rem;
         }
@@ -302,35 +308,53 @@ const Wrapper = styled.section`
   }
 
   @media (max-width: ${({ theme }) => theme.media.mobile}) {
- h3{
-  font-size:3rem;
- }
- a{
-  font-size:1.7rem;
- }
+    h3 {
+      font-size: 3rem;
+    }
+    a {
+      font-size: 1.7rem;
+    }
     .footer_portion {
       padding: 1rem 0 7rem 0;
       background: ${({ theme }) => theme.colors.bg};
       color: ${({ theme }) => theme.colors.color_white};
 
-    .grid {
-      display: grid;
-      margin: 8rem 10rem;
-    }
+      .grid {
+        display: grid;
+        gap:3rem;
+        margin: 8rem 8rem;
+      }
       .grid-three-column {
         grid-template-columns: 1fr;
+      }
+      .contact_portion {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        p {
+          font-size: 1.5rem;
+        }
       }
       a {
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         gap: 1rem;
         color: ${({ theme }) => theme.colors.color_white};
       }
-
+      .services,
+      .resources {
+        h3 {
+          text-align: center;
+        }
+      }
       .flutter {
         display: flex;
         gap: 0.6rem;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
         img {
           width: 1.6rem;
         }
@@ -358,18 +382,33 @@ const Wrapper = styled.section`
       padding: 1rem 0 7rem 0;
       background: ${({ theme }) => theme.colors.bg};
       color: ${({ theme }) => theme.colors.color_white};
-    .grid {
-      display: grid;
-      gap: 2rem;
-      margin: 8rem 5rem;
-    }
+      .grid {
+        display: grid;
+        gap: 3rem;
+        margin: 8rem 5rem;
+      }
       .grid-three-column {
         grid-template-columns: 1fr;
+      }
+      .contact_portion {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        p {
+          font-size: 1.5rem;
+        }
+      }
+      .services,
+      .resources {
+        h3 {
+          text-align: center;
+        }
       }
       a {
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: center;
         flex-direction: row;
         gap: 1rem;
         color: ${({ theme }) => theme.colors.color_white};
@@ -378,7 +417,10 @@ const Wrapper = styled.section`
       .flutter {
         display: flex;
         gap: 0.6rem;
-      
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
         img {
           width: 1.6rem;
         }
