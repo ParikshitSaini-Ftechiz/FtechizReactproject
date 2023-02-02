@@ -35,7 +35,7 @@ function About() {
   return (
     <>
       {/* {myName} */}
-      <Main_Section myData={data} para={para} image={image} btn={btn}/>
+      <Main_Section  myData={data} para={para} image={image} btn={btn}/>
       <Our_Aim/>
       <Who_We_Are/>
       <Our_Proficiency/>
