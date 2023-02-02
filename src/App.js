@@ -39,6 +39,7 @@ import {
   Hire_SpringBoot_Dev_remote,
   Hire_SpringBoot_Dev_java,
 } from "./components/components/components/DropDown_components.js/Hire_SpringBoot_Dev";
+import ScrollToTop from "./components/ScrollToTop";
 
 function App() {
   const theme = {
@@ -81,10 +82,10 @@ function App() {
       <ThemeProvider theme={theme}>
         <Router>
           <GlobalStyle />
+          <ScrollToTop />
           <Header />
           <Scroll_Up />
           <Routes>
-            <Route path="/" element={<Home />} />
             <Route path="/home" element={<Home />} />
             <Route path="/about" element={<About />} />
 
