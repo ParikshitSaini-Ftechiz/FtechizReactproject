@@ -176,7 +176,15 @@ const Footer = () => {
 };
 const Wrapper = styled.section`
   margin-top: 9rem;
-
+  h3 {
+      font-size: 2.5rem;
+    }
+    a {
+      font-size: 1.5rem;
+    }
+    p {
+      font-size: 1.4rem;
+    }
   .footer_portion {
     padding: 1rem 0 7rem 0;
     background: ${({ theme }) => theme.colors.bg};
@@ -237,15 +245,7 @@ const Wrapper = styled.section`
 
   ${"" /* responsive */}
   @media (max-width: ${({ theme }) => theme.media.tab}) {
-    h3 {
-      font-size: 2.2rem;
-    }
-    a {
-      font-size: 1.3rem;
-    }
-    p {
-      font-size: 1.3rem;
-    }
+ 
     .footer_portion {
       padding: 1rem 0 7rem 0;
       background: ${({ theme }) => theme.colors.bg};
@@ -253,12 +253,12 @@ const Wrapper = styled.section`
 
       .grid {
         display: grid;
-        gap: .4rem;
+        gap: .2rem;
         margin: 8rem 0rem 0rem 0rem;
       }
 
       .grid-three-column {
-        grid-template-columns: 0.2fr 1.3fr 1.2fr;
+        grid-template-columns: 0.2fr 1.3fr 1.4fr;
       }
       a {
         display: flex;
@@ -267,12 +267,6 @@ const Wrapper = styled.section`
         gap: 1rem;
         color: ${({ theme }) => theme.colors.color_white};
       }
-      ${'' /* .services,
-      .resources {
-        h3 {
-          text-align: center;
-        }
-      } */}
       .flutter {
         display: flex;
         gap: 0.6rem;
@@ -288,9 +282,10 @@ const Wrapper = styled.section`
         p {
           display: flex;
           align-items: center;
-          line-height: 3.4rem;
+          line-height: 2.4rem;
           gap: 1rem;
-          margin-bottom: 2rem;
+          margin-bottom: 1rem;
+          margin-top: 1.4rem;
         }
       }
     }
@@ -322,7 +317,7 @@ const Wrapper = styled.section`
       .grid {
         display: grid;
         gap:3rem;
-        margin: 8rem 8rem;
+        margin: 8rem 2rem;
       }
       .grid-three-column {
         grid-template-columns: 1fr;
@@ -366,7 +361,7 @@ const Wrapper = styled.section`
         p {
           display: flex;
           align-items: center;
-          line-height: 3.4rem;
+          line-height: 2.4rem;
           gap: 1rem;
           margin-bottom: 2rem;
         }
@@ -385,7 +380,7 @@ const Wrapper = styled.section`
       .grid {
         display: grid;
         gap: 3rem;
-        margin: 8rem 5rem;
+        margin: 8rem 2rem;
       }
       .grid-three-column {
         grid-template-columns: 1fr;
@@ -423,6 +418,18 @@ const Wrapper = styled.section`
         flex-direction: row;
         img {
           width: 1.6rem;
+        }
+      }
+      .contact {
+        h3 {
+          margin-top: 2.4rem;
+        }
+        p {
+          display: flex;
+          align-items: center;
+          line-height: 2.4rem;
+          gap: 1rem;
+          margin-bottom: 1.7rem;
         }
       }
     }
