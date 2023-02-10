@@ -136,26 +136,26 @@ const Nav = styled.nav`
 
   .navbar-link-btn {
     background: ${({ theme }) => theme.colors.helper};
-    padding: 0.6rem 1.2rem;
-    border-radius: 1.6rem;
+    padding: 0.8rem 1.2rem;
+    border-radius: 0.4rem;
   }
 
   /* ----------- Grid part ends ----------------- */
 
   .menu-link ul li {
     font-size: 1.8rem;
-    padding: 0.4rem 1.3rem;
+    padding: 0.6rem 1rem;
 
     &:hover {
       background: ${({ theme }) => theme.colors.helper};
-      padding: 0.4rem 1.3rem;
-      border-radius: 1.6rem;
+      padding: 0.6rem 1rem;
+      border-radius: 0.4rem;
     }
   }
   .active {
     background: ${({ theme }) => theme.colors.helper};
-    padding: 0.6rem 1.6rem;
-    border-radius: 1.6rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.4rem;
   }
   .menu-link ul li a {
     text-transform: capitalize;
@@ -245,11 +245,10 @@ const Nav = styled.nav`
     .menu-link ul li {
       font-size: 1.6rem;
       padding: 0.1rem 1.6rem;
-
       &:hover {
         background: ${({ theme }) => theme.colors.helper};
-        padding: .1rem .9rem;
-        border-radius: 1.6rem;
+        padding: 0.1rem 1rem;
+        border-radius: 0.4rem;
       }
     }
     .mobile-menu-link ul li a {
@@ -308,8 +307,8 @@ const Nav = styled.nav`
 
       &:hover {
         background: ${({ theme }) => theme.colors.helper};
-        padding: .1rem .9rem;
-        border-radius: 1.6rem;
+        padding: 0.1rem 1rem;
+        border-radius: 0.4rem;
       }
     }
     .mobile-menu-link ul li a {
@@ -359,8 +358,8 @@ const Nav = styled.nav`
 
       &:hover {
         background: ${({ theme }) => theme.colors.helper};
-        padding: .1rem .9rem;
-        border-radius: 2rem;
+        padding: 0.1rem 1rem;
+        border-radius: 0.4rem;
       }
     }
     .mobile-menu-link {
@@ -392,15 +391,14 @@ const Nav = styled.nav`
       color: ${({ theme }) => theme.colors.color_white};
       .navbar-link-btn {
         background: ${({ theme }) => theme.colors.helper};
-        padding: 0.8rem 1.5rem;
-        border-radius: 3rem;
+        padding: 0.8rem 1.2rem;
+        border-radius: 0.4rem;
       }
     }
     .mobile-menu-link ul li a {
       color: ${({ theme }) => theme.colors.color_white};
       font-size: 2.2rem;
     }
-
   }
 `;
 export default Navbar;
