@@ -101,7 +101,7 @@ const Contact_Small = () => {
   );
 };
 const Wrapper = styled.div`
-  padding: 5rem 2rem;
+  padding: 3rem 2rem;
   color: ${({ theme }) => theme.colors.color_white};
   font-size: 1.7rem;
   .container {

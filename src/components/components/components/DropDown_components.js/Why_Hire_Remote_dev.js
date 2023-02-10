@@ -42,6 +42,7 @@ const Why_Hire_Remote_dev = () => {
 const Wrapper = styled.section`
   .content {
     text-align: center;
+    margin:0 2rem;
   }
 `;
 export default Why_Hire_Remote_dev;

@@ -25,7 +25,7 @@ const Wrapper = styled.section`
     p {
       color: ${({ theme }) => theme.colors.heading};
       text-align: center;
-      margin: 0rem 10rem;
+      margin: 0rem 6rem;
     }
   }
   @media (max-width:${({ theme }) => theme.media.tab}) {
@@ -37,7 +37,7 @@ const Wrapper = styled.section`
     p {
       color: ${({ theme }) => theme.colors.heading};
       text-align: center;
-      margin: 0rem 10rem;
+      margin: 0rem 6rem;
     }
   }
 }

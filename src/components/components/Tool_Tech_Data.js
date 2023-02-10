@@ -1,235 +1,193 @@
 export const Tool_Tech_frontend = [
   {
     category: "frontend",
-    url: "https://ftechiz.com/wp-content/uploads/2022/07/4373284_angular_logo_logos_icon.svg"
-    
+    url: "./images/angular.svg",
   },
   {
     category: "frontend",
-    url: "https://ftechiz.com/wp-content/uploads/2022/08/652581_code_command_develop_javascript_language_icon-1024x1024.png"
-    
+    url: "./images/react_native.svg",
+  },
+  {
+    category: "frontend",
+    url: "./images/html5.png",
   },
 
   {
     category: "frontend",
-    url: "https://ftechiz.com/wp-content/uploads/2022/07/7423888_react_react-native_icon.svg"
-    
+    url: "./images/css3.png",
   },
   {
     category: "frontend",
-    url: "https://ftechiz.com/wp-content/uploads/2022/08/4375066_logo_sass_icon-1024x1024.png"
-    
+    url: "./images/js.png",
   },
   {
     category: "frontend",
-    url: "https://ftechiz.com/wp-content/uploads/2022/07/317755_badge_html_html5_achievement_award_icon.png"
-    
+    url: "./images/saas.png",
   },
   {
     category: "frontend",
-    url: "https://ftechiz.com/wp-content/uploads/2022/08/282806_jquery_logo_icon-1024x1024.png"
-    
+    url: "./images/jquery.png",
   },
   {
     category: "frontend",
-    url: "https://ftechiz.com/wp-content/uploads/2022/07/317756_badge_css_css3_achievement_award_icon.png"
-    
+    url: "./images/bootstrap.png",
   },
-  {
-    category: "frontend",
-    url: "https://ftechiz.com/wp-content/uploads/2022/08/8546808_bootstrap_icon-1024x1024.png"
-    
-  },
-]
+];
 //backend
 
 export const Tool_Tech_backend = [
-   {
+  {
     category: "backend",
-    url: "https://ftechiz.com/wp-content/uploads/2022/08/282806_jquery_logo_icon-1024x1024.png"
-    
+    url: "./images/codeigniter.svg",
   },
   {
     category: "backend",
-    url: "https://ftechiz.com/wp-content/uploads/2022/08/282806_jquery_logo_icon-1024x1024.png"
-    
+    url: "./images/laravel.svg",
   },
   {
     category: "backend",
-    url: "https://ftechiz.com/wp-content/uploads/2022/08/282806_jquery_logo_icon-1024x1024.png"
-    
+    url: "./images/nodejs.svg",
   },
   {
     category: "backend",
-    url: "https://ftechiz.com/wp-content/uploads/2022/08/282806_jquery_logo_icon-1024x1024.png"
-    
+    url: "./images/dj.svg",
   },
   {
     category: "backend",
-    url: "https://ftechiz.com/wp-content/uploads/2022/08/282806_jquery_logo_icon-1024x1024.png"
-    
+    url: "./images/php.svg",
   },
-  {
-    category: "backend",
-    url: "https://ftechiz.com/wp-content/uploads/2022/08/282806_jquery_logo_icon-1024x1024.png"
-    
-  },
-  {
-    category: "backend",
-    url: "https://ftechiz.com/wp-content/uploads/2022/08/282806_jquery_logo_icon-1024x1024.png"
-    
-  },
-  {
-    category: "backend",
-    url: "https://ftechiz.com/wp-content/uploads/2022/08/282806_jquery_logo_icon-1024x1024.png"
-    
-  },]
   
-  //cloud
-  export const Tool_Tech_cloud = [
+];
+
+//cloud
+export const Tool_Tech_cloud = [
   {
     category: "cloud",
-    url: "https://ftechiz.com/wp-content/uploads/2022/07/4373284_angular_logo_logos_icon.svg"
-    
-  },
-  {
-    category: "cloud",
-    url: "https://ftechiz.com/wp-content/uploads/2022/07/4373284_angular_logo_logos_icon.svg"
-    
+    url: "./images/amazon_webserver.png",
   },
   {
     category: "cloud",
-    url: "https://ftechiz.com/wp-content/uploads/2022/07/4373284_angular_logo_logos_icon.svg"
-    
-  },
-   {
-    category: "cloud",
-    url: "https://ftechiz.com/wp-content/uploads/2022/07/4373284_angular_logo_logos_icon.svg"
-    
-  }, {
-    category: "cloud",
-    url: "https://ftechiz.com/wp-content/uploads/2022/07/4373284_angular_logo_logos_icon.svg"
-    
+    url: "./images/ibm_cloud.png",
   },
   {
     category: "cloud",
-    url: "https://ftechiz.com/wp-content/uploads/2022/07/4373284_angular_logo_logos_icon.svg"
-    
+    url: "./images/serverspace.png",
   },
   {
     category: "cloud",
-    url: "https://ftechiz.com/wp-content/uploads/2022/07/4373284_angular_logo_logos_icon.svg"
-    
+    url: "./images/azure.png",
   },
   {
     category: "cloud",
-    url: "https://ftechiz.com/wp-content/uploads/2022/07/4373284_angular_logo_logos_icon.svg"
-    
+    url: "./images/google_cloud.png",
   },
-  ]
+  {
+    category: "cloud",
+    url: "./images/adobe.png",
+  },
+
+];
 
 //   blockchain
 export const Tool_Tech_blockchain = [
-{
-    category: "blockchain",
-    url:"https://ftechiz.com/wp-content/uploads/2022/08/652581_code_command_develop_javascript_language_icon-1024x1024.png"
-    
-  },
   {
     category: "blockchain",
-    url:"https://ftechiz.com/wp-content/uploads/2022/08/652581_code_command_develop_javascript_language_icon-1024x1024.png"
-    
+    url: "./images/etherium.png",
   },
   {
     category: "blockchain",
-    url:"https://ftechiz.com/wp-content/uploads/2022/08/652581_code_command_develop_javascript_language_icon-1024x1024.png"
-    
-  },
-   {
-    category: "blockchain",
-    url:"https://ftechiz.com/wp-content/uploads/2022/08/652581_code_command_develop_javascript_language_icon-1024x1024.png"
-    
-  }, {
-    category: "blockchain",
-    url:"https://ftechiz.com/wp-content/uploads/2022/08/652581_code_command_develop_javascript_language_icon-1024x1024.png"
-    
+    url: "./images/hyperledger.png",
   },
   {
     category: "blockchain",
-    url:"https://ftechiz.com/wp-content/uploads/2022/08/652581_code_command_develop_javascript_language_icon-1024x1024.png"
-    
+    url: "./images/gochain.png",
   },
   {
     category: "blockchain",
-    url:"https://ftechiz.com/wp-content/uploads/2022/08/652581_code_command_develop_javascript_language_icon-1024x1024.png"
-    
+    url: "./images/corda.png",
   },
   {
     category: "blockchain",
-    url:"https://ftechiz.com/wp-content/uploads/2022/08/652581_code_command_develop_javascript_language_icon-1024x1024.png"
-    
+    url: "./images/solidity.png",
   },
-]
-  //   databasepng"
-  export const Tool_Tech_database = [
-{
+  {
+    category: "blockchain",
+    url: "./images/oneledger.png",
+  },
+  {
+    category: "blockchain",
+    url: "./images/erc.png",
+  },
+  {
+    category: "blockchain",
+    url: "./images/web3.png",
+  },
+];
+//   databasepng"
+export const Tool_Tech_database = [
+  {
     category: "database",
-    url: "https://ftechiz.com/wp-content/uploads/2022/07/7423888_react_react-native_icon.svg" 
+    url: "./images/mysql.png",
   },
   {
     category: "database",
-    url: "https://ftechiz.com/wp-content/uploads/2022/07/7423888_react_react-native_icon.svg" 
+    url: "./images/sqlserver.png",
   },
   {
     category: "database",
-    url: "https://ftechiz.com/wp-content/uploads/2022/07/7423888_react_react-native_icon.svg" 
-  },
-   {
-    category: "database",
-    url: "https://ftechiz.com/wp-content/uploads/2022/07/7423888_react_react-native_icon.svg" 
-  }, {
-    category: "database",
-    url: "https://ftechiz.com/wp-content/uploads/2022/07/7423888_react_react-native_icon.svg" 
+    url: "./images/oracle.png",
   },
   {
     category: "database",
-    url: "https://ftechiz.com/wp-content/uploads/2022/07/7423888_react_react-native_icon.svg" 
+    url: "./images/postgresql.png",
   },
   {
     category: "database",
-    url: "https://ftechiz.com/wp-content/uploads/2022/07/7423888_react_react-native_icon.svg" 
+    url: "./images/mongoDB.png",
   },
   {
     category: "database",
-    url: "https://ftechiz.com/wp-content/uploads/2022/07/7423888_react_react-native_icon.svg" 
+    url: "./images/mariaDB.png",
   },
-  ]
+  {
+    category: "database",
+    url: "./images/amazon_dynamo.png",
+  },
 
-    //   mobile
-    export const Tool_Tech_mobile = [
-{
-    category: "mobile",
-    url: "https://ftechiz.com/wp-content/uploads/2022/08/4375066_logo_sass_icon-1024x1024.png"  },
-  {
-    category: "mobile",
-    url: "https://ftechiz.com/wp-content/uploads/2022/08/4375066_logo_sass_icon-1024x1024.png"  },
-  {
-    category: "mobile",
-    url: "https://ftechiz.com/wp-content/uploads/2022/08/4375066_logo_sass_icon-1024x1024.png"  },
-   {
-    category: "mobile",
-    url: "https://ftechiz.com/wp-content/uploads/2022/08/4375066_logo_sass_icon-1024x1024.png"  },
-  {
-    category: "mobile",
-    url: "https://ftechiz.com/wp-content/uploads/2022/08/4375066_logo_sass_icon-1024x1024.png"  },
-  {
-    category: "mobile",
-    url: "https://ftechiz.com/wp-content/uploads/2022/08/4375066_logo_sass_icon-1024x1024.png"  },
-  {
-    category: "mobile",
-    url: "https://ftechiz.com/wp-content/uploads/2022/08/4375066_logo_sass_icon-1024x1024.png"  },
-  {
-    category: "mobile",
-    url: "https://ftechiz.com/wp-content/uploads/2022/08/4375066_logo_sass_icon-1024x1024.png"  },
+];
 
+//   mobile
+export const Tool_Tech_mobile = [
+  {
+    category: "mobile",
+    url: "./images/android.png",
+  },
+  {
+    category: "mobile",
+    url: "./images/ios.svg",
+  },
+  {
+    category: "mobile",
+    url: "./images/ionic.png",
+  },
+  {
+    category: "mobile",
+    url: "./images/react_native.svg",
+  },
+  {
+    category: "mobile",
+    url: "./images/flutter.svg",
+  },
+  {
+    category: "mobile",
+    url: "./images/c-1.png",
+  },
+  {
+    category: "mobile",
+    url: "./images/kotlin.png",
+  },
+  {
+    category: "mobile",
+    url: "./images/swift.png",
+  },
 ];

@@ -24,11 +24,10 @@ const ContactPage_Small = ({contactPara, contactHeading}) => {
   );
 };
 const Wrapper = styled.section`
-  padding: 6rem 0 0 0 ;
+  padding: 5rem 6rem ;
   .grid {
     display: grid;
-
-    margin: 2rem 1rem 0rem 1rem;
+    margin: 6rem 0rem;
   }
   .content {
     h1 {
@@ -44,6 +43,8 @@ const Wrapper = styled.section`
     }
   }
   @media (max-width:${({ theme }) => theme.media.small_phone}) {
+  padding: 5rem  2rem ;
+
       html{
         font-size: 50%;
       }
@@ -56,7 +57,7 @@ const Wrapper = styled.section`
     }
     p {
       color: ${({ theme }) => theme.colors.heading};
-      text-align: center;
+      text-align: justify;
       margin: 0rem 2rem;
     }
   }

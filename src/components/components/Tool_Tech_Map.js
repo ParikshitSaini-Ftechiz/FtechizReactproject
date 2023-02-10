@@ -118,10 +118,55 @@ export const Tool_Tech_Map_Mobile = () => {
   )
 };
 const Wrapper = styled.section`
+
 img{
   width:10rem;
 }
+.grid {
+    display: grid;
+    gap: 7rem;
+    margin: 6rem 0rem;
+  }
 .grid-four-column{
   grid-template-columns:1fr 1fr 1fr 1fr;
+}
+@media (max-width: ${({ theme }) => theme.media.tab}) {
+  img{
+  width:9rem;
+}
+.grid {
+    display: grid;
+    gap: 4rem;
+    margin: 6rem 0rem;
+  }
+.grid-four-column{
+  grid-template-columns:1fr 1fr 1fr 1fr;
+}
+}
+@media (max-width: ${({ theme }) => theme.media.mobile}) {
+  img{
+  width:16rem;
+}
+.grid {
+    display: grid;
+    gap: 9rem;
+    margin: 2rem 0rem;
+  }
+.grid-four-column{
+  grid-template-columns: 1fr;
+}
+}
+@media (max-width: ${({ theme }) => theme.media.small_phone}) {
+  img{
+  width:16rem;
+}
+.grid {
+    display: grid;
+    gap: 9rem;
+    margin: 6rem 0rem;
+  }
+.grid-four-column{
+  grid-template-columns: 1fr;
+}
 }
 `;
