@@ -24,7 +24,7 @@ const WebsiteDesigning = () => {
   };
   const image = {
     imageData:
-      "	https://ftechiz.com/wp-content/uploads/2022/08/hal-gatewood-tZc3vjPCk-Q-unsplash.jpg",
+      "	./images/webdesigning_page.jpg",
   };
   const btn = {
     btnData: "Lets talk",

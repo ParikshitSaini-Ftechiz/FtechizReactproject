@@ -23,7 +23,7 @@ const FlutterAppDevelopment = () => {
       "As one of the leading flutter app development company, Ftechiz works on Google’s revolutionary framework, Flutter to develop flexible, high performance, and expressive mobile apps for iOS, Android, Web, and Desktop. Our team of Flutter developers write single codebases and compiles it into a cross-platform app for native devices.",
   };
   const image = {
-    imageData: "	https://ftechiz.com/wp-content/uploads/2022/08/flutter.jpg",
+    imageData: "	./images/flutter_page.jpg",
   };
   const btn = {
     btnData: "Lets talk",

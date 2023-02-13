@@ -22,7 +22,7 @@ const MobileAppDevelopment = () => {
   };
   const image = {
     imageData:
-      "	https://ftechiz.com/wp-content/uploads/2022/08/mobile_app_development-1.png",
+      "./images/mobile_page.jpg",
   };
   const btn = {
     btnData: "Lets talk",

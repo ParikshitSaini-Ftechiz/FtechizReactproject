@@ -25,7 +25,7 @@ const IOSAppDevelopment = () => {
   };
   const image = {
     imageData:
-      "https://ftechiz.com/wp-content/uploads/2022/11/HireRemoteDevelopers.jpg",
+      "./images/ios_page.png",
   };
   const btn = {
     btnData: "Lets talk",

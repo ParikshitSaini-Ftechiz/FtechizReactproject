@@ -24,7 +24,7 @@ const WebApplicationDevelopment = () => {
   };
   const image = {
     imageData:
-      "https://ftechiz.com/wp-content/uploads/2022/08/lee-campbell-DtDlVpy-vvQ-unsplash-1.jpg",
+      "./images/webapp_page.jpg",
   };
   const btn = {
     btnData: "Lets talk",

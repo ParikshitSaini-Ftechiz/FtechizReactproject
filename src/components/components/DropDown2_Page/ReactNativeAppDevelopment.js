@@ -24,7 +24,7 @@ const ReactNativeAppDevelopment = () => {
   };
   const image = {
     imageData:
-      "https://ftechiz.com/wp-content/uploads/2022/08/pexels-realtoughcandycom-11035471.jpg",
+      "./images/reactnative_page.jpg",
   };
   const btn = {
     btnData: "Lets talk",

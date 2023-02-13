@@ -24,7 +24,7 @@ const BlockChainDevelopment = () => {
   };
   const image = {
     imageData:
-      "https://ftechiz.com/wp-content/uploads/2022/08/shubham-dhage-v0VjjYYFjOg-unsplash-1.jpg",
+      "./images/blockchain_page.jpg",
   };
   const btn = {
     btnData: "Lets talk",

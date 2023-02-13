@@ -24,7 +24,7 @@ const CloudAppDevelopment = () => {
   };
   const image = {
     imageData:
-      "	https://ftechiz.com/wp-content/uploads/2022/08/cloud-computing.jpg",
+      "./images/cloud_page.jpg",
   };
   const btn = {
     btnData: "Lets talk",
