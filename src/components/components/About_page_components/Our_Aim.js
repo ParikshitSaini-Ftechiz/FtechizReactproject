@@ -11,7 +11,7 @@ const Our_Aim = () => {
           <div className="grid grid_two_column">
             <div className="image_section">
               <img
-                src="https://ftechiz.com/wp-content/uploads/2022/07/about.jpg"
+                src="./images/about.jpg"
                 alt="aim_image"
               />
             </div>
