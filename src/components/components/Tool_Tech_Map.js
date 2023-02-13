@@ -120,7 +120,7 @@ export const Tool_Tech_Map_Mobile = () => {
 const Wrapper = styled.section`
 
 img{
-  width:10rem;
+  width:8rem;
 }
 .grid {
     display: grid;
@@ -132,7 +132,7 @@ img{
 }
 @media (max-width: ${({ theme }) => theme.media.tab}) {
   img{
-  width:9rem;
+  width:8rem;
 }
 .grid {
     display: grid;

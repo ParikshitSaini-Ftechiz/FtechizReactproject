@@ -4,11 +4,11 @@ import Industries_We_Serve from "../components/DropDown_components.js/Industries
 import ContactForm_DropDown from "../components/DropDown_components.js/ContactForm_DropDown";
 import styled from "styled-components";
 import Contact_Small from "../components/DropDown_components.js/Contact_Small";
+import Tool_Tech_HireFullStack from "./../components/DropDown_components.js/Tool_Tech_HireFullStack";
 import ContactPage_Small from "../components/DropDown_components.js/ContactPage_Small";
 import { Questions_hirefullstack } from "../components/DropDown_components.js/Questions";
 import { Development_Services_fullstack } from "../components/DropDown_components.js/Development_Services";
 import { Hire_Best_Team_fullstack } from "../components/DropDown_components.js/Hire_Best_Team";
-import Tool_Tech from "../Tool_Tech";
 import { Why_Hire_developers_fullstackDev } from "../components/DropDown_components.js/Why_Hire_developers";
 import { Hire_SpringBoot_Dev_fullstack } from "../components/DropDown_components.js/Hire_SpringBoot_Dev";
 
@@ -70,7 +70,7 @@ const HireFullStackDevelopers = () => {
       {/* Development_Services */}
 
       {/* our technology */}
-      <Tool_Tech
+      <Tool_Tech_HireFullStack
         tool_tech_heading={tool_tech_heading}
         tool_tech_para={tool_tech_para}
       />
