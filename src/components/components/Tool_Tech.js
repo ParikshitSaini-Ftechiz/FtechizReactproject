@@ -160,7 +160,7 @@ const Wrapper = styled.section`
   }
   .grid {
     display: grid;
-    gap: 7rem;
+    gap: 9rem;
     margin: 6rem 0rem 0rem 3rem;
   }
   .grid-five-column {
@@ -168,7 +168,7 @@ const Wrapper = styled.section`
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 4rem;
+    gap: 12rem;
   }
   h1,
   p {

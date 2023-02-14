@@ -1,172 +1,244 @@
-import React,{useState} from 'react'
-import { Tool_Tech_backend, Tool_Tech_blockchain, Tool_Tech_cloud,  Tool_Tech_database, Tool_Tech_frontend, Tool_Tech_mobile } from './Tool_Tech_Data';
+import React, { useState } from "react";
+import {
+  Tool_Tech_backend,
+  Tool_Tech_blockchain,
+  Tool_Tech_cloud,
+  Tool_Tech_database,
+  Tool_Tech_frontend,
+  Tool_Tech_mobile,
+  Tool_Tech_Programming_Languages,
+  Tool_Tech_Toolkit,
+  Tool_Tech_Databases,
+  Tool_Tech_Frameworks,
+  Tool_Tech_SDK,
+} from "./Tool_Tech_Data";
 import styled from "styled-components";
 
-
 export const Tool_Tech_Map_FrontEnd = () => {
-    const [image, setImage] = useState(Tool_Tech_frontend);
+  const [image, setImage] = useState(Tool_Tech_frontend);
   return (
-  <>      
-  <Wrapper>
-  <div className="grid grid-four-column">
-    {
-        image.map((currentData) =>{
-            return(
-                <img src={currentData.url} />
-            )
-        })
-    }
-    </div>
-  </Wrapper>
-  </>
-
-  )
+    <>
+      <Wrapper>
+        <div className="grid grid-four-column">
+          {image.map((currentData) => {
+            return <img src={currentData.url} />;
+          })}
+        </div>
+      </Wrapper>
+    </>
+  );
 };
 export const Tool_Tech_Map_BackEnd = () => {
-    const [image, setImage] = useState(Tool_Tech_backend);
+  const [image, setImage] = useState(Tool_Tech_backend);
   return (
-  <>      
-  <Wrapper>
-  <div className="grid grid-four-column">
-    {
-        image.map((currentData) =>{
-            return(
-                <img src={currentData.url} />
-            )
-        })
-    }
-    </div>
-  </Wrapper>
-  </>
-
-  )
+    <>
+      <Wrapper>
+        <div className="grid grid-four-column">
+          {image.map((currentData) => {
+            return <img src={currentData.url} />;
+          })}
+        </div>
+      </Wrapper>
+    </>
+  );
 };
 export const Tool_Tech_Map_Blockchain = () => {
-    const [image, setImage] = useState(Tool_Tech_blockchain);
+  const [image, setImage] = useState(Tool_Tech_blockchain);
   return (
-  <>      
-  <Wrapper>
-  <div className="grid grid-four-column">
-    {
-        image.map((currentData) =>{
-            return(
-                <img src={currentData.url} />
-            )
-        })
-    }
-    </div>
-  </Wrapper>
-  </>
-
-  )
+    <>
+      <Wrapper>
+        <div className="grid grid-four-column">
+          {image.map((currentData) => {
+            return <img src={currentData.url} />;
+          })}
+        </div>
+      </Wrapper>
+    </>
+  );
 };
 export const Tool_Tech_Map_Cloud = () => {
-    const [image, setImage] = useState(Tool_Tech_cloud);
+  const [image, setImage] = useState(Tool_Tech_cloud);
   return (
-  <>      
-  <Wrapper>
-  <div className="grid grid-four-column">
-    {
-        image.map((currentData) =>{
-            return(
-                <img src={currentData.url} />
-            )
-        })
-    }
-    </div>
-  </Wrapper>
-  </>
-
-  )
+    <>
+      <Wrapper>
+        <div className="grid grid-four-column">
+          {image.map((currentData) => {
+            return <img src={currentData.url} />;
+          })}
+        </div>
+      </Wrapper>
+    </>
+  );
 };
 export const Tool_Tech_Map_Database = () => {
-    const [image, setImage] = useState(Tool_Tech_database);
+  const [image, setImage] = useState(Tool_Tech_database);
   return (
-  <>      
-  <Wrapper>
-  <div className="grid grid-four-column">
-    {
-        image.map((currentData) =>{
-            return(
-                <img src={currentData.url}/>
-            )
-        })
-    }
-    </div>
-  </Wrapper>
-  </>
-
-  )
+    <>
+      <Wrapper>
+        <div className="grid grid-four-column">
+          {image.map((currentData) => {
+            return <img src={currentData.url} />;
+          })}
+        </div>
+      </Wrapper>
+    </>
+  );
 };
 export const Tool_Tech_Map_Mobile = () => {
-    const [image, setImage] = useState(Tool_Tech_mobile);
+  const [image, setImage] = useState(Tool_Tech_mobile);
   return (
-  <>      
-  <Wrapper>
-  <div className="grid grid-four-column">
-    {
-        image.map((currentData) =>{
-            return(
-                <img src={currentData.url} />
-            )
-        })
-    }
-    </div>
-  </Wrapper>
-  </>
-
-  )
+    <>
+      <Wrapper>
+        <div className="grid grid-four-column">
+          {image.map((currentData) => {
+            return <img src={currentData.url} />;
+          })}
+        </div>
+      </Wrapper>
+    </>
+  );
 };
+//tool tech android//
+export const Tool_Tech_Map_Programming_Languages = () => {
+  const [image, setImage] = useState(Tool_Tech_Programming_Languages);
+  return (
+    <>
+      <Wrapper>
+        <div className="grid grid-three-column ">
+          {image.map((currentData) => {
+            return <img src={currentData.url} className="Programming_Languages_images"/>;
+          })}
+        </div>
+      </Wrapper>
+    </>
+  );
+};
+export const Tool_Tech_Map_Toolkit = () => {
+  const [image, setImage] = useState(Tool_Tech_Toolkit);
+  return (
+    <>
+      <Wrapper>
+        <div className="grid grid-three-column ">
+          {image.map((currentData) => {
+            return <img src={currentData.url} className="images"/>;
+          })}
+        </div>
+      </Wrapper>
+    </>
+  );
+};
+export const Tool_Tech_Map_Databases = () => {
+  const [image, setImage] = useState(Tool_Tech_Databases);
+  return (
+    <>
+      <Wrapper>
+        <div className="grid grid-three-column ">
+          {image.map((currentData) => {
+            return <img src={currentData.url} className="images"/>;
+          })}
+        </div>
+      </Wrapper>
+    </>
+  );
+};
+export const Tool_Tech_Map_Frameworks = () => {
+  const [image, setImage] = useState(Tool_Tech_Frameworks);
+  return (
+    <>
+      <Wrapper>
+        <div className="grid grid-three-column ">
+          {image.map((currentData) => {
+            return <img src={currentData.url} className="frameworks_images"/>;
+          })}
+        </div>
+      </Wrapper>
+    </>
+  );
+};
+export const Tool_Tech_Map_SDK = () => {
+  const [image, setImage] = useState(Tool_Tech_SDK);
+  return (
+    <>
+      <Wrapper>
+        <div className="grid grid-three-column ">
+          {image.map((currentData) => {
+            return <img src={currentData.url} className="images"/>;
+          })}
+        </div>
+      </Wrapper>
+    </>
+  );
+};
+
 const Wrapper = styled.section`
 
-img{
-  width:8rem;
-}
-.grid {
-    display: grid;
-    gap: 7rem;
-    margin: 6rem 0rem;
+  img {
+    width: 8rem;
   }
-.grid-four-column{
-  grid-template-columns:1fr 1fr 1fr 1fr;
-}
-@media (max-width: ${({ theme }) => theme.media.tab}) {
-  img{
-  width:8rem;
-}
-.grid {
-    display: grid;
-    gap: 4rem;
-    margin: 6rem 0rem;
+  .Programming_Languages_images{
+    width: 9rem;
+
   }
-.grid-four-column{
-  grid-template-columns:1fr 1fr 1fr 1fr;
-}
-}
-@media (max-width: ${({ theme }) => theme.media.mobile}) {
-  img{
-  width:16rem;
-}
-.grid {
-    display: grid;
-    gap: 9rem;
-    margin: 2rem 0rem;
+  .images{
+    width: 11.5rem;
   }
-.grid-four-column{
-  grid-template-columns: 1fr;
-}
-}
-@media (max-width: ${({ theme }) => theme.media.small_phone}) {
-  img{
-  width:16rem;
-}
-.grid {
-    display: grid;
-    gap: 9rem;
-    margin: 6rem 0rem;
+  .frameworks_images{
+    width: 10rem;
   }
-.grid-four-column{
-  grid-template-columns: 1fr;
-}
-}
+  .grid {
+    display: grid;
+    gap: 5rem;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    ${'' /* margin: 8rem 0rem; */}
+  }
+  .grid-four-column {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .grid-three-column  {
+    grid-template-columns: .5fr .5fr .5fr ;
+  }
+  .grid-two-column  {
+    grid-template-columns: .5fr  .5fr ;
+  }
+  @media (max-width: ${({ theme }) => theme.media.tab}) {
+    img {
+      width: 8rem;
+    }
+    .grid {
+      display: grid;
+      gap: 4rem;
+      margin: 6rem 0rem;
+    }
+    .grid-four-column {
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+  }
+  @media (max-width: ${({ theme }) => theme.media.mobile}) {
+    img {
+      width: 16rem;
+    }
+    .grid {
+      display: grid;
+      gap: 9rem;
+      margin: 2rem 0rem;
+    }
+    .grid-four-column {
+      grid-template-columns: 1fr;
+    }
+  }
+  @media (max-width: ${({ theme }) => theme.media.small_phone}) {
+    img {
+      width: 16rem;
+    }
+    .grid {
+      display: grid;
+      gap: 9rem;
+      margin: 6rem 0rem;
+    }
+    .grid-four-column {
+      grid-template-columns: 1fr;
+    }
+  }
 `;

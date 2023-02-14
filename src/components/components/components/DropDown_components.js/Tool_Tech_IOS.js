@@ -4,17 +4,17 @@ import styled from "styled-components";
 
 import {
   Tool_Tech_Map_BackEnd,
+  Tool_Tech_Map_Blockchain,
   Tool_Tech_Map_Cloud,
   Tool_Tech_Map_Database,
   Tool_Tech_Map_FrontEnd,
-
+  Tool_Tech_Map_Mobile,
 } from "../../Tool_Tech_Map";
 
-const Tool_Tech = ({ tool_tech_para, tool_tech_heading }) => {
+const Tool_Tech_IOS = () => {
   const [showtab, setShowtab] = useState(1);
 
-  const { paraData } = tool_tech_para;
-  const { headingData } = tool_tech_heading;
+
   const handletab = (e) => {
     setShowtab(e);
   };
@@ -23,8 +23,7 @@ const Tool_Tech = ({ tool_tech_para, tool_tech_heading }) => {
       <Wrapper>
         <Container>
           <div className="container">
-            <h1>{headingData}</h1>
-            <p>{paraData}</p>
+         
             <div className="grid grid-five-column">
               <div className="first_column">
                 <button
@@ -268,5 +267,5 @@ const Wrapper = styled.section`
     }
   }
 `;
-export default Tool_Tech;
+export default Tool_Tech_IOS;
 

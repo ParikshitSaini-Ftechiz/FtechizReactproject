@@ -11,6 +11,7 @@ import Industries from "../Industries";
 import { Questions_ios } from "../components/DropDown_components.js/Questions";
 import { Why_To_Choose_ios } from "../components/DropDown_components.js/Why_To_Choose_Data";
 import { Vertical_Card_App_Dev_Process_IOS } from "../components/DropDown_components.js/Vertical_Card_App_Dev_Process";
+import Tool_Tech_IOS from "./../components/DropDown_components.js/Tool_Tech_IOS";
 
 const IOSAppDevelopment = () => {
   const [state1, setState1] = useState(IOS_Data);
@@ -96,6 +97,10 @@ const IOSAppDevelopment = () => {
         {/* industries we serve */}
         <Industries />
         {/* industries we serve */}
+  
+        {/* Tool_Tech_IOS */}
+         <Tool_Tech_IOS/>
+        {/* Tool_Tech_IOS */}
 
         {/* development process we follow */}
         <Vertical_Card_App_Dev_Process_IOS />

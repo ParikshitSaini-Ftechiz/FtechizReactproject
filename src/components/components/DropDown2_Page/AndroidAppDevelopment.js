@@ -13,6 +13,7 @@ import { Why_To_Choose_android } from "../components/DropDown_components.js/Why_
 import {
   Vertical_Card_App_Dev_Process_Android,
 } from "../components/DropDown_components.js/Vertical_Card_App_Dev_Process";
+import Tool_Tech_Android from "./../components/DropDown_components.js/Tool_Tech_Android";
 
 // import Card from './Card';
 const AndroidAppDevelopment = () => {
@@ -100,6 +101,10 @@ const AndroidAppDevelopment = () => {
       {/* industies we serve */}
       <Industries />
       {/* industies we serve */}
+
+      {/* Tool_Tech_Android */}
+       <Tool_Tech_Android/>
+      {/* Tool_Tech_Android */}
 
       {/* development process we follow */}
       <Vertical_Card_App_Dev_Process_Android />

@@ -123,7 +123,7 @@ export const Tool_Tech_blockchain = [
     url: "./images/web3.png",
   },
 ];
-//   databasepng"
+//   databases"
 export const Tool_Tech_database = [
   {
     category: "database",
@@ -191,3 +191,135 @@ export const Tool_Tech_mobile = [
     url: "./images/swift.png",
   },
 ];
+
+// Tool_tech_Android
+
+export const Tool_Tech_Programming_Languages =[
+  {
+    category: "Programming_Languages",
+    url: "./images/java.png",
+  },
+
+  {
+    category: "Programming_Languages",
+    url: "",
+  },
+  {
+    category: "Programming_Languages",
+    url: "./images/c-2.png",
+  },
+  {
+    category: "Programming_Languages",
+    url: "./images/eclipse.png",
+  },
+  {
+    category: "Programming_Languages",
+    url: "",
+  },
+  {
+    category: "Programming_Languages",
+    url: "./images/c-1.png",
+  },
+
+
+
+  
+]
+export const Tool_Tech_Toolkit = [
+  {
+    category: "Toolkit",
+    url: "./images/android.png",
+  },
+  {
+    category: "Toolkit",
+    url: "./images/toolkit.png",
+  },
+  {
+    category: "Toolkit",
+    url: "./images/avd.png",
+  },
+  {
+    category: "Toolkit",
+    url: "./images/eclipse.png",
+  },
+   
+  {
+    category: "Toolkit",
+    url: "",
+  },
+  {
+    category: "Toolkit",
+    url: "./images/unity.png",
+  },
+
+]
+// Databases
+export const Tool_Tech_Databases = [
+  {
+    category: "Databases",
+    url: "./images/SQLLite.png",
+  },
+  {
+    category: "Databases",
+    url: "./images/firebase.png",
+  },
+  {
+    category: "Databases",
+    url: "./images/cloudfirestore.png",
+  },
+ 
+]
+// Frameworks
+export const Tool_Tech_Frameworks = [
+  {
+    category: "Frameworks",
+    url: "./images/react_native.svg",
+  },
+  {
+    category: "Frameworks",
+    url: "./images/espresso.png",
+  },
+  {
+    category: "Frameworks",
+    url: "./images/rails.png",
+  },
+  {
+    category: "Frameworks",
+    url: "./images/dagger.png",
+  },
+  {
+    category: "Frameworks",
+    url: "./images/trailblazer.png",
+  },
+  {
+    category: "Frameworks",
+    url: "./images/gradle.png",
+  },
+]
+// SDK
+export const Tool_Tech_SDK = [
+  {
+    category: "SDK",
+    url: "",
+  },
+  {
+    category: "SDK",
+    url: "./images/android_skd.png",
+  },
+ 
+]
+
+// Tool_tech_Android
+
+// {
+//   category: "Programming_Languages",
+//   url: "./images/swift.png",
+// },
+// {
+//   category: "Programming_Languages",
+//   url: "./images/python.png",
+// },
+// {
+//   category: "Programming_Languages",
+//   url: "./images/objC.png",
+// },

@@ -3,18 +3,16 @@ import { Container } from "react-bootstrap";
 import styled from "styled-components";
 
 import {
-  Tool_Tech_Map_BackEnd,
-  Tool_Tech_Map_Cloud,
-  Tool_Tech_Map_Database,
-  Tool_Tech_Map_FrontEnd,
-
+  Tool_Tech_Map_Programming_Languages,
+  Tool_Tech_Map_Toolkit,
+  Tool_Tech_Map_Databases,
+  Tool_Tech_Map_Frameworks,
+  Tool_Tech_Map_SDK,
 } from "../../Tool_Tech_Map";
 
-const Tool_Tech = ({ tool_tech_para, tool_tech_heading }) => {
+const Tool_Tech_Android = () => {
   const [showtab, setShowtab] = useState(1);
 
-  const { paraData } = tool_tech_para;
-  const { headingData } = tool_tech_heading;
   const handletab = (e) => {
     setShowtab(e);
   };
@@ -23,22 +21,21 @@ const Tool_Tech = ({ tool_tech_para, tool_tech_heading }) => {
       <Wrapper>
         <Container>
           <div className="container">
-            <h1>{headingData}</h1>
-            <p>{paraData}</p>
-            <div className="grid grid-five-column">
+            <h1>Technology We Use for Android App Development</h1>
+            <div className="grid grid-four-column">
               <div className="first_column">
                 <button
                   className="first_column_text"
                   onClick={() => handletab(1)}
                 >
-                  frontend
+                  Programming Languages
                 </button>
 
                 <button
                   className="first_column_text"
                   onClick={() => handletab(2)}
                 >
-                  backend
+                  Toolkit
                 </button>
 
                 <button
@@ -50,9 +47,15 @@ const Tool_Tech = ({ tool_tech_para, tool_tech_heading }) => {
 
                 <button
                   className="first_column_text"
+                  onClick={() => handletab(5)}
+                >
+                  Frameworks
+                </button>
+                <button
+                  className="first_column_text"
                   onClick={() => handletab(6)}
                 >
-                  Cloud Services
+                  SDK
                 </button>
               </div>
 
@@ -65,7 +68,7 @@ const Tool_Tech = ({ tool_tech_para, tool_tech_heading }) => {
                       : "tab-pane fade show"
                   }
                 >
-                  <Tool_Tech_Map_FrontEnd />
+                  <Tool_Tech_Map_Programming_Languages />
                 </div>
                 {/* close tab 1*/}
 
@@ -77,10 +80,9 @@ const Tool_Tech = ({ tool_tech_para, tool_tech_heading }) => {
                       : "tab-pane fade"
                   }
                 >
-                  <Tool_Tech_Map_BackEnd />
+                  <Tool_Tech_Map_Toolkit/>
                 </div>
                 {/* close tab 2*/}
-
 
                 {/* start tab 4*/}
                 <div
@@ -90,20 +92,30 @@ const Tool_Tech = ({ tool_tech_para, tool_tech_heading }) => {
                       : "tab-pane fade"
                   }
                 >
-                  <Tool_Tech_Map_Database />
+                  <Tool_Tech_Map_Databases />
                 </div>
                 {/* close tab 4*/}
-              
 
-                {/* start tab 6*/}
+                {/* start tab 5*/}
                 <div
+                  className={
+                    showtab === 5
+                      ? "tab-pane fade show active"
+                      : "tab-pane fade"
+                  }
+                >
+                  <Tool_Tech_Map_Frameworks />
+                </div>
+                {/* close tab 5*/}
+                 {/* start tab 6*/}
+                 <div
                   className={
                     showtab === 6
                       ? "tab-pane fade show active"
                       : "tab-pane fade"
                   }
                 >
-                  <Tool_Tech_Map_Cloud />
+                  <Tool_Tech_Map_SDK />
                 </div>
                 {/* close tab 6*/}
               </div>
@@ -115,7 +127,7 @@ const Tool_Tech = ({ tool_tech_para, tool_tech_heading }) => {
   );
 };
 const Wrapper = styled.section`
-  padding: 6rem 0rem;
+  padding: 9rem 0rem;
 
   .container {
     display: flex;
@@ -128,25 +140,24 @@ const Wrapper = styled.section`
     gap: 7rem;
     margin: 6rem 0rem 0rem 3rem;
   }
-  .grid-five-column {
-    grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr 0.5fr;
+  .grid-four-column {
+    grid-template-columns: 1fr 0.5fr 0.5fr 0.5fr ;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 12rem;
   }
-  h1,
-  p {
+  h1{
     color: ${({ theme }) => theme.colors.heading};
     text-align: center;
-    margin: 0rem 16rem;
+    margin: 0rem 6rem;
   }
   .first_column {
     width: 25rem;
     height: auto;
     display: flex;
     flex-direction: column;
-    
+
     box-shadow: ${({ theme }) => theme.colors.shadow};
     .first_column_text {
       display: flex;
@@ -209,11 +220,10 @@ const Wrapper = styled.section`
       flex-direction: column;
       gap: 4rem;
     }
-    h1  h1{
+    h1 h1 {
       color: ${({ theme }) => theme.colors.heading};
       text-align: center;
       margin: 0rem 2rem 0rem 2rem;
-
     }
     p {
       color: ${({ theme }) => theme.colors.heading};
@@ -245,11 +255,10 @@ const Wrapper = styled.section`
       flex-direction: column;
       gap: 4rem;
     }
-    h1{
+    h1 {
       color: ${({ theme }) => theme.colors.heading};
       text-align: center;
       margin: 0rem 2rem 0rem 2rem;
-
     }
     p {
       color: ${({ theme }) => theme.colors.heading};
@@ -268,5 +277,4 @@ const Wrapper = styled.section`
     }
   }
 `;
-export default Tool_Tech;
-
+export default Tool_Tech_Android;
