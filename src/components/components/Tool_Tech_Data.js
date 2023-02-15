@@ -220,10 +220,6 @@ export const Tool_Tech_Programming_Languages =[
     category: "Programming_Languages",
     url: "./images/c-1.png",
   },
-
-
-
-  
 ]
 export const Tool_Tech_Toolkit = [
   {
@@ -309,17 +305,112 @@ export const Tool_Tech_SDK = [
  
 ]
 
-// Tool_tech_Android
+// Tool_tech_IOS
 
-// {
-//   category: "Programming_Languages",
-//   url: "./images/swift.png",
-// },
-// {
-//   category: "Programming_Languages",
-//   url: "./images/python.png",
-// },
-// {
-//   category: "Programming_Languages",
-//   url: "./images/objC.png",
-// },
+export const Tool_Tech_Programming_Languages_data =[
+  {
+    category: "Programming_Languages",
+    url: "./images/swift.png",
+  },
+
+  {
+    category: "Programming_Languages",
+    url: "",
+  },
+  {
+    category: "Programming_Languages",
+    url: "./images/python.png",
+  },
+  {
+    category: "Programming_Languages",
+    url: "",
+  },
+ 
+  {
+    category: "Programming_Languages",
+    url: "./images/objC.png",
+  },
+]
+export const Tool_Tech_Toolkit_data = [
+  {
+    category: "Toolkit",
+    url: "./images/promisekit.png",
+  },
+  {
+    category: "Toolkit",
+    url: "./images/json.png",
+  },
+  {
+    category: "Toolkit",
+    url: "./images/alamofire.png",
+  },
+  {
+    category: "Toolkit",
+    url: "./images/SDWebImage.png",
+  },
+   
+  {
+    category: "Toolkit",
+    url: "",
+  },
+  {
+    category: "Toolkit",
+    url: "./images/AFNetworking.png",
+  },
+
+]
+// Databases
+export const Tool_Tech_Databases_data = [
+  {
+    category: "Databases",
+    url: "./images/realm.png",
+  },
+  {
+    category: "Databases",
+    url: "./images/SQLLite.png",
+  },
+  {
+    category: "Databases",
+    url: "./images/coredata.png",
+  },
+ 
+]
+// Frameworks
+export const Tool_Tech_Frameworks_data = [
+  {
+    category: "Frameworks",
+    url: "./images/x.svg",
+  },
+  {
+    category: "Frameworks",
+    url: "./images/PhoneGap.png",
+  },
+  {
+    category: "Frameworks",
+    url: "./images/flutter.svg",
+  },
+  {
+    category: "Frameworks",
+    url: "./images/ionic.png",
+  },
+  {
+    category: "Frameworks",
+    url: "",
+  },
+  {
+    category: "Frameworks",
+    url: "./images/framework.png",
+  },
+]
+// SDK
+export const Tool_Tech_SDK_data = [
+  {
+    category: "SDK",
+    url: "",
+  },
+  {
+    category: "SDK",
+    url: "./images/xcode.png",
+  },
+ 
+]

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { Container } from "react-bootstrap";
 import styled from "styled-components";
+import {NavLink} from "react-router-dom"
 
 import {
   Tool_Tech_Map_BackEnd,
@@ -28,12 +29,9 @@ const Tool_Tech = ({ tool_tech_para, tool_tech_heading }) => {
             <p>{paraData}</p>
             <div className="grid grid-five-column">
               <div className="first_column">
-                <button
-                  className="first_column_text"
-                  onClick={() => handletab(1)}
-                >
-                  frontend
-                </button>
+               <NavLink>
+
+               </NavLink>
 
                 <button
                   className="first_column_text"
